@@ -1,0 +1,52 @@
+name: daily-update-subscription
+
+# 每天定时抓取上游免费源 -> 去重 -> 剔除 VMess -> mihomo 实测 -> 生成 clash.yaml 并提交
+on:
+  schedule:
+    - cron: "30 1 * * *"   # 每天 UTC 01:30 = 北京时间 09:30
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-subscription
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install pyyaml requests
+
+      - name: Install mihomo
+        run: |
+          curl -sL -o mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.10/mihomo-linux-amd64-v1.19.10.gz"
+          gunzip -f mihomo.gz
+          chmod +x mihomo
+          sudo mv mihomo /usr/local/bin/mihomo
+          mihomo -v
+
+      - name: Fetch + normalize + test + build
+        run: |
+          python scripts/pipeline.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "sub-bot"
+          git config user.email "sub-bot@users.noreply.github.com"
+          if git diff --quiet -- clash.yaml; then
+            echo "No changes"
+          else
+            git add clash.yaml
+            git commit -m "auto: refresh subscription $(date -u +%F)"
+            git push
+          fi
