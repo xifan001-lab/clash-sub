@@ -230,7 +230,7 @@ with ThreadPoolExecutor(max_workers=200) as ex:
             tcp_ok.append(p)
 tcp_ok.sort(key=lambda p: p["_tcp"])
 print("tcp alive:", len(tcp_ok), flush=True)
-test = tcp_ok[:1100]
+test = tcp_ok[:700]
 for i, p in enumerate(test):
     p["name"] = f"c{i:04d}"
 
@@ -238,28 +238,32 @@ for i, p in enumerate(test):
 probe = os.path.join(ROOT, "ci_probe")
 os.makedirs(probe, exist_ok=True)
 cfg = {"mixed-port": 7898, "allow-lan": False, "mode": "rule", "log-level": "warning",
-       "ipv6": False, "external-controller": "127.0.0.1:9099", "secret": "",
+       "ipv6": True, "external-controller": "127.0.0.1:9099", "secret": "",
        "proxies": [{k: v for k, v in p.items() if k != "_tcp"} for p in test],
        "proxy-groups": [], "rules": ["MATCH,DIRECT"]}
 cp = os.path.join(probe, "config.yaml")
 yaml.safe_dump(cfg, open(cp, "w", encoding="utf-8"), allow_unicode=True, sort_keys=False, width=4096)
 
-proc = subprocess.Popen(["mihomo", "-d", probe, "-f", cp],
-                        stdout=open(os.path.join(probe, "mihomo.log"), "w"), stderr=subprocess.STDOUT)
-for _ in range(40):
-    time.sleep(1)
-    try:
-        urllib.request.urlopen(f"{CTRL}/version", timeout=2).read()
-        break
-    except Exception:
-        if proc.poll() is not None:
-            raise SystemExit("mihomo exited")
+def start_mihomo(cfg_path, probe_dir):
+    proc = subprocess.Popen(["mihomo", "-d", probe_dir, "-f", cfg_path],
+                            stdout=open(os.path.join(probe_dir, "mihomo.log"), "w"),
+                            stderr=subprocess.STDOUT)
+    for _ in range(40):
+        time.sleep(1)
+        try:
+            urllib.request.urlopen(f"{CTRL}/version", timeout=2).read()
+            return proc
+        except Exception:
+            if proc.poll() is not None:
+                return None
+    proc.terminate()
+    return None
 
 def delay(name, to=6000):
     q = urllib.parse.urlencode({"url": TEST_URL, "timeout": to})
     try:
         with urllib.request.urlopen(f"{CTRL}/proxies/{urllib.parse.quote(name)}/delay?{q}",
-                                    timeout=to / 1000 + 4) as f:
+                                    timeout=to / 1000 + 5) as f:
             return json.load(f).get("delay")
     except Exception:
         return None
@@ -272,19 +276,40 @@ def run_test(names, workers=50):
             out[fs[f]] = f.result()
     return out
 
-names = [p["name"] for p in test]
 passes, lat = collections.Counter(), {}
-try:
-    for rnd in range(4):
-        res = run_test(names)
-        for n, v in res.items():
-            if v:
-                passes[n] += 1
-                lat[n] = min(lat.get(n, 1 << 30), v)
-        print(f"round{rnd+1}: passed={len(passes)}", flush=True)
-finally:
-    proc.terminate()
+chunk = 300
+good = []
+for start in range(0, len(test), chunk):
+    batch = test[start:start+chunk]
+    cfg = {"mixed-port": 7898, "allow-lan": False, "mode": "rule", "log-level": "warning",
+           "ipv6": False, "external-controller": "127.0.0.1:9099", "secret": "",
+           "proxies": [{k: v for k, v in p.items() if k != "_tcp"} for p in batch],
+           "proxy-groups": [], "rules": ["MATCH,DIRECT"]}
+    cp = os.path.join(probe, f"config{start}.yaml")
+    yaml.safe_dump(cfg, open(cp, "w", encoding="utf-8"), allow_unicode=True, sort_keys=False, width=4096)
+    proc = start_mihomo(cp, probe)
+    if not proc:
+        print(f"  batch {start}: load failed, skipping", flush=True)
+        continue
+    good.extend(batch)
+    names = [p["name"] for p in batch]
+    try:
+        for rnd in range(3):
+            res = run_test(names)
+            for n, v in res.items():
+                if v:
+                    passes[n] += 1
+                    lat[n] = min(lat.get(n, 1 << 30), v)
+            print(f"  batch {start} round{rnd+1}: passed={sum(1 for n in names if passes.get(n))}", flush=True)
+    finally:
+        proc.terminate()
+        try:
+            proc.wait(timeout=10)
+        except Exception:
+            proc.kill()
 
+test = good
+print(f"tested total: {len(test)}, alive: {len(passes)}", flush=True)
 rows = [p for p in test if passes.get(p["name"])]
 rows.sort(key=lambda p: (-passes[p["name"]], lat[p["name"]]))
 print("alive:", len(rows), flush=True)
@@ -309,15 +334,6 @@ out = {"mixed-port": 7890, "allow-lan": False, "mode": "rule", "log-level": "war
            {"name": "GLOBAL", "type": "select", "proxies": ["AUTO-FASTEST", "PROXY", "DIRECT"] + nm},
        ],
        "rules": ["MATCH,PROXY"]}
-header = (
-    "# ============================================================\n"
-    f"#  免费节点订阅  •  {len(proxies)} 个节点\n"
-    f"#  生成时间: {time.strftime('%Y-%m-%d %H:%M')} (UTC)\n"
-    "#  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序\n"
-    "#  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。\n"
-    "# ============================================================\n"
-)
-with open(os.path.join(ROOT, "clash.yaml"), "w", encoding="utf-8", newline="\n") as f:
-    f.write(header)
+with open(os.path.join(ROOT, "ci_clash.yaml"), "w", encoding="utf-8", newline="\n") as f:
     yaml.safe_dump(out, f, allow_unicode=True, sort_keys=False, width=4096)
-print("wrote clash.yaml", len(proxies), flush=True)
+print("wrote ci_clash.yaml", len(proxies), flush=True)
