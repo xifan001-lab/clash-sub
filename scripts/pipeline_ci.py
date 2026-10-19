@@ -235,8 +235,8 @@ if os.path.exists(old_path):
     except Exception as e:
         print('seed load failed:', e)
 print('seeds:', len(seeds), flush=True)
-cands = seeds + [p for p in cands if (str(p.get('type')), str(p.get('server')), str(p.get('port'))) not in
-                 {(str(s.get('type')), str(s.get('server')), str(s.get('port'))) for s in seeds}]
+seed_keys = {(str(s.get('type')), str(s.get('server')), str(s.get('port'))) for s in seeds}
+cands = seeds + [p for p in list(pool.values()) if (str(p.get('type')), str(p.get('server')), str(p.get('port'))) not in seed_keys]
 cands = list(cands)
 tcp_ok = []
 with ThreadPoolExecutor(max_workers=200) as ex:
