@@ -218,7 +218,26 @@ def tcp(server, port, timeout=2.0):
     except Exception:
         return None
 
-cands = list(pool.values())
+
+seeds = []
+old_path = os.path.join(ROOT, 'clash.yaml')
+if os.path.exists(old_path):
+    try:
+        old = yaml.safe_load(open(old_path, encoding='utf-8')) or {}
+        for p in (old.get('proxies') or []):
+            if not p.get('server'):
+                continue
+            q = dict(p)
+            parts = str(q.get('name', '')).split(' | ')
+            q['name'] = 'seed' + str(len(seeds))
+            q.pop('udp', None)
+            seeds.append(q)
+    except Exception as e:
+        print('seed load failed:', e)
+print('seeds:', len(seeds), flush=True)
+cands = seeds + [p for p in cands if (str(p.get('type')), str(p.get('server')), str(p.get('port'))) not in
+                 {(str(s.get('type')), str(s.get('server')), str(s.get('port'))) for s in seeds}]
+cands = list(cands)
 tcp_ok = []
 with ThreadPoolExecutor(max_workers=200) as ex:
     futs = {ex.submit(tcp, p["server"], int(p["port"])): p for p in cands}
@@ -230,7 +249,7 @@ with ThreadPoolExecutor(max_workers=200) as ex:
             tcp_ok.append(p)
 tcp_ok.sort(key=lambda p: p["_tcp"])
 print("tcp alive:", len(tcp_ok), flush=True)
-test = tcp_ok[:700]
+test = tcp_ok[:1100]
 for i, p in enumerate(test):
     p["name"] = f"c{i:04d}"
 
@@ -238,7 +257,7 @@ for i, p in enumerate(test):
 probe = os.path.join(ROOT, "ci_probe")
 os.makedirs(probe, exist_ok=True)
 cfg = {"mixed-port": 7898, "allow-lan": False, "mode": "rule", "log-level": "warning",
-       "ipv6": True, "external-controller": "127.0.0.1:9099", "secret": "",
+       "ipv6": False, "external-controller": "127.0.0.1:9099", "secret": "",
        "proxies": [{k: v for k, v in p.items() if k != "_tcp"} for p in test],
        "proxy-groups": [], "rules": ["MATCH,DIRECT"]}
 cp = os.path.join(probe, "config.yaml")
@@ -314,6 +333,9 @@ rows = [p for p in test if passes.get(p["name"])]
 rows.sort(key=lambda p: (-passes[p["name"]], lat[p["name"]]))
 print("alive:", len(rows), flush=True)
 picked = rows[:TARGET]
+if len(picked) < TARGET:
+    print(f"WARN: only {len(picked)} verified (<{TARGET}), keep existing clash.yaml", flush=True)
+    raise SystemExit(0)
 
 proxies = []
 for i, p in enumerate(picked, 1):
@@ -334,6 +356,15 @@ out = {"mixed-port": 7890, "allow-lan": False, "mode": "rule", "log-level": "war
            {"name": "GLOBAL", "type": "select", "proxies": ["AUTO-FASTEST", "PROXY", "DIRECT"] + nm},
        ],
        "rules": ["MATCH,PROXY"]}
-with open(os.path.join(ROOT, "ci_clash.yaml"), "w", encoding="utf-8", newline="\n") as f:
+header = (
+    "# ============================================================\n"
+    f"#  免费节点订阅  •  {len(proxies)} 个节点\n"
+    f"#  生成时间: {time.strftime('%Y-%m-%d %H:%M')} (UTC)\n"
+    "#  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序\n"
+    "#  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。\n"
+    "# ============================================================\n"
+)
+with open(os.path.join(ROOT, "clash.yaml"), "w", encoding="utf-8", newline="\n") as f:
+    f.write(header)
     yaml.safe_dump(out, f, allow_unicode=True, sort_keys=False, width=4096)
-print("wrote ci_clash.yaml", len(proxies), flush=True)
+print("wrote clash.yaml", len(proxies), flush=True)
