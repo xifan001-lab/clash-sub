@@ -1,7 +1,7 @@
 # ============================================================
-#  免费节点订阅  •  46 个节点
-#  生成时间: 2026-10-19 08:30 (UTC)
-#  说明: 已用 mihomo 三轮实测延迟，全部非 VMess；按通过轮次优先排序
+#  免费节点订阅  •  100 个节点
+#  生成时间: 2026-10-19
+#  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序
 #  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。
 # ============================================================
 mixed-port: 7890
@@ -12,42 +12,76 @@ ipv6: true
 unified-delay: true
 external-controller: 127.0.0.1:9090
 proxies:
-- type: vless
-  server: 47.253.226.114
+- password: ec74bb6a86c2
   port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  server: 684616s4.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+  udp: true
+  name: 001 | 196ms | 🇹🇼 🇨🇳 台湾 / TWN 3
+- password: 0324fbc29561
+  port: 443
+  server: 56481.df6h451rh.xin
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
+  name: 002 | 438ms | 🇭🇰 香港 / HKG
+- password: 0324fbc29561
+  port: 443
+  server: 654968169.df6h451rh.xin
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
+  name: 003 | 440ms | 🇭🇰 香港 / HKG 3
+- type: http
+  server: 178.248.73.58
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 004 | 510ms | ID - zhuhai.uk
+- type: socks5
+  server: 217.142.236.180
+  port: 1080
+  udp: true
+  name: 005 | 528ms | JP - zhuhai.uk 02
+- name: 006 | 582ms | 🇯🇵JP_1/1.4MB/s
+  port: 343
+  server: 133.18.200.207
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 007 | 676ms | EPODONIOS
+  type: vless
+  server: 31.59.210.32
+  port: 443
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   udp: true
   tls: true
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
+  servername: www.yandex.ru
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
   reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-    short-id: ''
-  name: 001 | 29ms | 47.253.226.114
-- password: 4291c983-c520-46ac-82cc-48f14bef573f
-  port: 35013
-  server: 129.213.91.185
+    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
+    short-id: 7ec4374ffc6308fd
+- server: 98416548.df6h451rh.xin
+  port: 443
+  type: anytls
+  password: 0324fbc29561
+  udp: true
+  sni: images.ctfassets.net
   skip-cert-verify: true
-  sni: 129.213.91.185
-  tls: false
-  type: hysteria2
-  name: 002 | 38ms | 129.213.91.185
-  udp: true
-- type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  name: 003 | 41ms | 172.64.150.28
+  name: 008 | 681ms | 🇹🇼 🇨🇳 台湾 / TWN 5
 - alpn:
   - http/1.1
   client-fingerprint: chrome
+  name: 009 | 693ms | 🇺🇸US_1/3.4MB/s
   network: ws
   port: 443
   server: 104.19.45.195
@@ -62,216 +96,527 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
     path: /?TELEGRAM-TOOTFFARANGI
   xudp: true
-  name: 004 | 54ms | 104.19.45.195
-- type: vless
-  server: 162.159.250.29
+- server: 45.145.12.148
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
+  type: vless
+  uuid: b869a8d0-0733-4346-8d1c-c1230a78651c
   tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
+    short-id: 35debf0dc757d053
+  servername: max.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+  name: 010 | 784ms | 🇩🇪 德国 / DEU 8
+- name: 011 | 863ms | 🏳[openproxylist.com] vless-
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    path: /platform106
     headers:
-      Host: lucasjow.us.ci
-  name: 005 | 54ms | 162.159.250.29
+      Host: platform106.halalkhor.info
+- name: 012 | 879ms | ProxyPool / 🇧🇷 巴西 / BRA
+  server: 147.15.108.14
+  port: 20000
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  auth: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000
+  udp: true
+- password: None
+  port: 9002
+  server: 138.199.35.215
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 013 | 882ms | 🇺🇸US_7/2.9MB/s
+- type: vless
+  server: 64.188.66.181
+  port: 443
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  udp: true
+  tls: true
+  servername: ge-s-1.pythonmakemigreat.wiki
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  name: 014 | 906ms | 美国+加利福尼亚
+- name: 015 | 913ms | EPODONIOS
+  type: vless
+  server: 163.245.42.48
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  udp: true
+  tls: true
+  servername: mother-earth.fyi
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+- password: None
+  port: 9002
+  server: 138.199.35.218
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 016 | 925ms | 🇺🇸US_3/1000KB/s
+- type: http
+  server: 138.199.35.210
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 017 | 934ms | US - zhuhai.uk 06
+- type: http
+  server: 138.199.35.195
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 018 | 943ms | US - zhuhai.uk 04
+- password: 'null'
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  name: 019 | 947ms | US_speednode_0131
 - port: 443
   server: 172.64.68.89
   skip-cert-verify: true
   tls: true
   type: http
-  name: 006 | 55ms | 172.64.68.89
   udp: true
-- type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  name: 020 | 952ms | 🇩🇪DE_9/3.4MB/s
+- auth: 633bc3be486b646190661ac2387c150a
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+  password: 633bc3be486b646190661ac2387c150a
+  port: 443
+  server: 152.67.115.203
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+  name: 021 | 953ms | 🇦🇺 澳大利亚 / AUS
+- name: 022 | 963ms | EPODONIOS
+  type: trojan
+  server: 86.54.42.16
+  port: 27613
+  password: lzi0ooaq8vgy1536
+  udp: true
+- port: 9002
+  server: 138.199.35.196
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 023 | 999ms | 🇺🇸US_11/2.7MB/s
+- port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 024 | 1014ms | 🇺🇸US_4/3.3MB/s
+- name: 025 | 1023ms | EPODONIOS
+  type: vless
+  server: 31.57.106.241
+  port: 443
+  uuid: a4801105-c0c7-4cab-87c6-f257ff2afc09
   udp: true
   tls: true
-  servername: lucasjow.us.ci
+  servername: www.lmt.lv
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
-    headers:
-      Host: lucasjow.us.ci
-  name: 007 | 55ms | 188.114.97.6
-- alpn:
+  reality-opts:
+    public-key: 4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o
+    short-id: 44f7c5615039ae1b
+- port: 9002
+  server: 138.199.35.217
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 026 | 1025ms | 🇺🇸US_6/1.2MB/s
+- password: None
+  port: 9002
+  server: 138.199.35.207
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 027 | 1027ms | 🇺🇸US_8/2.6MB/s
+- port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 028 | 1059ms | US_speednode_0143
+- name: 029 | 1071ms | 🇵🇱 波兰 / POL 2
+  server: pl-a50baf0d7f.shamanapp.online
+  port: 443
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  alpn:
+  - h2
   - http/1.1
+  servername: pl-a50baf0d7f.shamanapp.online
   client-fingerprint: chrome
-  encryption: none
-  network: ws
+  network: xhttp
+  xhttp-opts:
+    path: /ShamanXHTTP2026
+    host: pl-a50baf0d7f.shamanapp.online
+    mode: stream-up
+  udp: true
+- server: bs.90909.club
+  port: 2096
+  type: vless
+  uuid: e667f5c7-6b38-48ef-ab89-40519713afb0
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc-reality
+  udp: true
+  name: 030 | 1102ms | 🇩🇪 德国 / DEU 6
+- port: 443
+  server: 38.28.193.188
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 031 | 1130ms | US_speednode_0141
+- port: 443
+  server: 103.97.88.154
+  skip-cert-verify: true
+  sni: 4a8c2906c96058315dffbc2b0e7ff19b-98005bea43f9ac33.apache-iv.com
+  tls: true
+  type: http
+  udp: true
+  name: 032 | 1175ms | 🇳🇱NL_7/2.0MB/s
+- name: 033 | 1180ms | 🇧🇪BE_1/2.8MB/s
   port: 443
-  server: 104.21.91.244
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
+  server: 146.70.123.98
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- password: 0324fbc29561
+  port: 443
+  server: er8u54dh.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+  udp: true
+  name: 034 | 1188ms | 🇹🇼 🇨🇳 台湾 / TWN 2
+- port: 443
+  server: 82.65.162.76
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 035 | 1217ms | 🇫🇷FR_5/3.2MB/s
+- server: randomquaint.net
+  port: 2053
+  type: vless
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: randomquaint.net
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: randomquaint.net
+    mode: auto
+  udp: true
+  name: 036 | 1224ms | 🇷🇺 俄罗斯 / RUS
+- port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 037 | 1242ms | 🇩🇪DE_7/3.9MB/s
+- port: 443
+  server: 185.140.209.235
+  skip-cert-verify: true
+  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
+  tls: true
+  type: http
+  udp: true
+  name: 038 | 1242ms | 🇳🇱NL_4/1.6MB/s
+- type: http
+  server: 80.124.109.22
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 039 | 1247ms | FR - zhuhai.uk
+- password: None
+  port: 9002
+  server: 84.17.47.125
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 040 | 1248ms | NL_speednode_0005
+- type: http
+  server: 89.124.11.9
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 041 | 1249ms | LT - zhuhai.uk
+- type: http
+  server: 45.145.73.240
+  port: 8443
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 042 | 1252ms | US - zhuhai.uk 03
+- name: 043 | 1257ms | 🇨🇦CA_2/1.5MB/s
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- server: starlink-ft.251313.xyz
+  port: 443
+  type: hysteria2
+  password: https://xship.top
+  auth: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
+  udp: true
+  name: 044 | 1258ms | 🇺🇸 美国 / USA 7
+- port: 9002
+  server: 84.17.47.147
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 045 | 1264ms | 🇳🇱NL_5/3.4MB/s
+- client-fingerprint: random
+  network: ws
+  port: 8443
+  server: 194.87.143.165
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  ws-opts:
-    headers:
-      Host: lucasjow.us.ci
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-  name: 008 | 56ms | 104.21.91.244
-  udp: true
-- network: ws
-  port: 2082
-  server: 104.18.35.86
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: false
-  type: vless
-  udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fp
-  name: 009 | 56ms | 104.18.35.86
-- type: vless
-  server: 172.64.158.170
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
-  network: ws
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   ws-opts:
     path: /
-    headers:
-      Host: ccc.010304.xyz
-  name: 010 | 56ms | 172.64.158.170
-- type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  name: '046 | 1273ms | 🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+- port: 443
+  server: 103.82.101.44
+  skip-cert-verify: true
+  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
   tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-  name: 011 | 56ms | cf.877774.xyz
-- type: vless
-  server: 104.18.43.174
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  type: http
   udp: true
+  name: 047 | 1279ms | 🇫🇷FR_3/1.5MB/s
+- port: 9002
+  server: 84.17.47.146
+  skip-cert-verify: true
   tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed
-    headers:
-      Host: lucasjow.us.ci
-  name: 012 | 57ms | 104.18.43.174
-- type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  servername: ccc.010304.xyz
+  type: http
+  udp: true
+  name: 048 | 1310ms | NL_speednode_0009
+- type: socks5
+  server: 47.236.168.243
+  port: 1080
+  username: '8888'
+  password: '8888'
+  udp: true
+  name: 049 | 1337ms | SG - zhuhai.uk
+- port: 9002
+  server: 193.176.84.25
+  skip-cert-verify: true
   tls: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-  skip-cert-verify: false
+  type: http
   udp: true
-  name: 013 | 58ms | 172.64.152.241
-- type: vless
-  network: ws
-  server: 172.67.76.40
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  servername: ccc.010304.xyz
+  name: 050 | 1343ms | RO_speednode_0083
+- port: 9002
+  server: 193.176.84.27
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /
-  name: 014 | 58ms | 172.67.76.40
+  type: http
   udp: true
-- type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
+  name: 051 | 1354ms | RO_speednode_0110
+- type: http
+  server: 193.176.84.19
+  port: 9002
   tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: lucasjow.us.ci
-  name: 015 | 62ms | 188.114.98.0
-- server: 104.18.37.247
-  port: 443
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+  name: 052 | 1354ms | RO - zhuhai.uk 04
+- password: None
+  port: 9002
+  server: 193.176.84.22
+  skip-cert-verify: true
   tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
+  type: http
   udp: true
-  name: 016 | 63ms | 104.18.37.247
-- type: vless
-  server: 104.26.4.2
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
+  name: 053 | 1355ms | 🇷🇴RO_7/2.7MB/s
+- port: 9002
+  server: 193.176.84.17
+  skip-cert-verify: true
   tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-  name: 017 | 63ms | 104.26.4.2
-- type: vless
-  network: ws
-  server: 188.114.98.0
-  port: 443
-  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
-  servername: tn1r.eu.cc
+  type: http
+  udp: true
+  name: 054 | 1358ms | RO_speednode_0045
+- type: http
+  server: 84.17.47.124
+  port: 9002
   tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: tn1r.eu.cc
-    path: /id-pusat
-  name: 018 | 63ms | 188.114.98.0
+  skip-cert-verify: true
   udp: true
-- server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+  name: 055 | 1369ms | NL - zhuhai.uk
+- port: 443
+  server: 38.247.141.135
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  name: 019 | 73ms | 104.18.35.86
+  name: 056 | 1373ms | 🇺🇸US_12/1.2MB/s
+- port: 9002
+  server: 193.176.84.26
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+  udp: true
+  name: 057 | 1373ms | 🇷🇴RO_8/3.1MB/s
+- server: 158.178.137.129
+  port: 20000
+  type: hysteria2
+  password: b42d90fa667942aebc734d60
+  auth: b42d90fa667942aebc734d60
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  ports: 20000-30000
+  udp: true
+  name: 058 | 1379ms | 🇦🇺 澳大利亚 / AUS
+- port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 059 | 1384ms | 🇩🇪DE_5/1.4MB/s
+- type: http
+  server: 51.158.243.91
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 060 | 1385ms | NL - zhuhai.uk 02
+- port: 9002
+  server: 84.17.47.150
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 061 | 1390ms | NL_speednode_0006
+- port: 9002
+  server: 193.176.84.20
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+  udp: true
+  name: 062 | 1393ms | RO_speednode_0087
+- port: 443
+  server: 185.238.168.20
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 063 | 1398ms | 🇳🇱NL_6/1.2MB/s
+- port: 9002
+  server: 193.176.84.21
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+  udp: true
+  name: 064 | 1403ms | 🇷🇴RO_6/3.3MB/s
+- type: http
+  server: 193.176.84.37
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  name: 065 | 1404ms | RO - zhuhai.uk 02
+- port: 9002
+  server: 193.176.84.24
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 066 | 1430ms | RO_speednode_0082
+- port: 9002
+  server: 84.17.47.149
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 067 | 1431ms | NL_speednode_0010
+- type: socks5
+  server: 101.36.104.239
+  port: 10808
+  udp: true
+  name: 068 | 1433ms | JP - zhuhai.uk
+- port: 9002
+  server: 193.176.84.39
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 069 | 1443ms | RO_speednode_0126
 - alpn:
   - h3
   - h2
   client-fingerprint: chrome
   encryption: none
+  name: 070 | 1453ms | 🇩🇪DE_1/3.4MB/s
   network: ws
   port: 443
   server: 162.159.135.234
@@ -286,38 +631,178 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /
   xudp: true
-  name: 020 | 74ms | 162.159.135.234
-- server: 104.18.35.86
-  port: 2083
+- port: 9002
+  server: 158.173.154.3
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 071 | 1457ms | 🇩🇪DE_11/2.8MB/s
+- port: 9002
+  server: 193.176.84.29
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 072 | 1461ms | 🇷🇴RO_3/1.4MB/s
+- port: 9002
+  server: 84.17.47.148
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 073 | 1464ms | NL_speednode_0007
+- password: 'null'
+  port: 9002
+  server: 193.176.84.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  name: 074 | 1479ms | 🇷🇴RO_4/3.4MB/s
+- password: None
+  port: 9002
+  server: 193.176.84.23
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 075 | 1487ms | RO_speednode_0097
+- port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 076 | 1507ms | 🇩🇪DE_8/2.0MB/s
+- port: 9002
+  server: 193.176.84.30
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 077 | 1509ms | RO_speednode_0042
+- name: 078 | 1524ms | EPODONIOS
+  type: trojan
+  server: www.pleadcourt.org
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+- port: 9002
+  server: 193.176.84.35
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 079 | 1528ms | RO_speednode_0044
+- name: 080 | 1562ms | MX - zhuhai.uk
+  type: socks5
+  server: 103.88.234.239
+  port: 40002
+  udp: true
+- port: 443
+  server: 141.94.16.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 081 | 1563ms | 🇫🇷FR_2/1.1MB/s
+- port: 443
+  server: 82.66.235.221
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 082 | 1564ms | 🇫🇷FR_6/2.6MB/s
+- port: 8443
+  server: 18.206.28.143
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 083 | 1580ms | 🇺🇸US_17/3.5MB/s
+- port: 9002
+  server: 193.176.84.40
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+  udp: true
+  name: 084 | 1582ms | 🇷🇴RO_10/3.4MB/s
+- port: 8090
+  server: 24.142.229.178
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 085 | 1603ms | 🇺🇸US_20/1.3MB/s
+- port: 9002
+  server: 193.176.84.32
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 086 | 1607ms | RO_speednode_0124
+- port: 9002
+  server: 193.176.84.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 087 | 1655ms | RO_speednode_0041
+- server: 78.159.246.179
+  port: 2053
   type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
   tls: true
-  servername: vlsovip.1d.mom
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: vlsovip.1d.mom
+  alpn:
+  - h2
+  - http/1.1
+  servername: randomquaint.net
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: randomquaint.net
+    mode: auto
   udp: true
-  name: 021 | 77ms | 104.18.35.86
-- type: vless
-  network: ws
-  server: 172.67.155.65
-  port: 8443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  servername: lucasjow.us.ci
+  name: '088 | 1662ms | 🇷🇺 俄罗斯 / RUS #2'
+- port: 443
+  server: 66.64.100.66
+  skip-cert-verify: true
   tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: lucasjow.us.ci
-    path: /cart/docs/www/proxyip=108.160.132.132
-  name: 022 | 82ms | 172.67.155.65
+  type: http
   udp: true
-- type: trojan
+  name: 089 | 1665ms | 🇺🇸US_19/3.0MB/s
+- name: 090 | 1729ms | 🇸🇪SE_2/1.0MB/s
+  port: 443
+  server: 217.210.129.243
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  port: 24667
+  protocol: udp
+  server: 62.210.70.191
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  up: 11 Mbps
+  udp: true
+  name: 091 | 1829ms | https://github.com/*********-*...
+- name: 092 | 2040ms | 德国 003
+  type: trojan
   network: ws
-  server: 104.19.229.21
+  server: 185.220.100.168
   port: 443
   password: humanity
   skip-cert-verify: false
@@ -326,344 +811,173 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-  name: 023 | 386ms | 104.19.229.21
   udp: true
-- type: trojan
-  server: 141.193.213.172
-  port: 443
-  password: humanity
+- type: socks5
+  server: 121.169.46.116
+  port: 1090
   udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  name: 024 | 393ms | 141.193.213.172
-- type: trojan
-  server: 104.18.32.47
-  port: 443
-  password: humanity
+  name: 093 | 2237ms | KR - zhuhai.uk
+- name: 094 | 2271ms | HK - zhuhai.uk
+  type: socks5
+  server: 47.242.19.215
+  port: 8899
+  username: admin
+  password: admin
   udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  name: 025 | 396ms | 104.18.32.47
-- type: trojan
-  server: 162.159.244.91
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  name: 026 | 397ms | 162.159.244.91
-- type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  name: 027 | 429ms | 172.64.152.23
-- type: trojan
-  server: 172.64.145.133
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-  name: 028 | 439ms | 172.64.145.133
-- type: trojan
-  network: ws
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-  name: 029 | 442ms | 45.130.125.160
-  udp: true
-- type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  name: 030 | 606ms | 188.42.145.180
-- type: trojan
-  server: 104.21.37.56
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-  name: 031 | 754ms | 104.21.37.56
-- type: trojan
-  server: 104.21.57.25
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-  name: 032 | 768ms | 104.21.57.25
-- type: trojan
-  server: 104.18.4.5
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-  name: 033 | 1039ms | 104.18.4.5
-- type: trojan
-  server: 172.67.139.14
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-  name: 034 | 1082ms | 172.67.139.14
-- type: trojan
-  server: 188.114.97.8
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-  name: 035 | 1166ms | 188.114.97.8
-- type: trojan
-  server: 104.18.35.86
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumerOot.coM.
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumerOot.coM.
-  name: 036 | 1496ms | 104.18.35.86
-- type: vless
-  network: ws
-  server: 104.19.33.237
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  servername: jp3.yohototo.top
-  tls: true
-  client-fingerprint: unsafe
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-  name: 037 | 1673ms | 104.19.33.237
-  udp: true
-- encryption: none
-  network: ws
-  port: 443
-  server: 104.16.10.2
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  tls: true
+- server: dnld.chaqalli.com
+  port: 8180
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  ws-opts:
-    headers:
-      Host: v2ray.simspeedup.com
-    path: /ws
-  name: 038 | 1810ms | 104.16.10.2
-  udp: true
-- type: trojan
-  server: 190.93.245.148
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
+  uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
+  tls: false
+  encryption: mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk
   network: ws
   ws-opts:
-    path: /assignment
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
-      Host: www.pleadcourt.org
-  name: 039 | 398ms | 190.93.245.148
-- type: trojan
-  server: 188.114.97.2
-  port: 443
-  password: humanity
+      Host: dnld.chaqalli.com
   udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-  name: 040 | 412ms | 188.114.97.2
-- type: trojan
-  server: 8.47.69.0
-  port: 443
-  password: humanity
+  name: 095 | 2279ms | 🇮🇷 伊朗 / IRN
+- type: socks5
+  server: 47.87.97.94
+  port: 1080
   udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-  name: 041 | 1482ms | 8.47.69.0
-- server: 172.67.168.158
-  port: 2087
+  name: 096 | 2408ms | TH - zhuhai.uk
+- port: 8084
+  server: 102.244.78.61
+  skip-cert-verify: true
+  type: http
+  udp: true
+  name: 097 | 2680ms | 🇨🇲CM_1/1.9MB/s
+- name: 098 | 4861ms | 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
   type: vless
-  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  network: ws
+  servername: z1q3pv4g78.rucdncomp.pro
   tls: true
-  servername: vn11vina.210z.dev
-  client-fingerprint: chrome
-  network: ws
+  client-fingerprint: firefox
   ws-opts:
-    path: /vlessvina
+    path: /useraction/events/b892639b7195/
     headers:
-      Host: vn11vina.210z.dev
+      Host: z1q3pv4g78.rucdncomp.pro
+  skip-cert-verify: true
   udp: true
-  name: 042 | 1499ms | 172.67.168.158
-- type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
+- type: socks5
+  server: 171.25.158.95
+  port: 1080
   udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-  name: 043 | 409ms | 188.114.98.0
-- type: trojan
-  server: 108.162.194.134
-  port: 443
-  password: humanity
+  name: 099 | 4900ms | SE - zhuhai.uk
+- port: 3129
+  server: 89.58.42.118
+  skip-cert-verify: true
+  type: socks5
   udp: true
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-  name: 044 | 432ms | 108.162.194.134
-- type: vless
-  network: ws
-  server: 162.159.192.125
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: a.cwvps.eu.org
-    path: /ws
-  name: 045 | 1451ms | 162.159.192.125
-- type: vless
-  network: ws
-  server: 104.19.4.149
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: a.cwvps.eu.org
-    path: /ws
-  name: 046 | 1648ms | 104.19.4.149
+  name: 100 | 5210ms | 🇩🇪DE_15/3.2MB/s
 proxy-groups:
 - name: AUTO-FASTEST
   type: url-test
   proxies:
-  - 001 | 29ms | 47.253.226.114
-  - 002 | 38ms | 129.213.91.185
-  - 003 | 41ms | 172.64.150.28
-  - 004 | 54ms | 104.19.45.195
-  - 005 | 54ms | 162.159.250.29
-  - 006 | 55ms | 172.64.68.89
-  - 007 | 55ms | 188.114.97.6
-  - 008 | 56ms | 104.21.91.244
-  - 009 | 56ms | 104.18.35.86
-  - 010 | 56ms | 172.64.158.170
-  - 011 | 56ms | cf.877774.xyz
-  - 012 | 57ms | 104.18.43.174
-  - 013 | 58ms | 172.64.152.241
-  - 014 | 58ms | 172.67.76.40
-  - 015 | 62ms | 188.114.98.0
-  - 016 | 63ms | 104.18.37.247
-  - 017 | 63ms | 104.26.4.2
-  - 018 | 63ms | 188.114.98.0
-  - 019 | 73ms | 104.18.35.86
-  - 020 | 74ms | 162.159.135.234
-  - 021 | 77ms | 104.18.35.86
-  - 022 | 82ms | 172.67.155.65
-  - 023 | 386ms | 104.19.229.21
-  - 024 | 393ms | 141.193.213.172
-  - 025 | 396ms | 104.18.32.47
-  - 026 | 397ms | 162.159.244.91
-  - 027 | 429ms | 172.64.152.23
-  - 028 | 439ms | 172.64.145.133
-  - 029 | 442ms | 45.130.125.160
-  - 030 | 606ms | 188.42.145.180
-  - 031 | 754ms | 104.21.37.56
-  - 032 | 768ms | 104.21.57.25
-  - 033 | 1039ms | 104.18.4.5
-  - 034 | 1082ms | 172.67.139.14
-  - 035 | 1166ms | 188.114.97.8
-  - 036 | 1496ms | 104.18.35.86
-  - 037 | 1673ms | 104.19.33.237
-  - 038 | 1810ms | 104.16.10.2
-  - 039 | 398ms | 190.93.245.148
-  - 040 | 412ms | 188.114.97.2
-  - 041 | 1482ms | 8.47.69.0
-  - 042 | 1499ms | 172.67.168.158
-  - 043 | 409ms | 188.114.98.0
-  - 044 | 432ms | 108.162.194.134
-  - 045 | 1451ms | 162.159.192.125
-  - 046 | 1648ms | 104.19.4.149
+  - 001 | 196ms | 🇹🇼 🇨🇳 台湾 / TWN 3
+  - 002 | 438ms | 🇭🇰 香港 / HKG
+  - 003 | 440ms | 🇭🇰 香港 / HKG 3
+  - 004 | 510ms | ID - zhuhai.uk
+  - 005 | 528ms | JP - zhuhai.uk 02
+  - 006 | 582ms | 🇯🇵JP_1/1.4MB/s
+  - 007 | 676ms | EPODONIOS
+  - 008 | 681ms | 🇹🇼 🇨🇳 台湾 / TWN 5
+  - 009 | 693ms | 🇺🇸US_1/3.4MB/s
+  - 010 | 784ms | 🇩🇪 德国 / DEU 8
+  - 011 | 863ms | 🏳[openproxylist.com] vless-
+  - 012 | 879ms | ProxyPool / 🇧🇷 巴西 / BRA
+  - 013 | 882ms | 🇺🇸US_7/2.9MB/s
+  - 014 | 906ms | 美国+加利福尼亚
+  - 015 | 913ms | EPODONIOS
+  - 016 | 925ms | 🇺🇸US_3/1000KB/s
+  - 017 | 934ms | US - zhuhai.uk 06
+  - 018 | 943ms | US - zhuhai.uk 04
+  - 019 | 947ms | US_speednode_0131
+  - 020 | 952ms | 🇩🇪DE_9/3.4MB/s
+  - 021 | 953ms | 🇦🇺 澳大利亚 / AUS
+  - 022 | 963ms | EPODONIOS
+  - 023 | 999ms | 🇺🇸US_11/2.7MB/s
+  - 024 | 1014ms | 🇺🇸US_4/3.3MB/s
+  - 025 | 1023ms | EPODONIOS
+  - 026 | 1025ms | 🇺🇸US_6/1.2MB/s
+  - 027 | 1027ms | 🇺🇸US_8/2.6MB/s
+  - 028 | 1059ms | US_speednode_0143
+  - 029 | 1071ms | 🇵🇱 波兰 / POL 2
+  - 030 | 1102ms | 🇩🇪 德国 / DEU 6
+  - 031 | 1130ms | US_speednode_0141
+  - 032 | 1175ms | 🇳🇱NL_7/2.0MB/s
+  - 033 | 1180ms | 🇧🇪BE_1/2.8MB/s
+  - 034 | 1188ms | 🇹🇼 🇨🇳 台湾 / TWN 2
+  - 035 | 1217ms | 🇫🇷FR_5/3.2MB/s
+  - 036 | 1224ms | 🇷🇺 俄罗斯 / RUS
+  - 037 | 1242ms | 🇩🇪DE_7/3.9MB/s
+  - 038 | 1242ms | 🇳🇱NL_4/1.6MB/s
+  - 039 | 1247ms | FR - zhuhai.uk
+  - 040 | 1248ms | NL_speednode_0005
+  - 041 | 1249ms | LT - zhuhai.uk
+  - 042 | 1252ms | US - zhuhai.uk 03
+  - 043 | 1257ms | 🇨🇦CA_2/1.5MB/s
+  - 044 | 1258ms | 🇺🇸 美国 / USA 7
+  - 045 | 1264ms | 🇳🇱NL_5/3.4MB/s
+  - '046 | 1273ms | 🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  - 047 | 1279ms | 🇫🇷FR_3/1.5MB/s
+  - 048 | 1310ms | NL_speednode_0009
+  - 049 | 1337ms | SG - zhuhai.uk
+  - 050 | 1343ms | RO_speednode_0083
+  - 051 | 1354ms | RO_speednode_0110
+  - 052 | 1354ms | RO - zhuhai.uk 04
+  - 053 | 1355ms | 🇷🇴RO_7/2.7MB/s
+  - 054 | 1358ms | RO_speednode_0045
+  - 055 | 1369ms | NL - zhuhai.uk
+  - 056 | 1373ms | 🇺🇸US_12/1.2MB/s
+  - 057 | 1373ms | 🇷🇴RO_8/3.1MB/s
+  - 058 | 1379ms | 🇦🇺 澳大利亚 / AUS
+  - 059 | 1384ms | 🇩🇪DE_5/1.4MB/s
+  - 060 | 1385ms | NL - zhuhai.uk 02
+  - 061 | 1390ms | NL_speednode_0006
+  - 062 | 1393ms | RO_speednode_0087
+  - 063 | 1398ms | 🇳🇱NL_6/1.2MB/s
+  - 064 | 1403ms | 🇷🇴RO_6/3.3MB/s
+  - 065 | 1404ms | RO - zhuhai.uk 02
+  - 066 | 1430ms | RO_speednode_0082
+  - 067 | 1431ms | NL_speednode_0010
+  - 068 | 1433ms | JP - zhuhai.uk
+  - 069 | 1443ms | RO_speednode_0126
+  - 070 | 1453ms | 🇩🇪DE_1/3.4MB/s
+  - 071 | 1457ms | 🇩🇪DE_11/2.8MB/s
+  - 072 | 1461ms | 🇷🇴RO_3/1.4MB/s
+  - 073 | 1464ms | NL_speednode_0007
+  - 074 | 1479ms | 🇷🇴RO_4/3.4MB/s
+  - 075 | 1487ms | RO_speednode_0097
+  - 076 | 1507ms | 🇩🇪DE_8/2.0MB/s
+  - 077 | 1509ms | RO_speednode_0042
+  - 078 | 1524ms | EPODONIOS
+  - 079 | 1528ms | RO_speednode_0044
+  - 080 | 1562ms | MX - zhuhai.uk
+  - 081 | 1563ms | 🇫🇷FR_2/1.1MB/s
+  - 082 | 1564ms | 🇫🇷FR_6/2.6MB/s
+  - 083 | 1580ms | 🇺🇸US_17/3.5MB/s
+  - 084 | 1582ms | 🇷🇴RO_10/3.4MB/s
+  - 085 | 1603ms | 🇺🇸US_20/1.3MB/s
+  - 086 | 1607ms | RO_speednode_0124
+  - 087 | 1655ms | RO_speednode_0041
+  - '088 | 1662ms | 🇷🇺 俄罗斯 / RUS #2'
+  - 089 | 1665ms | 🇺🇸US_19/3.0MB/s
+  - 090 | 1729ms | 🇸🇪SE_2/1.0MB/s
+  - 091 | 1829ms | https://github.com/*********-*...
+  - 092 | 2040ms | 德国 003
+  - 093 | 2237ms | KR - zhuhai.uk
+  - 094 | 2271ms | HK - zhuhai.uk
+  - 095 | 2279ms | 🇮🇷 伊朗 / IRN
+  - 096 | 2408ms | TH - zhuhai.uk
+  - 097 | 2680ms | 🇨🇲CM_1/1.9MB/s
+  - 098 | 4861ms | 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  - 099 | 4900ms | SE - zhuhai.uk
+  - 100 | 5210ms | 🇩🇪DE_15/3.2MB/s
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -673,103 +987,211 @@ proxy-groups:
   proxies:
   - AUTO-FASTEST
   - DIRECT
-  - 001 | 29ms | 47.253.226.114
-  - 002 | 38ms | 129.213.91.185
-  - 003 | 41ms | 172.64.150.28
-  - 004 | 54ms | 104.19.45.195
-  - 005 | 54ms | 162.159.250.29
-  - 006 | 55ms | 172.64.68.89
-  - 007 | 55ms | 188.114.97.6
-  - 008 | 56ms | 104.21.91.244
-  - 009 | 56ms | 104.18.35.86
-  - 010 | 56ms | 172.64.158.170
-  - 011 | 56ms | cf.877774.xyz
-  - 012 | 57ms | 104.18.43.174
-  - 013 | 58ms | 172.64.152.241
-  - 014 | 58ms | 172.67.76.40
-  - 015 | 62ms | 188.114.98.0
-  - 016 | 63ms | 104.18.37.247
-  - 017 | 63ms | 104.26.4.2
-  - 018 | 63ms | 188.114.98.0
-  - 019 | 73ms | 104.18.35.86
-  - 020 | 74ms | 162.159.135.234
-  - 021 | 77ms | 104.18.35.86
-  - 022 | 82ms | 172.67.155.65
-  - 023 | 386ms | 104.19.229.21
-  - 024 | 393ms | 141.193.213.172
-  - 025 | 396ms | 104.18.32.47
-  - 026 | 397ms | 162.159.244.91
-  - 027 | 429ms | 172.64.152.23
-  - 028 | 439ms | 172.64.145.133
-  - 029 | 442ms | 45.130.125.160
-  - 030 | 606ms | 188.42.145.180
-  - 031 | 754ms | 104.21.37.56
-  - 032 | 768ms | 104.21.57.25
-  - 033 | 1039ms | 104.18.4.5
-  - 034 | 1082ms | 172.67.139.14
-  - 035 | 1166ms | 188.114.97.8
-  - 036 | 1496ms | 104.18.35.86
-  - 037 | 1673ms | 104.19.33.237
-  - 038 | 1810ms | 104.16.10.2
-  - 039 | 398ms | 190.93.245.148
-  - 040 | 412ms | 188.114.97.2
-  - 041 | 1482ms | 8.47.69.0
-  - 042 | 1499ms | 172.67.168.158
-  - 043 | 409ms | 188.114.98.0
-  - 044 | 432ms | 108.162.194.134
-  - 045 | 1451ms | 162.159.192.125
-  - 046 | 1648ms | 104.19.4.149
+  - 001 | 196ms | 🇹🇼 🇨🇳 台湾 / TWN 3
+  - 002 | 438ms | 🇭🇰 香港 / HKG
+  - 003 | 440ms | 🇭🇰 香港 / HKG 3
+  - 004 | 510ms | ID - zhuhai.uk
+  - 005 | 528ms | JP - zhuhai.uk 02
+  - 006 | 582ms | 🇯🇵JP_1/1.4MB/s
+  - 007 | 676ms | EPODONIOS
+  - 008 | 681ms | 🇹🇼 🇨🇳 台湾 / TWN 5
+  - 009 | 693ms | 🇺🇸US_1/3.4MB/s
+  - 010 | 784ms | 🇩🇪 德国 / DEU 8
+  - 011 | 863ms | 🏳[openproxylist.com] vless-
+  - 012 | 879ms | ProxyPool / 🇧🇷 巴西 / BRA
+  - 013 | 882ms | 🇺🇸US_7/2.9MB/s
+  - 014 | 906ms | 美国+加利福尼亚
+  - 015 | 913ms | EPODONIOS
+  - 016 | 925ms | 🇺🇸US_3/1000KB/s
+  - 017 | 934ms | US - zhuhai.uk 06
+  - 018 | 943ms | US - zhuhai.uk 04
+  - 019 | 947ms | US_speednode_0131
+  - 020 | 952ms | 🇩🇪DE_9/3.4MB/s
+  - 021 | 953ms | 🇦🇺 澳大利亚 / AUS
+  - 022 | 963ms | EPODONIOS
+  - 023 | 999ms | 🇺🇸US_11/2.7MB/s
+  - 024 | 1014ms | 🇺🇸US_4/3.3MB/s
+  - 025 | 1023ms | EPODONIOS
+  - 026 | 1025ms | 🇺🇸US_6/1.2MB/s
+  - 027 | 1027ms | 🇺🇸US_8/2.6MB/s
+  - 028 | 1059ms | US_speednode_0143
+  - 029 | 1071ms | 🇵🇱 波兰 / POL 2
+  - 030 | 1102ms | 🇩🇪 德国 / DEU 6
+  - 031 | 1130ms | US_speednode_0141
+  - 032 | 1175ms | 🇳🇱NL_7/2.0MB/s
+  - 033 | 1180ms | 🇧🇪BE_1/2.8MB/s
+  - 034 | 1188ms | 🇹🇼 🇨🇳 台湾 / TWN 2
+  - 035 | 1217ms | 🇫🇷FR_5/3.2MB/s
+  - 036 | 1224ms | 🇷🇺 俄罗斯 / RUS
+  - 037 | 1242ms | 🇩🇪DE_7/3.9MB/s
+  - 038 | 1242ms | 🇳🇱NL_4/1.6MB/s
+  - 039 | 1247ms | FR - zhuhai.uk
+  - 040 | 1248ms | NL_speednode_0005
+  - 041 | 1249ms | LT - zhuhai.uk
+  - 042 | 1252ms | US - zhuhai.uk 03
+  - 043 | 1257ms | 🇨🇦CA_2/1.5MB/s
+  - 044 | 1258ms | 🇺🇸 美国 / USA 7
+  - 045 | 1264ms | 🇳🇱NL_5/3.4MB/s
+  - '046 | 1273ms | 🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  - 047 | 1279ms | 🇫🇷FR_3/1.5MB/s
+  - 048 | 1310ms | NL_speednode_0009
+  - 049 | 1337ms | SG - zhuhai.uk
+  - 050 | 1343ms | RO_speednode_0083
+  - 051 | 1354ms | RO_speednode_0110
+  - 052 | 1354ms | RO - zhuhai.uk 04
+  - 053 | 1355ms | 🇷🇴RO_7/2.7MB/s
+  - 054 | 1358ms | RO_speednode_0045
+  - 055 | 1369ms | NL - zhuhai.uk
+  - 056 | 1373ms | 🇺🇸US_12/1.2MB/s
+  - 057 | 1373ms | 🇷🇴RO_8/3.1MB/s
+  - 058 | 1379ms | 🇦🇺 澳大利亚 / AUS
+  - 059 | 1384ms | 🇩🇪DE_5/1.4MB/s
+  - 060 | 1385ms | NL - zhuhai.uk 02
+  - 061 | 1390ms | NL_speednode_0006
+  - 062 | 1393ms | RO_speednode_0087
+  - 063 | 1398ms | 🇳🇱NL_6/1.2MB/s
+  - 064 | 1403ms | 🇷🇴RO_6/3.3MB/s
+  - 065 | 1404ms | RO - zhuhai.uk 02
+  - 066 | 1430ms | RO_speednode_0082
+  - 067 | 1431ms | NL_speednode_0010
+  - 068 | 1433ms | JP - zhuhai.uk
+  - 069 | 1443ms | RO_speednode_0126
+  - 070 | 1453ms | 🇩🇪DE_1/3.4MB/s
+  - 071 | 1457ms | 🇩🇪DE_11/2.8MB/s
+  - 072 | 1461ms | 🇷🇴RO_3/1.4MB/s
+  - 073 | 1464ms | NL_speednode_0007
+  - 074 | 1479ms | 🇷🇴RO_4/3.4MB/s
+  - 075 | 1487ms | RO_speednode_0097
+  - 076 | 1507ms | 🇩🇪DE_8/2.0MB/s
+  - 077 | 1509ms | RO_speednode_0042
+  - 078 | 1524ms | EPODONIOS
+  - 079 | 1528ms | RO_speednode_0044
+  - 080 | 1562ms | MX - zhuhai.uk
+  - 081 | 1563ms | 🇫🇷FR_2/1.1MB/s
+  - 082 | 1564ms | 🇫🇷FR_6/2.6MB/s
+  - 083 | 1580ms | 🇺🇸US_17/3.5MB/s
+  - 084 | 1582ms | 🇷🇴RO_10/3.4MB/s
+  - 085 | 1603ms | 🇺🇸US_20/1.3MB/s
+  - 086 | 1607ms | RO_speednode_0124
+  - 087 | 1655ms | RO_speednode_0041
+  - '088 | 1662ms | 🇷🇺 俄罗斯 / RUS #2'
+  - 089 | 1665ms | 🇺🇸US_19/3.0MB/s
+  - 090 | 1729ms | 🇸🇪SE_2/1.0MB/s
+  - 091 | 1829ms | https://github.com/*********-*...
+  - 092 | 2040ms | 德国 003
+  - 093 | 2237ms | KR - zhuhai.uk
+  - 094 | 2271ms | HK - zhuhai.uk
+  - 095 | 2279ms | 🇮🇷 伊朗 / IRN
+  - 096 | 2408ms | TH - zhuhai.uk
+  - 097 | 2680ms | 🇨🇲CM_1/1.9MB/s
+  - 098 | 4861ms | 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  - 099 | 4900ms | SE - zhuhai.uk
+  - 100 | 5210ms | 🇩🇪DE_15/3.2MB/s
 - name: GLOBAL
   type: select
   proxies:
   - AUTO-FASTEST
   - PROXY
   - DIRECT
-  - 001 | 29ms | 47.253.226.114
-  - 002 | 38ms | 129.213.91.185
-  - 003 | 41ms | 172.64.150.28
-  - 004 | 54ms | 104.19.45.195
-  - 005 | 54ms | 162.159.250.29
-  - 006 | 55ms | 172.64.68.89
-  - 007 | 55ms | 188.114.97.6
-  - 008 | 56ms | 104.21.91.244
-  - 009 | 56ms | 104.18.35.86
-  - 010 | 56ms | 172.64.158.170
-  - 011 | 56ms | cf.877774.xyz
-  - 012 | 57ms | 104.18.43.174
-  - 013 | 58ms | 172.64.152.241
-  - 014 | 58ms | 172.67.76.40
-  - 015 | 62ms | 188.114.98.0
-  - 016 | 63ms | 104.18.37.247
-  - 017 | 63ms | 104.26.4.2
-  - 018 | 63ms | 188.114.98.0
-  - 019 | 73ms | 104.18.35.86
-  - 020 | 74ms | 162.159.135.234
-  - 021 | 77ms | 104.18.35.86
-  - 022 | 82ms | 172.67.155.65
-  - 023 | 386ms | 104.19.229.21
-  - 024 | 393ms | 141.193.213.172
-  - 025 | 396ms | 104.18.32.47
-  - 026 | 397ms | 162.159.244.91
-  - 027 | 429ms | 172.64.152.23
-  - 028 | 439ms | 172.64.145.133
-  - 029 | 442ms | 45.130.125.160
-  - 030 | 606ms | 188.42.145.180
-  - 031 | 754ms | 104.21.37.56
-  - 032 | 768ms | 104.21.57.25
-  - 033 | 1039ms | 104.18.4.5
-  - 034 | 1082ms | 172.67.139.14
-  - 035 | 1166ms | 188.114.97.8
-  - 036 | 1496ms | 104.18.35.86
-  - 037 | 1673ms | 104.19.33.237
-  - 038 | 1810ms | 104.16.10.2
-  - 039 | 398ms | 190.93.245.148
-  - 040 | 412ms | 188.114.97.2
-  - 041 | 1482ms | 8.47.69.0
-  - 042 | 1499ms | 172.67.168.158
-  - 043 | 409ms | 188.114.98.0
-  - 044 | 432ms | 108.162.194.134
-  - 045 | 1451ms | 162.159.192.125
-  - 046 | 1648ms | 104.19.4.149
+  - 001 | 196ms | 🇹🇼 🇨🇳 台湾 / TWN 3
+  - 002 | 438ms | 🇭🇰 香港 / HKG
+  - 003 | 440ms | 🇭🇰 香港 / HKG 3
+  - 004 | 510ms | ID - zhuhai.uk
+  - 005 | 528ms | JP - zhuhai.uk 02
+  - 006 | 582ms | 🇯🇵JP_1/1.4MB/s
+  - 007 | 676ms | EPODONIOS
+  - 008 | 681ms | 🇹🇼 🇨🇳 台湾 / TWN 5
+  - 009 | 693ms | 🇺🇸US_1/3.4MB/s
+  - 010 | 784ms | 🇩🇪 德国 / DEU 8
+  - 011 | 863ms | 🏳[openproxylist.com] vless-
+  - 012 | 879ms | ProxyPool / 🇧🇷 巴西 / BRA
+  - 013 | 882ms | 🇺🇸US_7/2.9MB/s
+  - 014 | 906ms | 美国+加利福尼亚
+  - 015 | 913ms | EPODONIOS
+  - 016 | 925ms | 🇺🇸US_3/1000KB/s
+  - 017 | 934ms | US - zhuhai.uk 06
+  - 018 | 943ms | US - zhuhai.uk 04
+  - 019 | 947ms | US_speednode_0131
+  - 020 | 952ms | 🇩🇪DE_9/3.4MB/s
+  - 021 | 953ms | 🇦🇺 澳大利亚 / AUS
+  - 022 | 963ms | EPODONIOS
+  - 023 | 999ms | 🇺🇸US_11/2.7MB/s
+  - 024 | 1014ms | 🇺🇸US_4/3.3MB/s
+  - 025 | 1023ms | EPODONIOS
+  - 026 | 1025ms | 🇺🇸US_6/1.2MB/s
+  - 027 | 1027ms | 🇺🇸US_8/2.6MB/s
+  - 028 | 1059ms | US_speednode_0143
+  - 029 | 1071ms | 🇵🇱 波兰 / POL 2
+  - 030 | 1102ms | 🇩🇪 德国 / DEU 6
+  - 031 | 1130ms | US_speednode_0141
+  - 032 | 1175ms | 🇳🇱NL_7/2.0MB/s
+  - 033 | 1180ms | 🇧🇪BE_1/2.8MB/s
+  - 034 | 1188ms | 🇹🇼 🇨🇳 台湾 / TWN 2
+  - 035 | 1217ms | 🇫🇷FR_5/3.2MB/s
+  - 036 | 1224ms | 🇷🇺 俄罗斯 / RUS
+  - 037 | 1242ms | 🇩🇪DE_7/3.9MB/s
+  - 038 | 1242ms | 🇳🇱NL_4/1.6MB/s
+  - 039 | 1247ms | FR - zhuhai.uk
+  - 040 | 1248ms | NL_speednode_0005
+  - 041 | 1249ms | LT - zhuhai.uk
+  - 042 | 1252ms | US - zhuhai.uk 03
+  - 043 | 1257ms | 🇨🇦CA_2/1.5MB/s
+  - 044 | 1258ms | 🇺🇸 美国 / USA 7
+  - 045 | 1264ms | 🇳🇱NL_5/3.4MB/s
+  - '046 | 1273ms | 🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  - 047 | 1279ms | 🇫🇷FR_3/1.5MB/s
+  - 048 | 1310ms | NL_speednode_0009
+  - 049 | 1337ms | SG - zhuhai.uk
+  - 050 | 1343ms | RO_speednode_0083
+  - 051 | 1354ms | RO_speednode_0110
+  - 052 | 1354ms | RO - zhuhai.uk 04
+  - 053 | 1355ms | 🇷🇴RO_7/2.7MB/s
+  - 054 | 1358ms | RO_speednode_0045
+  - 055 | 1369ms | NL - zhuhai.uk
+  - 056 | 1373ms | 🇺🇸US_12/1.2MB/s
+  - 057 | 1373ms | 🇷🇴RO_8/3.1MB/s
+  - 058 | 1379ms | 🇦🇺 澳大利亚 / AUS
+  - 059 | 1384ms | 🇩🇪DE_5/1.4MB/s
+  - 060 | 1385ms | NL - zhuhai.uk 02
+  - 061 | 1390ms | NL_speednode_0006
+  - 062 | 1393ms | RO_speednode_0087
+  - 063 | 1398ms | 🇳🇱NL_6/1.2MB/s
+  - 064 | 1403ms | 🇷🇴RO_6/3.3MB/s
+  - 065 | 1404ms | RO - zhuhai.uk 02
+  - 066 | 1430ms | RO_speednode_0082
+  - 067 | 1431ms | NL_speednode_0010
+  - 068 | 1433ms | JP - zhuhai.uk
+  - 069 | 1443ms | RO_speednode_0126
+  - 070 | 1453ms | 🇩🇪DE_1/3.4MB/s
+  - 071 | 1457ms | 🇩🇪DE_11/2.8MB/s
+  - 072 | 1461ms | 🇷🇴RO_3/1.4MB/s
+  - 073 | 1464ms | NL_speednode_0007
+  - 074 | 1479ms | 🇷🇴RO_4/3.4MB/s
+  - 075 | 1487ms | RO_speednode_0097
+  - 076 | 1507ms | 🇩🇪DE_8/2.0MB/s
+  - 077 | 1509ms | RO_speednode_0042
+  - 078 | 1524ms | EPODONIOS
+  - 079 | 1528ms | RO_speednode_0044
+  - 080 | 1562ms | MX - zhuhai.uk
+  - 081 | 1563ms | 🇫🇷FR_2/1.1MB/s
+  - 082 | 1564ms | 🇫🇷FR_6/2.6MB/s
+  - 083 | 1580ms | 🇺🇸US_17/3.5MB/s
+  - 084 | 1582ms | 🇷🇴RO_10/3.4MB/s
+  - 085 | 1603ms | 🇺🇸US_20/1.3MB/s
+  - 086 | 1607ms | RO_speednode_0124
+  - 087 | 1655ms | RO_speednode_0041
+  - '088 | 1662ms | 🇷🇺 俄罗斯 / RUS #2'
+  - 089 | 1665ms | 🇺🇸US_19/3.0MB/s
+  - 090 | 1729ms | 🇸🇪SE_2/1.0MB/s
+  - 091 | 1829ms | https://github.com/*********-*...
+  - 092 | 2040ms | 德国 003
+  - 093 | 2237ms | KR - zhuhai.uk
+  - 094 | 2271ms | HK - zhuhai.uk
+  - 095 | 2279ms | 🇮🇷 伊朗 / IRN
+  - 096 | 2408ms | TH - zhuhai.uk
+  - 097 | 2680ms | 🇨🇲CM_1/1.9MB/s
+  - 098 | 4861ms | 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  - 099 | 4900ms | SE - zhuhai.uk
+  - 100 | 5210ms | 🇩🇪DE_15/3.2MB/s
 rules:
 - MATCH,PROXY
