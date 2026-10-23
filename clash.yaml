@@ -1,6 +1,6 @@
 # ============================================================
 #  免费节点订阅  •  100 个节点
-#  生成时间: 2026-10-22 06:25 (UTC)
+#  生成时间: 2026-10-23 06:19 (UTC)
 #  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序
 #  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。
 # ============================================================
@@ -12,158 +12,217 @@ ipv6: true
 unified-delay: true
 external-controller: 127.0.0.1:9090
 proxies:
-- server: 156.146.38.167
-  port: 443
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 95.215.201.18
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 001 | 47ms | 156.146.38.167
+  name: 001 | 23ms | 95.215.201.18
   udp: true
-- server: 156.146.38.170
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 002 | 49ms | 156.146.38.170
-  udp: true
-- password: 4291c983-c520-46ac-82cc-48f14bef573f
-  port: 35013
-  server: 129.213.91.185
-  skip-cert-verify: true
-  sni: 129.213.91.185
-  tls: false
-  type: hysteria2
-  name: 003 | 56ms | 129.213.91.185
-  udp: true
-- server: 156.146.38.168
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 004 | 57ms | 156.146.38.168
-  udp: true
-- server: 138.199.42.68
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  name: 005 | 67ms | 138.199.42.68
-  udp: true
-- server: 156.146.38.169
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 006 | 74ms | 156.146.38.169
-  udp: true
-- type: vless
-  server: 147.45.60.160
-  port: 8444
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+- type: http
+  server: 138.199.35.218
+  port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: ''
-  name: 007 | 74ms | 147.45.60.160
+  skip-cert-verify: true
+  name: 002 | 54ms | 138.199.35.218
   udp: true
-- port: 443
-  server: 193.239.236.134
+- port: 9002
+  server: 138.199.35.208
   skip-cert-verify: true
   tls: true
   type: http
-  name: 008 | 75ms | 193.239.236.134
   udp: true
-- port: 443
-  server: 121.127.34.82
+  name: 003 | 58ms | 138.199.35.208
+- port: 9002
+  server: 138.199.35.217
   skip-cert-verify: true
   tls: true
   type: http
-  name: 009 | 88ms | 121.127.34.82
   udp: true
-- server: 37.19.198.160
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 010 | 93ms | 37.19.198.160
+  name: 004 | 59ms | 138.199.35.217
+- port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 005 | 59ms | 138.199.35.195
+  udp: true
+- port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 006 | 60ms | 138.199.35.214
+  udp: true
+- password: None
+  port: 9002
+  server: 138.199.35.196
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 007 | 61ms | 138.199.35.196
+  udp: true
+- port: 9002
+  server: 138.199.35.215
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 008 | 62ms | 138.199.35.215
+- password: 'null'
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  name: 009 | 62ms | 138.199.35.220
+  udp: true
+- password: 'null'
+  port: 9002
+  server: 138.199.35.202
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  name: 010 | 62ms | 138.199.35.202
+- password: None
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 011 | 65ms | 138.199.35.213
+  udp: true
+- password: 'null'
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  sni: 138.199.35.198
+  tls: true
+  type: http
+  username: 'null'
+  name: 012 | 69ms | 138.199.35.198
   udp: true
 - port: 443
   server: 172.64.69.89
   skip-cert-verify: true
   tls: true
   type: http
-  name: 011 | 94ms | 172.64.69.89
+  name: 013 | 74ms | 172.64.69.89
   udp: true
-- server: 37.19.198.244
+- server: 173.244.56.9
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-  name: 012 | 94ms | 37.19.198.244
-  udp: true
-- server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 013 | 95ms | 37.19.198.236
-  udp: true
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.215.132.9
-  type: ss
-  name: 014 | 95ms | 185.215.132.9
-  udp: true
-- port: 443
-  server: 23.133.176.14
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 015 | 97ms | 23.133.176.14
-  udp: true
-- type: ss
-  server: 185.215.132.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 016 | 97ms | 185.215.132.18
-  udp: true
-- type: trojan
-  server: 104.21.82.155
-  port: 443
-  password: bd85f5fe32d9446a8b1f59e4f710455b
-  udp: true
-  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoibkN2cER2SDZIUTkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6IiIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed=2560
-  name: 017 | 100ms | 104.21.82.155
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.151.163.18
-  type: ss
-  name: 018 | 101ms | 193.151.163.18
+  name: 014 | 75ms | 173.244.56.9
   udp: true
 - type: vless
-  server: 172.67.155.65
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  servername: lucasjow.us.ci
+  server: 104.18.35.86
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  servername: hhlfy.twiladaphne.ndjp.net
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    path: /fp
     headers:
-      Host: lucasjow.us.ci
-  name: 019 | 103ms | 172.67.155.65
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 015 | 76ms | 104.18.35.86
   udp: true
+- server: 216.105.168.18
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hCCWOcIsK5wrFz4OX70rWf
+  name: 016 | 76ms | 216.105.168.18
+  udp: true
+- server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 017 | 76ms | 173.244.56.6
+  udp: true
+- network: ws
+  port: 8080
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
+  name: 018 | 83ms | 104.18.35.86
+  udp: true
+- type: vless
+  server: 104.18.0.181
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 019 | 88ms | 104.18.0.181
+  udp: true
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 188.114.96.6
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /
+  xudp: true
+  name: 020 | 88ms | 188.114.96.6
+- type: vless
+  server: 104.17.44.17
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 021 | 89ms | 104.17.44.17
+  udp: true
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.18.32.47
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /
+  xudp: true
+  name: 022 | 89ms | 104.18.32.47
 - type: vless
   server: 188.114.97.6
   port: 2053
@@ -176,111 +235,92 @@ proxies:
     path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
     headers:
       Host: lucasjow.us.ci
-  name: 020 | 103ms | 188.114.97.6
+  name: 023 | 90ms | 188.114.97.6
   udp: true
 - type: vless
-  server: 104.17.44.17
+  server: 172.64.150.43
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  servername: hhlfy.twiladaphne.ndjp.net
+  servername: 'hhlfy.twiladaphne.ndjp.net '
   network: ws
   ws-opts:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-  name: 021 | 106ms | 104.17.44.17
+  name: 024 | 91ms | 172.64.150.43
   udp: true
-- type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 022 | 106ms | 185.230.230.18
-  udp: true
-- type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   network: ws
+  port: 443
+  server: 104.26.4.2
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
-    path: /
     headers:
       Host: ccc.010304.xyz
-  name: 023 | 107ms | cf.130519.xyz
-- type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  udp: true
-  tls: true
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-    short-id: ''
-  name: 024 | 109ms | 47.253.226.114
-- server: 37.19.198.243
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 025 | 110ms | 37.19.198.243
-  udp: true
-- type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  name: 026 | 111ms | 104.18.35.86
-  udp: true
-- type: vless
-  server: 45.138.100.248
-  port: 10443
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  name: 027 | 111ms | 45.138.100.248
+    path: /
+  name: 025 | 91ms | 104.26.4.2
   udp: true
 - alpn:
-  - http/1.1
+  - h3
+  - h2
   client-fingerprint: chrome
   encryption: none
   network: ws
   port: 443
-  server: 188.114.96.9
-  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
-  skip-cert-verify: false
+  server: 104.20.6.134
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
-  ws-opts:
-    headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
-  name: 028 | 112ms | 188.114.96.9
   udp: true
-- type: vless
-  server: 172.67.79.160
-  port: 2087
-  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
-  network: ws
-  servername: cvhpyn.pages.dev
-  tls: true
-  client-fingerprint: chrome
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
-    path: /
     headers:
-      Host: cvhpyn.pages.dev
-  skip-cert-verify: false
-  name: 029 | 113ms | 172.67.79.160
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /
+  xudp: true
+  name: 026 | 91ms | 104.20.6.134
+- server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 027 | 91ms | 156.146.38.169
+  udp: true
+- server: 156.146.38.170
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 028 | 92ms | 156.146.38.170
+  udp: true
+- server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 029 | 92ms | 156.146.38.168
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.64.153.61
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /fdipfp=unsafe
+  xudp: true
+  name: 030 | 93ms | 172.64.153.61
   udp: true
 - type: vless
   network: ws
@@ -297,198 +337,7 @@ proxies:
       Host: snip.edgeoneai.cc.cd
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
     path: /
-  name: 030 | 115ms | 172.64.150.43
-  udp: true
-- type: trojan
-  server: 172.67.131.217
-  port: 443
-  password: 6c73b7937b3e44e5982f9d5efa57d8cd
-  sni: aUTO-scale-728382.BuiLD-sVc-267891.wORkErs.dEv
-  network: ws
-  ws-opts:
-    path: /tr/9LJwNSQPh5UJMu8TbPKBJPtkZWKkYFFl?ed=2560
-    headers:
-      Host: auto-ScaLe-728382.builD-sVc-267891.WoRkeRS.DeV
-  name: 031 | 116ms | 172.67.131.217
-  udp: true
-- server: 188.114.97.6
-  port: 8080
-  type: vless
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: youxuanku.kdns.fr
-  udp: true
-  name: 032 | 116ms | 188.114.97.6
-- password: None
-  port: 443
-  server: 68.235.56.51
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 033 | 116ms | 68.235.56.51
-  udp: true
-- type: vless
-  network: ws
-  server: 188.114.98.0
-  port: 443
-  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
-  servername: tn1r.eu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: tn1r.eu.cc
-    path: /id-pusat
-  name: 034 | 117ms | 188.114.98.0
-  udp: true
-- type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-  name: 035 | 118ms | chatgpt.com
-  udp: true
-- type: vless
-  server: 104.21.5.155
-  port: 443
-  uuid: 0548782b-ab25-456f-a11b-099932e2a877
-  udp: true
-  tls: true
-  servername: filE-IO-5E675D-eDG.VshEJeGEHje.WorKErs.deV
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fiLe-iO-5E675d-eDG.VshejeGEHJE.WoRkers.dEV
-  name: 036 | 120ms | 104.21.5.155
-- network: ws
-  port: 2082
-  server: 172.64.150.28
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: false
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fpfp=chrome
-  name: 037 | 121ms | 172.64.150.28
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  password: e7TTceggMwUMg+aFN:F4
-  port: 443
-  server: 172.66.47.18
-  skip-cert-verify: false
-  sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /tr/SIeRkg2QvR2Zcpu0SeEMow?ed=2560
-  name: 038 | 121ms | 172.66.47.18
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: 104.21.91.244
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  ws-opts:
-    headers:
-      Host: lucasjow.us.ci
-    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
-  name: 039 | 121ms | 104.21.91.244
-  udp: true
-- type: vless
-  server: 104.18.0.181
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  name: 040 | 124ms | 104.18.0.181
-  udp: true
-- type: vless
-  network: ws
-  server: 188.164.248.216
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  encryption: none
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /
-  name: 041 | 124ms | 188.164.248.216
-- client-fingerprint: chrome
-  network: ws
-  port: 443
-  server: 104.26.4.2
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /
-  name: 042 | 124ms | 104.26.4.2
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  ws-opts:
-    headers:
-      Host: lucasjow.us.ci
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#
-  name: 043 | 125ms | 188.114.97.6
-  udp: true
-- network: ws
-  port: 8080
-  server: 104.18.35.86
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: false
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
-  name: 044 | 127ms | 104.18.35.86
+  name: 031 | 94ms | 172.64.150.43
   udp: true
 - alpn:
   - h3
@@ -508,26 +357,20 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /
   xudp: true
-  name: 045 | 127ms | 162.159.135.234
+  name: 032 | 94ms | 162.159.135.234
+  udp: true
+- server: 156.146.38.167
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 033 | 94ms | 156.146.38.167
   udp: true
 - type: vless
-  server: 104.18.41.190
+  server: 190.93.246.21
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-  name: 046 | 127ms | 104.18.41.190
   udp: true
-- type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   tls: true
   servername: lucasjow.us.ci
   client-fingerprint: chrome
@@ -536,64 +379,11 @@ proxies:
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
       Host: lucasjow.us.ci
-  name: 047 | 127ms | 188.114.98.0
-  udp: true
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 45.86.51.18
-  type: ss
-  name: 048 | 127ms | 45.86.51.18
-  udp: true
-- type: vless
-  server: 172.64.150.43
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  servername: 'hhlfy.twiladaphne.ndjp.net '
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  name: 049 | 128ms | 172.64.150.43
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  port: 443
-  server: 172.64.153.61
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /fdipfp=unsafe
-  xudp: true
-  name: 050 | 129ms | 172.64.153.61
-- type: vless
-  server: medium.com
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-  name: 051 | 129ms | medium.com
-  udp: true
+  name: 034 | 95ms | 190.93.246.21
 - type: vless
   server: 172.66.47.10
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
   tls: true
   servername: lucasjow.us.ci
   client-fingerprint: qq
@@ -602,157 +392,7 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-  name: 052 | 132ms | 172.66.47.10
-- type: vless
-  server: 208.84.100.209
-  port: 8080
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  network: ws
-  tls: false
-  skip-cert-verify: true
-  udp: true
-  name: 053 | 132ms | 208.84.100.209
-- password: None
-  port: 9443
-  server: 149.88.98.81
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 054 | 132ms | 149.88.98.81
-  udp: true
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 98.98.79.198
-  type: ss
-  name: 055 | 132ms | 98.98.79.198
-  udp: true
-- type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  servername: ccc.010304.xyz
-  tls: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-  skip-cert-verify: false
-  name: 056 | 133ms | 172.64.152.241
-  udp: true
-- type: vless
-  server: 172.64.158.170
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-  name: 057 | 133ms | 172.64.158.170
-  udp: true
-- cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 51.222.136.236
-  type: ss
-  name: 058 | 133ms | 51.222.136.236
-  udp: true
-- client-fingerprint: chrome
-  network: ws
-  port: 443
-  server: 172.67.152.148
-  servername: cf-socks.caoyuwu.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
-  ws-opts:
-    headers:
-      Host: cf-socks.caoyuwu.eu.org
-    path: /
-  name: 059 | 135ms | 172.67.152.148
-- type: ss
-  server: 193.151.160.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 060 | 140ms | 193.151.160.9
-  udp: true
-- port: 9443
-  server: 198.44.135.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 061 | 141ms | 198.44.135.19
-  udp: true
-- server: 137.184.174.93
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  name: 062 | 141ms | 137.184.174.93
-  udp: true
-- password: None
-  port: 443
-  server: 12.202.180.118
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 063 | 142ms | 12.202.180.118
-  udp: true
-- type: vless
-  server: 45.138.100.248
-  port: 14430
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.138.100.248
-  name: 064 | 142ms | 45.138.100.248
-  udp: true
-- type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  name: 065 | 142ms | 169.40.42.74
-  udp: true
-- type: vless
-  server: 154.197.64.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime36.workers.dev
-  name: 066 | 143ms | 154.197.64.30
-  udp: true
-- client-fingerprint: chrome
-  network: ws
-  port: 443
-  server: 104.18.221.221
-  servername: cfnode-11ivy8.pages.dev
-  tls: true
-  type: vless
-  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
-  ws-opts:
-    headers:
-      Host: cfnode-11ivy8.pages.dev
-    path: /ws
-  name: 067 | 143ms | 104.18.221.221
+  name: 035 | 97ms | 172.66.47.10
   udp: true
 - type: vless
   network: ws
@@ -767,40 +407,172 @@ proxies:
     headers:
       Host: lucasjow.us.ci
     path: /cart/docs/www/proxyip?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
-  name: 068 | 144ms | 172.67.155.65
+  name: 036 | 98ms | 172.67.155.65
   udp: true
-- port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 069 | 145ms | 38.247.141.135
-  udp: true
-- port: 443
-  server: 68.235.56.59
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 070 | 146ms | 68.235.56.59
-  udp: true
-- type: vless
-  server: 169.40.42.163
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
+- alpn:
+  - http/1.1
   client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  name: 071 | 147ms | 169.40.42.163
+  encryption: none
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  ws-opts:
+    headers:
+      Host: lucasjow.us.ci
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#
+  name: 037 | 98ms | 188.114.97.6
+  udp: true
+- network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: lucasjow.us.ci
+  tls: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  ws-opts:
+    headers:
+      Host: lucasjow.us.ci
+    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
+  name: 038 | 99ms | cf.090227.xyz
+  udp: true
+- type: trojan
+  server: 104.21.82.155
+  port: 443
+  password: bd85f5fe32d9446a8b1f59e4f710455b
+  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoibkN2cER2SDZIUTkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6IiIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed=2560
+  name: 039 | 101ms | 104.21.82.155
   udp: true
 - type: vless
-  server: cf.877774.xyz
+  network: ws
+  server: 172.64.147.91
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  servername: powered-by-surena.configfarsi695fce27aa549.workers.dev
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi695fce27aa549.workers.dev
+    path: /?ed
+  name: 040 | 104ms | 172.64.147.91
+- type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  servername: ccc.010304.xyz
+  tls: true
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+  skip-cert-verify: false
+  name: 041 | 104ms | 172.64.152.241
+  udp: true
+- type: vless
+  server: courses.mftplus.qzz.io
+  port: 2096
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  udp: true
+  tls: true
+  servername: courses.mftplus.qzz.io
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: courses.mftplus.qzz.io
+  name: 042 | 104ms | courses.mftplus.qzz.io
+- type: vless
+  server: 188.114.98.0
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+  name: 043 | 106ms | 188.114.98.0
   udp: true
+- network: ws
+  port: 2082
+  server: 172.64.150.28
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /fpfp=chrome
+  name: 044 | 108ms | 172.64.150.28
+  udp: true
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.67.152.148
+  servername: cf-socks.caoyuwu.eu.org
+  tls: true
+  type: vless
+  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
+  ws-opts:
+    headers:
+      Host: cf-socks.caoyuwu.eu.org
+    path: /
+  name: 045 | 110ms | 172.67.152.148
+  udp: true
+- type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+  name: 046 | 113ms | 172.67.155.65
+  udp: true
+- type: vless
+  server: 88.216.69.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime06.workers.dev
+  name: 047 | 117ms | 88.216.69.30
+  udp: true
+- type: vless
+  server: vl.cocopon.top
+  port: 443
+  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+  name: 048 | 117ms | vl.cocopon.top
+- type: vless
+  server: 104.18.41.190
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   tls: true
   servername: lucasjow.us.ci
   client-fingerprint: chrome
@@ -809,40 +581,93 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-  name: 072 | 148ms | cf.877774.xyz
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.151.160.18
-  type: ss
-  name: 073 | 148ms | 193.151.160.18
-  udp: true
-- server: 198.98.53.130
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-  name: 074 | 152ms | 198.98.53.130
+  name: 049 | 119ms | 104.18.41.190
   udp: true
 - type: vless
-  server: 169.40.42.235
+  server: chatgpt.com
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  name: 075 | 154ms | 169.40.42.235
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  name: 050 | 119ms | chatgpt.com
   udp: true
-- port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
+- type: vless
+  server: 172.67.79.160
+  port: 2087
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  network: ws
+  servername: cvhpyn.pages.dev
   tls: true
-  type: http
-  name: 076 | 155ms | 198.44.157.19
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
+  skip-cert-verify: false
+  name: 051 | 122ms | 172.67.79.160
+  udp: true
+- type: vless
+  network: ws
+  server: 188.164.248.216
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: chrome
+  encryption: none
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+  name: 052 | 122ms | 188.164.248.216
+  udp: true
+- type: trojan
+  server: 172.67.131.217
+  port: 443
+  password: 6c73b7937b3e44e5982f9d5efa57d8cd
+  sni: aUTO-scale-728382.BuiLD-sVc-267891.wORkErs.dEv
+  network: ws
+  ws-opts:
+    path: /tr/9LJwNSQPh5UJMu8TbPKBJPtkZWKkYFFl?ed=2560
+    headers:
+      Host: auto-ScaLe-728382.builD-sVc-267891.WoRkeRS.DeV
+  name: 053 | 123ms | 172.67.131.217
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  password: e7TTceggMwUMg+aFN:F4
+  port: 443
+  server: 172.66.47.18
+  skip-cert-verify: false
+  sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /tr/SIeRkg2QvR2Zcpu0SeEMow?ed=2560
+  name: 054 | 123ms | 172.66.47.18
+  udp: true
+- type: vless
+  network: ws
+  server: 188.114.98.0
+  port: 443
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  servername: tn1r.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: tn1r.eu.cc
+    path: /id-pusat
+  name: 055 | 124ms | 188.114.98.0
   udp: true
 - type: vless
   server: 104.18.43.174
@@ -856,176 +681,51 @@ proxies:
     path: /
     headers:
       Host: lucasjow.us.ci
-  name: 077 | 159ms | 104.18.43.174
+  name: 056 | 124ms | 104.18.43.174
   udp: true
-- type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  name: 078 | 161ms | 66.70.179.198
-  udp: true
-- type: vless
-  server: 88.216.69.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime06.workers.dev
-  name: 079 | 162ms | 88.216.69.30
-  udp: true
-- type: vless
-  network: ws
-  server: 104.16.215.234
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  servername: vms.lifetime39.workers.dev
+- server: 188.114.97.6
+  port: 8080
+  type: vless
+  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
   tls: false
-  ws-opts:
-    headers:
-      Host: vms.lifetime39.workers.dev
-    path: /
-  name: 080 | 162ms | 104.16.215.234
-  udp: true
-- port: 443
-  server: 149.88.21.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  name: 081 | 162ms | 149.88.21.129
-- server: 173.244.56.6
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 082 | 162ms | 173.244.56.6
-  udp: true
-- type: vless
-  server: 159.89.87.21
-  port: 28190
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-  tls: true
-  servername: aws.amazon.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-    short-id: ''
-  name: 083 | 163ms | 159.89.87.21
-  udp: true
-- port: 9443
-  server: 198.44.138.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 084 | 165ms | 198.44.138.27
-  udp: true
-- type: vless
-  server: 169.40.42.202
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  name: 085 | 166ms | 169.40.42.202
-  udp: true
-- type: vless
-  server: 208.84.100.209
-  port: 2112
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  name: 086 | 168ms | 208.84.100.209
-  udp: true
-- port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 087 | 169ms | 206.223.161.47
-  udp: true
-- server: 173.244.56.9
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 088 | 170ms | 173.244.56.9
-  udp: true
-- port: 443
-  server: 12.202.180.10
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 089 | 175ms | 12.202.180.10
-  udp: true
-- port: 38182
-  server: 69.55.49.177
-  skip-cert-verify: true
-  type: socks5
-  name: 090 | 176ms | 69.55.49.177
-  udp: true
-- type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: de.mitivpn.in.net
   network: ws
   ws-opts:
-    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/--@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    path: /
     headers:
-      Host: de.mitivpn.in.net
-  name: 091 | 180ms | 188.114.97.6
-  udp: true
-- type: http
-  server: 162.217.114.50
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  name: 092 | 189ms | 162.217.114.50
-  udp: true
-- password: None
-  port: 443
-  server: 64.98.50.100
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 093 | 190ms | 64.98.50.100
+      Host: youxuanku.kdns.fr
+  name: 057 | 125ms | 188.114.97.6
   udp: true
 - type: vless
-  server: 169.40.42.89
+  server: 172.64.158.170
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
+  servername: ccc.010304.xyz
   client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  name: 094 | 195ms | 169.40.42.89
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  name: 058 | 128ms | 172.64.158.170
   udp: true
-- port: 443
-  server: 35.183.131.26
-  skip-cert-verify: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 188.114.96.9
+  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
+  skip-cert-verify: false
   tls: true
-  type: http
-  name: 095 | 195ms | 35.183.131.26
+  type: vless
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  ws-opts:
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+  name: 059 | 128ms | 188.114.96.9
   udp: true
 - server: 104.17.44.17
   port: 443
@@ -1039,14 +739,232 @@ proxies:
     path: /
     headers:
       Host: top-e4s.pages.dev
-  name: 096 | 197ms | 104.17.44.17
+  name: 060 | 133ms | 104.17.44.17
+  udp: true
+- type: vless
+  server: 104.21.5.155
+  port: 443
+  uuid: 0548782b-ab25-456f-a11b-099932e2a877
+  tls: true
+  servername: filE-IO-5E675D-eDG.VshEJeGEHje.WorKErs.deV
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fiLe-iO-5E675d-eDG.VshejeGEHJE.WoRkers.dEV
+  name: 061 | 134ms | 104.21.5.155
   udp: true
 - port: 443
-  server: 12.221.146.147
+  server: 167.88.60.242
   skip-cert-verify: true
   tls: true
   type: http
-  name: 097 | 202ms | 12.221.146.147
+  name: 062 | 134ms | 167.88.60.242
+  udp: true
+- type: vless
+  network: ws
+  server: 104.16.215.234
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  servername: vms.lifetime39.workers.dev
+  tls: false
+  ws-opts:
+    headers:
+      Host: vms.lifetime39.workers.dev
+    path: /
+  name: 063 | 135ms | 104.16.215.234
+  udp: true
+- type: vless
+  server: 154.197.64.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime36.workers.dev
+  name: 064 | 140ms | 154.197.64.30
+  udp: true
+- type: vless
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 065 | 143ms | 15.204.97.197
+- type: vless
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 066 | 143ms | 15.204.97.216
+- type: vless
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: ''
+  name: 067 | 143ms | 15.204.97.219
+- type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 068 | 143ms | 15.204.97.198
+- type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 069 | 143ms | 15.204.97.214
+- type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 070 | 144ms | 15.204.97.206
+- type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 071 | 144ms | 15.204.97.195
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.21.91.244
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  ws-opts:
+    headers:
+      Host: lucasjow.us.ci
+    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
+  name: 072 | 147ms | 104.21.91.244
+  udp: true
+- type: vless
+  server: cfnode-11ivy8.pages.dev
+  port: 443
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+  name: 073 | 147ms | cfnode-11ivy8.pages.dev
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 104.18.221.221
+  servername: cfnode-11ivy8.pages.dev
+  tls: true
+  type: vless
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  ws-opts:
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+    path: /ws
+  name: 074 | 150ms | 104.18.221.221
+  udp: true
+- port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 075 | 158ms | 23.133.176.14
+  udp: true
+- type: vless
+  network: ws
+  server: 162.159.192.125
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  servername: a.cwvps.eu.org
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: a.cwvps.eu.org
+    path: /ws
+  name: 076 | 161ms | 162.159.192.125
+- port: 443
+  server: 45.63.38.134
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 077 | 187ms | 45.63.38.134
+  udp: true
+- port: 8443
+  server: 44.248.167.117
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 078 | 206ms | 44.248.167.117
+- type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: de.mitivpn.in.net
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/--@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    headers:
+      Host: de.mitivpn.in.net
+  name: 079 | 211ms | 188.114.97.6
   udp: true
 - type: vless
   server: 104.25.199.149
@@ -1058,127 +976,355 @@ proxies:
     path: /api/ws
     headers:
       Host: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
-  name: 098 | 203ms | 104.25.199.149
+  name: 080 | 216ms | 104.25.199.149
   udp: true
-- password: None
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
+- type: vless
+  server: 162.35.8.62
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
   tls: true
-  type: http
-  name: 099 | 203ms | 138.199.35.213
-  udp: true
-- port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
+  servername: a0688bt.us4.h1clayd.click
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+    short-id: 257420d9d430152a
+  name: 081 | 466ms | 162.35.8.62
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.16.10.185
+  servername: jp3.yohototo.top
   tls: true
-  type: http
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+  name: 082 | 601ms | 104.16.10.185
   udp: true
-  name: 100 | 204ms | 138.199.35.195
+- type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  name: 083 | 621ms | 45.80.111.7
+- type: trojan
+  network: ws
+  server: 45.130.125.160
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+  name: 084 | 627ms | 45.130.125.160
+  udp: true
+- type: trojan
+  server: 141.101.115.104
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  name: 085 | 631ms | 141.101.115.104
+- type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  name: 086 | 633ms | 188.114.98.0
+- type: trojan
+  network: ws
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+  name: 087 | 635ms | 212.183.88.136
+  udp: true
+- type: trojan
+  network: ws
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+  name: 088 | 636ms | 104.19.229.21
+  udp: true
+- type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  name: 089 | 637ms | www.speedtest.net
+- type: trojan
+  server: 104.16.72.41
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  name: 090 | 647ms | 104.16.72.41
+- type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  name: 091 | 648ms | 172.64.152.23
+- type: trojan
+  server: 104.18.32.47
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  name: 092 | 648ms | 104.18.32.47
+- type: trojan
+  server: 141.193.213.172
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  name: 093 | 657ms | 141.193.213.172
+- type: trojan
+  server: www.pleadcourt.org
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+  name: 094 | 689ms | www.pleadcourt.org
+- type: trojan
+  server: 8.47.69.0
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+  name: 095 | 696ms | 8.47.69.0
+- type: trojan
+  server: 108.162.194.134
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+  name: 096 | 723ms | 108.162.194.134
+- type: trojan
+  server: 172.66.40.99
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.trusteeforward.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.trusteeforward.com
+  name: 097 | 731ms | 172.66.40.99
+- type: trojan
+  server: 190.93.245.148
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+  name: 098 | 765ms | 190.93.245.148
+- type: trojan
+  server: 172.64.145.133
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+  name: 099 | 768ms | 172.64.145.133
+- type: vless
+  network: ws
+  server: 104.17.50.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: unsafe
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+  name: 100 | 928ms | 104.17.50.53
 proxy-groups:
 - name: AUTO-FASTEST
   type: url-test
   proxies:
-  - 001 | 47ms | 156.146.38.167
-  - 002 | 49ms | 156.146.38.170
-  - 003 | 56ms | 129.213.91.185
-  - 004 | 57ms | 156.146.38.168
-  - 005 | 67ms | 138.199.42.68
-  - 006 | 74ms | 156.146.38.169
-  - 007 | 74ms | 147.45.60.160
-  - 008 | 75ms | 193.239.236.134
-  - 009 | 88ms | 121.127.34.82
-  - 010 | 93ms | 37.19.198.160
-  - 011 | 94ms | 172.64.69.89
-  - 012 | 94ms | 37.19.198.244
-  - 013 | 95ms | 37.19.198.236
-  - 014 | 95ms | 185.215.132.9
-  - 015 | 97ms | 23.133.176.14
-  - 016 | 97ms | 185.215.132.18
-  - 017 | 100ms | 104.21.82.155
-  - 018 | 101ms | 193.151.163.18
-  - 019 | 103ms | 172.67.155.65
-  - 020 | 103ms | 188.114.97.6
-  - 021 | 106ms | 104.17.44.17
-  - 022 | 106ms | 185.230.230.18
-  - 023 | 107ms | cf.130519.xyz
-  - 024 | 109ms | 47.253.226.114
-  - 025 | 110ms | 37.19.198.243
-  - 026 | 111ms | 104.18.35.86
-  - 027 | 111ms | 45.138.100.248
-  - 028 | 112ms | 188.114.96.9
-  - 029 | 113ms | 172.67.79.160
-  - 030 | 115ms | 172.64.150.43
-  - 031 | 116ms | 172.67.131.217
-  - 032 | 116ms | 188.114.97.6
-  - 033 | 116ms | 68.235.56.51
-  - 034 | 117ms | 188.114.98.0
-  - 035 | 118ms | chatgpt.com
-  - 036 | 120ms | 104.21.5.155
-  - 037 | 121ms | 172.64.150.28
-  - 038 | 121ms | 172.66.47.18
-  - 039 | 121ms | 104.21.91.244
-  - 040 | 124ms | 104.18.0.181
-  - 041 | 124ms | 188.164.248.216
-  - 042 | 124ms | 104.26.4.2
-  - 043 | 125ms | 188.114.97.6
-  - 044 | 127ms | 104.18.35.86
-  - 045 | 127ms | 162.159.135.234
-  - 046 | 127ms | 104.18.41.190
-  - 047 | 127ms | 188.114.98.0
-  - 048 | 127ms | 45.86.51.18
-  - 049 | 128ms | 172.64.150.43
-  - 050 | 129ms | 172.64.153.61
-  - 051 | 129ms | medium.com
-  - 052 | 132ms | 172.66.47.10
-  - 053 | 132ms | 208.84.100.209
-  - 054 | 132ms | 149.88.98.81
-  - 055 | 132ms | 98.98.79.198
-  - 056 | 133ms | 172.64.152.241
-  - 057 | 133ms | 172.64.158.170
-  - 058 | 133ms | 51.222.136.236
-  - 059 | 135ms | 172.67.152.148
-  - 060 | 140ms | 193.151.160.9
-  - 061 | 141ms | 198.44.135.19
-  - 062 | 141ms | 137.184.174.93
-  - 063 | 142ms | 12.202.180.118
-  - 064 | 142ms | 45.138.100.248
-  - 065 | 142ms | 169.40.42.74
-  - 066 | 143ms | 154.197.64.30
-  - 067 | 143ms | 104.18.221.221
-  - 068 | 144ms | 172.67.155.65
-  - 069 | 145ms | 38.247.141.135
-  - 070 | 146ms | 68.235.56.59
-  - 071 | 147ms | 169.40.42.163
-  - 072 | 148ms | cf.877774.xyz
-  - 073 | 148ms | 193.151.160.18
-  - 074 | 152ms | 198.98.53.130
-  - 075 | 154ms | 169.40.42.235
-  - 076 | 155ms | 198.44.157.19
-  - 077 | 159ms | 104.18.43.174
-  - 078 | 161ms | 66.70.179.198
-  - 079 | 162ms | 88.216.69.30
-  - 080 | 162ms | 104.16.215.234
-  - 081 | 162ms | 149.88.21.129
-  - 082 | 162ms | 173.244.56.6
-  - 083 | 163ms | 159.89.87.21
-  - 084 | 165ms | 198.44.138.27
-  - 085 | 166ms | 169.40.42.202
-  - 086 | 168ms | 208.84.100.209
-  - 087 | 169ms | 206.223.161.47
-  - 088 | 170ms | 173.244.56.9
-  - 089 | 175ms | 12.202.180.10
-  - 090 | 176ms | 69.55.49.177
-  - 091 | 180ms | 188.114.97.6
-  - 092 | 189ms | 162.217.114.50
-  - 093 | 190ms | 64.98.50.100
-  - 094 | 195ms | 169.40.42.89
-  - 095 | 195ms | 35.183.131.26
-  - 096 | 197ms | 104.17.44.17
-  - 097 | 202ms | 12.221.146.147
-  - 098 | 203ms | 104.25.199.149
-  - 099 | 203ms | 138.199.35.213
-  - 100 | 204ms | 138.199.35.195
+  - 001 | 23ms | 95.215.201.18
+  - 002 | 54ms | 138.199.35.218
+  - 003 | 58ms | 138.199.35.208
+  - 004 | 59ms | 138.199.35.217
+  - 005 | 59ms | 138.199.35.195
+  - 006 | 60ms | 138.199.35.214
+  - 007 | 61ms | 138.199.35.196
+  - 008 | 62ms | 138.199.35.215
+  - 009 | 62ms | 138.199.35.220
+  - 010 | 62ms | 138.199.35.202
+  - 011 | 65ms | 138.199.35.213
+  - 012 | 69ms | 138.199.35.198
+  - 013 | 74ms | 172.64.69.89
+  - 014 | 75ms | 173.244.56.9
+  - 015 | 76ms | 104.18.35.86
+  - 016 | 76ms | 216.105.168.18
+  - 017 | 76ms | 173.244.56.6
+  - 018 | 83ms | 104.18.35.86
+  - 019 | 88ms | 104.18.0.181
+  - 020 | 88ms | 188.114.96.6
+  - 021 | 89ms | 104.17.44.17
+  - 022 | 89ms | 104.18.32.47
+  - 023 | 90ms | 188.114.97.6
+  - 024 | 91ms | 172.64.150.43
+  - 025 | 91ms | 104.26.4.2
+  - 026 | 91ms | 104.20.6.134
+  - 027 | 91ms | 156.146.38.169
+  - 028 | 92ms | 156.146.38.170
+  - 029 | 92ms | 156.146.38.168
+  - 030 | 93ms | 172.64.153.61
+  - 031 | 94ms | 172.64.150.43
+  - 032 | 94ms | 162.159.135.234
+  - 033 | 94ms | 156.146.38.167
+  - 034 | 95ms | 190.93.246.21
+  - 035 | 97ms | 172.66.47.10
+  - 036 | 98ms | 172.67.155.65
+  - 037 | 98ms | 188.114.97.6
+  - 038 | 99ms | cf.090227.xyz
+  - 039 | 101ms | 104.21.82.155
+  - 040 | 104ms | 172.64.147.91
+  - 041 | 104ms | 172.64.152.241
+  - 042 | 104ms | courses.mftplus.qzz.io
+  - 043 | 106ms | 188.114.98.0
+  - 044 | 108ms | 172.64.150.28
+  - 045 | 110ms | 172.67.152.148
+  - 046 | 113ms | 172.67.155.65
+  - 047 | 117ms | 88.216.69.30
+  - 048 | 117ms | vl.cocopon.top
+  - 049 | 119ms | 104.18.41.190
+  - 050 | 119ms | chatgpt.com
+  - 051 | 122ms | 172.67.79.160
+  - 052 | 122ms | 188.164.248.216
+  - 053 | 123ms | 172.67.131.217
+  - 054 | 123ms | 172.66.47.18
+  - 055 | 124ms | 188.114.98.0
+  - 056 | 124ms | 104.18.43.174
+  - 057 | 125ms | 188.114.97.6
+  - 058 | 128ms | 172.64.158.170
+  - 059 | 128ms | 188.114.96.9
+  - 060 | 133ms | 104.17.44.17
+  - 061 | 134ms | 104.21.5.155
+  - 062 | 134ms | 167.88.60.242
+  - 063 | 135ms | 104.16.215.234
+  - 064 | 140ms | 154.197.64.30
+  - 065 | 143ms | 15.204.97.197
+  - 066 | 143ms | 15.204.97.216
+  - 067 | 143ms | 15.204.97.219
+  - 068 | 143ms | 15.204.97.198
+  - 069 | 143ms | 15.204.97.214
+  - 070 | 144ms | 15.204.97.206
+  - 071 | 144ms | 15.204.97.195
+  - 072 | 147ms | 104.21.91.244
+  - 073 | 147ms | cfnode-11ivy8.pages.dev
+  - 074 | 150ms | 104.18.221.221
+  - 075 | 158ms | 23.133.176.14
+  - 076 | 161ms | 162.159.192.125
+  - 077 | 187ms | 45.63.38.134
+  - 078 | 206ms | 44.248.167.117
+  - 079 | 211ms | 188.114.97.6
+  - 080 | 216ms | 104.25.199.149
+  - 081 | 466ms | 162.35.8.62
+  - 082 | 601ms | 104.16.10.185
+  - 083 | 621ms | 45.80.111.7
+  - 084 | 627ms | 45.130.125.160
+  - 085 | 631ms | 141.101.115.104
+  - 086 | 633ms | 188.114.98.0
+  - 087 | 635ms | 212.183.88.136
+  - 088 | 636ms | 104.19.229.21
+  - 089 | 637ms | www.speedtest.net
+  - 090 | 647ms | 104.16.72.41
+  - 091 | 648ms | 172.64.152.23
+  - 092 | 648ms | 104.18.32.47
+  - 093 | 657ms | 141.193.213.172
+  - 094 | 689ms | www.pleadcourt.org
+  - 095 | 696ms | 8.47.69.0
+  - 096 | 723ms | 108.162.194.134
+  - 097 | 731ms | 172.66.40.99
+  - 098 | 765ms | 190.93.245.148
+  - 099 | 768ms | 172.64.145.133
+  - 100 | 928ms | 104.17.50.53
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -1188,211 +1334,211 @@ proxy-groups:
   proxies:
   - AUTO-FASTEST
   - DIRECT
-  - 001 | 47ms | 156.146.38.167
-  - 002 | 49ms | 156.146.38.170
-  - 003 | 56ms | 129.213.91.185
-  - 004 | 57ms | 156.146.38.168
-  - 005 | 67ms | 138.199.42.68
-  - 006 | 74ms | 156.146.38.169
-  - 007 | 74ms | 147.45.60.160
-  - 008 | 75ms | 193.239.236.134
-  - 009 | 88ms | 121.127.34.82
-  - 010 | 93ms | 37.19.198.160
-  - 011 | 94ms | 172.64.69.89
-  - 012 | 94ms | 37.19.198.244
-  - 013 | 95ms | 37.19.198.236
-  - 014 | 95ms | 185.215.132.9
-  - 015 | 97ms | 23.133.176.14
-  - 016 | 97ms | 185.215.132.18
-  - 017 | 100ms | 104.21.82.155
-  - 018 | 101ms | 193.151.163.18
-  - 019 | 103ms | 172.67.155.65
-  - 020 | 103ms | 188.114.97.6
-  - 021 | 106ms | 104.17.44.17
-  - 022 | 106ms | 185.230.230.18
-  - 023 | 107ms | cf.130519.xyz
-  - 024 | 109ms | 47.253.226.114
-  - 025 | 110ms | 37.19.198.243
-  - 026 | 111ms | 104.18.35.86
-  - 027 | 111ms | 45.138.100.248
-  - 028 | 112ms | 188.114.96.9
-  - 029 | 113ms | 172.67.79.160
-  - 030 | 115ms | 172.64.150.43
-  - 031 | 116ms | 172.67.131.217
-  - 032 | 116ms | 188.114.97.6
-  - 033 | 116ms | 68.235.56.51
-  - 034 | 117ms | 188.114.98.0
-  - 035 | 118ms | chatgpt.com
-  - 036 | 120ms | 104.21.5.155
-  - 037 | 121ms | 172.64.150.28
-  - 038 | 121ms | 172.66.47.18
-  - 039 | 121ms | 104.21.91.244
-  - 040 | 124ms | 104.18.0.181
-  - 041 | 124ms | 188.164.248.216
-  - 042 | 124ms | 104.26.4.2
-  - 043 | 125ms | 188.114.97.6
-  - 044 | 127ms | 104.18.35.86
-  - 045 | 127ms | 162.159.135.234
-  - 046 | 127ms | 104.18.41.190
-  - 047 | 127ms | 188.114.98.0
-  - 048 | 127ms | 45.86.51.18
-  - 049 | 128ms | 172.64.150.43
-  - 050 | 129ms | 172.64.153.61
-  - 051 | 129ms | medium.com
-  - 052 | 132ms | 172.66.47.10
-  - 053 | 132ms | 208.84.100.209
-  - 054 | 132ms | 149.88.98.81
-  - 055 | 132ms | 98.98.79.198
-  - 056 | 133ms | 172.64.152.241
-  - 057 | 133ms | 172.64.158.170
-  - 058 | 133ms | 51.222.136.236
-  - 059 | 135ms | 172.67.152.148
-  - 060 | 140ms | 193.151.160.9
-  - 061 | 141ms | 198.44.135.19
-  - 062 | 141ms | 137.184.174.93
-  - 063 | 142ms | 12.202.180.118
-  - 064 | 142ms | 45.138.100.248
-  - 065 | 142ms | 169.40.42.74
-  - 066 | 143ms | 154.197.64.30
-  - 067 | 143ms | 104.18.221.221
-  - 068 | 144ms | 172.67.155.65
-  - 069 | 145ms | 38.247.141.135
-  - 070 | 146ms | 68.235.56.59
-  - 071 | 147ms | 169.40.42.163
-  - 072 | 148ms | cf.877774.xyz
-  - 073 | 148ms | 193.151.160.18
-  - 074 | 152ms | 198.98.53.130
-  - 075 | 154ms | 169.40.42.235
-  - 076 | 155ms | 198.44.157.19
-  - 077 | 159ms | 104.18.43.174
-  - 078 | 161ms | 66.70.179.198
-  - 079 | 162ms | 88.216.69.30
-  - 080 | 162ms | 104.16.215.234
-  - 081 | 162ms | 149.88.21.129
-  - 082 | 162ms | 173.244.56.6
-  - 083 | 163ms | 159.89.87.21
-  - 084 | 165ms | 198.44.138.27
-  - 085 | 166ms | 169.40.42.202
-  - 086 | 168ms | 208.84.100.209
-  - 087 | 169ms | 206.223.161.47
-  - 088 | 170ms | 173.244.56.9
-  - 089 | 175ms | 12.202.180.10
-  - 090 | 176ms | 69.55.49.177
-  - 091 | 180ms | 188.114.97.6
-  - 092 | 189ms | 162.217.114.50
-  - 093 | 190ms | 64.98.50.100
-  - 094 | 195ms | 169.40.42.89
-  - 095 | 195ms | 35.183.131.26
-  - 096 | 197ms | 104.17.44.17
-  - 097 | 202ms | 12.221.146.147
-  - 098 | 203ms | 104.25.199.149
-  - 099 | 203ms | 138.199.35.213
-  - 100 | 204ms | 138.199.35.195
+  - 001 | 23ms | 95.215.201.18
+  - 002 | 54ms | 138.199.35.218
+  - 003 | 58ms | 138.199.35.208
+  - 004 | 59ms | 138.199.35.217
+  - 005 | 59ms | 138.199.35.195
+  - 006 | 60ms | 138.199.35.214
+  - 007 | 61ms | 138.199.35.196
+  - 008 | 62ms | 138.199.35.215
+  - 009 | 62ms | 138.199.35.220
+  - 010 | 62ms | 138.199.35.202
+  - 011 | 65ms | 138.199.35.213
+  - 012 | 69ms | 138.199.35.198
+  - 013 | 74ms | 172.64.69.89
+  - 014 | 75ms | 173.244.56.9
+  - 015 | 76ms | 104.18.35.86
+  - 016 | 76ms | 216.105.168.18
+  - 017 | 76ms | 173.244.56.6
+  - 018 | 83ms | 104.18.35.86
+  - 019 | 88ms | 104.18.0.181
+  - 020 | 88ms | 188.114.96.6
+  - 021 | 89ms | 104.17.44.17
+  - 022 | 89ms | 104.18.32.47
+  - 023 | 90ms | 188.114.97.6
+  - 024 | 91ms | 172.64.150.43
+  - 025 | 91ms | 104.26.4.2
+  - 026 | 91ms | 104.20.6.134
+  - 027 | 91ms | 156.146.38.169
+  - 028 | 92ms | 156.146.38.170
+  - 029 | 92ms | 156.146.38.168
+  - 030 | 93ms | 172.64.153.61
+  - 031 | 94ms | 172.64.150.43
+  - 032 | 94ms | 162.159.135.234
+  - 033 | 94ms | 156.146.38.167
+  - 034 | 95ms | 190.93.246.21
+  - 035 | 97ms | 172.66.47.10
+  - 036 | 98ms | 172.67.155.65
+  - 037 | 98ms | 188.114.97.6
+  - 038 | 99ms | cf.090227.xyz
+  - 039 | 101ms | 104.21.82.155
+  - 040 | 104ms | 172.64.147.91
+  - 041 | 104ms | 172.64.152.241
+  - 042 | 104ms | courses.mftplus.qzz.io
+  - 043 | 106ms | 188.114.98.0
+  - 044 | 108ms | 172.64.150.28
+  - 045 | 110ms | 172.67.152.148
+  - 046 | 113ms | 172.67.155.65
+  - 047 | 117ms | 88.216.69.30
+  - 048 | 117ms | vl.cocopon.top
+  - 049 | 119ms | 104.18.41.190
+  - 050 | 119ms | chatgpt.com
+  - 051 | 122ms | 172.67.79.160
+  - 052 | 122ms | 188.164.248.216
+  - 053 | 123ms | 172.67.131.217
+  - 054 | 123ms | 172.66.47.18
+  - 055 | 124ms | 188.114.98.0
+  - 056 | 124ms | 104.18.43.174
+  - 057 | 125ms | 188.114.97.6
+  - 058 | 128ms | 172.64.158.170
+  - 059 | 128ms | 188.114.96.9
+  - 060 | 133ms | 104.17.44.17
+  - 061 | 134ms | 104.21.5.155
+  - 062 | 134ms | 167.88.60.242
+  - 063 | 135ms | 104.16.215.234
+  - 064 | 140ms | 154.197.64.30
+  - 065 | 143ms | 15.204.97.197
+  - 066 | 143ms | 15.204.97.216
+  - 067 | 143ms | 15.204.97.219
+  - 068 | 143ms | 15.204.97.198
+  - 069 | 143ms | 15.204.97.214
+  - 070 | 144ms | 15.204.97.206
+  - 071 | 144ms | 15.204.97.195
+  - 072 | 147ms | 104.21.91.244
+  - 073 | 147ms | cfnode-11ivy8.pages.dev
+  - 074 | 150ms | 104.18.221.221
+  - 075 | 158ms | 23.133.176.14
+  - 076 | 161ms | 162.159.192.125
+  - 077 | 187ms | 45.63.38.134
+  - 078 | 206ms | 44.248.167.117
+  - 079 | 211ms | 188.114.97.6
+  - 080 | 216ms | 104.25.199.149
+  - 081 | 466ms | 162.35.8.62
+  - 082 | 601ms | 104.16.10.185
+  - 083 | 621ms | 45.80.111.7
+  - 084 | 627ms | 45.130.125.160
+  - 085 | 631ms | 141.101.115.104
+  - 086 | 633ms | 188.114.98.0
+  - 087 | 635ms | 212.183.88.136
+  - 088 | 636ms | 104.19.229.21
+  - 089 | 637ms | www.speedtest.net
+  - 090 | 647ms | 104.16.72.41
+  - 091 | 648ms | 172.64.152.23
+  - 092 | 648ms | 104.18.32.47
+  - 093 | 657ms | 141.193.213.172
+  - 094 | 689ms | www.pleadcourt.org
+  - 095 | 696ms | 8.47.69.0
+  - 096 | 723ms | 108.162.194.134
+  - 097 | 731ms | 172.66.40.99
+  - 098 | 765ms | 190.93.245.148
+  - 099 | 768ms | 172.64.145.133
+  - 100 | 928ms | 104.17.50.53
 - name: GLOBAL
   type: select
   proxies:
   - AUTO-FASTEST
   - PROXY
   - DIRECT
-  - 001 | 47ms | 156.146.38.167
-  - 002 | 49ms | 156.146.38.170
-  - 003 | 56ms | 129.213.91.185
-  - 004 | 57ms | 156.146.38.168
-  - 005 | 67ms | 138.199.42.68
-  - 006 | 74ms | 156.146.38.169
-  - 007 | 74ms | 147.45.60.160
-  - 008 | 75ms | 193.239.236.134
-  - 009 | 88ms | 121.127.34.82
-  - 010 | 93ms | 37.19.198.160
-  - 011 | 94ms | 172.64.69.89
-  - 012 | 94ms | 37.19.198.244
-  - 013 | 95ms | 37.19.198.236
-  - 014 | 95ms | 185.215.132.9
-  - 015 | 97ms | 23.133.176.14
-  - 016 | 97ms | 185.215.132.18
-  - 017 | 100ms | 104.21.82.155
-  - 018 | 101ms | 193.151.163.18
-  - 019 | 103ms | 172.67.155.65
-  - 020 | 103ms | 188.114.97.6
-  - 021 | 106ms | 104.17.44.17
-  - 022 | 106ms | 185.230.230.18
-  - 023 | 107ms | cf.130519.xyz
-  - 024 | 109ms | 47.253.226.114
-  - 025 | 110ms | 37.19.198.243
-  - 026 | 111ms | 104.18.35.86
-  - 027 | 111ms | 45.138.100.248
-  - 028 | 112ms | 188.114.96.9
-  - 029 | 113ms | 172.67.79.160
-  - 030 | 115ms | 172.64.150.43
-  - 031 | 116ms | 172.67.131.217
-  - 032 | 116ms | 188.114.97.6
-  - 033 | 116ms | 68.235.56.51
-  - 034 | 117ms | 188.114.98.0
-  - 035 | 118ms | chatgpt.com
-  - 036 | 120ms | 104.21.5.155
-  - 037 | 121ms | 172.64.150.28
-  - 038 | 121ms | 172.66.47.18
-  - 039 | 121ms | 104.21.91.244
-  - 040 | 124ms | 104.18.0.181
-  - 041 | 124ms | 188.164.248.216
-  - 042 | 124ms | 104.26.4.2
-  - 043 | 125ms | 188.114.97.6
-  - 044 | 127ms | 104.18.35.86
-  - 045 | 127ms | 162.159.135.234
-  - 046 | 127ms | 104.18.41.190
-  - 047 | 127ms | 188.114.98.0
-  - 048 | 127ms | 45.86.51.18
-  - 049 | 128ms | 172.64.150.43
-  - 050 | 129ms | 172.64.153.61
-  - 051 | 129ms | medium.com
-  - 052 | 132ms | 172.66.47.10
-  - 053 | 132ms | 208.84.100.209
-  - 054 | 132ms | 149.88.98.81
-  - 055 | 132ms | 98.98.79.198
-  - 056 | 133ms | 172.64.152.241
-  - 057 | 133ms | 172.64.158.170
-  - 058 | 133ms | 51.222.136.236
-  - 059 | 135ms | 172.67.152.148
-  - 060 | 140ms | 193.151.160.9
-  - 061 | 141ms | 198.44.135.19
-  - 062 | 141ms | 137.184.174.93
-  - 063 | 142ms | 12.202.180.118
-  - 064 | 142ms | 45.138.100.248
-  - 065 | 142ms | 169.40.42.74
-  - 066 | 143ms | 154.197.64.30
-  - 067 | 143ms | 104.18.221.221
-  - 068 | 144ms | 172.67.155.65
-  - 069 | 145ms | 38.247.141.135
-  - 070 | 146ms | 68.235.56.59
-  - 071 | 147ms | 169.40.42.163
-  - 072 | 148ms | cf.877774.xyz
-  - 073 | 148ms | 193.151.160.18
-  - 074 | 152ms | 198.98.53.130
-  - 075 | 154ms | 169.40.42.235
-  - 076 | 155ms | 198.44.157.19
-  - 077 | 159ms | 104.18.43.174
-  - 078 | 161ms | 66.70.179.198
-  - 079 | 162ms | 88.216.69.30
-  - 080 | 162ms | 104.16.215.234
-  - 081 | 162ms | 149.88.21.129
-  - 082 | 162ms | 173.244.56.6
-  - 083 | 163ms | 159.89.87.21
-  - 084 | 165ms | 198.44.138.27
-  - 085 | 166ms | 169.40.42.202
-  - 086 | 168ms | 208.84.100.209
-  - 087 | 169ms | 206.223.161.47
-  - 088 | 170ms | 173.244.56.9
-  - 089 | 175ms | 12.202.180.10
-  - 090 | 176ms | 69.55.49.177
-  - 091 | 180ms | 188.114.97.6
-  - 092 | 189ms | 162.217.114.50
-  - 093 | 190ms | 64.98.50.100
-  - 094 | 195ms | 169.40.42.89
-  - 095 | 195ms | 35.183.131.26
-  - 096 | 197ms | 104.17.44.17
-  - 097 | 202ms | 12.221.146.147
-  - 098 | 203ms | 104.25.199.149
-  - 099 | 203ms | 138.199.35.213
-  - 100 | 204ms | 138.199.35.195
+  - 001 | 23ms | 95.215.201.18
+  - 002 | 54ms | 138.199.35.218
+  - 003 | 58ms | 138.199.35.208
+  - 004 | 59ms | 138.199.35.217
+  - 005 | 59ms | 138.199.35.195
+  - 006 | 60ms | 138.199.35.214
+  - 007 | 61ms | 138.199.35.196
+  - 008 | 62ms | 138.199.35.215
+  - 009 | 62ms | 138.199.35.220
+  - 010 | 62ms | 138.199.35.202
+  - 011 | 65ms | 138.199.35.213
+  - 012 | 69ms | 138.199.35.198
+  - 013 | 74ms | 172.64.69.89
+  - 014 | 75ms | 173.244.56.9
+  - 015 | 76ms | 104.18.35.86
+  - 016 | 76ms | 216.105.168.18
+  - 017 | 76ms | 173.244.56.6
+  - 018 | 83ms | 104.18.35.86
+  - 019 | 88ms | 104.18.0.181
+  - 020 | 88ms | 188.114.96.6
+  - 021 | 89ms | 104.17.44.17
+  - 022 | 89ms | 104.18.32.47
+  - 023 | 90ms | 188.114.97.6
+  - 024 | 91ms | 172.64.150.43
+  - 025 | 91ms | 104.26.4.2
+  - 026 | 91ms | 104.20.6.134
+  - 027 | 91ms | 156.146.38.169
+  - 028 | 92ms | 156.146.38.170
+  - 029 | 92ms | 156.146.38.168
+  - 030 | 93ms | 172.64.153.61
+  - 031 | 94ms | 172.64.150.43
+  - 032 | 94ms | 162.159.135.234
+  - 033 | 94ms | 156.146.38.167
+  - 034 | 95ms | 190.93.246.21
+  - 035 | 97ms | 172.66.47.10
+  - 036 | 98ms | 172.67.155.65
+  - 037 | 98ms | 188.114.97.6
+  - 038 | 99ms | cf.090227.xyz
+  - 039 | 101ms | 104.21.82.155
+  - 040 | 104ms | 172.64.147.91
+  - 041 | 104ms | 172.64.152.241
+  - 042 | 104ms | courses.mftplus.qzz.io
+  - 043 | 106ms | 188.114.98.0
+  - 044 | 108ms | 172.64.150.28
+  - 045 | 110ms | 172.67.152.148
+  - 046 | 113ms | 172.67.155.65
+  - 047 | 117ms | 88.216.69.30
+  - 048 | 117ms | vl.cocopon.top
+  - 049 | 119ms | 104.18.41.190
+  - 050 | 119ms | chatgpt.com
+  - 051 | 122ms | 172.67.79.160
+  - 052 | 122ms | 188.164.248.216
+  - 053 | 123ms | 172.67.131.217
+  - 054 | 123ms | 172.66.47.18
+  - 055 | 124ms | 188.114.98.0
+  - 056 | 124ms | 104.18.43.174
+  - 057 | 125ms | 188.114.97.6
+  - 058 | 128ms | 172.64.158.170
+  - 059 | 128ms | 188.114.96.9
+  - 060 | 133ms | 104.17.44.17
+  - 061 | 134ms | 104.21.5.155
+  - 062 | 134ms | 167.88.60.242
+  - 063 | 135ms | 104.16.215.234
+  - 064 | 140ms | 154.197.64.30
+  - 065 | 143ms | 15.204.97.197
+  - 066 | 143ms | 15.204.97.216
+  - 067 | 143ms | 15.204.97.219
+  - 068 | 143ms | 15.204.97.198
+  - 069 | 143ms | 15.204.97.214
+  - 070 | 144ms | 15.204.97.206
+  - 071 | 144ms | 15.204.97.195
+  - 072 | 147ms | 104.21.91.244
+  - 073 | 147ms | cfnode-11ivy8.pages.dev
+  - 074 | 150ms | 104.18.221.221
+  - 075 | 158ms | 23.133.176.14
+  - 076 | 161ms | 162.159.192.125
+  - 077 | 187ms | 45.63.38.134
+  - 078 | 206ms | 44.248.167.117
+  - 079 | 211ms | 188.114.97.6
+  - 080 | 216ms | 104.25.199.149
+  - 081 | 466ms | 162.35.8.62
+  - 082 | 601ms | 104.16.10.185
+  - 083 | 621ms | 45.80.111.7
+  - 084 | 627ms | 45.130.125.160
+  - 085 | 631ms | 141.101.115.104
+  - 086 | 633ms | 188.114.98.0
+  - 087 | 635ms | 212.183.88.136
+  - 088 | 636ms | 104.19.229.21
+  - 089 | 637ms | www.speedtest.net
+  - 090 | 647ms | 104.16.72.41
+  - 091 | 648ms | 172.64.152.23
+  - 092 | 648ms | 104.18.32.47
+  - 093 | 657ms | 141.193.213.172
+  - 094 | 689ms | www.pleadcourt.org
+  - 095 | 696ms | 8.47.69.0
+  - 096 | 723ms | 108.162.194.134
+  - 097 | 731ms | 172.66.40.99
+  - 098 | 765ms | 190.93.245.148
+  - 099 | 768ms | 172.64.145.133
+  - 100 | 928ms | 104.17.50.53
 rules:
 - MATCH,PROXY
