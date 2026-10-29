@@ -1,781 +1,740 @@
-# 免费节点订阅（自动生成 / 三轮以上实测）
-# 节点数: 100  生成: 2026-10-29
-mixed-port: 7897
-socks-port: 7898
-port: 7899
+# ============================================================
+#  免费节点订阅  •  100 个节点
+#  生成时间: 2026-10-29 07:31 (UTC)
+#  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序
+#  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。
+# ============================================================
+mixed-port: 7890
 allow-lan: false
-ipv6: true
 mode: rule
 log-level: warning
+ipv6: true
 unified-delay: true
+external-controller: 127.0.0.1:9090
 proxies:
-- name: 001 | 198ms | 🇭🇰HK_49/561KB/s/P002-260618 [a3de63191023]
-  port: 3128
-  server: 119.28.24.235
+- password: 4291c983-c520-46ac-82cc-48f14bef573f
+  port: 35013
+  server: 129.213.91.185
   skip-cert-verify: true
-  sub_tag: P002-260618
+  sni: 129.213.91.185
+  tls: false
+  type: hysteria2
+  name: 001 | 20ms | 129.213.91.185
+  udp: true
+- port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 002 | 298ms | 🇸🇬SG_58/827KB/s/R002-260618 [7e6a15927292]
-  port: 9090
-  server: 128.199.116.219
+  name: 002 | 45ms | 172.64.69.89
+- type: vless
+  network: ws
+  server: 104.18.0.181
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /
+  name: 003 | 48ms | 104.18.0.181
+  udp: true
+- port: 9443
+  server: 198.44.135.19
+  skip-cert-verify: true
   sub_tag: R002-260618
+  tls: true
   type: http
   udp: true
-- name: 003 | 299ms | 🇸🇬SG_59/476KB/s/R002-260618 [50a568bb2adc]
-  port: 9090
-  server: 152.42.170.187
+  name: 004 | 53ms | 198.44.135.19
+- port: 443
+  server: 198.44.135.27
+  skip-cert-verify: true
   sub_tag: R002-260618
+  tls: true
   type: http
   udp: true
-- name: 004 | 305ms | ❓Other_15/887KB/s/R002-260618 [b220905f4ba2]
-  password: None
-  port: 9090
-  server: 104.248.151.93
-  sub_tag: R002-260618
-  type: http
+  name: 005 | 54ms | 198.44.135.27
+- type: vless
+  server: 185.162.229.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime61.workers.dev
+  skip-cert-verify: false
   udp: true
-- name: 005 | 368ms | 🇫🇷FR_284/545KB/s/F003-260618 [950debb9a438]
-  client-fingerprint: chrome
+  name: 006 | 54ms | 185.162.229.40
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 104.18.40.100
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+  name: 007 | 56ms | 104.18.40.100
+  udp: true
+- password: None
+  port: 443
+  server: 198.44.135.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 008 | 58ms | 198.44.135.27
+  udp: true
+- client-fingerprint: unsafe
   encryption: none
   network: ws
   port: 443
-  server: 172.66.0.172
-  sub_tag: F003-260618
+  server: 104.21.221.158
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
-  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: wallweb-4r0.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+  name: 009 | 58ms | 104.21.221.158
+  udp: true
+- encryption: none
+  network: ws
+  port: 8080
+  server: 104.26.12.31
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
+  ws-opts:
+    headers:
+      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
     path: /
   xudp: true
   packet-encoding: xudp
-  servername: wallweb-4r0.pages.dev
-- name: 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
-  password: '1234'
-  port: 2080
-  server: 47.129.174.248
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  type: http
-  username: '1234'
-  udp: true
-- name: 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
-  password: VDJjbE0wUWxNMFE2Og
-  port: 1090
-  server: 121.169.46.116
-  sub_tag: R002-260618
-  type: socks5
-  udp: true
-  username: VDJjbE0wUWxNMFE2Og
-- name: 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
-  password: '1234'
-  port: 2080
-  server: 13.212.14.88
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  type: http
-  username: '1234'
-  udp: true
-- name: 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
+  servername: ip.sb
+  name: 010 | 59ms | 104.26.12.31
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
   port: 443
-  server: 103.86.116.118
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  server: 172.64.145.94
+  sub_tag: M003-260806
   tls: true
-  type: http
+  type: vless
   udp: true
-- name: 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+  name: 011 | 60ms | 172.64.145.94
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
   port: 443
-  server: 178.248.73.58
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  server: ccc.010304.xyz
+  sub_tag: P001-260618
   tls: true
-  type: http
+  type: vless
   udp: true
-- name: 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: ccc.010304.xyz
+  name: 012 | 67ms | ccc.010304.xyz
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
   port: 443
-  server: 43.160.239.37
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  server: 172.67.160.192
+  sub_tag: X001-260618
   tls: true
-  type: http
+  type: vless
   udp: true
-- name: 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  ws-opts:
+    headers:
+      Host: nuclear.us.kg
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /free/103.101.153.32:443
+  xudp: true
+  packet-encoding: xudp
+  servername: nuclear.us.kg
+  name: 013 | 68ms | 172.67.160.192
+- server: 104.18.35.86
+  port: 2082
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+  name: 014 | 70ms | 104.18.35.86
+- type: vless
+  network: ws
+  server: 104.17.44.17
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
+  name: 015 | 71ms | 104.17.44.17
+  udp: true
+- server: 185.230.230.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 016 | 71ms | 185.230.230.18
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
   port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  server: 172.64.144.198
+  sub_tag: M003-260806
   tls: true
-  type: http
+  type: vless
   udp: true
-- name: 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
-  port: 1080
-  server: 47.238.126.208
-  sub_tag: R002-260618
-  type: socks5
-  udp: true
-- name: 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
-  password: gs4BXwT6SW
-  port: 10988
-  server: 154.26.192.123
-  sub_tag: R002-260618
-  tls: false
-  type: http
-  username: fQ67Dpe5dU
-  udp: true
-- type: ss
-  name: 015 | 597ms | 🇮🇹_IT_意大利 (4)
-  server: 202.50.253.63
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 016 | 602ms | 🇮🇹_IT_意大利 (8)
-  server: 202.50.253.99
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 017 | 603ms | 🇮🇹_IT_意大利
-  server: 202.50.253.27
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 018 | 607ms | 🇮🇹_IT_意大利 (9)
-  server: 202.50.253.81
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 019 | 608ms | 🇮🇹_IT_意大利 (7)
-  server: 202.50.253.45
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 020 | 609ms | 🇮🇹_IT_意大利 (3)
-  server: 202.50.253.90
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 021 | 616ms | 🇮🇹_IT_意大利 (5)
-  server: 202.50.253.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 022 | 626ms | 🇮🇹_IT_意大利 (10)
-  server: 202.50.253.72
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- type: ss
-  name: 023 | 630ms | 🇮🇹_IT_意大利 (2)
-  server: 202.50.253.36
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
-  port: 343
-  server: 133.18.200.207
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  name: 017 | 72ms | 172.64.144.198
+- type: vless
+  server: 172.66.154.57
   port: 443
-  server: 137.175.22.72
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-- name: 026 | 729ms | 🇺🇸US美国丨yoyapai.com
+  tls: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  name: 018 | 72ms | 172.66.154.57
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.122.7
+  skip-cert-verify: true
+  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
   type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
+  name: 019 | 75ms | 66.163.122.7
   udp: true
-- name: 027 | 740ms | US - zhuhai.uk 11
-  type: http
-  server: 137.175.22.45
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
-  port: 9090
-  server: 128.199.121.61
-  sub_tag: R002-260618
-  type: http
-  udp: true
-- name: 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
-  port: 443
-  server: 137.175.22.29
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- type: ss
-  name: 030 | 794ms | 🇮🇹_IT_意大利 (6)
-  server: 202.50.253.54
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
-  port: 443
-  server: 137.175.22.116
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
-  port: 443
-  server: 137.175.22.56
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
-  port: 8443
-  server: 44.248.167.117
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
-  port: 443
-  server: 137.175.22.85
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
-  port: 8443
-  server: 44.229.69.166
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
-  port: 999
-  server: 189.51.168.164
-  sub_tag: P002-260618
-  type: http
-  udp: true
-- name: 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
-  port: 443
-  server: 137.175.22.16
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
-  client-fingerprint: chrome
+- client-fingerprint: unsafe
   encryption: none
   network: ws
   port: 443
-  server: 172.67.74.177
+  server: 88.216.69.253
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+  name: 020 | 77ms | 88.216.69.253
+  udp: true
+- type: vless
+  server: 172.64.153.153
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  name: 021 | 77ms | 172.64.153.153
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.64.145.82
   sub_tag: F003-260618
   tls: true
   type: vless
   udp: true
-  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
+  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
   ws-opts:
     headers:
-      Host: wallweb-4r0.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+      Host: cf.zhahui.de5.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
     path: /
   xudp: true
   packet-encoding: xudp
-  servername: wallweb-4r0.pages.dev
-- name: 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
-  port: 443
-  server: 103.82.101.44
-  skip-cert-verify: true
-  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
-  password: 'null'
-  port: 443
-  server: 38.28.193.188
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 041 | 898ms | FR - zhuhai.uk
-  type: http
-  server: 87.98.174.157
-  port: 6103
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
-  port: 443
-  server: 38.28.193.1
-  skip-cert-verify: true
-  sni: 38.28.193.1
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 043 | 914ms | 🇫🇷FR_27/1.8MB/s/R002-260618 [31a8661c0de3]
-  port: 443
-  server: 103.82.101.43
-  skip-cert-verify: true
-  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 044 | 927ms | DE_speednode_0004
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 045 | 927ms | DE_speednode_0004
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 046 | 954ms | 🇳🇱NL_239/266KB/s/R002-260618 [1ab44c194f27]
-  port: 443
-  server: 5.255.125.188
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 047 | 960ms | 🇳🇱NL_272/1.6MB/s/R002-260618 [5ca84f13fa08]
-  port: 443
-  server: 5.255.125.187
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 048 | 964ms | US_speednode_0041
-  port: 443
-  server: 64.98.50.100
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
-  port: 443
-  server: 51.210.167.149
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
-  port: 443
-  server: 185.140.209.235
-  skip-cert-verify: true
-  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
-  password: None
-  port: 443
-  server: 64.98.50.100
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  username: ''
-  udp: true
-- name: 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
-  port: 443
-  server: 34.249.214.108
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
-  port: 443
-  server: 193.233.75.115
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
-  port: 443
-  server: 18.200.158.139
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
-  port: 443
-  server: 176.94.74.21
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
-  password: 'null'
-  port: 443
-  server: 103.97.88.154
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
-  port: 6103
-  server: 87.98.174.157
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  password: None
-  port: 443
-  server: 5.255.118.82
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  password: None
-  port: 443
-  server: 5.255.118.82
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
-  port: 443
-  server: 4.172.245.121
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
-  port: 443
-  server: 89.124.11.9
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
-  port: 9002
-  server: 84.17.47.126
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
-  port: 443
-  server: 178.219.43.226
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
-  port: 443
-  server: 62.210.27.111
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
-  port: 443
-  server: 79.76.126.155
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
-  port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
-  password: None
-  port: 9002
-  server: 193.176.84.22
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
-  password: 'null'
-  port: 9002
-  server: 84.17.47.149
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
-  port: 443
-  server: 23.133.176.14
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
-  port: 443
-  server: 94.177.163.156
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
-  password: ''
-  port: 9002
-  server: 84.17.47.146
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  username: ''
-  udp: true
-- name: 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
-  password: 'null'
-  port: 9002
-  server: 84.17.47.147
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
-  port: 8090
-  server: 83.206.1.225
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
-  port: 443
-  server: 162.217.114.50
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
-  password: None
-  port: 9002
-  server: 84.17.47.123
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 079 | 1130ms | 🇳🇱NL_88/1.2MB/s/R002-260618 [9d40bb46c3cd]
-  port: 443
-  server: 185.238.168.20
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 080 | 1131ms | 🇺🇸US_216/819KB/s/R002-260618 [f3757137fc03]
-  port: 443
-  server: 129.153.93.183
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 081 | 1131ms | 🇫🇷FR_213/2.0MB/s/R002-260618 [be42dcdcad27]
-  port: 443
-  server: 84.235.228.156
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
-  port: 9002
-  server: 84.17.47.124
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
-  password: None
-  port: 443
-  server: 51.158.243.91
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
-  port: 443
-  server: 185.238.170.10
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 085 | 1153ms | NL - zhuhai.uk 02
-  type: http
-  server: 185.93.106.214
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 086 | 1153ms | NL - zhuhai.uk 02
-  type: http
-  server: 185.93.106.214
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 087 | 1157ms | LV_speednode_0021
-  password: None
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 088 | 1157ms | LV_speednode_0021
-  password: None
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 089 | 1159ms | 🇺🇸US_227/1021KB/s/R002-260618 [e971c1f60e14]
-  port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 090 | 1160ms | 巴西 002
-  type: vless
+  servername: cf.zhahui.de5.net
+  name: 022 | 78ms | 172.64.145.82
+- client-fingerprint: chrome
   network: ws
-  server: 200.165.231.209
   port: 443
-  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
-  servername: wstg.datasynctrue.online
+  server: 172.67.152.148
+  sub_tag: A001-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
+  ws-opts:
+    headers:
+      Host: cf-socks.caoyuwu.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36
+    path: /fp=chrome
+  xudp: true
+  packet-encoding: xudp
+  servername: cf-socks.caoyuwu.eu.org
+  name: 023 | 79ms | 172.67.152.148
+- type: vless
+  server: 172.67.208.235
+  port: 2096
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  udp: true
+  tls: true
+  servername: courses.mftplus.qzz.io
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: courses.mftplus.qzz.io
+  name: 024 | 80ms | 172.67.208.235
+- type: vless
+  server: 167.17.69.171
+  port: 443
+  uuid: 00144519-7e0d-476b-8d28-435576af9262
+  udp: true
+  tls: true
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
+    short-id: 0990d22f
+  name: 025 | 80ms | 167.17.69.171
+- server: 45.86.51.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 026 | 81ms | 45.86.51.18
+  udp: true
+- type: vless
+  network: ws
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: unsafe
+  encryption: none
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp
+  name: 027 | 83ms | 104.18.45.38
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.26.4.2
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+  name: 028 | 83ms | 104.26.4.2
+  udp: true
+- client-fingerprint: unsafe
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.66.1.36
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+  name: 029 | 88ms | 172.66.1.36
+  udp: true
+- type: vless
+  server: 172.64.150.43
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  servername: 'hhlfy.twiladaphne.ndjp.net '
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 030 | 89ms | 172.64.150.43
+- network: ws
+  port: 8080
+  server: 172.67.71.187
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /sg-melbi
+  xudp: true
+  packet-encoding: xudp
+  name: 031 | 91ms | 172.67.71.187
+- network: ws
+  port: 8080
+  server: 188.114.97.6
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /sg-melbi
+  xudp: true
+  packet-encoding: xudp
+  name: 032 | 92ms | 188.114.97.6
+- type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  servername: ccc.010304.xyz
+  tls: true
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+  skip-cert-verify: false
+  udp: true
+  name: 033 | 93ms | 172.64.152.241
+- server: 15.204.247.206
+  port: 4444
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  name: 034 | 94ms | 15.204.247.206
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.66.0.162
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+  name: 035 | 95ms | 172.66.0.162
+  udp: true
+- encryption: none
+  network: ws
+  port: 8080
+  server: 104.19.174.68
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 2500e602-671c-4654-a602-c518b7282167
+  ws-opts:
+    headers:
+      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: www.digitalocean.com
+  name: 036 | 95ms | 104.19.174.68
+- server: 193.151.160.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 037 | 98ms | 193.151.160.18
+  udp: true
+- server: 193.151.160.9
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 038 | 99ms | 193.151.160.9
+  udp: true
+- encryption: none
+  network: ws
+  port: 8080
+  server: 172.67.75.172
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
+  ws-opts:
+    headers:
+      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  name: 039 | 100ms | 172.67.75.172
+- server: 66.163.122.81
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+  name: 040 | 101ms | 66.163.122.81
+  udp: true
+- network: ws
+  port: 8080
+  server: 104.19.164.25
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /sg-melbi
+  xudp: true
+  packet-encoding: xudp
+  name: 041 | 101ms | 104.19.164.25
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.64.144.240
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
+  ws-opts:
+    headers:
+      Host: pmpmppm.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /?ed=2048fp=randomized
+  xudp: true
+  packet-encoding: xudp
+  servername: pmpmppm.pages.dev
+  name: 042 | 106ms | 172.64.144.240
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.215.132.9
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+  name: 043 | 106ms | 185.215.132.9
+- network: ws
+  port: 2082
+  server: 104.17.162.11
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  name: 044 | 107ms | 104.17.162.11
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.215.132.18
+  sub_tag: B007-260618
+  type: ss
+  udp: true
+  name: 045 | 107ms | 185.215.132.18
+- encryption: none
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  ws-opts:
+    headers:
+      Host: all.speedtest03.ccwu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: all.speedtest03.ccwu.cc
+  name: 046 | 108ms | 188.114.97.6
+- server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 047 | 108ms | 156.146.38.169
+  udp: true
+- server: 156.146.38.170
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 048 | 109ms | 156.146.38.170
+  udp: true
+- server: 156.146.38.167
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 049 | 110ms | 156.146.38.167
+  udp: true
+- type: vless
+  network: ws
+  server: 188.114.98.0
+  port: 443
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  servername: tn1r.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: tn1r.eu.cc
+    path: /id-pusat
+  name: 050 | 111ms | 188.114.98.0
+  udp: true
+- server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 051 | 112ms | 156.146.38.168
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.64.149.65
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  name: 052 | 113ms | 172.64.149.65
+- server: 104.18.35.86
+  port: 2083
+  type: vless
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  tls: true
+  servername: vlsovip.1d.mom
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: vlsovip.1d.mom
+  udp: true
+  name: 053 | 114ms | 104.18.35.86
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: cfnode-11ivy8.pages.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  ws-opts:
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+    path: /ws
+  xudp: true
+  packet-encoding: xudp
+  servername: cfnode-11ivy8.pages.dev
+  name: 054 | 115ms | cfnode-11ivy8.pages.dev
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: epam.com
+  sub_tag: A004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
+  ws-opts:
+    headers:
+      Host: wallweb-boi.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: wallweb-boi.pages.dev
+  name: 055 | 116ms | epam.com
+- type: vless
+  network: ws
+  server: 188.114.96.9
+  port: 443
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
   skip-cert-verify: false
   tls: true
   udp: true
@@ -783,238 +742,535 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: wstg.datasynctrue.online
-    path: /api/connect
-- name: 091 | 1205ms | 🇫🇮FI芬兰丨yoyapai.com_5
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 71a195c5-df47-47ad-81be-f4d3a3a21be3
-  network: xhttp
-  servername: ssl.fastly.com
-  tls: true
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  xhttp-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
-    host: cloudnet2026.global.ssl.fastly.net
-    mode: auto
-  skip-cert-verify: false
-  udp: true
-- name: 092 | 1227ms | 🇩🇪 德国 / DEU 5
-  server: 155.212.240.10
-  port: 443
-  type: vless
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  tls: true
-  servername: n.bitpulse.me
-  client-fingerprint: firefox
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+  name: 056 | 118ms | 188.114.96.9
+- type: vless
+  server: 92.53.189.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
+  tls: false
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    path: /
     headers:
-      Host: n.bitpulse.me
-  udp: true
-- name: 093 | 1355ms | DE - zhuhai.uk
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
-  tls: true
-  sni: t.meFuckTheWall
+      Host: vms.lifetime19.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 094 | 1355ms | DE - zhuhai.uk
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
-  tls: true
-  sni: t.meFuckTheWall
-  skip-cert-verify: true
+  name: 057 | 121ms | 92.53.189.40
+- type: vless
+  server: 209.200.246.148
+  port: 443
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
   udp: true
-- name: 095 | 1355ms | DE - zhuhai.uk
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
   tls: true
-  sni: t.meFuckTheWall
-  skip-cert-verify: true
-  udp: true
-- name: 096 | 1428ms | 🇮🇷 伊朗 / IRN
-  server: tunell2027.crackerbinam.org
-  port: 48312
-  type: vless
-  uuid: f47057d5-120d-4b42-b6d6-30469aef6813
-  tls: true
-  reality-opts:
-    public-key: d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y
-    short-id: 902c315efc
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - www.cloudflare.com
-  udp: true
-- name: 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
-  client-fingerprint: chrome
-  network: tcp
-  port: 15656
-  server: ph001.zestapp778.com
-  sub_tag: A004-260618
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  name: 058 | 123ms | 209.200.246.148
+- type: vless
+  network: ws
+  server: 172.67.74.90
+  port: 443
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  servername: cvhpyn.pages.dev
   tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: cvhpyn.pages.dev
+    path: /fp=chrome
+  name: 059 | 124ms | 172.67.74.90
+  udp: true
+- network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.155.23
+  skip-cert-verify: false
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+  type: trojan
+  name: 060 | 124ms | 216.152.155.23
+  udp: true
+- cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+  udp: true
+  name: 061 | 126ms | 138.199.42.68
+- encryption: none
+  network: ws
+  port: 8080
+  server: 104.26.13.31
+  sub_tag: M003-260806
   type: vless
   udp: true
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
+  ws-opts:
+    headers:
+      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /
   xudp: true
   packet-encoding: xudp
-  servername: ph001.zestapp778.com
-- name: 098 | 2475ms | 🇹🇷 土耳其 / TUR
-  server: tr2.h1cloud.net
-  port: 25021
-  type: vless
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
-    short-id: 17fa3af0924c88b3
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  network: tcp
+  servername: ip.sb
+  name: 062 | 128ms | 104.26.13.31
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.156.212
+  skip-cert-verify: true
+  sni: courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  type: trojan
+  name: 063 | 133ms | 216.152.156.212
   udp: true
-- name: 099 | 3069ms | ❓未知丨yoyapai.com_36
+- type: vless
+  server: 5.34.178.120
+  port: 443
+  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
+  udp: true
+  tls: true
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM
+    short-id: 55ab5559e3a6d10a
+  name: 064 | 134ms | 5.34.178.120
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.156.42
+  skip-cert-verify: true
+  sni: blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  type: trojan
+  name: 065 | 136ms | 216.152.156.42
+  udp: true
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.156.81
+  skip-cert-verify: true
+  sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  type: trojan
+  name: 066 | 136ms | 216.152.156.81
+  udp: true
+- server: 190.93.244.166
+  port: 2096
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
+  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
+  tls: true
+  servername: wQa3mioJJR8fYoZhIui--su3-UCG1GDx.pages.DEv
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiWmFzVk5rd2siLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
+    headers:
+      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
+  udp: true
+  name: 067 | 137ms | 190.93.244.166
+- server: 216.152.156.65
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  skip-cert-verify: false
+  name: 068 | 139ms | 216.152.156.65
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: help1.digikala-aparat-zula.com
+  sub_tag: S004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
+  ws-opts:
+    headers:
+      Host: wallweb-av6.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: wallweb-av6.pages.dev
+  name: 069 | 143ms | help1.digikala-aparat-zula.com
+- type: vless
+  server: 195.211.98.43
+  port: 443
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  udp: true
+  tls: true
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  name: 070 | 144ms | 195.211.98.43
+- port: 9443
+  server: 154.47.25.78
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 071 | 151ms | 154.47.25.78
+- port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 072 | 155ms | 198.44.157.19
+- port: 443
+  server: 4.172.245.121
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 073 | 156ms | 4.172.245.121
+  udp: true
+- server: 137.184.174.93
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  name: 074 | 156ms | 137.184.174.93
+  udp: true
+- port: 443
+  server: 121.127.34.82
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 075 | 157ms | 121.127.34.82
+- port: 443
+  server: 193.239.236.134
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 076 | 157ms | 193.239.236.134
+- cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.197.141.58
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+  name: 077 | 157ms | 138.197.141.58
+- password: None
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 078 | 158ms | 198.44.157.27
+  udp: true
+- password: None
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 079 | 159ms | 198.44.157.19
+  udp: true
+- port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 080 | 159ms | 198.44.157.27
+- type: vless
+  server: 172.67.79.160
+  port: 2087
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  network: ws
+  servername: cvhpyn.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
   skip-cert-verify: false
   udp: true
-- name: 100 | 4005ms | 🇩🇪 德国 / DEU 7
-  server: 79.182.39.236
-  port: 25362
-  type: vless
-  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  name: 081 | 161ms | 172.67.79.160
+- port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
   tls: true
-  reality-opts:
-    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
-    short-id: 23732d14a527990d
-  servername: www.chip.de
-  client-fingerprint: firefox
-  network: tcp
+  type: http
+  name: 082 | 163ms | 206.223.183.13
   udp: true
+- port: 443
+  server: 68.235.56.59
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 083 | 168ms | 68.235.56.59
+- server: 95.215.201.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 084 | 168ms | 95.215.201.18
+  udp: true
+- client-fingerprint: chrome
+  network: ws
+  password: trojan
+  port: 8443
+  server: 104.18.12.229
+  sni: longwanghen.pages.dev
+  sub_tag: R002-260618
+  type: trojan
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /
+  udp: true
+  name: 085 | 169ms | 104.18.12.229
+- password: None
+  port: 443
+  server: 206.223.183.16
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 086 | 171ms | 206.223.183.16
+- port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 087 | 171ms | 23.133.176.14
+  udp: true
+- port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 088 | 173ms | 206.223.161.47
+- type: http
+  server: 12.202.180.118
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  name: 089 | 176ms | 12.202.180.118
+  udp: true
+- port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 090 | 178ms | 206.223.183.21
+- port: 443
+  server: 38.247.141.135
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 091 | 179ms | 38.247.141.135
+  udp: true
+- password: None
+  port: 443
+  server: 68.235.56.51
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 092 | 181ms | 68.235.56.51
+  udp: true
+- port: 443
+  server: 142.44.210.129
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 093 | 183ms | 142.44.210.129
+- password: None
+  port: 443
+  server: 12.202.180.118
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 094 | 183ms | 12.202.180.118
+  udp: true
+- network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 104.25.199.149
+  sub_tag: R002-260618
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-5dd075c8ae9b
+  ws-opts:
+    headers:
+      Host: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
+    path: /api/ws
+  udp: true
+  servername: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
+  name: 095 | 184ms | 104.25.199.149
+- password: None
+  port: 443
+  server: 12.202.180.10
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+  name: 096 | 186ms | 12.202.180.10
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.114.132
+  skip-cert-verify: true
+  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: trojan
+  name: 097 | 187ms | 66.163.114.132
+  udp: true
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.114.114
+  skip-cert-verify: true
+  sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: trojan
+  name: 098 | 187ms | 66.163.114.114
+  udp: true
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.114.166
+  skip-cert-verify: true
+  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: trojan
+  name: 099 | 189ms | 66.163.114.166
+  udp: true
+- port: 443
+  server: 12.221.146.147
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 100 | 193ms | 12.221.146.147
 proxy-groups:
 - name: AUTO-FASTEST
   type: url-test
   proxies:
-  - 001 | 198ms | 🇭🇰HK_49/561KB/s/P002-260618 [a3de63191023]
-  - 002 | 298ms | 🇸🇬SG_58/827KB/s/R002-260618 [7e6a15927292]
-  - 003 | 299ms | 🇸🇬SG_59/476KB/s/R002-260618 [50a568bb2adc]
-  - 004 | 305ms | ❓Other_15/887KB/s/R002-260618 [b220905f4ba2]
-  - 005 | 368ms | 🇫🇷FR_284/545KB/s/F003-260618 [950debb9a438]
-  - 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
-  - 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
-  - 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
-  - 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
-  - 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
-  - 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
-  - 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
-  - 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
-  - 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
-  - 015 | 597ms | 🇮🇹_IT_意大利 (4)
-  - 016 | 602ms | 🇮🇹_IT_意大利 (8)
-  - 017 | 603ms | 🇮🇹_IT_意大利
-  - 018 | 607ms | 🇮🇹_IT_意大利 (9)
-  - 019 | 608ms | 🇮🇹_IT_意大利 (7)
-  - 020 | 609ms | 🇮🇹_IT_意大利 (3)
-  - 021 | 616ms | 🇮🇹_IT_意大利 (5)
-  - 022 | 626ms | 🇮🇹_IT_意大利 (10)
-  - 023 | 630ms | 🇮🇹_IT_意大利 (2)
-  - 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
-  - 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
-  - 026 | 729ms | 🇺🇸US美国丨yoyapai.com
-  - 027 | 740ms | US - zhuhai.uk 11
-  - 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
-  - 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
-  - 030 | 794ms | 🇮🇹_IT_意大利 (6)
-  - 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
-  - 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
-  - 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
-  - 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
-  - 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
-  - 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
-  - 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
-  - 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
-  - 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
-  - 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
-  - 041 | 898ms | FR - zhuhai.uk
-  - 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
-  - 043 | 914ms | 🇫🇷FR_27/1.8MB/s/R002-260618 [31a8661c0de3]
-  - 044 | 927ms | DE_speednode_0004
-  - 045 | 927ms | DE_speednode_0004
-  - 046 | 954ms | 🇳🇱NL_239/266KB/s/R002-260618 [1ab44c194f27]
-  - 047 | 960ms | 🇳🇱NL_272/1.6MB/s/R002-260618 [5ca84f13fa08]
-  - 048 | 964ms | US_speednode_0041
-  - 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
-  - 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
-  - 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
-  - 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
-  - 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
-  - 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
-  - 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
-  - 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
-  - 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
-  - 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
-  - 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
-  - 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
-  - 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
-  - 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
-  - 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
-  - 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
-  - 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
-  - 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
-  - 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
-  - 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
-  - 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
-  - 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
-  - 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
-  - 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
-  - 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
-  - 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
-  - 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
-  - 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
-  - 079 | 1130ms | 🇳🇱NL_88/1.2MB/s/R002-260618 [9d40bb46c3cd]
-  - 080 | 1131ms | 🇺🇸US_216/819KB/s/R002-260618 [f3757137fc03]
-  - 081 | 1131ms | 🇫🇷FR_213/2.0MB/s/R002-260618 [be42dcdcad27]
-  - 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
-  - 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
-  - 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
-  - 085 | 1153ms | NL - zhuhai.uk 02
-  - 086 | 1153ms | NL - zhuhai.uk 02
-  - 087 | 1157ms | LV_speednode_0021
-  - 088 | 1157ms | LV_speednode_0021
-  - 089 | 1159ms | 🇺🇸US_227/1021KB/s/R002-260618 [e971c1f60e14]
-  - 090 | 1160ms | 巴西 002
-  - 091 | 1205ms | 🇫🇮FI芬兰丨yoyapai.com_5
-  - 092 | 1227ms | 🇩🇪 德国 / DEU 5
-  - 093 | 1355ms | DE - zhuhai.uk
-  - 094 | 1355ms | DE - zhuhai.uk
-  - 095 | 1355ms | DE - zhuhai.uk
-  - 096 | 1428ms | 🇮🇷 伊朗 / IRN
-  - 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
-  - 098 | 2475ms | 🇹🇷 土耳其 / TUR
-  - 099 | 3069ms | ❓未知丨yoyapai.com_36
-  - 100 | 4005ms | 🇩🇪 德国 / DEU 7
+  - 001 | 20ms | 129.213.91.185
+  - 002 | 45ms | 172.64.69.89
+  - 003 | 48ms | 104.18.0.181
+  - 004 | 53ms | 198.44.135.19
+  - 005 | 54ms | 198.44.135.27
+  - 006 | 54ms | 185.162.229.40
+  - 007 | 56ms | 104.18.40.100
+  - 008 | 58ms | 198.44.135.27
+  - 009 | 58ms | 104.21.221.158
+  - 010 | 59ms | 104.26.12.31
+  - 011 | 60ms | 172.64.145.94
+  - 012 | 67ms | ccc.010304.xyz
+  - 013 | 68ms | 172.67.160.192
+  - 014 | 70ms | 104.18.35.86
+  - 015 | 71ms | 104.17.44.17
+  - 016 | 71ms | 185.230.230.18
+  - 017 | 72ms | 172.64.144.198
+  - 018 | 72ms | 172.66.154.57
+  - 019 | 75ms | 66.163.122.7
+  - 020 | 77ms | 88.216.69.253
+  - 021 | 77ms | 172.64.153.153
+  - 022 | 78ms | 172.64.145.82
+  - 023 | 79ms | 172.67.152.148
+  - 024 | 80ms | 172.67.208.235
+  - 025 | 80ms | 167.17.69.171
+  - 026 | 81ms | 45.86.51.18
+  - 027 | 83ms | 104.18.45.38
+  - 028 | 83ms | 104.26.4.2
+  - 029 | 88ms | 172.66.1.36
+  - 030 | 89ms | 172.64.150.43
+  - 031 | 91ms | 172.67.71.187
+  - 032 | 92ms | 188.114.97.6
+  - 033 | 93ms | 172.64.152.241
+  - 034 | 94ms | 15.204.247.206
+  - 035 | 95ms | 172.66.0.162
+  - 036 | 95ms | 104.19.174.68
+  - 037 | 98ms | 193.151.160.18
+  - 038 | 99ms | 193.151.160.9
+  - 039 | 100ms | 172.67.75.172
+  - 040 | 101ms | 66.163.122.81
+  - 041 | 101ms | 104.19.164.25
+  - 042 | 106ms | 172.64.144.240
+  - 043 | 106ms | 185.215.132.9
+  - 044 | 107ms | 104.17.162.11
+  - 045 | 107ms | 185.215.132.18
+  - 046 | 108ms | 188.114.97.6
+  - 047 | 108ms | 156.146.38.169
+  - 048 | 109ms | 156.146.38.170
+  - 049 | 110ms | 156.146.38.167
+  - 050 | 111ms | 188.114.98.0
+  - 051 | 112ms | 156.146.38.168
+  - 052 | 113ms | 172.64.149.65
+  - 053 | 114ms | 104.18.35.86
+  - 054 | 115ms | cfnode-11ivy8.pages.dev
+  - 055 | 116ms | epam.com
+  - 056 | 118ms | 188.114.96.9
+  - 057 | 121ms | 92.53.189.40
+  - 058 | 123ms | 209.200.246.148
+  - 059 | 124ms | 172.67.74.90
+  - 060 | 124ms | 216.152.155.23
+  - 061 | 126ms | 138.199.42.68
+  - 062 | 128ms | 104.26.13.31
+  - 063 | 133ms | 216.152.156.212
+  - 064 | 134ms | 5.34.178.120
+  - 065 | 136ms | 216.152.156.42
+  - 066 | 136ms | 216.152.156.81
+  - 067 | 137ms | 190.93.244.166
+  - 068 | 139ms | 216.152.156.65
+  - 069 | 143ms | help1.digikala-aparat-zula.com
+  - 070 | 144ms | 195.211.98.43
+  - 071 | 151ms | 154.47.25.78
+  - 072 | 155ms | 198.44.157.19
+  - 073 | 156ms | 4.172.245.121
+  - 074 | 156ms | 137.184.174.93
+  - 075 | 157ms | 121.127.34.82
+  - 076 | 157ms | 193.239.236.134
+  - 077 | 157ms | 138.197.141.58
+  - 078 | 158ms | 198.44.157.27
+  - 079 | 159ms | 198.44.157.19
+  - 080 | 159ms | 198.44.157.27
+  - 081 | 161ms | 172.67.79.160
+  - 082 | 163ms | 206.223.183.13
+  - 083 | 168ms | 68.235.56.59
+  - 084 | 168ms | 95.215.201.18
+  - 085 | 169ms | 104.18.12.229
+  - 086 | 171ms | 206.223.183.16
+  - 087 | 171ms | 23.133.176.14
+  - 088 | 173ms | 206.223.161.47
+  - 089 | 176ms | 12.202.180.118
+  - 090 | 178ms | 206.223.183.21
+  - 091 | 179ms | 38.247.141.135
+  - 092 | 181ms | 68.235.56.51
+  - 093 | 183ms | 142.44.210.129
+  - 094 | 183ms | 12.202.180.118
+  - 095 | 184ms | 104.25.199.149
+  - 096 | 186ms | 12.202.180.10
+  - 097 | 187ms | 66.163.114.132
+  - 098 | 187ms | 66.163.114.114
+  - 099 | 189ms | 66.163.114.166
+  - 100 | 193ms | 12.221.146.147
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -1024,210 +1280,211 @@ proxy-groups:
   proxies:
   - AUTO-FASTEST
   - DIRECT
-  - 001 | 198ms | 🇭🇰HK_49/561KB/s/P002-260618 [a3de63191023]
-  - 002 | 298ms | 🇸🇬SG_58/827KB/s/R002-260618 [7e6a15927292]
-  - 003 | 299ms | 🇸🇬SG_59/476KB/s/R002-260618 [50a568bb2adc]
-  - 004 | 305ms | ❓Other_15/887KB/s/R002-260618 [b220905f4ba2]
-  - 005 | 368ms | 🇫🇷FR_284/545KB/s/F003-260618 [950debb9a438]
-  - 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
-  - 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
-  - 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
-  - 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
-  - 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
-  - 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
-  - 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
-  - 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
-  - 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
-  - 015 | 597ms | 🇮🇹_IT_意大利 (4)
-  - 016 | 602ms | 🇮🇹_IT_意大利 (8)
-  - 017 | 603ms | 🇮🇹_IT_意大利
-  - 018 | 607ms | 🇮🇹_IT_意大利 (9)
-  - 019 | 608ms | 🇮🇹_IT_意大利 (7)
-  - 020 | 609ms | 🇮🇹_IT_意大利 (3)
-  - 021 | 616ms | 🇮🇹_IT_意大利 (5)
-  - 022 | 626ms | 🇮🇹_IT_意大利 (10)
-  - 023 | 630ms | 🇮🇹_IT_意大利 (2)
-  - 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
-  - 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
-  - 026 | 729ms | 🇺🇸US美国丨yoyapai.com
-  - 027 | 740ms | US - zhuhai.uk 11
-  - 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
-  - 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
-  - 030 | 794ms | 🇮🇹_IT_意大利 (6)
-  - 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
-  - 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
-  - 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
-  - 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
-  - 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
-  - 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
-  - 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
-  - 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
-  - 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
-  - 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
-  - 041 | 898ms | FR - zhuhai.uk
-  - 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
-  - 043 | 914ms | 🇫🇷FR_27/1.8MB/s/R002-260618 [31a8661c0de3]
-  - 044 | 927ms | DE_speednode_0004
-  - 045 | 927ms | DE_speednode_0004
-  - 046 | 954ms | 🇳🇱NL_239/266KB/s/R002-260618 [1ab44c194f27]
-  - 047 | 960ms | 🇳🇱NL_272/1.6MB/s/R002-260618 [5ca84f13fa08]
-  - 048 | 964ms | US_speednode_0041
-  - 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
-  - 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
-  - 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
-  - 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
-  - 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
-  - 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
-  - 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
-  - 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
-  - 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
-  - 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
-  - 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
-  - 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
-  - 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
-  - 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
-  - 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
-  - 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
-  - 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
-  - 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
-  - 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
-  - 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
-  - 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
-  - 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
-  - 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
-  - 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
-  - 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
-  - 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
-  - 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
-  - 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
-  - 079 | 1130ms | 🇳🇱NL_88/1.2MB/s/R002-260618 [9d40bb46c3cd]
-  - 080 | 1131ms | 🇺🇸US_216/819KB/s/R002-260618 [f3757137fc03]
-  - 081 | 1131ms | 🇫🇷FR_213/2.0MB/s/R002-260618 [be42dcdcad27]
-  - 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
-  - 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
-  - 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
-  - 085 | 1153ms | NL - zhuhai.uk 02
-  - 086 | 1153ms | NL - zhuhai.uk 02
-  - 087 | 1157ms | LV_speednode_0021
-  - 088 | 1157ms | LV_speednode_0021
-  - 089 | 1159ms | 🇺🇸US_227/1021KB/s/R002-260618 [e971c1f60e14]
-  - 090 | 1160ms | 巴西 002
-  - 091 | 1205ms | 🇫🇮FI芬兰丨yoyapai.com_5
-  - 092 | 1227ms | 🇩🇪 德国 / DEU 5
-  - 093 | 1355ms | DE - zhuhai.uk
-  - 094 | 1355ms | DE - zhuhai.uk
-  - 095 | 1355ms | DE - zhuhai.uk
-  - 096 | 1428ms | 🇮🇷 伊朗 / IRN
-  - 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
-  - 098 | 2475ms | 🇹🇷 土耳其 / TUR
-  - 099 | 3069ms | ❓未知丨yoyapai.com_36
-  - 100 | 4005ms | 🇩🇪 德国 / DEU 7
+  - 001 | 20ms | 129.213.91.185
+  - 002 | 45ms | 172.64.69.89
+  - 003 | 48ms | 104.18.0.181
+  - 004 | 53ms | 198.44.135.19
+  - 005 | 54ms | 198.44.135.27
+  - 006 | 54ms | 185.162.229.40
+  - 007 | 56ms | 104.18.40.100
+  - 008 | 58ms | 198.44.135.27
+  - 009 | 58ms | 104.21.221.158
+  - 010 | 59ms | 104.26.12.31
+  - 011 | 60ms | 172.64.145.94
+  - 012 | 67ms | ccc.010304.xyz
+  - 013 | 68ms | 172.67.160.192
+  - 014 | 70ms | 104.18.35.86
+  - 015 | 71ms | 104.17.44.17
+  - 016 | 71ms | 185.230.230.18
+  - 017 | 72ms | 172.64.144.198
+  - 018 | 72ms | 172.66.154.57
+  - 019 | 75ms | 66.163.122.7
+  - 020 | 77ms | 88.216.69.253
+  - 021 | 77ms | 172.64.153.153
+  - 022 | 78ms | 172.64.145.82
+  - 023 | 79ms | 172.67.152.148
+  - 024 | 80ms | 172.67.208.235
+  - 025 | 80ms | 167.17.69.171
+  - 026 | 81ms | 45.86.51.18
+  - 027 | 83ms | 104.18.45.38
+  - 028 | 83ms | 104.26.4.2
+  - 029 | 88ms | 172.66.1.36
+  - 030 | 89ms | 172.64.150.43
+  - 031 | 91ms | 172.67.71.187
+  - 032 | 92ms | 188.114.97.6
+  - 033 | 93ms | 172.64.152.241
+  - 034 | 94ms | 15.204.247.206
+  - 035 | 95ms | 172.66.0.162
+  - 036 | 95ms | 104.19.174.68
+  - 037 | 98ms | 193.151.160.18
+  - 038 | 99ms | 193.151.160.9
+  - 039 | 100ms | 172.67.75.172
+  - 040 | 101ms | 66.163.122.81
+  - 041 | 101ms | 104.19.164.25
+  - 042 | 106ms | 172.64.144.240
+  - 043 | 106ms | 185.215.132.9
+  - 044 | 107ms | 104.17.162.11
+  - 045 | 107ms | 185.215.132.18
+  - 046 | 108ms | 188.114.97.6
+  - 047 | 108ms | 156.146.38.169
+  - 048 | 109ms | 156.146.38.170
+  - 049 | 110ms | 156.146.38.167
+  - 050 | 111ms | 188.114.98.0
+  - 051 | 112ms | 156.146.38.168
+  - 052 | 113ms | 172.64.149.65
+  - 053 | 114ms | 104.18.35.86
+  - 054 | 115ms | cfnode-11ivy8.pages.dev
+  - 055 | 116ms | epam.com
+  - 056 | 118ms | 188.114.96.9
+  - 057 | 121ms | 92.53.189.40
+  - 058 | 123ms | 209.200.246.148
+  - 059 | 124ms | 172.67.74.90
+  - 060 | 124ms | 216.152.155.23
+  - 061 | 126ms | 138.199.42.68
+  - 062 | 128ms | 104.26.13.31
+  - 063 | 133ms | 216.152.156.212
+  - 064 | 134ms | 5.34.178.120
+  - 065 | 136ms | 216.152.156.42
+  - 066 | 136ms | 216.152.156.81
+  - 067 | 137ms | 190.93.244.166
+  - 068 | 139ms | 216.152.156.65
+  - 069 | 143ms | help1.digikala-aparat-zula.com
+  - 070 | 144ms | 195.211.98.43
+  - 071 | 151ms | 154.47.25.78
+  - 072 | 155ms | 198.44.157.19
+  - 073 | 156ms | 4.172.245.121
+  - 074 | 156ms | 137.184.174.93
+  - 075 | 157ms | 121.127.34.82
+  - 076 | 157ms | 193.239.236.134
+  - 077 | 157ms | 138.197.141.58
+  - 078 | 158ms | 198.44.157.27
+  - 079 | 159ms | 198.44.157.19
+  - 080 | 159ms | 198.44.157.27
+  - 081 | 161ms | 172.67.79.160
+  - 082 | 163ms | 206.223.183.13
+  - 083 | 168ms | 68.235.56.59
+  - 084 | 168ms | 95.215.201.18
+  - 085 | 169ms | 104.18.12.229
+  - 086 | 171ms | 206.223.183.16
+  - 087 | 171ms | 23.133.176.14
+  - 088 | 173ms | 206.223.161.47
+  - 089 | 176ms | 12.202.180.118
+  - 090 | 178ms | 206.223.183.21
+  - 091 | 179ms | 38.247.141.135
+  - 092 | 181ms | 68.235.56.51
+  - 093 | 183ms | 142.44.210.129
+  - 094 | 183ms | 12.202.180.118
+  - 095 | 184ms | 104.25.199.149
+  - 096 | 186ms | 12.202.180.10
+  - 097 | 187ms | 66.163.114.132
+  - 098 | 187ms | 66.163.114.114
+  - 099 | 189ms | 66.163.114.166
+  - 100 | 193ms | 12.221.146.147
 - name: GLOBAL
   type: select
   proxies:
   - AUTO-FASTEST
+  - PROXY
   - DIRECT
-  - 001 | 198ms | 🇭🇰HK_49/561KB/s/P002-260618 [a3de63191023]
-  - 002 | 298ms | 🇸🇬SG_58/827KB/s/R002-260618 [7e6a15927292]
-  - 003 | 299ms | 🇸🇬SG_59/476KB/s/R002-260618 [50a568bb2adc]
-  - 004 | 305ms | ❓Other_15/887KB/s/R002-260618 [b220905f4ba2]
-  - 005 | 368ms | 🇫🇷FR_284/545KB/s/F003-260618 [950debb9a438]
-  - 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
-  - 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
-  - 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
-  - 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
-  - 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
-  - 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
-  - 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
-  - 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
-  - 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
-  - 015 | 597ms | 🇮🇹_IT_意大利 (4)
-  - 016 | 602ms | 🇮🇹_IT_意大利 (8)
-  - 017 | 603ms | 🇮🇹_IT_意大利
-  - 018 | 607ms | 🇮🇹_IT_意大利 (9)
-  - 019 | 608ms | 🇮🇹_IT_意大利 (7)
-  - 020 | 609ms | 🇮🇹_IT_意大利 (3)
-  - 021 | 616ms | 🇮🇹_IT_意大利 (5)
-  - 022 | 626ms | 🇮🇹_IT_意大利 (10)
-  - 023 | 630ms | 🇮🇹_IT_意大利 (2)
-  - 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
-  - 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
-  - 026 | 729ms | 🇺🇸US美国丨yoyapai.com
-  - 027 | 740ms | US - zhuhai.uk 11
-  - 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
-  - 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
-  - 030 | 794ms | 🇮🇹_IT_意大利 (6)
-  - 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
-  - 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
-  - 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
-  - 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
-  - 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
-  - 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
-  - 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
-  - 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
-  - 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
-  - 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
-  - 041 | 898ms | FR - zhuhai.uk
-  - 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
-  - 043 | 914ms | 🇫🇷FR_27/1.8MB/s/R002-260618 [31a8661c0de3]
-  - 044 | 927ms | DE_speednode_0004
-  - 045 | 927ms | DE_speednode_0004
-  - 046 | 954ms | 🇳🇱NL_239/266KB/s/R002-260618 [1ab44c194f27]
-  - 047 | 960ms | 🇳🇱NL_272/1.6MB/s/R002-260618 [5ca84f13fa08]
-  - 048 | 964ms | US_speednode_0041
-  - 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
-  - 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
-  - 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
-  - 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
-  - 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
-  - 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
-  - 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
-  - 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
-  - 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
-  - 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
-  - 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
-  - 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
-  - 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
-  - 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
-  - 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
-  - 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
-  - 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
-  - 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
-  - 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
-  - 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
-  - 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
-  - 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
-  - 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
-  - 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
-  - 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
-  - 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
-  - 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
-  - 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
-  - 079 | 1130ms | 🇳🇱NL_88/1.2MB/s/R002-260618 [9d40bb46c3cd]
-  - 080 | 1131ms | 🇺🇸US_216/819KB/s/R002-260618 [f3757137fc03]
-  - 081 | 1131ms | 🇫🇷FR_213/2.0MB/s/R002-260618 [be42dcdcad27]
-  - 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
-  - 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
-  - 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
-  - 085 | 1153ms | NL - zhuhai.uk 02
-  - 086 | 1153ms | NL - zhuhai.uk 02
-  - 087 | 1157ms | LV_speednode_0021
-  - 088 | 1157ms | LV_speednode_0021
-  - 089 | 1159ms | 🇺🇸US_227/1021KB/s/R002-260618 [e971c1f60e14]
-  - 090 | 1160ms | 巴西 002
-  - 091 | 1205ms | 🇫🇮FI芬兰丨yoyapai.com_5
-  - 092 | 1227ms | 🇩🇪 德国 / DEU 5
-  - 093 | 1355ms | DE - zhuhai.uk
-  - 094 | 1355ms | DE - zhuhai.uk
-  - 095 | 1355ms | DE - zhuhai.uk
-  - 096 | 1428ms | 🇮🇷 伊朗 / IRN
-  - 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
-  - 098 | 2475ms | 🇹🇷 土耳其 / TUR
-  - 099 | 3069ms | ❓未知丨yoyapai.com_36
-  - 100 | 4005ms | 🇩🇪 德国 / DEU 7
+  - 001 | 20ms | 129.213.91.185
+  - 002 | 45ms | 172.64.69.89
+  - 003 | 48ms | 104.18.0.181
+  - 004 | 53ms | 198.44.135.19
+  - 005 | 54ms | 198.44.135.27
+  - 006 | 54ms | 185.162.229.40
+  - 007 | 56ms | 104.18.40.100
+  - 008 | 58ms | 198.44.135.27
+  - 009 | 58ms | 104.21.221.158
+  - 010 | 59ms | 104.26.12.31
+  - 011 | 60ms | 172.64.145.94
+  - 012 | 67ms | ccc.010304.xyz
+  - 013 | 68ms | 172.67.160.192
+  - 014 | 70ms | 104.18.35.86
+  - 015 | 71ms | 104.17.44.17
+  - 016 | 71ms | 185.230.230.18
+  - 017 | 72ms | 172.64.144.198
+  - 018 | 72ms | 172.66.154.57
+  - 019 | 75ms | 66.163.122.7
+  - 020 | 77ms | 88.216.69.253
+  - 021 | 77ms | 172.64.153.153
+  - 022 | 78ms | 172.64.145.82
+  - 023 | 79ms | 172.67.152.148
+  - 024 | 80ms | 172.67.208.235
+  - 025 | 80ms | 167.17.69.171
+  - 026 | 81ms | 45.86.51.18
+  - 027 | 83ms | 104.18.45.38
+  - 028 | 83ms | 104.26.4.2
+  - 029 | 88ms | 172.66.1.36
+  - 030 | 89ms | 172.64.150.43
+  - 031 | 91ms | 172.67.71.187
+  - 032 | 92ms | 188.114.97.6
+  - 033 | 93ms | 172.64.152.241
+  - 034 | 94ms | 15.204.247.206
+  - 035 | 95ms | 172.66.0.162
+  - 036 | 95ms | 104.19.174.68
+  - 037 | 98ms | 193.151.160.18
+  - 038 | 99ms | 193.151.160.9
+  - 039 | 100ms | 172.67.75.172
+  - 040 | 101ms | 66.163.122.81
+  - 041 | 101ms | 104.19.164.25
+  - 042 | 106ms | 172.64.144.240
+  - 043 | 106ms | 185.215.132.9
+  - 044 | 107ms | 104.17.162.11
+  - 045 | 107ms | 185.215.132.18
+  - 046 | 108ms | 188.114.97.6
+  - 047 | 108ms | 156.146.38.169
+  - 048 | 109ms | 156.146.38.170
+  - 049 | 110ms | 156.146.38.167
+  - 050 | 111ms | 188.114.98.0
+  - 051 | 112ms | 156.146.38.168
+  - 052 | 113ms | 172.64.149.65
+  - 053 | 114ms | 104.18.35.86
+  - 054 | 115ms | cfnode-11ivy8.pages.dev
+  - 055 | 116ms | epam.com
+  - 056 | 118ms | 188.114.96.9
+  - 057 | 121ms | 92.53.189.40
+  - 058 | 123ms | 209.200.246.148
+  - 059 | 124ms | 172.67.74.90
+  - 060 | 124ms | 216.152.155.23
+  - 061 | 126ms | 138.199.42.68
+  - 062 | 128ms | 104.26.13.31
+  - 063 | 133ms | 216.152.156.212
+  - 064 | 134ms | 5.34.178.120
+  - 065 | 136ms | 216.152.156.42
+  - 066 | 136ms | 216.152.156.81
+  - 067 | 137ms | 190.93.244.166
+  - 068 | 139ms | 216.152.156.65
+  - 069 | 143ms | help1.digikala-aparat-zula.com
+  - 070 | 144ms | 195.211.98.43
+  - 071 | 151ms | 154.47.25.78
+  - 072 | 155ms | 198.44.157.19
+  - 073 | 156ms | 4.172.245.121
+  - 074 | 156ms | 137.184.174.93
+  - 075 | 157ms | 121.127.34.82
+  - 076 | 157ms | 193.239.236.134
+  - 077 | 157ms | 138.197.141.58
+  - 078 | 158ms | 198.44.157.27
+  - 079 | 159ms | 198.44.157.19
+  - 080 | 159ms | 198.44.157.27
+  - 081 | 161ms | 172.67.79.160
+  - 082 | 163ms | 206.223.183.13
+  - 083 | 168ms | 68.235.56.59
+  - 084 | 168ms | 95.215.201.18
+  - 085 | 169ms | 104.18.12.229
+  - 086 | 171ms | 206.223.183.16
+  - 087 | 171ms | 23.133.176.14
+  - 088 | 173ms | 206.223.161.47
+  - 089 | 176ms | 12.202.180.118
+  - 090 | 178ms | 206.223.183.21
+  - 091 | 179ms | 38.247.141.135
+  - 092 | 181ms | 68.235.56.51
+  - 093 | 183ms | 142.44.210.129
+  - 094 | 183ms | 12.202.180.118
+  - 095 | 184ms | 104.25.199.149
+  - 096 | 186ms | 12.202.180.10
+  - 097 | 187ms | 66.163.114.132
+  - 098 | 187ms | 66.163.114.114
+  - 099 | 189ms | 66.163.114.166
+  - 100 | 193ms | 12.221.146.147
 rules:
 - MATCH,PROXY
