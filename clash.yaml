@@ -55,11 +55,14 @@ proxies:
   xudp: true
   packet-encoding: xudp
   servername: wallweb-4r0.pages.dev
-- name: 006 | 388ms | ❓Other_9/673KB/s/R002-260618 [1f249084883f]
-  port: 9090
-  server: 128.199.254.13
-  sub_tag: R002-260618
+- name: 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
+  password: '1234'
+  port: 2080
+  server: 47.129.174.248
+  skip-cert-verify: true
+  sub_tag: K001-260618
   type: http
+  username: '1234'
   udp: true
 - name: 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
   password: VDJjbE0wUWxNMFE2Og
@@ -69,19 +72,21 @@ proxies:
   type: socks5
   udp: true
   username: VDJjbE0wUWxNMFE2Og
-- name: 008 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
+- name: 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
+  password: '1234'
+  port: 2080
+  server: 13.212.14.88
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  type: http
+  username: '1234'
+  udp: true
+- name: 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
   port: 443
   server: 103.86.116.118
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
-  type: http
-  udp: true
-- name: 009 | 435ms | 🇸🇬SG_94/884KB/s/P002-260618 [7385d869a22b]
-  port: 9090
-  server: 128.199.113.85
-  skip-cert-verify: true
-  sub_tag: P002-260618
   type: http
   udp: true
 - name: 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
@@ -92,7 +97,15 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 011 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
+- name: 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
+  port: 443
+  server: 43.160.239.37
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
   port: 443
   server: 103.86.117.202
   skip-cert-verify: true
@@ -100,7 +113,13 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 012 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
+- name: 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
+  port: 1080
+  server: 47.238.126.208
+  sub_tag: R002-260618
+  type: socks5
+  udp: true
+- name: 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
   password: gs4BXwT6SW
   port: 10988
   server: 154.26.192.123
@@ -110,7 +129,7 @@ proxies:
   username: fQ67Dpe5dU
   udp: true
 - type: ss
-  name: 013 | 597ms | 🇮🇹_IT_意大利 (4)
+  name: 015 | 597ms | 🇮🇹_IT_意大利 (4)
   server: 202.50.253.63
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -119,7 +138,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 014 | 602ms | 🇮🇹_IT_意大利 (8)
+  name: 016 | 602ms | 🇮🇹_IT_意大利 (8)
   server: 202.50.253.99
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -128,7 +147,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 015 | 603ms | 🇮🇹_IT_意大利
+  name: 017 | 603ms | 🇮🇹_IT_意大利
   server: 202.50.253.27
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -137,7 +156,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 016 | 607ms | 🇮🇹_IT_意大利 (9)
+  name: 018 | 607ms | 🇮🇹_IT_意大利 (9)
   server: 202.50.253.81
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -146,7 +165,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 017 | 608ms | 🇮🇹_IT_意大利 (7)
+  name: 019 | 608ms | 🇮🇹_IT_意大利 (7)
   server: 202.50.253.45
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -155,7 +174,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 018 | 609ms | 🇮🇹_IT_意大利 (3)
+  name: 020 | 609ms | 🇮🇹_IT_意大利 (3)
   server: 202.50.253.90
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -164,7 +183,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 019 | 616ms | 🇮🇹_IT_意大利 (5)
+  name: 021 | 616ms | 🇮🇹_IT_意大利 (5)
   server: 202.50.253.18
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -173,7 +192,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 020 | 626ms | 🇮🇹_IT_意大利 (10)
+  name: 022 | 626ms | 🇮🇹_IT_意大利 (10)
   server: 202.50.253.72
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -182,7 +201,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - type: ss
-  name: 021 | 630ms | 🇮🇹_IT_意大利 (2)
+  name: 023 | 630ms | 🇮🇹_IT_意大利 (2)
   server: 202.50.253.36
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -190,7 +209,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 022 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
+- name: 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
   port: 343
   server: 133.18.200.207
   skip-cert-verify: true
@@ -198,7 +217,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 023 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
+- name: 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
   port: 443
   server: 137.175.22.72
   skip-cert-verify: true
@@ -206,7 +225,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 024 | 729ms | 🇺🇸US美国丨yoyapai.com
+- name: 026 | 729ms | 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
   port: 443
@@ -218,20 +237,20 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: 025 | 740ms | US - zhuhai.uk 11
+- name: 027 | 740ms | US - zhuhai.uk 11
   type: http
   server: 137.175.22.45
   port: 443
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 026 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
+- name: 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
   port: 9090
   server: 128.199.121.61
   sub_tag: R002-260618
   type: http
   udp: true
-- name: 027 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
+- name: 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
   port: 443
   server: 137.175.22.29
   skip-cert-verify: true
@@ -240,7 +259,7 @@ proxies:
   type: http
   udp: true
 - type: ss
-  name: 028 | 794ms | 🇮🇹_IT_意大利 (6)
+  name: 030 | 794ms | 🇮🇹_IT_意大利 (6)
   server: 202.50.253.54
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -248,7 +267,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 029 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
+- name: 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
   port: 443
   server: 137.175.22.116
   skip-cert-verify: true
@@ -256,7 +275,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 030 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
+- name: 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
   port: 443
   server: 137.175.22.56
   skip-cert-verify: true
@@ -264,7 +283,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 031 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
+- name: 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
   port: 8443
   server: 44.248.167.117
   skip-cert-verify: true
@@ -272,7 +291,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 032 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
+- name: 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
   port: 443
   server: 137.175.22.85
   skip-cert-verify: true
@@ -280,7 +299,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 033 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
+- name: 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
   port: 8443
   server: 44.229.69.166
   skip-cert-verify: true
@@ -288,13 +307,13 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 034 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
+- name: 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
   port: 999
   server: 189.51.168.164
   sub_tag: P002-260618
   type: http
   udp: true
-- name: 035 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
+- name: 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
   port: 443
   server: 137.175.22.16
   skip-cert-verify: true
@@ -302,7 +321,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 036 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
+- name: 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
   client-fingerprint: chrome
   encryption: none
   network: ws
@@ -321,20 +340,7 @@ proxies:
   xudp: true
   packet-encoding: xudp
   servername: wallweb-4r0.pages.dev
-- name: 037 | 883ms | 🇩🇪 德国 / DEU 2
-  server: nl-central.v8x2b.lol
-  port: 443
-  type: vless
-  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
-  servername: nl-central.v8x2b.lol
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 038 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
+- name: 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
   port: 443
   server: 103.82.101.44
   skip-cert-verify: true
@@ -343,7 +349,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 039 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
+- name: 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
   password: 'null'
   port: 443
   server: 38.28.193.188
@@ -353,7 +359,7 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 040 | 898ms | FR - zhuhai.uk
+- name: 041 | 898ms | FR - zhuhai.uk
   type: http
   server: 87.98.174.157
   port: 6103
@@ -362,21 +368,12 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 041 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
+- name: 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
   port: 443
   server: 38.28.193.1
   skip-cert-verify: true
   sni: 38.28.193.1
   sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 042 | 907ms | 🇩🇪DE_187/4.5MB/s/P002-260618 [c242c75d0a6f]
-  password: None
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
@@ -396,9 +393,9 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 045 | 950ms | 🇳🇱NL_3/2.5MB/s
+- name: 045 | 927ms | DE_speednode_0004
   port: 443
-  server: 5.255.118.82
+  server: 213.109.163.119
   skip-cert-verify: true
   tls: true
   type: http
@@ -419,7 +416,14 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 048 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
+- name: 048 | 964ms | US_speednode_0041
+  port: 443
+  server: 64.98.50.100
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
   port: 443
   server: 51.210.167.149
   skip-cert-verify: true
@@ -427,7 +431,16 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 049 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
+- name: 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
+  port: 443
+  server: 185.140.209.235
+  skip-cert-verify: true
+  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
   port: 443
   server: 87.106.223.158
   skip-cert-verify: true
@@ -435,7 +448,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 050 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
+- name: 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
   password: None
   port: 443
   server: 64.98.50.100
@@ -445,7 +458,7 @@ proxies:
   type: http
   username: ''
   udp: true
-- name: 051 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
+- name: 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
   port: 443
   server: 34.249.214.108
   skip-cert-verify: true
@@ -453,7 +466,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 052 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
+- name: 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
   port: 443
   server: 193.233.75.115
   skip-cert-verify: true
@@ -461,7 +474,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 053 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
+- name: 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
   port: 443
   server: 18.200.158.139
   skip-cert-verify: true
@@ -469,7 +482,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 054 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
+- name: 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
   port: 443
   server: 176.94.74.21
   skip-cert-verify: true
@@ -477,7 +490,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 055 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
+- name: 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
   password: 'null'
   port: 443
   server: 103.97.88.154
@@ -487,7 +500,15 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 056 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+- name: 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
+  port: 6103
+  server: 87.98.174.157
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
   password: None
   port: 443
   server: 5.255.118.82
@@ -496,7 +517,16 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 057 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
+- name: 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+  password: None
+  port: 443
+  server: 5.255.118.82
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
   port: 9002
   server: 158.173.154.4
   skip-cert-verify: true
@@ -504,17 +534,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- client-fingerprint: chrome
-  name: 058 | 1019ms | 🇩🇪DE_10/4.0MB/s
-  network: tcp
-  password: happybirthdaydaniel
-  port: 25267
-  server: de-bots4.h1cloud.net
-  skip-cert-verify: true
-  sni: de-bots4.h1cloud.net
-  type: trojan
-  udp: true
-- name: 059 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
+- name: 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
   port: 443
   server: 4.172.245.121
   skip-cert-verify: true
@@ -522,15 +542,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 060 | 1049ms | 🇩🇪[www.v2nodes.com] trojan-DE-...
-  password: happybirthdaydaniel
-  port: 25267
-  server: de-bots4.h1cloud.net
-  skip-cert-verify: true
-  sni: t.me/FuckTheWall
-  type: trojan
-  udp: true
-- name: 061 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
+- name: 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
   port: 443
   server: 89.124.11.9
   skip-cert-verify: true
@@ -538,7 +550,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 062 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
+- name: 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
   port: 9002
   server: 84.17.47.126
   skip-cert-verify: true
@@ -546,7 +558,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 063 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
+- name: 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
   port: 443
   server: 178.219.43.226
   skip-cert-verify: true
@@ -554,7 +566,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 064 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
+- name: 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
   port: 443
   server: 62.210.27.111
   skip-cert-verify: true
@@ -562,7 +574,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 065 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
+- name: 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
   port: 9002
   server: 158.173.154.5
   skip-cert-verify: true
@@ -570,7 +582,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 066 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
+- name: 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
   port: 443
   server: 79.76.126.155
   skip-cert-verify: true
@@ -578,7 +590,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 067 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
+- name: 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
   port: 443
   server: 185.219.159.15
   skip-cert-verify: true
@@ -586,7 +598,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 068 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
+- name: 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
   password: None
   port: 9002
   server: 193.176.84.22
@@ -595,7 +607,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 069 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
+- name: 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
   password: 'null'
   port: 9002
   server: 84.17.47.149
@@ -605,7 +617,7 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 070 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
+- name: 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
   port: 443
   server: 23.133.176.14
   skip-cert-verify: true
@@ -613,7 +625,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 071 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
+- name: 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
   port: 443
   server: 94.177.163.156
   skip-cert-verify: true
@@ -621,15 +633,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 072 | 1104ms | 🇱🇻LV_4/2.0MB/s/R002-260618 [818b03a8a270]
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 073 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
+- name: 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
   password: ''
   port: 9002
   server: 84.17.47.146
@@ -639,7 +643,7 @@ proxies:
   type: http
   username: ''
   udp: true
-- name: 074 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
+- name: 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
   password: 'null'
   port: 9002
   server: 84.17.47.147
@@ -649,7 +653,7 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 075 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
+- name: 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
   port: 8090
   server: 83.206.1.225
   skip-cert-verify: true
@@ -657,7 +661,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 076 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
+- name: 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
   port: 443
   server: 162.217.114.50
   skip-cert-verify: true
@@ -665,20 +669,12 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 077 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
+- name: 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
   password: None
   port: 9002
   server: 84.17.47.123
   skip-cert-verify: true
   sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 078 | 1130ms | 🇷🇺RU_4/1.4MB/s/R002-260618 [48eeca537cae]
-  port: 1446
-  server: 46.29.166.134
-  skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
@@ -706,15 +702,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 082 | 1137ms | 🇳🇱NL_208/1.4MB/s/R002-260618 [87aaf58ab774]
-  port: 443
-  server: 185.93.106.214
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 083 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
+- name: 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
   port: 9002
   server: 84.17.47.124
   skip-cert-verify: true
@@ -722,7 +710,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 084 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
+- name: 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
   password: None
   port: 443
   server: 51.158.243.91
@@ -731,7 +719,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 085 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
+- name: 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
   port: 443
   server: 185.238.170.10
   skip-cert-verify: true
@@ -739,15 +727,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 086 | 1144ms | 🇩🇪DE_22/2.2MB/s/R002-260618 [eae87f7b4752]
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 087 | 1153ms | NL - zhuhai.uk 02
+- name: 085 | 1153ms | NL - zhuhai.uk 02
   type: http
   server: 185.93.106.214
   port: 443
@@ -755,6 +735,23 @@ proxies:
   password: 'null'
   tls: true
   skip-cert-verify: true
+  udp: true
+- name: 086 | 1153ms | NL - zhuhai.uk 02
+  type: http
+  server: 185.93.106.214
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 087 | 1157ms | LV_speednode_0021
+  password: None
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
 - name: 088 | 1157ms | LV_speednode_0021
   password: None
@@ -819,20 +816,15 @@ proxies:
     headers:
       Host: n.bitpulse.me
   udp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 093 | 1290ms | 🇩🇪DE_8/1.5MB/s
-  network: xhttp
-  port: 443
-  server: 144.31.213.229
-  servername: 6d160a52.con.fernarchive.online
+- name: 093 | 1355ms | DE - zhuhai.uk
+  type: trojan
+  server: de-bots4.h1cloud.net
+  port: 25267
+  password: happybirthdaydaniel
   tls: true
-  type: vless
+  sni: t.meFuckTheWall
+  skip-cert-verify: true
   udp: true
-  uuid: abca037b-bee5-41cc-a888-0668e4c66176
-  xhttp-opts:
-    path: /conv4/stream/77dd2aeeb94331fbff325bb48850392b
-  xudp: true
 - name: 094 | 1355ms | DE - zhuhai.uk
   type: trojan
   server: de-bots4.h1cloud.net
@@ -842,7 +834,16 @@ proxies:
   sni: t.meFuckTheWall
   skip-cert-verify: true
   udp: true
-- name: 095 | 1428ms | 🇮🇷 伊朗 / IRN
+- name: 095 | 1355ms | DE - zhuhai.uk
+  type: trojan
+  server: de-bots4.h1cloud.net
+  port: 25267
+  password: happybirthdaydaniel
+  tls: true
+  sni: t.meFuckTheWall
+  skip-cert-verify: true
+  udp: true
+- name: 096 | 1428ms | 🇮🇷 伊朗 / IRN
   server: tunell2027.crackerbinam.org
   port: 48312
   type: vless
@@ -862,7 +863,7 @@ proxies:
       Host:
       - www.cloudflare.com
   udp: true
-- name: 096 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
+- name: 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
   client-fingerprint: chrome
   network: tcp
   port: 15656
@@ -875,19 +876,6 @@ proxies:
   xudp: true
   packet-encoding: xudp
   servername: ph001.zestapp778.com
-- name: 097 | 2075ms | 🇺🇸 美国 / USA 2
-  server: 79.182.39.57
-  port: 443
-  type: vless
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
-  tls: true
-  reality-opts:
-    public-key: 5KZVzOFqMgdL47--JzLlg5HmPlAYp-cmQsXxkTXngS0
-    short-id: 8d50d3a4df71468c
-  servername: f36f5ft.us4.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 098 | 2475ms | 🇹🇷 土耳其 / TUR
   server: tr2.h1cloud.net
   port: 25021
@@ -932,98 +920,98 @@ proxy-groups:
   - 003 | 299ms | 🇸🇬SG_59/476KB/s/R002-260618 [50a568bb2adc]
   - 004 | 305ms | ❓Other_15/887KB/s/R002-260618 [b220905f4ba2]
   - 005 | 368ms | 🇫🇷FR_284/545KB/s/F003-260618 [950debb9a438]
-  - 006 | 388ms | ❓Other_9/673KB/s/R002-260618 [1f249084883f]
+  - 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
   - 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
-  - 008 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
-  - 009 | 435ms | 🇸🇬SG_94/884KB/s/P002-260618 [7385d869a22b]
+  - 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
+  - 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
   - 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
-  - 011 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
-  - 012 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
-  - 013 | 597ms | 🇮🇹_IT_意大利 (4)
-  - 014 | 602ms | 🇮🇹_IT_意大利 (8)
-  - 015 | 603ms | 🇮🇹_IT_意大利
-  - 016 | 607ms | 🇮🇹_IT_意大利 (9)
-  - 017 | 608ms | 🇮🇹_IT_意大利 (7)
-  - 018 | 609ms | 🇮🇹_IT_意大利 (3)
-  - 019 | 616ms | 🇮🇹_IT_意大利 (5)
-  - 020 | 626ms | 🇮🇹_IT_意大利 (10)
-  - 021 | 630ms | 🇮🇹_IT_意大利 (2)
-  - 022 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
-  - 023 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
-  - 024 | 729ms | 🇺🇸US美国丨yoyapai.com
-  - 025 | 740ms | US - zhuhai.uk 11
-  - 026 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
-  - 027 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
-  - 028 | 794ms | 🇮🇹_IT_意大利 (6)
-  - 029 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
-  - 030 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
-  - 031 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
-  - 032 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
-  - 033 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
-  - 034 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
-  - 035 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
-  - 036 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
-  - 037 | 883ms | 🇩🇪 德国 / DEU 2
-  - 038 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
-  - 039 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
-  - 040 | 898ms | FR - zhuhai.uk
-  - 041 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
-  - 042 | 907ms | 🇩🇪DE_187/4.5MB/s/P002-260618 [c242c75d0a6f]
+  - 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
+  - 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
+  - 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
+  - 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
+  - 015 | 597ms | 🇮🇹_IT_意大利 (4)
+  - 016 | 602ms | 🇮🇹_IT_意大利 (8)
+  - 017 | 603ms | 🇮🇹_IT_意大利
+  - 018 | 607ms | 🇮🇹_IT_意大利 (9)
+  - 019 | 608ms | 🇮🇹_IT_意大利 (7)
+  - 020 | 609ms | 🇮🇹_IT_意大利 (3)
+  - 021 | 616ms | 🇮🇹_IT_意大利 (5)
+  - 022 | 626ms | 🇮🇹_IT_意大利 (10)
+  - 023 | 630ms | 🇮🇹_IT_意大利 (2)
+  - 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
+  - 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
+  - 026 | 729ms | 🇺🇸US美国丨yoyapai.com
+  - 027 | 740ms | US - zhuhai.uk 11
+  - 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
+  - 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
+  - 030 | 794ms | 🇮🇹_IT_意大利 (6)
+  - 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
+  - 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
+  - 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
+  - 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
+  - 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
+  - 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
+  - 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
+  - 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
+  - 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
+  - 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
+  - 041 | 898ms | FR - zhuhai.uk
+  - 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
   - 043 | 914ms | 🇫🇷FR_27/1.8MB/s/R002-260618 [31a8661c0de3]
   - 044 | 927ms | DE_speednode_0004
-  - 045 | 950ms | 🇳🇱NL_3/2.5MB/s
+  - 045 | 927ms | DE_speednode_0004
   - 046 | 954ms | 🇳🇱NL_239/266KB/s/R002-260618 [1ab44c194f27]
   - 047 | 960ms | 🇳🇱NL_272/1.6MB/s/R002-260618 [5ca84f13fa08]
-  - 048 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
-  - 049 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
-  - 050 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
-  - 051 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
-  - 052 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
-  - 053 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
-  - 054 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
-  - 055 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
-  - 056 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 057 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
-  - 058 | 1019ms | 🇩🇪DE_10/4.0MB/s
-  - 059 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
-  - 060 | 1049ms | 🇩🇪[www.v2nodes.com] trojan-DE-...
-  - 061 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
-  - 062 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
-  - 063 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
-  - 064 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
-  - 065 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
-  - 066 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
-  - 067 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
-  - 068 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
-  - 069 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
-  - 070 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
-  - 071 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
-  - 072 | 1104ms | 🇱🇻LV_4/2.0MB/s/R002-260618 [818b03a8a270]
-  - 073 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
-  - 074 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
-  - 075 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
-  - 076 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
-  - 077 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
-  - 078 | 1130ms | 🇷🇺RU_4/1.4MB/s/R002-260618 [48eeca537cae]
+  - 048 | 964ms | US_speednode_0041
+  - 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
+  - 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
+  - 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
+  - 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
+  - 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
+  - 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
+  - 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
+  - 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
+  - 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
+  - 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
+  - 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+  - 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+  - 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
+  - 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
+  - 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
+  - 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
+  - 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
+  - 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
+  - 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
+  - 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
+  - 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
+  - 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
+  - 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
+  - 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
+  - 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
+  - 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
+  - 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
+  - 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
+  - 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
+  - 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
   - 079 | 1130ms | 🇳🇱NL_88/1.2MB/s/R002-260618 [9d40bb46c3cd]
   - 080 | 1131ms | 🇺🇸US_216/819KB/s/R002-260618 [f3757137fc03]
   - 081 | 1131ms | 🇫🇷FR_213/2.0MB/s/R002-260618 [be42dcdcad27]
-  - 082 | 1137ms | 🇳🇱NL_208/1.4MB/s/R002-260618 [87aaf58ab774]
-  - 083 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
-  - 084 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
-  - 085 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
-  - 086 | 1144ms | 🇩🇪DE_22/2.2MB/s/R002-260618 [eae87f7b4752]
-  - 087 | 1153ms | NL - zhuhai.uk 02
+  - 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
+  - 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
+  - 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
+  - 085 | 1153ms | NL - zhuhai.uk 02
+  - 086 | 1153ms | NL - zhuhai.uk 02
+  - 087 | 1157ms | LV_speednode_0021
   - 088 | 1157ms | LV_speednode_0021
   - 089 | 1159ms | 🇺🇸US_227/1021KB/s/R002-260618 [e971c1f60e14]
   - 090 | 1160ms | 巴西 002
   - 091 | 1205ms | 🇫🇮FI芬兰丨yoyapai.com_5
   - 092 | 1227ms | 🇩🇪 德国 / DEU 5
-  - 093 | 1290ms | 🇩🇪DE_8/1.5MB/s
+  - 093 | 1355ms | DE - zhuhai.uk
   - 094 | 1355ms | DE - zhuhai.uk
-  - 095 | 1428ms | 🇮🇷 伊朗 / IRN
-  - 096 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
-  - 097 | 2075ms | 🇺🇸 美国 / USA 2
+  - 095 | 1355ms | DE - zhuhai.uk
+  - 096 | 1428ms | 🇮🇷 伊朗 / IRN
+  - 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
   - 098 | 2475ms | 🇹🇷 土耳其 / TUR
   - 099 | 3069ms | ❓未知丨yoyapai.com_36
   - 100 | 4005ms | 🇩🇪 德国 / DEU 7
@@ -1041,98 +1029,98 @@ proxy-groups:
   - 003 | 299ms | 🇸🇬SG_59/476KB/s/R002-260618 [50a568bb2adc]
   - 004 | 305ms | ❓Other_15/887KB/s/R002-260618 [b220905f4ba2]
   - 005 | 368ms | 🇫🇷FR_284/545KB/s/F003-260618 [950debb9a438]
-  - 006 | 388ms | ❓Other_9/673KB/s/R002-260618 [1f249084883f]
+  - 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
   - 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
-  - 008 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
-  - 009 | 435ms | 🇸🇬SG_94/884KB/s/P002-260618 [7385d869a22b]
+  - 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
+  - 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
   - 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
-  - 011 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
-  - 012 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
-  - 013 | 597ms | 🇮🇹_IT_意大利 (4)
-  - 014 | 602ms | 🇮🇹_IT_意大利 (8)
-  - 015 | 603ms | 🇮🇹_IT_意大利
-  - 016 | 607ms | 🇮🇹_IT_意大利 (9)
-  - 017 | 608ms | 🇮🇹_IT_意大利 (7)
-  - 018 | 609ms | 🇮🇹_IT_意大利 (3)
-  - 019 | 616ms | 🇮🇹_IT_意大利 (5)
-  - 020 | 626ms | 🇮🇹_IT_意大利 (10)
-  - 021 | 630ms | 🇮🇹_IT_意大利 (2)
-  - 022 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
-  - 023 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
-  - 024 | 729ms | 🇺🇸US美国丨yoyapai.com
-  - 025 | 740ms | US - zhuhai.uk 11
-  - 026 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
-  - 027 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
-  - 028 | 794ms | 🇮🇹_IT_意大利 (6)
-  - 029 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
-  - 030 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
-  - 031 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
-  - 032 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
-  - 033 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
-  - 034 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
-  - 035 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
-  - 036 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
-  - 037 | 883ms | 🇩🇪 德国 / DEU 2
-  - 038 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
-  - 039 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
-  - 040 | 898ms | FR - zhuhai.uk
-  - 041 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
-  - 042 | 907ms | 🇩🇪DE_187/4.5MB/s/P002-260618 [c242c75d0a6f]
+  - 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
+  - 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
+  - 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
+  - 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
+  - 015 | 597ms | 🇮🇹_IT_意大利 (4)
+  - 016 | 602ms | 🇮🇹_IT_意大利 (8)
+  - 017 | 603ms | 🇮🇹_IT_意大利
+  - 018 | 607ms | 🇮🇹_IT_意大利 (9)
+  - 019 | 608ms | 🇮🇹_IT_意大利 (7)
+  - 020 | 609ms | 🇮🇹_IT_意大利 (3)
+  - 021 | 616ms | 🇮🇹_IT_意大利 (5)
+  - 022 | 626ms | 🇮🇹_IT_意大利 (10)
+  - 023 | 630ms | 🇮🇹_IT_意大利 (2)
+  - 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
+  - 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
+  - 026 | 729ms | 🇺🇸US美国丨yoyapai.com
+  - 027 | 740ms | US - zhuhai.uk 11
+  - 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
+  - 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
+  - 030 | 794ms | 🇮🇹_IT_意大利 (6)
+  - 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
+  - 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
+  - 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
+  - 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
+  - 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
+  - 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
+  - 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
+  - 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
+  - 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
+  - 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
+  - 041 | 898ms | FR - zhuhai.uk
+  - 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
   - 043 | 914ms | 🇫🇷FR_27/1.8MB/s/R002-260618 [31a8661c0de3]
   - 044 | 927ms | DE_speednode_0004
-  - 045 | 950ms | 🇳🇱NL_3/2.5MB/s
+  - 045 | 927ms | DE_speednode_0004
   - 046 | 954ms | 🇳🇱NL_239/266KB/s/R002-260618 [1ab44c194f27]
   - 047 | 960ms | 🇳🇱NL_272/1.6MB/s/R002-260618 [5ca84f13fa08]
-  - 048 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
-  - 049 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
-  - 050 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
-  - 051 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
-  - 052 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
-  - 053 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
-  - 054 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
-  - 055 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
-  - 056 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 057 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
-  - 058 | 1019ms | 🇩🇪DE_10/4.0MB/s
-  - 059 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
-  - 060 | 1049ms | 🇩🇪[www.v2nodes.com] trojan-DE-...
-  - 061 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
-  - 062 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
-  - 063 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
-  - 064 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
-  - 065 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
-  - 066 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
-  - 067 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
-  - 068 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
-  - 069 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
-  - 070 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
-  - 071 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
-  - 072 | 1104ms | 🇱🇻LV_4/2.0MB/s/R002-260618 [818b03a8a270]
-  - 073 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
-  - 074 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
-  - 075 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
-  - 076 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
-  - 077 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
-  - 078 | 1130ms | 🇷🇺RU_4/1.4MB/s/R002-260618 [48eeca537cae]
+  - 048 | 964ms | US_speednode_0041
+  - 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
+  - 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
+  - 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
+  - 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
+  - 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
+  - 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
+  - 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
+  - 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
+  - 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
+  - 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
+  - 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+  - 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+  - 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
+  - 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
+  - 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
+  - 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
+  - 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
+  - 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
+  - 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
+  - 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
+  - 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
+  - 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
+  - 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
+  - 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
+  - 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
+  - 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
+  - 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
+  - 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
+  - 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
+  - 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
   - 079 | 1130ms | 🇳🇱NL_88/1.2MB/s/R002-260618 [9d40bb46c3cd]
   - 080 | 1131ms | 🇺🇸US_216/819KB/s/R002-260618 [f3757137fc03]
   - 081 | 1131ms | 🇫🇷FR_213/2.0MB/s/R002-260618 [be42dcdcad27]
-  - 082 | 1137ms | 🇳🇱NL_208/1.4MB/s/R002-260618 [87aaf58ab774]
-  - 083 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
-  - 084 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
-  - 085 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
-  - 086 | 1144ms | 🇩🇪DE_22/2.2MB/s/R002-260618 [eae87f7b4752]
-  - 087 | 1153ms | NL - zhuhai.uk 02
+  - 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
+  - 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
+  - 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
+  - 085 | 1153ms | NL - zhuhai.uk 02
+  - 086 | 1153ms | NL - zhuhai.uk 02
+  - 087 | 1157ms | LV_speednode_0021
   - 088 | 1157ms | LV_speednode_0021
   - 089 | 1159ms | 🇺🇸US_227/1021KB/s/R002-260618 [e971c1f60e14]
   - 090 | 1160ms | 巴西 002
   - 091 | 1205ms | 🇫🇮FI芬兰丨yoyapai.com_5
   - 092 | 1227ms | 🇩🇪 德国 / DEU 5
-  - 093 | 1290ms | 🇩🇪DE_8/1.5MB/s
+  - 093 | 1355ms | DE - zhuhai.uk
   - 094 | 1355ms | DE - zhuhai.uk
-  - 095 | 1428ms | 🇮🇷 伊朗 / IRN
-  - 096 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
-  - 097 | 2075ms | 🇺🇸 美国 / USA 2
+  - 095 | 1355ms | DE - zhuhai.uk
+  - 096 | 1428ms | 🇮🇷 伊朗 / IRN
+  - 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
   - 098 | 2475ms | 🇹🇷 土耳其 / TUR
   - 099 | 3069ms | ❓未知丨yoyapai.com_36
   - 100 | 4005ms | 🇩🇪 德国 / DEU 7
@@ -1146,98 +1134,98 @@ proxy-groups:
   - 003 | 299ms | 🇸🇬SG_59/476KB/s/R002-260618 [50a568bb2adc]
   - 004 | 305ms | ❓Other_15/887KB/s/R002-260618 [b220905f4ba2]
   - 005 | 368ms | 🇫🇷FR_284/545KB/s/F003-260618 [950debb9a438]
-  - 006 | 388ms | ❓Other_9/673KB/s/R002-260618 [1f249084883f]
+  - 006 | 369ms | 🇸🇬SG_63/512KB/s/K001-260618 [faaccdd13b7e]
   - 007 | 411ms | ❓Other_17/213KB/s/R002-260618 [01246ba37aaa]
-  - 008 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
-  - 009 | 435ms | 🇸🇬SG_94/884KB/s/P002-260618 [7385d869a22b]
+  - 008 | 419ms | ❓Other_17/532KB/s/K001-260618 [5cc3c9bc744c]
+  - 009 | 434ms | 🇮🇩ID_2/718KB/s/R002-260618 [ec91e15d058c]
   - 010 | 446ms | 🇮🇩ID_2/696KB/s/R002-260618 [1e85b67c9f00]
-  - 011 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
-  - 012 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
-  - 013 | 597ms | 🇮🇹_IT_意大利 (4)
-  - 014 | 602ms | 🇮🇹_IT_意大利 (8)
-  - 015 | 603ms | 🇮🇹_IT_意大利
-  - 016 | 607ms | 🇮🇹_IT_意大利 (9)
-  - 017 | 608ms | 🇮🇹_IT_意大利 (7)
-  - 018 | 609ms | 🇮🇹_IT_意大利 (3)
-  - 019 | 616ms | 🇮🇹_IT_意大利 (5)
-  - 020 | 626ms | 🇮🇹_IT_意大利 (10)
-  - 021 | 630ms | 🇮🇹_IT_意大利 (2)
-  - 022 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
-  - 023 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
-  - 024 | 729ms | 🇺🇸US美国丨yoyapai.com
-  - 025 | 740ms | US - zhuhai.uk 11
-  - 026 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
-  - 027 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
-  - 028 | 794ms | 🇮🇹_IT_意大利 (6)
-  - 029 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
-  - 030 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
-  - 031 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
-  - 032 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
-  - 033 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
-  - 034 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
-  - 035 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
-  - 036 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
-  - 037 | 883ms | 🇩🇪 德国 / DEU 2
-  - 038 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
-  - 039 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
-  - 040 | 898ms | FR - zhuhai.uk
-  - 041 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
-  - 042 | 907ms | 🇩🇪DE_187/4.5MB/s/P002-260618 [c242c75d0a6f]
+  - 011 | 466ms | 🇸🇬SG_71/569KB/s/R002-260618 [c20f0bad12dd]
+  - 012 | 470ms | 🇮🇩ID_1/702KB/s/R002-260618 [964f620b2028]
+  - 013 | 491ms | 🇭🇰HK_25/421KB/s/R002-260618 [e3645e13a877]
+  - 014 | 539ms | 🇺🇸US_382/229KB/s/R002-260618 [793850fdf18c]
+  - 015 | 597ms | 🇮🇹_IT_意大利 (4)
+  - 016 | 602ms | 🇮🇹_IT_意大利 (8)
+  - 017 | 603ms | 🇮🇹_IT_意大利
+  - 018 | 607ms | 🇮🇹_IT_意大利 (9)
+  - 019 | 608ms | 🇮🇹_IT_意大利 (7)
+  - 020 | 609ms | 🇮🇹_IT_意大利 (3)
+  - 021 | 616ms | 🇮🇹_IT_意大利 (5)
+  - 022 | 626ms | 🇮🇹_IT_意大利 (10)
+  - 023 | 630ms | 🇮🇹_IT_意大利 (2)
+  - 024 | 700ms | 🇯🇵JP_50/418KB/s/P002-260618 [43c1eca10f42]
+  - 025 | 707ms | 🇺🇸US_45/216KB/s/R002-260618 [39215ca34ddc]
+  - 026 | 729ms | 🇺🇸US美国丨yoyapai.com
+  - 027 | 740ms | US - zhuhai.uk 11
+  - 028 | 748ms | 🇸🇬SG_66/330KB/s/R002-260618 [7592b0b196e4]
+  - 029 | 766ms | 🇺🇸US_47/350KB/s/R002-260618 [f680b3bec0ff]
+  - 030 | 794ms | 🇮🇹_IT_意大利 (6)
+  - 031 | 797ms | 🇺🇸US_257/200KB/s/R002-260618 [1fc116c439cd]
+  - 032 | 801ms | 🇺🇸US_372/156KB/s/R002-260618 [5f9e954fe312]
+  - 033 | 803ms | 🇺🇸US_226/559KB/s/R002-260618 [49dd046d95fd]
+  - 034 | 816ms | 🇺🇸US_228/160KB/s/R002-260618 [22a5f322cb38]
+  - 035 | 823ms | 🇺🇸US_282/625KB/s/R002-260618 [2688a0364bb4]
+  - 036 | 823ms | 🇲🇽MX_2/862KB/s/P002-260618 [134074f5823b]
+  - 037 | 850ms | 🇺🇸US_408/236KB/s/R002-260618 [3a0d63aae3da]
+  - 038 | 877ms | 🇫🇷FR_283/1.1MB/s/F003-260618 [f6168b937b65]
+  - 039 | 885ms | 🇫🇷FR_28/1.5MB/s/R002-260618 [df3cefb034a8]
+  - 040 | 892ms | 🇺🇸US_121/161KB/s/R002-260618 [535e13772931]
+  - 041 | 898ms | FR - zhuhai.uk
+  - 042 | 903ms | 🇺🇸US_51/329KB/s/R002-260618 [4832540fa4bc]
   - 043 | 914ms | 🇫🇷FR_27/1.8MB/s/R002-260618 [31a8661c0de3]
   - 044 | 927ms | DE_speednode_0004
-  - 045 | 950ms | 🇳🇱NL_3/2.5MB/s
+  - 045 | 927ms | DE_speednode_0004
   - 046 | 954ms | 🇳🇱NL_239/266KB/s/R002-260618 [1ab44c194f27]
   - 047 | 960ms | 🇳🇱NL_272/1.6MB/s/R002-260618 [5ca84f13fa08]
-  - 048 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
-  - 049 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
-  - 050 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
-  - 051 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
-  - 052 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
-  - 053 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
-  - 054 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
-  - 055 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
-  - 056 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
-  - 057 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
-  - 058 | 1019ms | 🇩🇪DE_10/4.0MB/s
-  - 059 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
-  - 060 | 1049ms | 🇩🇪[www.v2nodes.com] trojan-DE-...
-  - 061 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
-  - 062 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
-  - 063 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
-  - 064 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
-  - 065 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
-  - 066 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
-  - 067 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
-  - 068 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
-  - 069 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
-  - 070 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
-  - 071 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
-  - 072 | 1104ms | 🇱🇻LV_4/2.0MB/s/R002-260618 [818b03a8a270]
-  - 073 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
-  - 074 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
-  - 075 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
-  - 076 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
-  - 077 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
-  - 078 | 1130ms | 🇷🇺RU_4/1.4MB/s/R002-260618 [48eeca537cae]
+  - 048 | 964ms | US_speednode_0041
+  - 049 | 978ms | 🇫🇷FR_45/2.3MB/s/R002-260618 [a3d0b5e1924f]
+  - 050 | 979ms | 🇳🇱NL_137/1.4MB/s/R002-260618 [511bc38da784]
+  - 051 | 979ms | 🇩🇪DE_23/3.5MB/s/R002-260618 [ba686855c77a]
+  - 052 | 979ms | 🇺🇸US_481/888KB/s/K001-260618 [264821797083]
+  - 053 | 984ms | 🇮🇪IE_1/3.5MB/s/R002-260618 [28e6899e674e]
+  - 054 | 990ms | 🇩🇪DE_28/1.5MB/s/R002-260618 [7ec6ac94817b]
+  - 055 | 992ms | 🇮🇪IE_2/1.3MB/s/R002-260618 [ad7d5a110359]
+  - 056 | 996ms | 🇩🇪DE_6/567KB/s/R002-260618 [797bb01a95ab]
+  - 057 | 999ms | 🇳🇱NL_177/1.2MB/s/R002-260618 [11147645fc19]
+  - 058 | 999ms | 🇫🇷FR_8/824KB/s/R002-260618 [7b7481c3cec7]
+  - 059 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+  - 060 | 1009ms | 🇳🇱NL_274/2.0MB/s/P002-260618 [64363aa77890]
+  - 061 | 1018ms | 🇩🇪DE_20/2.5MB/s/R002-260618 [a8379b384075]
+  - 062 | 1040ms | 🇨🇦CA_26/1.1MB/s/R002-260618 [52d842dc27e9]
+  - 063 | 1064ms | 🇱🇹LT_3/1.7MB/s/R002-260618 [bfa4d7ad5717]
+  - 064 | 1066ms | 🇳🇱NL_172/3.8MB/s/R002-260618 [565ec6032e34]
+  - 065 | 1066ms | 🇷🇺RU_1/1.1MB/s/R002-260618 [5aeebd4fdf60]
+  - 066 | 1081ms | 🇫🇷FR_253/77KB/s/R002-260618 [e657335c76c1]
+  - 067 | 1082ms | 🇩🇪DE_19/5.1MB/s/R002-260618 [eb56d2944297]
+  - 068 | 1083ms | 🇩🇪DE_29/5.2MB/s/R002-260618 [8d37bb54f74e]
+  - 069 | 1091ms | 🇱🇻LV_5/2.3MB/s/R002-260618 [2933de132b5e]
+  - 070 | 1098ms | 🇷🇴RO_70/1.2MB/s/R002-260618 [0a23683cba9b]
+  - 071 | 1100ms | 🇳🇱NL_212/4.9MB/s/R002-260618 [ecbc8201cfbb]
+  - 072 | 1100ms | 🇺🇸US_279/894KB/s/R002-260618 [f6ef7c53e70b]
+  - 073 | 1104ms | 🇮🇹IT_7/2.0MB/s/R002-260618 [306cbcf5a202]
+  - 074 | 1104ms | 🇳🇱NL_68/5.6MB/s/P002-260618 [5d22a4a266cd]
+  - 075 | 1108ms | 🇳🇱NL_72/3.6MB/s/K001-260618 [378b1d5ed2ba]
+  - 076 | 1124ms | 🇫🇷FR_12/1.2MB/s/R002-260618 [4b53647fa1cf]
+  - 077 | 1124ms | 🇺🇸US_217/745KB/s/R002-260618 [c0c88000d4a2]
+  - 078 | 1126ms | 🇳🇱NL_303/2.6MB/s/P002-260618 [111aaa619f5f]
   - 079 | 1130ms | 🇳🇱NL_88/1.2MB/s/R002-260618 [9d40bb46c3cd]
   - 080 | 1131ms | 🇺🇸US_216/819KB/s/R002-260618 [f3757137fc03]
   - 081 | 1131ms | 🇫🇷FR_213/2.0MB/s/R002-260618 [be42dcdcad27]
-  - 082 | 1137ms | 🇳🇱NL_208/1.4MB/s/R002-260618 [87aaf58ab774]
-  - 083 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
-  - 084 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
-  - 085 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
-  - 086 | 1144ms | 🇩🇪DE_22/2.2MB/s/R002-260618 [eae87f7b4752]
-  - 087 | 1153ms | NL - zhuhai.uk 02
+  - 082 | 1138ms | 🇳🇱NL_171/5.8MB/s/R002-260618 [aee8d229a5b3]
+  - 083 | 1139ms | 🇳🇱NL_152/5.4MB/s/P002-260618 [d77b65a8fb8a]
+  - 084 | 1144ms | 🇳🇱NL_42/1.3MB/s/R002-260618 [4c2ae899be2c]
+  - 085 | 1153ms | NL - zhuhai.uk 02
+  - 086 | 1153ms | NL - zhuhai.uk 02
+  - 087 | 1157ms | LV_speednode_0021
   - 088 | 1157ms | LV_speednode_0021
   - 089 | 1159ms | 🇺🇸US_227/1021KB/s/R002-260618 [e971c1f60e14]
   - 090 | 1160ms | 巴西 002
   - 091 | 1205ms | 🇫🇮FI芬兰丨yoyapai.com_5
   - 092 | 1227ms | 🇩🇪 德国 / DEU 5
-  - 093 | 1290ms | 🇩🇪DE_8/1.5MB/s
+  - 093 | 1355ms | DE - zhuhai.uk
   - 094 | 1355ms | DE - zhuhai.uk
-  - 095 | 1428ms | 🇮🇷 伊朗 / IRN
-  - 096 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
-  - 097 | 2075ms | 🇺🇸 美国 / USA 2
+  - 095 | 1355ms | DE - zhuhai.uk
+  - 096 | 1428ms | 🇮🇷 伊朗 / IRN
+  - 097 | 1451ms | 🇵🇭PH_1/426KB/s/A004-260618 [237ca8359c19]
   - 098 | 2475ms | 🇹🇷 土耳其 / TUR
   - 099 | 3069ms | ❓未知丨yoyapai.com_36
   - 100 | 4005ms | 🇩🇪 德国 / DEU 7
