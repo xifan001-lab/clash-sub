@@ -1,6 +1,6 @@
 # ============================================================
 #  免费节点订阅  •  100 个节点
-#  生成时间: 2026-10-29 07:31 (UTC)
+#  生成时间: 2026-10-30 07:33 (UTC)
 #  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序
 #  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。
 # ============================================================
@@ -12,6 +12,42 @@ ipv6: true
 unified-delay: true
 external-controller: 127.0.0.1:9090
 proxies:
+- server: 156.146.38.167
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 001 | 47ms | 156.146.38.167
+  udp: true
+- server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 002 | 48ms | 156.146.38.168
+  udp: true
+- server: 156.146.38.170
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 003 | 50ms | 156.146.38.170
+  udp: true
+- cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+  name: 004 | 52ms | 138.199.42.68
+  udp: true
+- port: 9443
+  server: 154.47.25.78
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 005 | 58ms | 154.47.25.78
+  udp: true
 - password: 4291c983-c520-46ac-82cc-48f14bef573f
   port: 35013
   server: 129.213.91.185
@@ -19,16 +55,225 @@ proxies:
   sni: 129.213.91.185
   tls: false
   type: hysteria2
-  name: 001 | 20ms | 129.213.91.185
+  name: 006 | 63ms | 129.213.91.185
   udp: true
+- type: trojan
+  network: tcp
+  server: 216.152.155.176
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  skip-cert-verify: false
+  sni: blog.nextjobopportunityandclaimyouridealrole.com
+  name: 007 | 65ms | 216.152.155.176
+  udp: true
+- network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.155.23
+  skip-cert-verify: false
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+  type: trojan
+  name: 008 | 74ms | 216.152.155.23
+  udp: true
+- server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 009 | 77ms | 156.146.38.169
+  udp: true
+- server: 31.172.69.31
+  port: 8443
+  type: vless
+  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: H43_itYl9CE0AJiCktUfriENFmixY_MTHgX8slCrN2Q
+    short-id: a4e32c324d86cfdf
+  servername: www.samsung.com
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+  name: 010 | 78ms | 31.172.69.31
+- port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 011 | 87ms | 172.64.68.89
+- port: 443
+  server: 121.127.34.82
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 012 | 89ms | 121.127.34.82
+  udp: true
+- port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 013 | 90ms | 23.133.176.14
+  udp: true
+- port: 443
+  server: 193.239.236.134
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 014 | 90ms | 193.239.236.134
+  udp: true
+- network: ws
+  port: 2082
+  server: 104.19.95.153
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  name: 015 | 92ms | 104.19.95.153
+- network: ws
+  port: 8080
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
+  name: 016 | 92ms | 104.18.35.86
 - port: 443
   server: 172.64.69.89
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
+  name: 017 | 93ms | 172.64.69.89
   udp: true
-  name: 002 | 45ms | 172.64.69.89
+- network: ws
+  port: 8080
+  server: 172.67.71.187
+  sub_tag: A004-260618
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /sg-melbi
+  xudp: true
+  packet-encoding: xudp
+  name: 018 | 96ms | 172.67.71.187
+  udp: true
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.215.132.18
+  sub_tag: B007-260618
+  type: ss
+  name: 019 | 96ms | 185.215.132.18
+  udp: true
+- client-fingerprint: chrome
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.135.88
+  skip-cert-verify: false
+  sni: vless.herogoing.top
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /tr
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  name: 020 | 97ms | 172.67.135.88
+- type: vless
+  network: ws
+  server: 104.17.44.17
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
+  name: 021 | 98ms | 104.17.44.17
+  udp: true
+- type: http
+  server: 12.202.180.118
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  name: 022 | 100ms | 12.202.180.118
+  udp: true
+- network: ws
+  port: 2082
+  server: 172.64.150.43
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: hhlfy.twiladaphne.ndjp.net
+  name: 023 | 101ms | 172.64.150.43
+- client-fingerprint: random
+  network: ws
+  port: 2053
+  server: vl.cocopon.top
+  sub_tag: T001-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
+  ws-opts:
+    headers:
+      Host: vl.cocopon.top
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: vl.cocopon.top
+  name: 024 | 102ms | vl.cocopon.top
+- client-fingerprint: chrome
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.21.26.36
+  skip-cert-verify: false
+  sni: vless.herogoing.top
+  sub_tag: M002-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /tr
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  name: 025 | 103ms | 104.21.26.36
 - type: vless
   network: ws
   server: 104.18.0.181
@@ -39,37 +284,125 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
     path: /
-  name: 003 | 48ms | 104.18.0.181
+  name: 026 | 104ms | 104.18.0.181
   udp: true
-- port: 9443
-  server: 198.44.135.19
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.114.114
   skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
+  sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: trojan
+  name: 027 | 105ms | 66.163.114.114
   udp: true
-  name: 004 | 53ms | 198.44.135.19
-- port: 443
-  server: 198.44.135.27
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 005 | 54ms | 198.44.135.27
-- type: vless
-  server: 185.162.229.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- client-fingerprint: chrome
   network: ws
-  tls: false
+  password: bpb-trojan
+  port: 443
+  server: 172.64.80.1
+  skip-cert-verify: false
+  sni: vless.herogoing.top
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+    path: /tr
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  name: 028 | 106ms | 172.64.80.1
+- type: vless
+  server: 172.64.153.153
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: chrome
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime61.workers.dev
-  skip-cert-verify: false
+      Host: ccc.010304.xyz
+  name: 029 | 106ms | 172.64.153.153
   udp: true
-  name: 006 | 54ms | 185.162.229.40
+- type: vless
+  server: 104.18.109.147
+  port: 80
+  uuid: c29d39bd-92a4-45db-bb61-56013998617c
+  udp: true
+  network: ws
+  ws-opts:
+    path: /Telegram-XV2ry2?ed=2048
+    headers:
+      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
+  name: 030 | 108ms | 104.18.109.147
+- client-fingerprint: unsafe
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.66.1.36
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+  name: 031 | 109ms | 172.66.1.36
+  udp: true
+- server: 104.18.35.86
+  port: 2082
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 032 | 109ms | 104.18.35.86
+  udp: true
+- type: vless
+  server: 104.20.5.134
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 033 | 109ms | 104.20.5.134
+- network: tcp
+  port: 10443
+  server: 45.138.100.248
+  sub_tag: A001-260618
+  type: vless
+  udp: true
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  xudp: true
+  packet-encoding: xudp
+  servername: 45.138.100.248
+  name: 034 | 109ms | 45.138.100.248
+- network: ws
+  port: 2082
+  server: 104.17.162.11
+  sub_tag: A004-260618
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  name: 035 | 110ms | 104.17.162.11
+  udp: true
 - client-fingerprint: chrome
   network: ws
   port: 443
@@ -82,15 +415,382 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-  name: 007 | 56ms | 104.18.40.100
+  name: 036 | 111ms | 104.18.40.100
   udp: true
+- type: vless
+  server: 172.64.146.66
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+  name: 037 | 111ms | 172.64.146.66
+- type: vless
+  network: ws
+  server: 172.67.131.125
+  port: 2083
+  uuid: f418674e-f518-4318-8ff9-e10000000046
+  servername: smart-edge-424.arti98399-1905.workers.dev
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: smart-edge-424.arti98399-1905.workers.dev
+    path: /sync
+  name: 038 | 113ms | 172.67.131.125
+- network: ws
+  port: 8080
+  server: 104.19.164.25
+  sub_tag: A004-260618
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /sg-melbi
+  xudp: true
+  packet-encoding: xudp
+  name: 039 | 114ms | 104.19.164.25
+  udp: true
+- network: ws
+  port: 8080
+  server: 188.114.97.6
+  sub_tag: A004-260618
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /sg-melbi
+  xudp: true
+  packet-encoding: xudp
+  name: 040 | 115ms | 188.114.97.6
+  udp: true
+- network: ws
+  port: 8080
+  server: 104.16.215.234
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /fp=chrome
+  xudp: true
+  packet-encoding: xudp
+  name: 041 | 115ms | 104.16.215.234
+- network: ws
+  port: 2082
+  server: 104.18.0.181
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /fp
+  xudp: true
+  packet-encoding: xudp
+  servername: hhlfy.twiladaphne.ndjp.net
+  name: 042 | 115ms | 104.18.0.181
+- alpn:
+  - http/1.1
+  encryption: none
+  network: ws
+  port: 8443
+  server: 172.66.44.124
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  ws-opts:
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /9BozNyvQ8VdRvsYX
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  xudp: true
+  packet-encoding: xudp
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  name: 043 | 115ms | 172.66.44.124
+- type: vless
+  server: 8.47.69.60
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: unsafe
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  name: 044 | 116ms | 8.47.69.60
+- type: vless
+  server: 172.64.150.43
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  servername: 'hhlfy.twiladaphne.ndjp.net '
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 045 | 116ms | 172.64.150.43
+  udp: true
+- type: vless
+  network: ws
+  server: 188.114.98.0
+  port: 443
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  servername: tn1r.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: tn1r.eu.cc
+    path: /id-pusat
+  name: 046 | 117ms | 188.114.98.0
+  udp: true
+- type: vless
+  network: ws
+  server: 188.114.96.9
+  port: 443
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+  name: 047 | 118ms | 188.114.96.9
+  udp: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  encryption: none
+  network: ws
+  packet-encoding: xudp
+  port: 2087
+  server: 104.18.1.1
+  sub_tag: R002-260618
+  tls: true
+  type: vless
+  uuid: 4859c235-2530-4062-9a0b-ea859cbbf861
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: 1.proxy2.us.ci.
+    max-early-data: 2560
+    path: /
+  udp: true
+  servername: 1.proxy2.us.ci.
+  name: 048 | 119ms | 104.18.1.1
 - password: None
   port: 443
-  server: 198.44.135.27
+  server: 12.202.180.118
   skip-cert-verify: true
   tls: true
   type: http
-  name: 008 | 58ms | 198.44.135.27
+  name: 049 | 119ms | 12.202.180.118
+  udp: true
+- type: vless
+  server: 172.67.79.160
+  port: 2087
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  network: ws
+  servername: cvhpyn.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
+  skip-cert-verify: false
+  name: 050 | 120ms | 172.67.79.160
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.64.145.94
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+  name: 051 | 120ms | 172.64.145.94
+  udp: true
+- encryption: none
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  ws-opts:
+    headers:
+      Host: all.speedtest03.ccwu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: all.speedtest03.ccwu.cc
+  name: 052 | 120ms | 188.114.97.6
+  udp: true
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 104.18.37.247
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: ccc.010304.xyz
+  name: 053 | 120ms | 104.18.37.247
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.114.166
+  skip-cert-verify: true
+  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: trojan
+  name: 054 | 120ms | 66.163.114.166
+  udp: true
+- type: vless
+  network: ws
+  server: 172.67.76.40
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+  name: 055 | 122ms | 172.67.76.40
+  udp: true
+- network: ws
+  port: 8080
+  server: 104.16.162.89
+  sub_tag: A004-260618
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /sg-melbi
+  xudp: true
+  packet-encoding: xudp
+  name: 056 | 122ms | 104.16.162.89
+- type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+  name: 057 | 122ms | 104.18.35.15
+- type: vless
+  server: 77.75.199.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime59.workers.dev
+  name: 058 | 123ms | 77.75.199.30
+- type: vless
+  server: 104.18.47.73
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  name: 059 | 124ms | 104.18.47.73
+- client-fingerprint: unsafe
+  encryption: none
+  network: ws
+  port: 443
+  server: 88.216.69.253
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+  name: 060 | 125ms | 88.216.69.253
+  udp: true
+- type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  servername: ccc.010304.xyz
+  tls: true
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+  skip-cert-verify: false
+  name: 061 | 125ms | 172.64.152.241
   udp: true
 - client-fingerprint: unsafe
   encryption: none
@@ -106,271 +806,46 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /fp=chrome
-  name: 009 | 58ms | 104.21.221.158
-  udp: true
-- encryption: none
-  network: ws
-  port: 8080
-  server: 104.26.12.31
-  sub_tag: M003-260806
-  type: vless
-  udp: true
-  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
-  ws-opts:
-    headers:
-      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: ip.sb
-  name: 010 | 59ms | 104.26.12.31
-- client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: 172.64.145.94
-  sub_tag: M003-260806
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  ws-opts:
-    headers:
-      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-  name: 011 | 60ms | 172.64.145.94
-- client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: ccc.010304.xyz
-  sub_tag: P001-260618
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: ccc.010304.xyz
-  name: 012 | 67ms | ccc.010304.xyz
-- client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: 172.67.160.192
-  sub_tag: X001-260618
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  ws-opts:
-    headers:
-      Host: nuclear.us.kg
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /free/103.101.153.32:443
-  xudp: true
-  packet-encoding: xudp
-  servername: nuclear.us.kg
-  name: 013 | 68ms | 172.67.160.192
-- server: 104.18.35.86
-  port: 2082
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
-  name: 014 | 70ms | 104.18.35.86
-- type: vless
-  network: ws
-  server: 104.17.44.17
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
-  name: 015 | 71ms | 104.17.44.17
-  udp: true
-- server: 185.230.230.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 016 | 71ms | 185.230.230.18
+  name: 062 | 125ms | 104.21.221.158
   udp: true
 - client-fingerprint: chrome
   encryption: none
   network: ws
   port: 443
-  server: 172.64.144.198
-  sub_tag: M003-260806
+  server: 188.164.248.216
+  sub_tag: M002-260618
   tls: true
   type: vless
   udp: true
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  ws-opts:
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  name: 017 | 72ms | 172.64.144.198
-- type: vless
-  server: 172.66.154.57
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-  name: 018 | 72ms | 172.66.154.57
-- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.122.7
-  skip-cert-verify: true
-  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
-  type: trojan
-  name: 019 | 75ms | 66.163.122.7
-  udp: true
-- client-fingerprint: unsafe
-  encryption: none
-  network: ws
-  port: 443
-  server: 88.216.69.253
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /fp=chrome
-  name: 020 | 77ms | 88.216.69.253
-  udp: true
-- type: vless
-  server: 172.64.153.153
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
     path: /
-    headers:
-      Host: ccc.010304.xyz
-  name: 021 | 77ms | 172.64.153.153
+  xudp: true
+  packet-encoding: xudp
+  servername: ccc.010304.xyz
+  name: 063 | 125ms | 188.164.248.216
 - client-fingerprint: chrome
   encryption: none
   network: ws
   port: 443
-  server: 172.64.145.82
-  sub_tag: F003-260618
+  server: chatgpt.com
+  sub_tag: S004-260618
   tls: true
   type: vless
   udp: true
-  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
-  ws-opts:
-    headers:
-      Host: cf.zhahui.de5.net
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: cf.zhahui.de5.net
-  name: 022 | 78ms | 172.64.145.82
-- client-fingerprint: chrome
-  network: ws
-  port: 443
-  server: 172.67.152.148
-  sub_tag: A001-260618
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
-  ws-opts:
-    headers:
-      Host: cf-socks.caoyuwu.eu.org
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36
-    path: /fp=chrome
-  xudp: true
-  packet-encoding: xudp
-  servername: cf-socks.caoyuwu.eu.org
-  name: 023 | 79ms | 172.67.152.148
-- type: vless
-  server: 172.67.208.235
-  port: 2096
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  udp: true
-  tls: true
-  servername: courses.mftplus.qzz.io
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: courses.mftplus.qzz.io
-  name: 024 | 80ms | 172.67.208.235
-- type: vless
-  server: 167.17.69.171
-  port: 443
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  udp: true
-  tls: true
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  name: 025 | 80ms | 167.17.69.171
-- server: 45.86.51.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 026 | 81ms | 45.86.51.18
-  udp: true
-- type: vless
-  network: ws
-  server: 104.18.45.38
-  port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: unsafe
-  encryption: none
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /fp
-  name: 027 | 83ms | 104.18.45.38
-  udp: true
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: ccc.010304.xyz
+  name: 064 | 125ms | chatgpt.com
 - client-fingerprint: chrome
   encryption: none
   network: ws
@@ -385,86 +860,7 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /fp=chrome
-  name: 028 | 83ms | 104.26.4.2
-  udp: true
-- client-fingerprint: unsafe
-  encryption: none
-  network: ws
-  port: 443
-  server: 172.66.1.36
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /
-  name: 029 | 88ms | 172.66.1.36
-  udp: true
-- type: vless
-  server: 172.64.150.43
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  servername: 'hhlfy.twiladaphne.ndjp.net '
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  name: 030 | 89ms | 172.64.150.43
-- network: ws
-  port: 8080
-  server: 172.67.71.187
-  sub_tag: A004-260618
-  type: vless
-  udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /sg-melbi
-  xudp: true
-  packet-encoding: xudp
-  name: 031 | 91ms | 172.67.71.187
-- network: ws
-  port: 8080
-  server: 188.114.97.6
-  sub_tag: A004-260618
-  type: vless
-  udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-    path: /sg-melbi
-  xudp: true
-  packet-encoding: xudp
-  name: 032 | 92ms | 188.114.97.6
-- type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  servername: ccc.010304.xyz
-  tls: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-  skip-cert-verify: false
-  udp: true
-  name: 033 | 93ms | 172.64.152.241
-- server: 15.204.247.206
-  port: 4444
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  name: 034 | 94ms | 15.204.247.206
+  name: 065 | 126ms | 104.26.4.2
   udp: true
 - client-fingerprint: chrome
   encryption: none
@@ -479,132 +875,31 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-  name: 035 | 95ms | 172.66.0.162
+  name: 066 | 126ms | 172.66.0.162
   udp: true
-- encryption: none
-  network: ws
-  port: 8080
-  server: 104.19.174.68
-  sub_tag: M003-260806
-  type: vless
-  udp: true
-  uuid: 2500e602-671c-4654-a602-c518b7282167
-  ws-opts:
-    headers:
-      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: www.digitalocean.com
-  name: 036 | 95ms | 104.19.174.68
-- server: 193.151.160.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 037 | 98ms | 193.151.160.18
-  udp: true
-- server: 193.151.160.9
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 038 | 99ms | 193.151.160.9
-  udp: true
-- encryption: none
-  network: ws
-  port: 8080
-  server: 172.67.75.172
-  sub_tag: M003-260806
-  type: vless
-  udp: true
-  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
-  ws-opts:
-    headers:
-      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  name: 039 | 100ms | 172.67.75.172
-- server: 66.163.122.81
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
-  name: 040 | 101ms | 66.163.122.81
-  udp: true
-- network: ws
-  port: 8080
-  server: 104.19.164.25
-  sub_tag: A004-260618
-  type: vless
-  udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-    path: /sg-melbi
-  xudp: true
-  packet-encoding: xudp
-  name: 041 | 101ms | 104.19.164.25
 - client-fingerprint: chrome
   network: ws
   port: 443
-  server: 172.64.144.240
-  sub_tag: M003-260806
+  server: cf.877774.xyz
+  sub_tag: S004-260618
   tls: true
   type: vless
   udp: true
-  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: pmpmppm.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /?ed=2048fp=randomized
-  xudp: true
-  packet-encoding: xudp
-  servername: pmpmppm.pages.dev
-  name: 042 | 106ms | 172.64.144.240
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.215.132.9
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-  name: 043 | 106ms | 185.215.132.9
-- network: ws
-  port: 2082
-  server: 104.17.162.11
-  sub_tag: A004-260618
-  type: vless
-  udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+      Host: ccc.010304.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /
   xudp: true
   packet-encoding: xudp
-  name: 044 | 107ms | 104.17.162.11
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.215.132.18
-  sub_tag: B007-260618
-  type: ss
-  udp: true
-  name: 045 | 107ms | 185.215.132.18
-- encryption: none
+  servername: ccc.010304.xyz
+  name: 067 | 126ms | cf.877774.xyz
+- client-fingerprint: chrome
+  encryption: none
   network: ws
   port: 443
-  server: 188.114.97.6
-  sub_tag: M003-260806
+  server: 104.18.0.1
   tls: true
   type: vless
   udp: true
@@ -612,165 +907,67 @@ proxies:
   ws-opts:
     headers:
       Host: all.speedtest03.ccwu.cc
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
     path: /
   xudp: true
   packet-encoding: xudp
   servername: all.speedtest03.ccwu.cc
-  name: 046 | 108ms | 188.114.97.6
-- server: 156.146.38.169
+  name: 068 | 127ms | 104.18.0.1
+- type: trojan
+  server: 66.163.114.45
   port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 047 | 108ms | 156.146.38.169
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-- server: 156.146.38.170
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 048 | 109ms | 156.146.38.170
-  udp: true
-- server: 156.146.38.167
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 049 | 110ms | 156.146.38.167
-  udp: true
+  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
+  name: 069 | 127ms | 66.163.114.45
 - type: vless
+  server: 172.67.68.157
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  servername: hhlfy.twiladaphne.ndjp.net
   network: ws
-  server: 188.114.98.0
-  port: 443
-  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
-  servername: tn1r.eu.cc
-  tls: true
-  client-fingerprint: chrome
   ws-opts:
+    path: /sg-melbi
     headers:
-      Host: tn1r.eu.cc
-    path: /id-pusat
-  name: 050 | 111ms | 188.114.98.0
-  udp: true
-- server: 156.146.38.168
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: 070 | 128ms | 172.67.68.157
+- type: vless
+  server: 104.17.154.123
   port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 051 | 112ms | 156.146.38.168
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-- client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: 172.64.149.65
-  sub_tag: M003-260806
   tls: true
-  type: vless
-  udp: true
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  ws-opts:
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  name: 052 | 113ms | 172.64.149.65
-- server: 104.18.35.86
-  port: 2083
-  type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  tls: true
-  servername: vlsovip.1d.mom
+  servername: ccc.010304.xyz
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: vlsovip.1d.mom
-  udp: true
-  name: 053 | 114ms | 104.18.35.86
-- client-fingerprint: chrome
-  network: ws
-  port: 443
-  server: cfnode-11ivy8.pages.dev
-  sub_tag: M003-260806
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
-  ws-opts:
-    headers:
-      Host: cfnode-11ivy8.pages.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
-    path: /ws
-  xudp: true
-  packet-encoding: xudp
-  servername: cfnode-11ivy8.pages.dev
-  name: 054 | 115ms | cfnode-11ivy8.pages.dev
-- client-fingerprint: chrome
-  network: ws
-  port: 443
-  server: epam.com
-  sub_tag: A004-260618
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
-  ws-opts:
-    headers:
-      Host: wallweb-boi.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: wallweb-boi.pages.dev
-  name: 055 | 116ms | epam.com
-- type: vless
-  network: ws
-  server: 188.114.96.9
-  port: 443
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
-  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
-  name: 056 | 118ms | 188.114.96.9
-- type: vless
-  server: 92.53.189.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
     path: /
     headers:
-      Host: vms.lifetime19.workers.dev
+      Host: ccc.010304.xyz
+  name: 071 | 128ms | 104.17.154.123
+- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.114.132
   skip-cert-verify: true
+  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: trojan
+  name: 072 | 129ms | 66.163.114.132
   udp: true
-  name: 057 | 121ms | 92.53.189.40
-- type: vless
-  server: 209.200.246.148
+- client-fingerprint: chrome
+  network: ws
   port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  udp: true
+  server: 104.18.41.86
+  servername: ccc.010304.xyz
   tls: true
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  name: 058 | 123ms | 209.200.246.148
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+  name: 073 | 130ms | 104.18.41.86
 - type: vless
   network: ws
   server: 172.67.74.90
@@ -783,124 +980,12 @@ proxies:
     headers:
       Host: cvhpyn.pages.dev
     path: /fp=chrome
-  name: 059 | 124ms | 172.67.74.90
+  name: 074 | 130ms | 172.67.74.90
   udp: true
-- network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.152.155.23
-  skip-cert-verify: false
-  sni: courses.nextjobopportunityandclaimyouridealrole.com
-  type: trojan
-  name: 060 | 124ms | 216.152.155.23
-  udp: true
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.199.42.68
-  type: ss
-  udp: true
-  name: 061 | 126ms | 138.199.42.68
-- encryption: none
-  network: ws
-  port: 8080
-  server: 104.26.13.31
-  sub_tag: M003-260806
-  type: vless
-  udp: true
-  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
-  ws-opts:
-    headers:
-      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: ip.sb
-  name: 062 | 128ms | 104.26.13.31
-- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.152.156.212
-  skip-cert-verify: true
-  sni: courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  type: trojan
-  name: 063 | 133ms | 216.152.156.212
-  udp: true
-- type: vless
-  server: 5.34.178.120
-  port: 443
-  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
-  udp: true
-  tls: true
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM
-    short-id: 55ab5559e3a6d10a
-  name: 064 | 134ms | 5.34.178.120
-- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.152.156.42
-  skip-cert-verify: true
-  sni: blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  type: trojan
-  name: 065 | 136ms | 216.152.156.42
-  udp: true
-- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.152.156.81
-  skip-cert-verify: true
-  sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  type: trojan
-  name: 066 | 136ms | 216.152.156.81
-  udp: true
-- server: 190.93.244.166
-  port: 2096
-  type: vless
-  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
-  tls: true
-  servername: wQa3mioJJR8fYoZhIui--su3-UCG1GDx.pages.DEv
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiWmFzVk5rd2siLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
-    headers:
-      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
-  udp: true
-  name: 067 | 137ms | 190.93.244.166
-- server: 216.152.156.65
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  skip-cert-verify: false
-  name: 068 | 139ms | 216.152.156.65
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: help1.digikala-aparat-zula.com
-  sub_tag: S004-260618
-  tls: true
-  type: vless
-  udp: true
-  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
-  ws-opts:
-    headers:
-      Host: wallweb-av6.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-  packet-encoding: xudp
-  servername: wallweb-av6.pages.dev
-  name: 069 | 143ms | help1.digikala-aparat-zula.com
 - type: vless
   server: 195.211.98.43
   port: 443
   uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-  udp: true
   tls: true
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
@@ -908,369 +993,460 @@ proxies:
   reality-opts:
     public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
     short-id: 9c56fddf237e8eaf
-  name: 070 | 144ms | 195.211.98.43
-- port: 9443
-  server: 154.47.25.78
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
+  name: 075 | 130ms | 195.211.98.43
   udp: true
-  name: 071 | 151ms | 154.47.25.78
-- port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 072 | 155ms | 198.44.157.19
-- port: 443
-  server: 4.172.245.121
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  name: 073 | 156ms | 4.172.245.121
-  udp: true
-- server: 137.184.174.93
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  name: 074 | 156ms | 137.184.174.93
-  udp: true
-- port: 443
-  server: 121.127.34.82
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 075 | 157ms | 121.127.34.82
-- port: 443
-  server: 193.239.236.134
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 076 | 157ms | 193.239.236.134
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.197.141.58
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-  name: 077 | 157ms | 138.197.141.58
-- password: None
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 078 | 158ms | 198.44.157.27
-  udp: true
-- password: None
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 079 | 159ms | 198.44.157.19
-  udp: true
-- port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 080 | 159ms | 198.44.157.27
 - type: vless
-  server: 172.67.79.160
-  port: 2087
-  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
-  network: ws
-  servername: cvhpyn.pages.dev
+  server: 185.95.231.156
+  port: 443
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
   tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  name: 076 | 130ms | 185.95.231.156
+- type: vless
+  server: 172.66.154.57
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  servername: ccc.010304.xyz
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: cvhpyn.pages.dev
-  skip-cert-verify: false
+      Host: ccc.010304.xyz
+  name: 077 | 132ms | 172.66.154.57
   udp: true
-  name: 081 | 161ms | 172.67.79.160
-- port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.64.144.240
+  sub_tag: M003-260806
   tls: true
-  type: http
-  name: 082 | 163ms | 206.223.183.13
+  type: vless
+  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
+  ws-opts:
+    headers:
+      Host: pmpmppm.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /?ed=2048fp=randomized
+  xudp: true
+  packet-encoding: xudp
+  servername: pmpmppm.pages.dev
+  name: 078 | 133ms | 172.64.144.240
   udp: true
-- port: 443
-  server: 68.235.56.59
+- server: 104.18.35.86
+  port: 2083
+  type: vless
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  tls: true
+  servername: vlsovip.1d.mom
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: vlsovip.1d.mom
+  name: 079 | 133ms | 104.18.35.86
+  udp: true
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.66.47.123
+  sub_tag: A004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
+  ws-opts:
+    headers:
+      Host: web-tomcat.pages.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: web-tomcat.pages.dev
+  name: 080 | 133ms | 172.66.47.123
+- cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 15.204.247.175
+  sub_tag: B007-260618
+  type: ss
+  udp: true
+  name: 081 | 133ms | 15.204.247.175
+- type: vless
+  network: ws
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: unsafe
+  encryption: none
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp
+  name: 082 | 134ms | 104.18.45.38
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.64.150.248
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
+  name: 083 | 134ms | 172.64.150.248
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: cfnode-11ivy8.pages.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  ws-opts:
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+    path: /ws
+  xudp: true
+  packet-encoding: xudp
+  servername: cfnode-11ivy8.pages.dev
+  name: 084 | 134ms | cfnode-11ivy8.pages.dev
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: ios
+  network: ws
+  port: 2083
+  server: 104.18.1.1
+  sub_tag: T001-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  ws-opts:
+    headers:
+      Host: vlsovip.1d.mom
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /socks5=888:888@hkip.1d.mom:1080
+  xudp: true
+  packet-encoding: xudp
+  servername: vlsovip.1d.mom
+  name: 085 | 137ms | 104.18.1.1
+- type: vless
+  network: ws
+  server: 104.18.35.86
+  port: 443
+  uuid: 1c7f675f-5923-463f-83fb-af4c898cecea
+  servername: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
+    path: /eyJqdW5rIjoiZWhuWFFGNWRISXBjSmRGWSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+  name: 086 | 138ms | 104.18.35.86
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.66.47.45
+  sub_tag: B007-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  ws-opts:
+    headers:
+      Host: ezaccess-project-f62c30.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  xudp: true
+  packet-encoding: xudp
+  servername: EZAcCESS-pROjECt-F62c30.PAGES.dEv
+  name: 087 | 138ms | 172.66.47.45
+- client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  sub_tag: A004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3de5a94c-aadc-4e40-ba1a-7d4b6545f8a3
+  ws-opts:
+    headers:
+      Host: oooyo.bi8bo.cyou
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: oooyo.bi8bo.cyou
+  name: 088 | 140ms | cf.090227.xyz
+- port: 9443
+  server: 198.44.135.19
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
-  udp: true
-  name: 083 | 168ms | 68.235.56.59
-- server: 95.215.201.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 084 | 168ms | 95.215.201.18
+  name: 089 | 140ms | 198.44.135.19
   udp: true
 - client-fingerprint: chrome
   network: ws
-  password: trojan
-  port: 8443
-  server: 104.18.12.229
-  sni: longwanghen.pages.dev
+  password: pH[]S[Bh:_:D6T4k
+  port: 443
+  server: 104.19.45.195
+  sni: AZaDneT-692.PagEs.DEv
   sub_tag: R002-260618
   type: trojan
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /trsVu9Ualb1DOfGjpw
   udp: true
-  name: 085 | 169ms | 104.18.12.229
+  name: 090 | 141ms | 104.19.45.195
 - password: None
   port: 443
-  server: 206.223.183.16
+  server: 198.44.135.27
   skip-cert-verify: true
-  sub_tag: P002-260618
   tls: true
   type: http
+  name: 091 | 141ms | 198.44.135.27
   udp: true
-  name: 086 | 171ms | 206.223.183.16
 - port: 443
-  server: 23.133.176.14
+  server: 198.44.135.27
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
-  name: 087 | 171ms | 23.133.176.14
-  udp: true
-- port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 088 | 173ms | 206.223.161.47
-- type: http
-  server: 12.202.180.118
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  name: 089 | 176ms | 12.202.180.118
-  udp: true
-- port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 090 | 178ms | 206.223.183.21
-- port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  name: 091 | 179ms | 38.247.141.135
-  udp: true
-- password: None
-  port: 443
-  server: 68.235.56.51
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 092 | 181ms | 68.235.56.51
-  udp: true
-- port: 443
-  server: 142.44.210.129
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 093 | 183ms | 142.44.210.129
-- password: None
-  port: 443
-  server: 12.202.180.118
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 094 | 183ms | 12.202.180.118
+  name: 092 | 142ms | 198.44.135.27
   udp: true
 - network: ws
-  packet-encoding: xudp
-  port: 80
-  server: 104.25.199.149
-  sub_tag: R002-260618
+  port: 8080
+  server: 208.84.100.209
+  sub_tag: A004-260618
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-5dd075c8ae9b
+  udp: true
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   ws-opts:
     headers:
-      Host: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
-    path: /api/ws
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  name: 093 | 142ms | 208.84.100.209
+- server: 193.151.163.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 094 | 142ms | 193.151.163.18
   udp: true
-  servername: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
-  name: 095 | 184ms | 104.25.199.149
-- password: None
+- client-fingerprint: chrome
+  network: ws
   port: 443
-  server: 12.202.180.10
+  server: cf.130519.xyz
+  sub_tag: T001-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: ccc.010304.xyz
+  name: 095 | 143ms | cf.130519.xyz
+- type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
+  udp: true
+  tls: true
+  servername: wallweb-av6.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-av6.pages.dev
+  name: 096 | 143ms | www.speedtest.net
+- password: None
+  port: 9443
+  server: 149.88.98.81
   skip-cert-verify: true
   sub_tag: K001-260618
   tls: true
   type: http
   username: ''
   udp: true
-  name: 096 | 186ms | 12.202.180.10
-- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.132
-  skip-cert-verify: true
-  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
-  type: trojan
-  name: 097 | 187ms | 66.163.114.132
+  name: 097 | 144ms | 149.88.98.81
+- server: 45.86.51.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 098 | 144ms | 45.86.51.18
   udp: true
-- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- client-fingerprint: chrome
+  network: ws
   port: 443
-  server: 66.163.114.114
-  skip-cert-verify: true
-  sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
-  type: trojan
-  name: 098 | 187ms | 66.163.114.114
+  server: 172.66.44.133
+  sub_tag: A004-260618
+  tls: true
+  type: vless
   udp: true
-- password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.166
-  skip-cert-verify: true
-  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-  type: trojan
-  name: 099 | 189ms | 66.163.114.166
-  udp: true
-- port: 443
-  server: 12.221.146.147
+  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
+  ws-opts:
+    headers:
+      Host: web-tomcat.pages.dev
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: web-tomcat.pages.dev
+  name: 099 | 145ms | 172.66.44.133
+- port: 7615
+  server: 47.90.206.169
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-  name: 100 | 193ms | 12.221.146.147
+  name: 100 | 145ms | 47.90.206.169
 proxy-groups:
 - name: AUTO-FASTEST
   type: url-test
   proxies:
-  - 001 | 20ms | 129.213.91.185
-  - 002 | 45ms | 172.64.69.89
-  - 003 | 48ms | 104.18.0.181
-  - 004 | 53ms | 198.44.135.19
-  - 005 | 54ms | 198.44.135.27
-  - 006 | 54ms | 185.162.229.40
-  - 007 | 56ms | 104.18.40.100
-  - 008 | 58ms | 198.44.135.27
-  - 009 | 58ms | 104.21.221.158
-  - 010 | 59ms | 104.26.12.31
-  - 011 | 60ms | 172.64.145.94
-  - 012 | 67ms | ccc.010304.xyz
-  - 013 | 68ms | 172.67.160.192
-  - 014 | 70ms | 104.18.35.86
-  - 015 | 71ms | 104.17.44.17
-  - 016 | 71ms | 185.230.230.18
-  - 017 | 72ms | 172.64.144.198
-  - 018 | 72ms | 172.66.154.57
-  - 019 | 75ms | 66.163.122.7
-  - 020 | 77ms | 88.216.69.253
-  - 021 | 77ms | 172.64.153.153
-  - 022 | 78ms | 172.64.145.82
-  - 023 | 79ms | 172.67.152.148
-  - 024 | 80ms | 172.67.208.235
-  - 025 | 80ms | 167.17.69.171
-  - 026 | 81ms | 45.86.51.18
-  - 027 | 83ms | 104.18.45.38
-  - 028 | 83ms | 104.26.4.2
-  - 029 | 88ms | 172.66.1.36
-  - 030 | 89ms | 172.64.150.43
-  - 031 | 91ms | 172.67.71.187
-  - 032 | 92ms | 188.114.97.6
-  - 033 | 93ms | 172.64.152.241
-  - 034 | 94ms | 15.204.247.206
-  - 035 | 95ms | 172.66.0.162
-  - 036 | 95ms | 104.19.174.68
-  - 037 | 98ms | 193.151.160.18
-  - 038 | 99ms | 193.151.160.9
-  - 039 | 100ms | 172.67.75.172
-  - 040 | 101ms | 66.163.122.81
-  - 041 | 101ms | 104.19.164.25
-  - 042 | 106ms | 172.64.144.240
-  - 043 | 106ms | 185.215.132.9
-  - 044 | 107ms | 104.17.162.11
-  - 045 | 107ms | 185.215.132.18
-  - 046 | 108ms | 188.114.97.6
-  - 047 | 108ms | 156.146.38.169
-  - 048 | 109ms | 156.146.38.170
-  - 049 | 110ms | 156.146.38.167
-  - 050 | 111ms | 188.114.98.0
-  - 051 | 112ms | 156.146.38.168
-  - 052 | 113ms | 172.64.149.65
-  - 053 | 114ms | 104.18.35.86
-  - 054 | 115ms | cfnode-11ivy8.pages.dev
-  - 055 | 116ms | epam.com
-  - 056 | 118ms | 188.114.96.9
-  - 057 | 121ms | 92.53.189.40
-  - 058 | 123ms | 209.200.246.148
-  - 059 | 124ms | 172.67.74.90
-  - 060 | 124ms | 216.152.155.23
-  - 061 | 126ms | 138.199.42.68
-  - 062 | 128ms | 104.26.13.31
-  - 063 | 133ms | 216.152.156.212
-  - 064 | 134ms | 5.34.178.120
-  - 065 | 136ms | 216.152.156.42
-  - 066 | 136ms | 216.152.156.81
-  - 067 | 137ms | 190.93.244.166
-  - 068 | 139ms | 216.152.156.65
-  - 069 | 143ms | help1.digikala-aparat-zula.com
-  - 070 | 144ms | 195.211.98.43
-  - 071 | 151ms | 154.47.25.78
-  - 072 | 155ms | 198.44.157.19
-  - 073 | 156ms | 4.172.245.121
-  - 074 | 156ms | 137.184.174.93
-  - 075 | 157ms | 121.127.34.82
-  - 076 | 157ms | 193.239.236.134
-  - 077 | 157ms | 138.197.141.58
-  - 078 | 158ms | 198.44.157.27
-  - 079 | 159ms | 198.44.157.19
-  - 080 | 159ms | 198.44.157.27
-  - 081 | 161ms | 172.67.79.160
-  - 082 | 163ms | 206.223.183.13
-  - 083 | 168ms | 68.235.56.59
-  - 084 | 168ms | 95.215.201.18
-  - 085 | 169ms | 104.18.12.229
-  - 086 | 171ms | 206.223.183.16
-  - 087 | 171ms | 23.133.176.14
-  - 088 | 173ms | 206.223.161.47
-  - 089 | 176ms | 12.202.180.118
-  - 090 | 178ms | 206.223.183.21
-  - 091 | 179ms | 38.247.141.135
-  - 092 | 181ms | 68.235.56.51
-  - 093 | 183ms | 142.44.210.129
-  - 094 | 183ms | 12.202.180.118
-  - 095 | 184ms | 104.25.199.149
-  - 096 | 186ms | 12.202.180.10
-  - 097 | 187ms | 66.163.114.132
-  - 098 | 187ms | 66.163.114.114
-  - 099 | 189ms | 66.163.114.166
-  - 100 | 193ms | 12.221.146.147
+  - 001 | 47ms | 156.146.38.167
+  - 002 | 48ms | 156.146.38.168
+  - 003 | 50ms | 156.146.38.170
+  - 004 | 52ms | 138.199.42.68
+  - 005 | 58ms | 154.47.25.78
+  - 006 | 63ms | 129.213.91.185
+  - 007 | 65ms | 216.152.155.176
+  - 008 | 74ms | 216.152.155.23
+  - 009 | 77ms | 156.146.38.169
+  - 010 | 78ms | 31.172.69.31
+  - 011 | 87ms | 172.64.68.89
+  - 012 | 89ms | 121.127.34.82
+  - 013 | 90ms | 23.133.176.14
+  - 014 | 90ms | 193.239.236.134
+  - 015 | 92ms | 104.19.95.153
+  - 016 | 92ms | 104.18.35.86
+  - 017 | 93ms | 172.64.69.89
+  - 018 | 96ms | 172.67.71.187
+  - 019 | 96ms | 185.215.132.18
+  - 020 | 97ms | 172.67.135.88
+  - 021 | 98ms | 104.17.44.17
+  - 022 | 100ms | 12.202.180.118
+  - 023 | 101ms | 172.64.150.43
+  - 024 | 102ms | vl.cocopon.top
+  - 025 | 103ms | 104.21.26.36
+  - 026 | 104ms | 104.18.0.181
+  - 027 | 105ms | 66.163.114.114
+  - 028 | 106ms | 172.64.80.1
+  - 029 | 106ms | 172.64.153.153
+  - 030 | 108ms | 104.18.109.147
+  - 031 | 109ms | 172.66.1.36
+  - 032 | 109ms | 104.18.35.86
+  - 033 | 109ms | 104.20.5.134
+  - 034 | 109ms | 45.138.100.248
+  - 035 | 110ms | 104.17.162.11
+  - 036 | 111ms | 104.18.40.100
+  - 037 | 111ms | 172.64.146.66
+  - 038 | 113ms | 172.67.131.125
+  - 039 | 114ms | 104.19.164.25
+  - 040 | 115ms | 188.114.97.6
+  - 041 | 115ms | 104.16.215.234
+  - 042 | 115ms | 104.18.0.181
+  - 043 | 115ms | 172.66.44.124
+  - 044 | 116ms | 8.47.69.60
+  - 045 | 116ms | 172.64.150.43
+  - 046 | 117ms | 188.114.98.0
+  - 047 | 118ms | 188.114.96.9
+  - 048 | 119ms | 104.18.1.1
+  - 049 | 119ms | 12.202.180.118
+  - 050 | 120ms | 172.67.79.160
+  - 051 | 120ms | 172.64.145.94
+  - 052 | 120ms | 188.114.97.6
+  - 053 | 120ms | 104.18.37.247
+  - 054 | 120ms | 66.163.114.166
+  - 055 | 122ms | 172.67.76.40
+  - 056 | 122ms | 104.16.162.89
+  - 057 | 122ms | 104.18.35.15
+  - 058 | 123ms | 77.75.199.30
+  - 059 | 124ms | 104.18.47.73
+  - 060 | 125ms | 88.216.69.253
+  - 061 | 125ms | 172.64.152.241
+  - 062 | 125ms | 104.21.221.158
+  - 063 | 125ms | 188.164.248.216
+  - 064 | 125ms | chatgpt.com
+  - 065 | 126ms | 104.26.4.2
+  - 066 | 126ms | 172.66.0.162
+  - 067 | 126ms | cf.877774.xyz
+  - 068 | 127ms | 104.18.0.1
+  - 069 | 127ms | 66.163.114.45
+  - 070 | 128ms | 172.67.68.157
+  - 071 | 128ms | 104.17.154.123
+  - 072 | 129ms | 66.163.114.132
+  - 073 | 130ms | 104.18.41.86
+  - 074 | 130ms | 172.67.74.90
+  - 075 | 130ms | 195.211.98.43
+  - 076 | 130ms | 185.95.231.156
+  - 077 | 132ms | 172.66.154.57
+  - 078 | 133ms | 172.64.144.240
+  - 079 | 133ms | 104.18.35.86
+  - 080 | 133ms | 172.66.47.123
+  - 081 | 133ms | 15.204.247.175
+  - 082 | 134ms | 104.18.45.38
+  - 083 | 134ms | 172.64.150.248
+  - 084 | 134ms | cfnode-11ivy8.pages.dev
+  - 085 | 137ms | 104.18.1.1
+  - 086 | 138ms | 104.18.35.86
+  - 087 | 138ms | 172.66.47.45
+  - 088 | 140ms | cf.090227.xyz
+  - 089 | 140ms | 198.44.135.19
+  - 090 | 141ms | 104.19.45.195
+  - 091 | 141ms | 198.44.135.27
+  - 092 | 142ms | 198.44.135.27
+  - 093 | 142ms | 208.84.100.209
+  - 094 | 142ms | 193.151.163.18
+  - 095 | 143ms | cf.130519.xyz
+  - 096 | 143ms | www.speedtest.net
+  - 097 | 144ms | 149.88.98.81
+  - 098 | 144ms | 45.86.51.18
+  - 099 | 145ms | 172.66.44.133
+  - 100 | 145ms | 47.90.206.169
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -1280,211 +1456,211 @@ proxy-groups:
   proxies:
   - AUTO-FASTEST
   - DIRECT
-  - 001 | 20ms | 129.213.91.185
-  - 002 | 45ms | 172.64.69.89
-  - 003 | 48ms | 104.18.0.181
-  - 004 | 53ms | 198.44.135.19
-  - 005 | 54ms | 198.44.135.27
-  - 006 | 54ms | 185.162.229.40
-  - 007 | 56ms | 104.18.40.100
-  - 008 | 58ms | 198.44.135.27
-  - 009 | 58ms | 104.21.221.158
-  - 010 | 59ms | 104.26.12.31
-  - 011 | 60ms | 172.64.145.94
-  - 012 | 67ms | ccc.010304.xyz
-  - 013 | 68ms | 172.67.160.192
-  - 014 | 70ms | 104.18.35.86
-  - 015 | 71ms | 104.17.44.17
-  - 016 | 71ms | 185.230.230.18
-  - 017 | 72ms | 172.64.144.198
-  - 018 | 72ms | 172.66.154.57
-  - 019 | 75ms | 66.163.122.7
-  - 020 | 77ms | 88.216.69.253
-  - 021 | 77ms | 172.64.153.153
-  - 022 | 78ms | 172.64.145.82
-  - 023 | 79ms | 172.67.152.148
-  - 024 | 80ms | 172.67.208.235
-  - 025 | 80ms | 167.17.69.171
-  - 026 | 81ms | 45.86.51.18
-  - 027 | 83ms | 104.18.45.38
-  - 028 | 83ms | 104.26.4.2
-  - 029 | 88ms | 172.66.1.36
-  - 030 | 89ms | 172.64.150.43
-  - 031 | 91ms | 172.67.71.187
-  - 032 | 92ms | 188.114.97.6
-  - 033 | 93ms | 172.64.152.241
-  - 034 | 94ms | 15.204.247.206
-  - 035 | 95ms | 172.66.0.162
-  - 036 | 95ms | 104.19.174.68
-  - 037 | 98ms | 193.151.160.18
-  - 038 | 99ms | 193.151.160.9
-  - 039 | 100ms | 172.67.75.172
-  - 040 | 101ms | 66.163.122.81
-  - 041 | 101ms | 104.19.164.25
-  - 042 | 106ms | 172.64.144.240
-  - 043 | 106ms | 185.215.132.9
-  - 044 | 107ms | 104.17.162.11
-  - 045 | 107ms | 185.215.132.18
-  - 046 | 108ms | 188.114.97.6
-  - 047 | 108ms | 156.146.38.169
-  - 048 | 109ms | 156.146.38.170
-  - 049 | 110ms | 156.146.38.167
-  - 050 | 111ms | 188.114.98.0
-  - 051 | 112ms | 156.146.38.168
-  - 052 | 113ms | 172.64.149.65
-  - 053 | 114ms | 104.18.35.86
-  - 054 | 115ms | cfnode-11ivy8.pages.dev
-  - 055 | 116ms | epam.com
-  - 056 | 118ms | 188.114.96.9
-  - 057 | 121ms | 92.53.189.40
-  - 058 | 123ms | 209.200.246.148
-  - 059 | 124ms | 172.67.74.90
-  - 060 | 124ms | 216.152.155.23
-  - 061 | 126ms | 138.199.42.68
-  - 062 | 128ms | 104.26.13.31
-  - 063 | 133ms | 216.152.156.212
-  - 064 | 134ms | 5.34.178.120
-  - 065 | 136ms | 216.152.156.42
-  - 066 | 136ms | 216.152.156.81
-  - 067 | 137ms | 190.93.244.166
-  - 068 | 139ms | 216.152.156.65
-  - 069 | 143ms | help1.digikala-aparat-zula.com
-  - 070 | 144ms | 195.211.98.43
-  - 071 | 151ms | 154.47.25.78
-  - 072 | 155ms | 198.44.157.19
-  - 073 | 156ms | 4.172.245.121
-  - 074 | 156ms | 137.184.174.93
-  - 075 | 157ms | 121.127.34.82
-  - 076 | 157ms | 193.239.236.134
-  - 077 | 157ms | 138.197.141.58
-  - 078 | 158ms | 198.44.157.27
-  - 079 | 159ms | 198.44.157.19
-  - 080 | 159ms | 198.44.157.27
-  - 081 | 161ms | 172.67.79.160
-  - 082 | 163ms | 206.223.183.13
-  - 083 | 168ms | 68.235.56.59
-  - 084 | 168ms | 95.215.201.18
-  - 085 | 169ms | 104.18.12.229
-  - 086 | 171ms | 206.223.183.16
-  - 087 | 171ms | 23.133.176.14
-  - 088 | 173ms | 206.223.161.47
-  - 089 | 176ms | 12.202.180.118
-  - 090 | 178ms | 206.223.183.21
-  - 091 | 179ms | 38.247.141.135
-  - 092 | 181ms | 68.235.56.51
-  - 093 | 183ms | 142.44.210.129
-  - 094 | 183ms | 12.202.180.118
-  - 095 | 184ms | 104.25.199.149
-  - 096 | 186ms | 12.202.180.10
-  - 097 | 187ms | 66.163.114.132
-  - 098 | 187ms | 66.163.114.114
-  - 099 | 189ms | 66.163.114.166
-  - 100 | 193ms | 12.221.146.147
+  - 001 | 47ms | 156.146.38.167
+  - 002 | 48ms | 156.146.38.168
+  - 003 | 50ms | 156.146.38.170
+  - 004 | 52ms | 138.199.42.68
+  - 005 | 58ms | 154.47.25.78
+  - 006 | 63ms | 129.213.91.185
+  - 007 | 65ms | 216.152.155.176
+  - 008 | 74ms | 216.152.155.23
+  - 009 | 77ms | 156.146.38.169
+  - 010 | 78ms | 31.172.69.31
+  - 011 | 87ms | 172.64.68.89
+  - 012 | 89ms | 121.127.34.82
+  - 013 | 90ms | 23.133.176.14
+  - 014 | 90ms | 193.239.236.134
+  - 015 | 92ms | 104.19.95.153
+  - 016 | 92ms | 104.18.35.86
+  - 017 | 93ms | 172.64.69.89
+  - 018 | 96ms | 172.67.71.187
+  - 019 | 96ms | 185.215.132.18
+  - 020 | 97ms | 172.67.135.88
+  - 021 | 98ms | 104.17.44.17
+  - 022 | 100ms | 12.202.180.118
+  - 023 | 101ms | 172.64.150.43
+  - 024 | 102ms | vl.cocopon.top
+  - 025 | 103ms | 104.21.26.36
+  - 026 | 104ms | 104.18.0.181
+  - 027 | 105ms | 66.163.114.114
+  - 028 | 106ms | 172.64.80.1
+  - 029 | 106ms | 172.64.153.153
+  - 030 | 108ms | 104.18.109.147
+  - 031 | 109ms | 172.66.1.36
+  - 032 | 109ms | 104.18.35.86
+  - 033 | 109ms | 104.20.5.134
+  - 034 | 109ms | 45.138.100.248
+  - 035 | 110ms | 104.17.162.11
+  - 036 | 111ms | 104.18.40.100
+  - 037 | 111ms | 172.64.146.66
+  - 038 | 113ms | 172.67.131.125
+  - 039 | 114ms | 104.19.164.25
+  - 040 | 115ms | 188.114.97.6
+  - 041 | 115ms | 104.16.215.234
+  - 042 | 115ms | 104.18.0.181
+  - 043 | 115ms | 172.66.44.124
+  - 044 | 116ms | 8.47.69.60
+  - 045 | 116ms | 172.64.150.43
+  - 046 | 117ms | 188.114.98.0
+  - 047 | 118ms | 188.114.96.9
+  - 048 | 119ms | 104.18.1.1
+  - 049 | 119ms | 12.202.180.118
+  - 050 | 120ms | 172.67.79.160
+  - 051 | 120ms | 172.64.145.94
+  - 052 | 120ms | 188.114.97.6
+  - 053 | 120ms | 104.18.37.247
+  - 054 | 120ms | 66.163.114.166
+  - 055 | 122ms | 172.67.76.40
+  - 056 | 122ms | 104.16.162.89
+  - 057 | 122ms | 104.18.35.15
+  - 058 | 123ms | 77.75.199.30
+  - 059 | 124ms | 104.18.47.73
+  - 060 | 125ms | 88.216.69.253
+  - 061 | 125ms | 172.64.152.241
+  - 062 | 125ms | 104.21.221.158
+  - 063 | 125ms | 188.164.248.216
+  - 064 | 125ms | chatgpt.com
+  - 065 | 126ms | 104.26.4.2
+  - 066 | 126ms | 172.66.0.162
+  - 067 | 126ms | cf.877774.xyz
+  - 068 | 127ms | 104.18.0.1
+  - 069 | 127ms | 66.163.114.45
+  - 070 | 128ms | 172.67.68.157
+  - 071 | 128ms | 104.17.154.123
+  - 072 | 129ms | 66.163.114.132
+  - 073 | 130ms | 104.18.41.86
+  - 074 | 130ms | 172.67.74.90
+  - 075 | 130ms | 195.211.98.43
+  - 076 | 130ms | 185.95.231.156
+  - 077 | 132ms | 172.66.154.57
+  - 078 | 133ms | 172.64.144.240
+  - 079 | 133ms | 104.18.35.86
+  - 080 | 133ms | 172.66.47.123
+  - 081 | 133ms | 15.204.247.175
+  - 082 | 134ms | 104.18.45.38
+  - 083 | 134ms | 172.64.150.248
+  - 084 | 134ms | cfnode-11ivy8.pages.dev
+  - 085 | 137ms | 104.18.1.1
+  - 086 | 138ms | 104.18.35.86
+  - 087 | 138ms | 172.66.47.45
+  - 088 | 140ms | cf.090227.xyz
+  - 089 | 140ms | 198.44.135.19
+  - 090 | 141ms | 104.19.45.195
+  - 091 | 141ms | 198.44.135.27
+  - 092 | 142ms | 198.44.135.27
+  - 093 | 142ms | 208.84.100.209
+  - 094 | 142ms | 193.151.163.18
+  - 095 | 143ms | cf.130519.xyz
+  - 096 | 143ms | www.speedtest.net
+  - 097 | 144ms | 149.88.98.81
+  - 098 | 144ms | 45.86.51.18
+  - 099 | 145ms | 172.66.44.133
+  - 100 | 145ms | 47.90.206.169
 - name: GLOBAL
   type: select
   proxies:
   - AUTO-FASTEST
   - PROXY
   - DIRECT
-  - 001 | 20ms | 129.213.91.185
-  - 002 | 45ms | 172.64.69.89
-  - 003 | 48ms | 104.18.0.181
-  - 004 | 53ms | 198.44.135.19
-  - 005 | 54ms | 198.44.135.27
-  - 006 | 54ms | 185.162.229.40
-  - 007 | 56ms | 104.18.40.100
-  - 008 | 58ms | 198.44.135.27
-  - 009 | 58ms | 104.21.221.158
-  - 010 | 59ms | 104.26.12.31
-  - 011 | 60ms | 172.64.145.94
-  - 012 | 67ms | ccc.010304.xyz
-  - 013 | 68ms | 172.67.160.192
-  - 014 | 70ms | 104.18.35.86
-  - 015 | 71ms | 104.17.44.17
-  - 016 | 71ms | 185.230.230.18
-  - 017 | 72ms | 172.64.144.198
-  - 018 | 72ms | 172.66.154.57
-  - 019 | 75ms | 66.163.122.7
-  - 020 | 77ms | 88.216.69.253
-  - 021 | 77ms | 172.64.153.153
-  - 022 | 78ms | 172.64.145.82
-  - 023 | 79ms | 172.67.152.148
-  - 024 | 80ms | 172.67.208.235
-  - 025 | 80ms | 167.17.69.171
-  - 026 | 81ms | 45.86.51.18
-  - 027 | 83ms | 104.18.45.38
-  - 028 | 83ms | 104.26.4.2
-  - 029 | 88ms | 172.66.1.36
-  - 030 | 89ms | 172.64.150.43
-  - 031 | 91ms | 172.67.71.187
-  - 032 | 92ms | 188.114.97.6
-  - 033 | 93ms | 172.64.152.241
-  - 034 | 94ms | 15.204.247.206
-  - 035 | 95ms | 172.66.0.162
-  - 036 | 95ms | 104.19.174.68
-  - 037 | 98ms | 193.151.160.18
-  - 038 | 99ms | 193.151.160.9
-  - 039 | 100ms | 172.67.75.172
-  - 040 | 101ms | 66.163.122.81
-  - 041 | 101ms | 104.19.164.25
-  - 042 | 106ms | 172.64.144.240
-  - 043 | 106ms | 185.215.132.9
-  - 044 | 107ms | 104.17.162.11
-  - 045 | 107ms | 185.215.132.18
-  - 046 | 108ms | 188.114.97.6
-  - 047 | 108ms | 156.146.38.169
-  - 048 | 109ms | 156.146.38.170
-  - 049 | 110ms | 156.146.38.167
-  - 050 | 111ms | 188.114.98.0
-  - 051 | 112ms | 156.146.38.168
-  - 052 | 113ms | 172.64.149.65
-  - 053 | 114ms | 104.18.35.86
-  - 054 | 115ms | cfnode-11ivy8.pages.dev
-  - 055 | 116ms | epam.com
-  - 056 | 118ms | 188.114.96.9
-  - 057 | 121ms | 92.53.189.40
-  - 058 | 123ms | 209.200.246.148
-  - 059 | 124ms | 172.67.74.90
-  - 060 | 124ms | 216.152.155.23
-  - 061 | 126ms | 138.199.42.68
-  - 062 | 128ms | 104.26.13.31
-  - 063 | 133ms | 216.152.156.212
-  - 064 | 134ms | 5.34.178.120
-  - 065 | 136ms | 216.152.156.42
-  - 066 | 136ms | 216.152.156.81
-  - 067 | 137ms | 190.93.244.166
-  - 068 | 139ms | 216.152.156.65
-  - 069 | 143ms | help1.digikala-aparat-zula.com
-  - 070 | 144ms | 195.211.98.43
-  - 071 | 151ms | 154.47.25.78
-  - 072 | 155ms | 198.44.157.19
-  - 073 | 156ms | 4.172.245.121
-  - 074 | 156ms | 137.184.174.93
-  - 075 | 157ms | 121.127.34.82
-  - 076 | 157ms | 193.239.236.134
-  - 077 | 157ms | 138.197.141.58
-  - 078 | 158ms | 198.44.157.27
-  - 079 | 159ms | 198.44.157.19
-  - 080 | 159ms | 198.44.157.27
-  - 081 | 161ms | 172.67.79.160
-  - 082 | 163ms | 206.223.183.13
-  - 083 | 168ms | 68.235.56.59
-  - 084 | 168ms | 95.215.201.18
-  - 085 | 169ms | 104.18.12.229
-  - 086 | 171ms | 206.223.183.16
-  - 087 | 171ms | 23.133.176.14
-  - 088 | 173ms | 206.223.161.47
-  - 089 | 176ms | 12.202.180.118
-  - 090 | 178ms | 206.223.183.21
-  - 091 | 179ms | 38.247.141.135
-  - 092 | 181ms | 68.235.56.51
-  - 093 | 183ms | 142.44.210.129
-  - 094 | 183ms | 12.202.180.118
-  - 095 | 184ms | 104.25.199.149
-  - 096 | 186ms | 12.202.180.10
-  - 097 | 187ms | 66.163.114.132
-  - 098 | 187ms | 66.163.114.114
-  - 099 | 189ms | 66.163.114.166
-  - 100 | 193ms | 12.221.146.147
+  - 001 | 47ms | 156.146.38.167
+  - 002 | 48ms | 156.146.38.168
+  - 003 | 50ms | 156.146.38.170
+  - 004 | 52ms | 138.199.42.68
+  - 005 | 58ms | 154.47.25.78
+  - 006 | 63ms | 129.213.91.185
+  - 007 | 65ms | 216.152.155.176
+  - 008 | 74ms | 216.152.155.23
+  - 009 | 77ms | 156.146.38.169
+  - 010 | 78ms | 31.172.69.31
+  - 011 | 87ms | 172.64.68.89
+  - 012 | 89ms | 121.127.34.82
+  - 013 | 90ms | 23.133.176.14
+  - 014 | 90ms | 193.239.236.134
+  - 015 | 92ms | 104.19.95.153
+  - 016 | 92ms | 104.18.35.86
+  - 017 | 93ms | 172.64.69.89
+  - 018 | 96ms | 172.67.71.187
+  - 019 | 96ms | 185.215.132.18
+  - 020 | 97ms | 172.67.135.88
+  - 021 | 98ms | 104.17.44.17
+  - 022 | 100ms | 12.202.180.118
+  - 023 | 101ms | 172.64.150.43
+  - 024 | 102ms | vl.cocopon.top
+  - 025 | 103ms | 104.21.26.36
+  - 026 | 104ms | 104.18.0.181
+  - 027 | 105ms | 66.163.114.114
+  - 028 | 106ms | 172.64.80.1
+  - 029 | 106ms | 172.64.153.153
+  - 030 | 108ms | 104.18.109.147
+  - 031 | 109ms | 172.66.1.36
+  - 032 | 109ms | 104.18.35.86
+  - 033 | 109ms | 104.20.5.134
+  - 034 | 109ms | 45.138.100.248
+  - 035 | 110ms | 104.17.162.11
+  - 036 | 111ms | 104.18.40.100
+  - 037 | 111ms | 172.64.146.66
+  - 038 | 113ms | 172.67.131.125
+  - 039 | 114ms | 104.19.164.25
+  - 040 | 115ms | 188.114.97.6
+  - 041 | 115ms | 104.16.215.234
+  - 042 | 115ms | 104.18.0.181
+  - 043 | 115ms | 172.66.44.124
+  - 044 | 116ms | 8.47.69.60
+  - 045 | 116ms | 172.64.150.43
+  - 046 | 117ms | 188.114.98.0
+  - 047 | 118ms | 188.114.96.9
+  - 048 | 119ms | 104.18.1.1
+  - 049 | 119ms | 12.202.180.118
+  - 050 | 120ms | 172.67.79.160
+  - 051 | 120ms | 172.64.145.94
+  - 052 | 120ms | 188.114.97.6
+  - 053 | 120ms | 104.18.37.247
+  - 054 | 120ms | 66.163.114.166
+  - 055 | 122ms | 172.67.76.40
+  - 056 | 122ms | 104.16.162.89
+  - 057 | 122ms | 104.18.35.15
+  - 058 | 123ms | 77.75.199.30
+  - 059 | 124ms | 104.18.47.73
+  - 060 | 125ms | 88.216.69.253
+  - 061 | 125ms | 172.64.152.241
+  - 062 | 125ms | 104.21.221.158
+  - 063 | 125ms | 188.164.248.216
+  - 064 | 125ms | chatgpt.com
+  - 065 | 126ms | 104.26.4.2
+  - 066 | 126ms | 172.66.0.162
+  - 067 | 126ms | cf.877774.xyz
+  - 068 | 127ms | 104.18.0.1
+  - 069 | 127ms | 66.163.114.45
+  - 070 | 128ms | 172.67.68.157
+  - 071 | 128ms | 104.17.154.123
+  - 072 | 129ms | 66.163.114.132
+  - 073 | 130ms | 104.18.41.86
+  - 074 | 130ms | 172.67.74.90
+  - 075 | 130ms | 195.211.98.43
+  - 076 | 130ms | 185.95.231.156
+  - 077 | 132ms | 172.66.154.57
+  - 078 | 133ms | 172.64.144.240
+  - 079 | 133ms | 104.18.35.86
+  - 080 | 133ms | 172.66.47.123
+  - 081 | 133ms | 15.204.247.175
+  - 082 | 134ms | 104.18.45.38
+  - 083 | 134ms | 172.64.150.248
+  - 084 | 134ms | cfnode-11ivy8.pages.dev
+  - 085 | 137ms | 104.18.1.1
+  - 086 | 138ms | 104.18.35.86
+  - 087 | 138ms | 172.66.47.45
+  - 088 | 140ms | cf.090227.xyz
+  - 089 | 140ms | 198.44.135.19
+  - 090 | 141ms | 104.19.45.195
+  - 091 | 141ms | 198.44.135.27
+  - 092 | 142ms | 198.44.135.27
+  - 093 | 142ms | 208.84.100.209
+  - 094 | 142ms | 193.151.163.18
+  - 095 | 143ms | cf.130519.xyz
+  - 096 | 143ms | www.speedtest.net
+  - 097 | 144ms | 149.88.98.81
+  - 098 | 144ms | 45.86.51.18
+  - 099 | 145ms | 172.66.44.133
+  - 100 | 145ms | 47.90.206.169
 rules:
 - MATCH,PROXY
