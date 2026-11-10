@@ -1,6 +1,6 @@
 # ============================================================
 #  免费节点订阅  •  100 个节点
-#  生成时间: 2026-11-09 08:27 (UTC)
+#  生成时间: 2026-11-10 08:42 (UTC)
 #  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序
 #  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。
 # ============================================================
@@ -12,40 +12,16 @@ ipv6: true
 unified-delay: true
 external-controller: 127.0.0.1:9090
 proxies:
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.199.43.159
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-  name: 001 | 30ms | 138.199.43.159
 - client-fingerprint: chrome
-  password: dba20dcb635e430fa4d3bfc303a149d2
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 216.106.186.32
+  server: 216.106.186.66
   skip-cert-verify: false
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
   sub_tag: M003-260806
   type: trojan
-  udp: true
   network: tcp
-  name: 002 | 34ms | 216.106.186.32
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 38.143.66.146
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-  name: 003 | 34ms | 38.143.66.146
-- server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  type: trojan
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-  name: 004 | 35ms | resources.findlocaljobnetworkandbuildcommunityconnections.com
+  name: 001 | 33ms | 216.106.186.66
   udp: true
 - client-fingerprint: chrome
   network: tcp
@@ -56,19 +32,27 @@ proxies:
   sni: courses.findlocaljobnetworkandbuildcommunityconnections.com
   sub_tag: C002-260622
   type: trojan
+  name: 002 | 33ms | 216.106.186.82
   udp: true
-  name: 005 | 36ms | 216.106.186.82
 - client-fingerprint: chrome
+  network: tcp
   password: 242a3d8eee5e4ed1a6bfa4141d549a25
   port: 443
-  server: 216.106.186.66
-  skip-cert-verify: true
-  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
+  server: www.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: false
   sub_tag: M003-260806
   type: trojan
   udp: true
-  network: tcp
-  name: 006 | 36ms | 216.106.186.66
+  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
+  name: 003 | 33ms | www.findlocaljobnetworkandbuildcommunityconnections.com
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 38.143.66.146
+  sub_tag: M003-260806
+  type: ss
+  name: 004 | 35ms | 38.143.66.146
+  udp: true
 - client-fingerprint: chrome
   network: tcp
   password: f0eb8c92ce8946aaba856569cff1a16b
@@ -78,8 +62,8 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   sub_tag: A004-260618
   type: trojan
+  name: 005 | 35ms | 216.106.186.33
   udp: true
-  name: 007 | 36ms | 216.106.186.33
 - client-fingerprint: chrome
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
@@ -89,38 +73,35 @@ proxies:
   sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
   sub_tag: C002-260622
   type: trojan
+  name: 006 | 36ms | 216.106.186.46
   udp: true
-  name: 008 | 37ms | 216.106.186.46
+- cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.43.159
+  sub_tag: A004-260618
+  type: ss
+  name: 007 | 39ms | 138.199.43.159
+  udp: true
 - client-fingerprint: chrome
-  network: tcp
   password: dba20dcb635e430fa4d3bfc303a149d2
   port: 443
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
+  server: 216.106.186.32
+  skip-cert-verify: false
   sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  sub_tag: A004-260618
+  sub_tag: M003-260806
   type: trojan
+  network: tcp
+  name: 008 | 39ms | 216.106.186.32
   udp: true
-  name: 009 | 38ms | blog.findlocaljobnetworkandbuildcommunityconnections.com
 - port: 443
   server: 149.22.88.65
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
+  name: 009 | 40ms | 149.22.88.65
   udp: true
-  name: 010 | 40ms | 149.22.88.65
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.106.186.66
-  skip-cert-verify: false
-  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  network: tcp
-  name: 011 | 40ms | 216.106.186.66
 - password: None
   port: 443
   server: 172.64.68.89
@@ -128,7 +109,7 @@ proxies:
   sub_tag: P002-260618
   tls: true
   type: http
-  name: 012 | 47ms | 172.64.68.89
+  name: 010 | 44ms | 172.64.68.89
   udp: true
 - port: 443
   server: 172.64.69.89
@@ -136,14 +117,7 @@ proxies:
   sub_tag: R002-260618
   tls: true
   type: http
-  udp: true
-  name: 013 | 49ms | 172.64.69.89
-- server: 149.22.95.183
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 014 | 49ms | 149.22.95.183
+  name: 011 | 45ms | 172.64.69.89
   udp: true
 - port: 443
   server: 172.64.68.89
@@ -151,872 +125,918 @@ proxies:
   sub_tag: R002-260618
   tls: true
   type: http
-  name: 015 | 50ms | 172.64.68.89
+  name: 012 | 46ms | 172.64.68.89
   udp: true
-- client-fingerprint: chrome
-  network: ws
-  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
-  port: 8443
-  server: www.wto.org
-  skip-cert-verify: true
-  sni: jiangjc.pages.dev
-  sub_tag: A001-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /
-  name: 016 | 76ms | www.wto.org
-- server: 169.197.142.68
-  port: 19999
+- server: 149.22.95.183
+  port: 443
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 017 | 90ms | 169.197.142.68
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 013 | 47ms | 149.22.95.183
   udp: true
-- password: test123
-  port: 1080
-  server: 104.168.249.36
-  skip-cert-verify: true
-  type: socks5
-  username: test123
+- type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
-  name: 018 | 91ms | 104.168.249.36
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 014 | 56ms | 15.204.97.206
+- type: vless
+  server: 15.204.97.209
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 015 | 56ms | 15.204.97.209
+- type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 016 | 57ms | 15.204.97.214
+- type: vless
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 017 | 58ms | 15.204.97.219
+- type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 018 | 59ms | 15.204.97.195
 - server: 137.184.89.151
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 019 | 92ms | 137.184.89.151
+  name: 019 | 90ms | 137.184.89.151
   udp: true
-- type: ss
-  server: 38.145.220.193
-  port: 8443
-  cipher: 2022-blake3-aes-128-gcm
-  password: jUbDNsFamcyDfpm+rI3Zyw==
-  udp: true
-  name: 020 | 101ms | 38.145.220.193
 - port: 8443
   server: 54.190.176.228
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
+  name: 020 | 102ms | 54.190.176.228
   udp: true
-  name: 021 | 103ms | 54.190.176.228
-- server: 104.17.10.171
-  port: 443
-  type: trojan
-  password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
-  sni: ltf8.jueson.de5.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /categories/community/
-    headers:
-      Host: ltf8.jueson.de5.net
-  udp: true
-  name: 022 | 104ms | 104.17.10.171
-- password: None
-  port: 8443
-  server: 44.248.167.117
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 023 | 106ms | 44.248.167.117
 - server: 23.150.152.38
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 024 | 107ms | 23.150.152.38
-  udp: true
-- port: 8443
-  server: 44.248.167.117
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  name: 025 | 112ms | 44.248.167.117
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 167.88.61.20
-  skip-cert-verify: false
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  network: tcp
-  name: 026 | 115ms | 167.88.61.20
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.11
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-  name: 027 | 116ms | 107.155.57.11
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.51
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-  name: 028 | 118ms | 107.155.57.51
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 167.88.61.198
-  skip-cert-verify: false
-  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  network: tcp
-  name: 029 | 118ms | 167.88.61.198
-- server: 167.88.61.52
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-  name: 030 | 118ms | 167.88.61.52
+  name: 021 | 103ms | 23.150.152.38
   udp: true
 - client-fingerprint: chrome
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: ws
   port: 443
-  server: 167.88.61.85
-  skip-cert-verify: false
-  sni: resources.browseseniorrolesandenhanceyourcareertoday.com
-  sub_tag: A004-260618
-  type: trojan
+  server: 162.159.198.1
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
   udp: true
-  name: 031 | 119ms | 167.88.61.85
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 23.251.121.242
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-  name: 032 | 120ms | 23.251.121.242
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
+  name: 022 | 108ms | 162.159.198.1
 - client-fingerprint: chrome
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: ws
+  password: d0298536-d670-4045-bbb1-ddd5ea68683e
   port: 443
-  server: 167.88.61.193
+  server: 104.19.173.68
   skip-cert-verify: false
-  sni: browseseniorrolesandenhanceyourcareertoday.com
-  sub_tag: A004-260618
+  sni: azadnet-5vk.pages.dev
+  sub_tag: C002-260622
   type: trojan
   udp: true
-  name: 033 | 120ms | 167.88.61.193
-- server: 167.88.61.175
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-  name: 034 | 120ms | 167.88.61.175
-  udp: true
-- type: vless
-  server: 198.2.251.107
-  port: 45197
-  uuid: 9d979dd1-1760-4c76-8881-b05a09b4d795
-  udp: true
-  tls: true
-  servername: www.amazon.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: LqXTJ-JXo1CgjUQT8trI3OEhY2qOr1YAin2YLuLZFx0
-    short-id: ''
-  name: 035 | 124ms | 198.2.251.107
-- server: 95.215.201.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 036 | 125ms | 95.215.201.18
-  udp: true
-- server: 173.244.56.6
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 037 | 126ms | 173.244.56.6
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /azadnet-5vk.pages.dev/?PROT_TYPE=trojan
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  name: 023 | 112ms | 104.19.173.68
+- password: test123
+  port: 1080
+  server: 104.168.249.36
+  skip-cert-verify: true
+  type: socks5
+  username: test123
+  name: 024 | 120ms | 104.168.249.36
   udp: true
 - port: 443
-  server: 137.175.22.16
+  server: 137.175.22.40
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-  name: 038 | 137ms | 137.175.22.16
-- port: 443
-  server: 137.175.22.116
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 039 | 138ms | 137.175.22.116
-- port: 443
-  server: 137.175.22.52
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 040 | 138ms | 137.175.22.52
-- port: 443
-  server: 137.175.22.84
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 041 | 138ms | 137.175.22.84
-- password: 'null'
-  port: 443
-  server: crosscards.site
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-  sni: crosscards.site
-  name: 042 | 138ms | crosscards.site
-- port: 443
-  server: 137.175.22.72
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 043 | 139ms | 137.175.22.72
-- port: 443
-  server: 167.88.60.242
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 044 | 139ms | 167.88.60.242
-- port: 443
-  server: 137.175.22.88
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 045 | 139ms | 137.175.22.88
-- server: 167.88.62.203
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 046 | 139ms | 167.88.62.203
-  udp: true
-- password: 'null'
-  port: 443
-  server: berniesbodybla.fun
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-  sni: berniesbodybla.fun
-  name: 047 | 139ms | berniesbodybla.fun
-- port: 443
-  server: crosscards.site
-  sni: crosscards.site
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 048 | 139ms | crosscards.site
-- password: None
-  port: 443
-  server: carolinafreigh.fun
-  skip-cert-verify: false
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  sni: carolinafreigh.fun
-  name: 049 | 139ms | carolinafreigh.fun
+  name: 025 | 137ms | 137.175.22.40
 - port: 443
   server: 137.175.22.41
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
+  name: 026 | 138ms | 137.175.22.41
   udp: true
-  name: 050 | 140ms | 137.175.22.41
-- type: vless
-  server: 136.0.197.99
-  port: 49520
-  uuid: ca4cb252-3fcb-4937-9d08-c39683e46e42
-  udp: true
-  tls: true
-  servername: www.ebay.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: c4S7RKiXGJElV2F5_cPCUc_NDZzjpcPHTEs-OwO6A2c
-    short-id: ''
-  name: 051 | 140ms | 136.0.197.99
-- type: vless
-  server: 148.135.86.162
-  port: 10000
-  uuid: 327b1113-049e-4256-8d72-8815643dbb65
-  udp: true
-  tls: true
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: DCbnS4mIPc1W2-wI0MGHhykwzf2nVuZvBadErSE6MxU
-    short-id: a1b2c3d4
-  name: 052 | 140ms | 148.135.86.162
 - port: 443
-  server: purposebydesig.club
-  sni: purposebydesig.club
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 053 | 140ms | purposebydesig.club
-- password: None
-  port: 443
-  server: mmgr.club
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  sni: mmgr.club
-  name: 054 | 140ms | mmgr.club
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 167.88.62.56
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-  name: 055 | 141ms | 167.88.62.56
-- port: 443
-  server: 137.175.22.45
+  server: 137.175.22.52
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
+  name: 027 | 138ms | 137.175.22.52
   udp: true
-  name: 056 | 142ms | 137.175.22.45
-- port: 443
-  server: 137.175.22.56
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 057 | 143ms | 137.175.22.56
-- password: None
-  port: 443
-  server: 167.88.60.242
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 058 | 143ms | 167.88.60.242
-- port: 443
-  server: 137.175.22.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 059 | 143ms | 137.175.22.89
-- port: 443
-  server: 137.175.22.120
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 060 | 144ms | 137.175.22.120
 - port: 443
   server: 137.175.22.29
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
+  name: 028 | 138ms | 137.175.22.29
   udp: true
-  name: 061 | 145ms | 137.175.22.29
-- port: 443
-  server: 137.175.22.96
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 062 | 145ms | 137.175.22.96
-- port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  sni: fan.365747.xyz
-  name: 063 | 145ms | fan.365747.xyz
-- port: 443
-  server: 137.175.22.85
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 064 | 146ms | 137.175.22.85
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.245
-  skip-cert-verify: true
-  sni: findconnectwithemployersandbuildprofessionalnetwork.com
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  network: tcp
-  name: 065 | 146ms | 66.163.114.245
-- client-fingerprint: chrome
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.106
-  skip-cert-verify: true
-  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
-  sub_tag: A004-260618
-  type: trojan
-  udp: true
-  name: 066 | 147ms | 66.163.114.106
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.166
-  skip-cert-verify: true
-  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-  sub_tag: A001-260618
-  type: trojan
-  udp: true
-  network: tcp
-  name: 067 | 147ms | 66.163.114.166
-- port: 443
-  server: 137.175.22.98
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  name: 068 | 148ms | 137.175.22.98
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.45
-  skip-cert-verify: false
-  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  network: tcp
-  name: 069 | 149ms | 66.163.114.45
-- server: 66.163.114.132
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
-  skip-cert-verify: false
-  name: 070 | 150ms | 66.163.114.132
-  udp: true
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.126
-  skip-cert-verify: false
-  sni: resources.findconnectwithemployersandbuildprofessionalnetwork.com
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  network: tcp
-  name: 071 | 151ms | 66.163.114.126
-- client-fingerprint: chrome
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.114
-  skip-cert-verify: false
-  sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
-  sub_tag: A004-260618
-  type: trojan
-  udp: true
-  name: 072 | 151ms | 66.163.114.114
-- password: gs4BXwT6SW
-  port: 10988
-  server: 154.26.192.123
-  sub_tag: R002-260618
-  tls: false
-  type: http
-  username: fQ67Dpe5dU
-  udp: true
-  name: 073 | 154ms | 154.26.192.123
 - type: vless
-  server: 156.229.167.109
+  server: 107.173.237.146
   port: 8443
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
   udp: true
   tls: true
-  servername: github.githubassets.com
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+    short-id: df8611c07d
+  name: 029 | 139ms | 107.173.237.146
+- server: 167.88.62.203
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 030 | 140ms | 167.88.62.203
+  udp: true
+- port: 443
+  server: 137.175.22.120
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  name: 031 | 142ms | 137.175.22.120
+  udp: true
+- type: vless
+  server: 23.95.222.127
+  port: 8443
+  uuid: 352ff568-f971-4613-bf48-92997a5d44ed
+  udp: true
+  tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  name: 074 | 155ms | 156.229.167.109
+    public-key: ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU
+    short-id: 35cd899f8de04801
+  name: 032 | 152ms | 23.95.222.127
 - cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 167.17.67.171
   sub_tag: M003-260806
   type: ss
-  udp: true
-  name: 075 | 156ms | 167.17.67.171
-- cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 79.110.54.250
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-  name: 076 | 157ms | 79.110.54.250
-- server: 156.146.38.168
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  name: 077 | 157ms | 156.146.38.168
+  name: 033 | 153ms | 167.17.67.171
   udp: true
 - server: 156.146.38.170
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-  name: 078 | 157ms | 156.146.38.170
+  name: 034 | 154ms | 156.146.38.170
+  udp: true
+- server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 035 | 155ms | 156.146.38.169
   udp: true
 - server: 156.146.38.167
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-  name: 079 | 158ms | 156.146.38.167
+  name: 036 | 155ms | 156.146.38.167
   udp: true
+- port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  name: 037 | 159ms | 138.199.35.220
+- password: None
+  port: 9002
+  server: 138.199.35.203
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 038 | 160ms | 138.199.35.203
+  udp: true
+- server: 216.106.178.169
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 039 | 160ms | 216.106.178.169
+  udp: true
+- password: None
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 040 | 161ms | 138.199.35.198
+  udp: true
+- password: None
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 041 | 161ms | 138.199.35.220
+- password: 'null'
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  name: 042 | 161ms | 138.199.35.220
+- password: None
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 043 | 162ms | 138.199.35.201
+- password: 'null'
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  name: 044 | 162ms | 138.199.35.213
+- password: 'null'
+  port: 9002
+  server: 138.199.35.217
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  name: 045 | 162ms | 138.199.35.217
+  udp: true
+- password: None
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 046 | 163ms | 138.199.35.213
+- password: 'null'
+  port: 9002
+  server: 138.199.35.209
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  name: 047 | 163ms | 138.199.35.209
+- password: 'null'
+  port: 9002
+  server: 138.199.35.210
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  name: 048 | 163ms | 138.199.35.210
+- password: 'null'
+  port: 9002
+  server: 138.199.35.205
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  name: 049 | 163ms | 138.199.35.205
+- port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 050 | 164ms | 138.199.35.198
+- password: None
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 051 | 164ms | 138.199.35.216
+- password: None
+  port: 9002
+  server: 138.199.35.200
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  name: 052 | 164ms | 138.199.35.200
 - cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.151.182.197
   sub_tag: A004-260618
   type: ss
+  name: 053 | 164ms | 107.151.182.197
   udp: true
-  name: 080 | 159ms | 107.151.182.197
+- password: 'null'
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  name: 054 | 165ms | 138.199.35.198
+- cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 79.110.53.169
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+  name: 055 | 169ms | 79.110.53.169
 - type: ss
   server: 67.220.73.178
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: 081 | 159ms | 67.220.73.178
-- client-fingerprint: chrome
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.112.171
-  skip-cert-verify: false
-  sni: learn.unlockyourfuturefindyourperfectcareer.com
-  sub_tag: M003-260806
-  type: trojan
-  network: tcp
-  name: 082 | 159ms | 66.163.112.171
+  name: 056 | 170ms | 67.220.73.178
   udp: true
 - password: None
-  port: 9002
-  server: 138.199.35.199
+  port: 9443
+  server: 38.95.111.226
   skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  name: 083 | 160ms | 138.199.35.199
-  udp: true
-- password: None
-  port: 9002
-  server: 138.199.35.217
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  name: 084 | 160ms | 138.199.35.217
-  udp: true
-- port: 9002
-  server: 138.199.35.212
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  name: 085 | 160ms | 138.199.35.212
-  udp: true
-- server: 66.163.112.13
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.unlockyourfuturefindyourperfectcareer.com
-  skip-cert-verify: false
-  name: 086 | 160ms | 66.163.112.13
-  udp: true
-- port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  name: 087 | 160ms | 138.199.35.207
-  udp: true
-- port: 9002
-  server: 138.199.35.204
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  name: 088 | 161ms | 138.199.35.204
-  udp: true
-- password: 'null'
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  username: 'null'
-  name: 089 | 161ms | 138.199.35.195
-  udp: true
-- password: 'null'
-  port: 9002
-  server: 138.199.35.217
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  username: 'null'
-  name: 090 | 161ms | 138.199.35.217
-  udp: true
-- port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  name: 091 | 161ms | 138.199.35.214
-  udp: true
-- password: None
-  port: 9002
-  server: 138.199.35.197
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  name: 092 | 162ms | 138.199.35.197
-  udp: true
-- password: None
-  port: 9002
-  server: 138.199.35.218
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  name: 093 | 162ms | 138.199.35.218
-  udp: true
-- password: None
-  port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  name: 094 | 162ms | 138.199.35.214
-  udp: true
-- password: None
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  name: 095 | 162ms | 138.199.35.196
-  udp: true
-- password: ''
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
+  sub_tag: K001-260618
   tls: true
   type: http
   username: ''
-  name: 096 | 162ms | 138.199.35.219
   udp: true
+  name: 057 | 172ms | 38.95.111.226
+- server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 058 | 178ms | 156.146.38.168
+  udp: true
+- type: vless
+  network: tcp
+  server: 85.155.179.206
+  port: 443
+  uuid: 86a83d11-d751-4b60-aa4e-1dca5cff7028
+  servername: us3.shtil.io
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  name: 059 | 180ms | 85.155.179.206
+- server: 38.121.43.225
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 060 | 185ms | 38.121.43.225
+  udp: true
+- server: 38.121.43.231
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 061 | 185ms | 38.121.43.231
+  udp: true
+- server: 38.22.17.219
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 062 | 185ms | 38.22.17.219
+  udp: true
+- server: 172.111.36.123
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 063 | 185ms | 172.111.36.123
+  udp: true
+- server: 167.88.63.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 064 | 186ms | 167.88.63.99
+  udp: true
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 38.22.17.139
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+  name: 065 | 186ms | 38.22.17.139
+- server: 38.22.17.129
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 066 | 186ms | 38.22.17.129
+  udp: true
+- server: 38.121.43.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 067 | 186ms | 38.121.43.18
+  udp: true
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.215.132.9
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+  name: 068 | 187ms | 185.215.132.9
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 167.88.63.39
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+  name: 069 | 189ms | 167.88.63.39
 - password: None
-  port: 9002
-  server: 138.199.35.211
+  port: 443
+  server: goedkoopgeluid.icu
   skip-cert-verify: true
   sub_tag: P002-260618
   tls: true
   type: http
-  name: 097 | 162ms | 138.199.35.211
   udp: true
+  sni: goedkoopgeluid.icu
+  name: 070 | 190ms | goedkoopgeluid.icu
+- cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 15.204.233.41
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+  name: 071 | 192ms | 15.204.233.41
 - password: 'null'
-  port: 9002
-  server: 138.199.35.215
+  port: 443
+  server: jewelscollecti.icu
   skip-cert-verify: true
-  sub_tag: P002-260618
+  sub_tag: K001-260618
   tls: true
   type: http
   username: 'null'
-  name: 098 | 162ms | 138.199.35.215
   udp: true
-- port: 9002
-  server: 138.199.35.206
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  name: 099 | 162ms | 138.199.35.206
-  udp: true
+  sni: jewelscollecti.icu
+  name: 072 | 193ms | jewelscollecti.icu
 - password: None
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
+  port: 443
+  server: tzoa.fun
+  skip-cert-verify: false
   sub_tag: P002-260618
   tls: true
   type: http
-  name: 100 | 162ms | 138.199.35.208
   udp: true
+  sni: tzoa.fun
+  name: 073 | 196ms | tzoa.fun
+- server: 38.91.100.39
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 074 | 198ms | 38.91.100.39
+  udp: true
+- server: 37.19.198.243
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 075 | 200ms | 37.19.198.243
+  udp: true
+- server: 37.19.198.160
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 076 | 201ms | 37.19.198.160
+  udp: true
+- server: 37.19.198.236
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 077 | 203ms | 37.19.198.236
+  udp: true
+- server: 37.19.198.244
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  name: 078 | 203ms | 37.19.198.244
+  udp: true
+- cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 15.204.246.132
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+  name: 079 | 208ms | 15.204.246.132
+- type: vless
+  server: 67.220.73.204
+  port: 18662
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  name: 080 | 212ms | 67.220.73.204
+- type: vless
+  server: 67.220.73.204
+  port: 16016
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  name: 081 | 214ms | 67.220.73.204
+- password: None
+  port: 443
+  server: kimberlymilano.icu
+  skip-cert-verify: false
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: kimberlymilano.icu
+  name: 082 | 214ms | kimberlymilano.icu
+- password: 'null'
+  port: 443
+  server: tzoa.fun
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  sni: tzoa.fun
+  name: 083 | 217ms | tzoa.fun
+- password: 'null'
+  port: 443
+  server: zebpay.site
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  sni: zebpay.site
+  name: 084 | 218ms | zebpay.site
+- client-fingerprint: chrome
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.155.23
+  skip-cert-verify: true
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+  sub_tag: A001-260618
+  type: trojan
+  udp: true
+  network: tcp
+  name: 085 | 219ms | 216.152.155.23
+- server: 23.227.38.99
+  port: 443
+  type: vless
+  uuid: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  tls: true
+  servername: uuu-2-8uuu.ccc3cosmo.top
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: uuu-2-8uuu.ccc3cosmo.top
+  udp: true
+  name: 086 | 221ms | 23.227.38.99
+- server: 149.40.57.133
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 087 | 225ms | 149.40.57.133
+  udp: true
+- client-fingerprint: chrome
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.155.158
+  skip-cert-verify: false
+  sni: resources.nextjobopportunityandclaimyouridealrole.com
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+  name: 088 | 226ms | 216.152.155.158
+- server: 149.40.57.134
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 089 | 226ms | 149.40.57.134
+  udp: true
+- server: 149.40.57.138
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 090 | 226ms | 149.40.57.138
+  udp: true
+- server: 45.86.51.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 091 | 226ms | 45.86.51.18
+  udp: true
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 149.40.57.135
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+  name: 092 | 227ms | 149.40.57.135
+- server: 185.230.230.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 093 | 227ms | 185.230.230.18
+  udp: true
+- server: 172.111.38.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 094 | 227ms | 172.111.38.72
+  udp: true
+- network: ws
+  port: 8080
+  server: 188.114.97.6
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 0aab6adc-104c-4339-8d25-09755ffe2cbd
+  ws-opts:
+    headers:
+      Host: liang92.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  name: 095 | 244ms | 188.114.97.6
+- client-fingerprint: chrome
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.156.42
+  skip-cert-verify: true
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+  name: 096 | 244ms | 216.152.156.42
+- client-fingerprint: chrome
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.156.65
+  skip-cert-verify: true
+  sni: 216.152.156.65
+  sub_tag: S004-260618
+  type: trojan
+  udp: true
+  network: tcp
+  name: 097 | 245ms | 216.152.156.65
+- client-fingerprint: chrome
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.156.81
+  skip-cert-verify: true
+  sni: 216.152.156.81
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+  name: 098 | 246ms | 216.152.156.81
+- client-fingerprint: chrome
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.156.49
+  skip-cert-verify: true
+  sni: api.unlockyourfuturefindyourperfectcareer.com
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+  name: 099 | 247ms | 216.152.156.49
+- type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  name: 100 | 250ms | 15.204.97.198
 proxy-groups:
 - name: AUTO-FASTEST
   type: url-test
   proxies:
-  - 001 | 30ms | 138.199.43.159
-  - 002 | 34ms | 216.106.186.32
-  - 003 | 34ms | 38.143.66.146
-  - 004 | 35ms | resources.findlocaljobnetworkandbuildcommunityconnections.com
-  - 005 | 36ms | 216.106.186.82
-  - 006 | 36ms | 216.106.186.66
-  - 007 | 36ms | 216.106.186.33
-  - 008 | 37ms | 216.106.186.46
-  - 009 | 38ms | blog.findlocaljobnetworkandbuildcommunityconnections.com
-  - 010 | 40ms | 149.22.88.65
-  - 011 | 40ms | 216.106.186.66
-  - 012 | 47ms | 172.64.68.89
-  - 013 | 49ms | 172.64.69.89
-  - 014 | 49ms | 149.22.95.183
-  - 015 | 50ms | 172.64.68.89
-  - 016 | 76ms | www.wto.org
-  - 017 | 90ms | 169.197.142.68
-  - 018 | 91ms | 104.168.249.36
-  - 019 | 92ms | 137.184.89.151
-  - 020 | 101ms | 38.145.220.193
-  - 021 | 103ms | 54.190.176.228
-  - 022 | 104ms | 104.17.10.171
-  - 023 | 106ms | 44.248.167.117
-  - 024 | 107ms | 23.150.152.38
-  - 025 | 112ms | 44.248.167.117
-  - 026 | 115ms | 167.88.61.20
-  - 027 | 116ms | 107.155.57.11
-  - 028 | 118ms | 107.155.57.51
-  - 029 | 118ms | 167.88.61.198
-  - 030 | 118ms | 167.88.61.52
-  - 031 | 119ms | 167.88.61.85
-  - 032 | 120ms | 23.251.121.242
-  - 033 | 120ms | 167.88.61.193
-  - 034 | 120ms | 167.88.61.175
-  - 035 | 124ms | 198.2.251.107
-  - 036 | 125ms | 95.215.201.18
-  - 037 | 126ms | 173.244.56.6
-  - 038 | 137ms | 137.175.22.16
-  - 039 | 138ms | 137.175.22.116
-  - 040 | 138ms | 137.175.22.52
-  - 041 | 138ms | 137.175.22.84
-  - 042 | 138ms | crosscards.site
-  - 043 | 139ms | 137.175.22.72
-  - 044 | 139ms | 167.88.60.242
-  - 045 | 139ms | 137.175.22.88
-  - 046 | 139ms | 167.88.62.203
-  - 047 | 139ms | berniesbodybla.fun
-  - 048 | 139ms | crosscards.site
-  - 049 | 139ms | carolinafreigh.fun
-  - 050 | 140ms | 137.175.22.41
-  - 051 | 140ms | 136.0.197.99
-  - 052 | 140ms | 148.135.86.162
-  - 053 | 140ms | purposebydesig.club
-  - 054 | 140ms | mmgr.club
-  - 055 | 141ms | 167.88.62.56
-  - 056 | 142ms | 137.175.22.45
-  - 057 | 143ms | 137.175.22.56
-  - 058 | 143ms | 167.88.60.242
-  - 059 | 143ms | 137.175.22.89
-  - 060 | 144ms | 137.175.22.120
-  - 061 | 145ms | 137.175.22.29
-  - 062 | 145ms | 137.175.22.96
-  - 063 | 145ms | fan.365747.xyz
-  - 064 | 146ms | 137.175.22.85
-  - 065 | 146ms | 66.163.114.245
-  - 066 | 147ms | 66.163.114.106
-  - 067 | 147ms | 66.163.114.166
-  - 068 | 148ms | 137.175.22.98
-  - 069 | 149ms | 66.163.114.45
-  - 070 | 150ms | 66.163.114.132
-  - 071 | 151ms | 66.163.114.126
-  - 072 | 151ms | 66.163.114.114
-  - 073 | 154ms | 154.26.192.123
-  - 074 | 155ms | 156.229.167.109
-  - 075 | 156ms | 167.17.67.171
-  - 076 | 157ms | 79.110.54.250
-  - 077 | 157ms | 156.146.38.168
-  - 078 | 157ms | 156.146.38.170
-  - 079 | 158ms | 156.146.38.167
-  - 080 | 159ms | 107.151.182.197
-  - 081 | 159ms | 67.220.73.178
-  - 082 | 159ms | 66.163.112.171
-  - 083 | 160ms | 138.199.35.199
-  - 084 | 160ms | 138.199.35.217
-  - 085 | 160ms | 138.199.35.212
-  - 086 | 160ms | 66.163.112.13
-  - 087 | 160ms | 138.199.35.207
-  - 088 | 161ms | 138.199.35.204
-  - 089 | 161ms | 138.199.35.195
-  - 090 | 161ms | 138.199.35.217
-  - 091 | 161ms | 138.199.35.214
-  - 092 | 162ms | 138.199.35.197
-  - 093 | 162ms | 138.199.35.218
-  - 094 | 162ms | 138.199.35.214
-  - 095 | 162ms | 138.199.35.196
-  - 096 | 162ms | 138.199.35.219
-  - 097 | 162ms | 138.199.35.211
-  - 098 | 162ms | 138.199.35.215
-  - 099 | 162ms | 138.199.35.206
-  - 100 | 162ms | 138.199.35.208
+  - 001 | 33ms | 216.106.186.66
+  - 002 | 33ms | 216.106.186.82
+  - 003 | 33ms | www.findlocaljobnetworkandbuildcommunityconnections.com
+  - 004 | 35ms | 38.143.66.146
+  - 005 | 35ms | 216.106.186.33
+  - 006 | 36ms | 216.106.186.46
+  - 007 | 39ms | 138.199.43.159
+  - 008 | 39ms | 216.106.186.32
+  - 009 | 40ms | 149.22.88.65
+  - 010 | 44ms | 172.64.68.89
+  - 011 | 45ms | 172.64.69.89
+  - 012 | 46ms | 172.64.68.89
+  - 013 | 47ms | 149.22.95.183
+  - 014 | 56ms | 15.204.97.206
+  - 015 | 56ms | 15.204.97.209
+  - 016 | 57ms | 15.204.97.214
+  - 017 | 58ms | 15.204.97.219
+  - 018 | 59ms | 15.204.97.195
+  - 019 | 90ms | 137.184.89.151
+  - 020 | 102ms | 54.190.176.228
+  - 021 | 103ms | 23.150.152.38
+  - 022 | 108ms | 162.159.198.1
+  - 023 | 112ms | 104.19.173.68
+  - 024 | 120ms | 104.168.249.36
+  - 025 | 137ms | 137.175.22.40
+  - 026 | 138ms | 137.175.22.41
+  - 027 | 138ms | 137.175.22.52
+  - 028 | 138ms | 137.175.22.29
+  - 029 | 139ms | 107.173.237.146
+  - 030 | 140ms | 167.88.62.203
+  - 031 | 142ms | 137.175.22.120
+  - 032 | 152ms | 23.95.222.127
+  - 033 | 153ms | 167.17.67.171
+  - 034 | 154ms | 156.146.38.170
+  - 035 | 155ms | 156.146.38.169
+  - 036 | 155ms | 156.146.38.167
+  - 037 | 159ms | 138.199.35.220
+  - 038 | 160ms | 138.199.35.203
+  - 039 | 160ms | 216.106.178.169
+  - 040 | 161ms | 138.199.35.198
+  - 041 | 161ms | 138.199.35.220
+  - 042 | 161ms | 138.199.35.220
+  - 043 | 162ms | 138.199.35.201
+  - 044 | 162ms | 138.199.35.213
+  - 045 | 162ms | 138.199.35.217
+  - 046 | 163ms | 138.199.35.213
+  - 047 | 163ms | 138.199.35.209
+  - 048 | 163ms | 138.199.35.210
+  - 049 | 163ms | 138.199.35.205
+  - 050 | 164ms | 138.199.35.198
+  - 051 | 164ms | 138.199.35.216
+  - 052 | 164ms | 138.199.35.200
+  - 053 | 164ms | 107.151.182.197
+  - 054 | 165ms | 138.199.35.198
+  - 055 | 169ms | 79.110.53.169
+  - 056 | 170ms | 67.220.73.178
+  - 057 | 172ms | 38.95.111.226
+  - 058 | 178ms | 156.146.38.168
+  - 059 | 180ms | 85.155.179.206
+  - 060 | 185ms | 38.121.43.225
+  - 061 | 185ms | 38.121.43.231
+  - 062 | 185ms | 38.22.17.219
+  - 063 | 185ms | 172.111.36.123
+  - 064 | 186ms | 167.88.63.99
+  - 065 | 186ms | 38.22.17.139
+  - 066 | 186ms | 38.22.17.129
+  - 067 | 186ms | 38.121.43.18
+  - 068 | 187ms | 185.215.132.9
+  - 069 | 189ms | 167.88.63.39
+  - 070 | 190ms | goedkoopgeluid.icu
+  - 071 | 192ms | 15.204.233.41
+  - 072 | 193ms | jewelscollecti.icu
+  - 073 | 196ms | tzoa.fun
+  - 074 | 198ms | 38.91.100.39
+  - 075 | 200ms | 37.19.198.243
+  - 076 | 201ms | 37.19.198.160
+  - 077 | 203ms | 37.19.198.236
+  - 078 | 203ms | 37.19.198.244
+  - 079 | 208ms | 15.204.246.132
+  - 080 | 212ms | 67.220.73.204
+  - 081 | 214ms | 67.220.73.204
+  - 082 | 214ms | kimberlymilano.icu
+  - 083 | 217ms | tzoa.fun
+  - 084 | 218ms | zebpay.site
+  - 085 | 219ms | 216.152.155.23
+  - 086 | 221ms | 23.227.38.99
+  - 087 | 225ms | 149.40.57.133
+  - 088 | 226ms | 216.152.155.158
+  - 089 | 226ms | 149.40.57.134
+  - 090 | 226ms | 149.40.57.138
+  - 091 | 226ms | 45.86.51.18
+  - 092 | 227ms | 149.40.57.135
+  - 093 | 227ms | 185.230.230.18
+  - 094 | 227ms | 172.111.38.72
+  - 095 | 244ms | 188.114.97.6
+  - 096 | 244ms | 216.152.156.42
+  - 097 | 245ms | 216.152.156.65
+  - 098 | 246ms | 216.152.156.81
+  - 099 | 247ms | 216.152.156.49
+  - 100 | 250ms | 15.204.97.198
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -1026,211 +1046,211 @@ proxy-groups:
   proxies:
   - AUTO-FASTEST
   - DIRECT
-  - 001 | 30ms | 138.199.43.159
-  - 002 | 34ms | 216.106.186.32
-  - 003 | 34ms | 38.143.66.146
-  - 004 | 35ms | resources.findlocaljobnetworkandbuildcommunityconnections.com
-  - 005 | 36ms | 216.106.186.82
-  - 006 | 36ms | 216.106.186.66
-  - 007 | 36ms | 216.106.186.33
-  - 008 | 37ms | 216.106.186.46
-  - 009 | 38ms | blog.findlocaljobnetworkandbuildcommunityconnections.com
-  - 010 | 40ms | 149.22.88.65
-  - 011 | 40ms | 216.106.186.66
-  - 012 | 47ms | 172.64.68.89
-  - 013 | 49ms | 172.64.69.89
-  - 014 | 49ms | 149.22.95.183
-  - 015 | 50ms | 172.64.68.89
-  - 016 | 76ms | www.wto.org
-  - 017 | 90ms | 169.197.142.68
-  - 018 | 91ms | 104.168.249.36
-  - 019 | 92ms | 137.184.89.151
-  - 020 | 101ms | 38.145.220.193
-  - 021 | 103ms | 54.190.176.228
-  - 022 | 104ms | 104.17.10.171
-  - 023 | 106ms | 44.248.167.117
-  - 024 | 107ms | 23.150.152.38
-  - 025 | 112ms | 44.248.167.117
-  - 026 | 115ms | 167.88.61.20
-  - 027 | 116ms | 107.155.57.11
-  - 028 | 118ms | 107.155.57.51
-  - 029 | 118ms | 167.88.61.198
-  - 030 | 118ms | 167.88.61.52
-  - 031 | 119ms | 167.88.61.85
-  - 032 | 120ms | 23.251.121.242
-  - 033 | 120ms | 167.88.61.193
-  - 034 | 120ms | 167.88.61.175
-  - 035 | 124ms | 198.2.251.107
-  - 036 | 125ms | 95.215.201.18
-  - 037 | 126ms | 173.244.56.6
-  - 038 | 137ms | 137.175.22.16
-  - 039 | 138ms | 137.175.22.116
-  - 040 | 138ms | 137.175.22.52
-  - 041 | 138ms | 137.175.22.84
-  - 042 | 138ms | crosscards.site
-  - 043 | 139ms | 137.175.22.72
-  - 044 | 139ms | 167.88.60.242
-  - 045 | 139ms | 137.175.22.88
-  - 046 | 139ms | 167.88.62.203
-  - 047 | 139ms | berniesbodybla.fun
-  - 048 | 139ms | crosscards.site
-  - 049 | 139ms | carolinafreigh.fun
-  - 050 | 140ms | 137.175.22.41
-  - 051 | 140ms | 136.0.197.99
-  - 052 | 140ms | 148.135.86.162
-  - 053 | 140ms | purposebydesig.club
-  - 054 | 140ms | mmgr.club
-  - 055 | 141ms | 167.88.62.56
-  - 056 | 142ms | 137.175.22.45
-  - 057 | 143ms | 137.175.22.56
-  - 058 | 143ms | 167.88.60.242
-  - 059 | 143ms | 137.175.22.89
-  - 060 | 144ms | 137.175.22.120
-  - 061 | 145ms | 137.175.22.29
-  - 062 | 145ms | 137.175.22.96
-  - 063 | 145ms | fan.365747.xyz
-  - 064 | 146ms | 137.175.22.85
-  - 065 | 146ms | 66.163.114.245
-  - 066 | 147ms | 66.163.114.106
-  - 067 | 147ms | 66.163.114.166
-  - 068 | 148ms | 137.175.22.98
-  - 069 | 149ms | 66.163.114.45
-  - 070 | 150ms | 66.163.114.132
-  - 071 | 151ms | 66.163.114.126
-  - 072 | 151ms | 66.163.114.114
-  - 073 | 154ms | 154.26.192.123
-  - 074 | 155ms | 156.229.167.109
-  - 075 | 156ms | 167.17.67.171
-  - 076 | 157ms | 79.110.54.250
-  - 077 | 157ms | 156.146.38.168
-  - 078 | 157ms | 156.146.38.170
-  - 079 | 158ms | 156.146.38.167
-  - 080 | 159ms | 107.151.182.197
-  - 081 | 159ms | 67.220.73.178
-  - 082 | 159ms | 66.163.112.171
-  - 083 | 160ms | 138.199.35.199
-  - 084 | 160ms | 138.199.35.217
-  - 085 | 160ms | 138.199.35.212
-  - 086 | 160ms | 66.163.112.13
-  - 087 | 160ms | 138.199.35.207
-  - 088 | 161ms | 138.199.35.204
-  - 089 | 161ms | 138.199.35.195
-  - 090 | 161ms | 138.199.35.217
-  - 091 | 161ms | 138.199.35.214
-  - 092 | 162ms | 138.199.35.197
-  - 093 | 162ms | 138.199.35.218
-  - 094 | 162ms | 138.199.35.214
-  - 095 | 162ms | 138.199.35.196
-  - 096 | 162ms | 138.199.35.219
-  - 097 | 162ms | 138.199.35.211
-  - 098 | 162ms | 138.199.35.215
-  - 099 | 162ms | 138.199.35.206
-  - 100 | 162ms | 138.199.35.208
+  - 001 | 33ms | 216.106.186.66
+  - 002 | 33ms | 216.106.186.82
+  - 003 | 33ms | www.findlocaljobnetworkandbuildcommunityconnections.com
+  - 004 | 35ms | 38.143.66.146
+  - 005 | 35ms | 216.106.186.33
+  - 006 | 36ms | 216.106.186.46
+  - 007 | 39ms | 138.199.43.159
+  - 008 | 39ms | 216.106.186.32
+  - 009 | 40ms | 149.22.88.65
+  - 010 | 44ms | 172.64.68.89
+  - 011 | 45ms | 172.64.69.89
+  - 012 | 46ms | 172.64.68.89
+  - 013 | 47ms | 149.22.95.183
+  - 014 | 56ms | 15.204.97.206
+  - 015 | 56ms | 15.204.97.209
+  - 016 | 57ms | 15.204.97.214
+  - 017 | 58ms | 15.204.97.219
+  - 018 | 59ms | 15.204.97.195
+  - 019 | 90ms | 137.184.89.151
+  - 020 | 102ms | 54.190.176.228
+  - 021 | 103ms | 23.150.152.38
+  - 022 | 108ms | 162.159.198.1
+  - 023 | 112ms | 104.19.173.68
+  - 024 | 120ms | 104.168.249.36
+  - 025 | 137ms | 137.175.22.40
+  - 026 | 138ms | 137.175.22.41
+  - 027 | 138ms | 137.175.22.52
+  - 028 | 138ms | 137.175.22.29
+  - 029 | 139ms | 107.173.237.146
+  - 030 | 140ms | 167.88.62.203
+  - 031 | 142ms | 137.175.22.120
+  - 032 | 152ms | 23.95.222.127
+  - 033 | 153ms | 167.17.67.171
+  - 034 | 154ms | 156.146.38.170
+  - 035 | 155ms | 156.146.38.169
+  - 036 | 155ms | 156.146.38.167
+  - 037 | 159ms | 138.199.35.220
+  - 038 | 160ms | 138.199.35.203
+  - 039 | 160ms | 216.106.178.169
+  - 040 | 161ms | 138.199.35.198
+  - 041 | 161ms | 138.199.35.220
+  - 042 | 161ms | 138.199.35.220
+  - 043 | 162ms | 138.199.35.201
+  - 044 | 162ms | 138.199.35.213
+  - 045 | 162ms | 138.199.35.217
+  - 046 | 163ms | 138.199.35.213
+  - 047 | 163ms | 138.199.35.209
+  - 048 | 163ms | 138.199.35.210
+  - 049 | 163ms | 138.199.35.205
+  - 050 | 164ms | 138.199.35.198
+  - 051 | 164ms | 138.199.35.216
+  - 052 | 164ms | 138.199.35.200
+  - 053 | 164ms | 107.151.182.197
+  - 054 | 165ms | 138.199.35.198
+  - 055 | 169ms | 79.110.53.169
+  - 056 | 170ms | 67.220.73.178
+  - 057 | 172ms | 38.95.111.226
+  - 058 | 178ms | 156.146.38.168
+  - 059 | 180ms | 85.155.179.206
+  - 060 | 185ms | 38.121.43.225
+  - 061 | 185ms | 38.121.43.231
+  - 062 | 185ms | 38.22.17.219
+  - 063 | 185ms | 172.111.36.123
+  - 064 | 186ms | 167.88.63.99
+  - 065 | 186ms | 38.22.17.139
+  - 066 | 186ms | 38.22.17.129
+  - 067 | 186ms | 38.121.43.18
+  - 068 | 187ms | 185.215.132.9
+  - 069 | 189ms | 167.88.63.39
+  - 070 | 190ms | goedkoopgeluid.icu
+  - 071 | 192ms | 15.204.233.41
+  - 072 | 193ms | jewelscollecti.icu
+  - 073 | 196ms | tzoa.fun
+  - 074 | 198ms | 38.91.100.39
+  - 075 | 200ms | 37.19.198.243
+  - 076 | 201ms | 37.19.198.160
+  - 077 | 203ms | 37.19.198.236
+  - 078 | 203ms | 37.19.198.244
+  - 079 | 208ms | 15.204.246.132
+  - 080 | 212ms | 67.220.73.204
+  - 081 | 214ms | 67.220.73.204
+  - 082 | 214ms | kimberlymilano.icu
+  - 083 | 217ms | tzoa.fun
+  - 084 | 218ms | zebpay.site
+  - 085 | 219ms | 216.152.155.23
+  - 086 | 221ms | 23.227.38.99
+  - 087 | 225ms | 149.40.57.133
+  - 088 | 226ms | 216.152.155.158
+  - 089 | 226ms | 149.40.57.134
+  - 090 | 226ms | 149.40.57.138
+  - 091 | 226ms | 45.86.51.18
+  - 092 | 227ms | 149.40.57.135
+  - 093 | 227ms | 185.230.230.18
+  - 094 | 227ms | 172.111.38.72
+  - 095 | 244ms | 188.114.97.6
+  - 096 | 244ms | 216.152.156.42
+  - 097 | 245ms | 216.152.156.65
+  - 098 | 246ms | 216.152.156.81
+  - 099 | 247ms | 216.152.156.49
+  - 100 | 250ms | 15.204.97.198
 - name: GLOBAL
   type: select
   proxies:
   - AUTO-FASTEST
   - PROXY
   - DIRECT
-  - 001 | 30ms | 138.199.43.159
-  - 002 | 34ms | 216.106.186.32
-  - 003 | 34ms | 38.143.66.146
-  - 004 | 35ms | resources.findlocaljobnetworkandbuildcommunityconnections.com
-  - 005 | 36ms | 216.106.186.82
-  - 006 | 36ms | 216.106.186.66
-  - 007 | 36ms | 216.106.186.33
-  - 008 | 37ms | 216.106.186.46
-  - 009 | 38ms | blog.findlocaljobnetworkandbuildcommunityconnections.com
-  - 010 | 40ms | 149.22.88.65
-  - 011 | 40ms | 216.106.186.66
-  - 012 | 47ms | 172.64.68.89
-  - 013 | 49ms | 172.64.69.89
-  - 014 | 49ms | 149.22.95.183
-  - 015 | 50ms | 172.64.68.89
-  - 016 | 76ms | www.wto.org
-  - 017 | 90ms | 169.197.142.68
-  - 018 | 91ms | 104.168.249.36
-  - 019 | 92ms | 137.184.89.151
-  - 020 | 101ms | 38.145.220.193
-  - 021 | 103ms | 54.190.176.228
-  - 022 | 104ms | 104.17.10.171
-  - 023 | 106ms | 44.248.167.117
-  - 024 | 107ms | 23.150.152.38
-  - 025 | 112ms | 44.248.167.117
-  - 026 | 115ms | 167.88.61.20
-  - 027 | 116ms | 107.155.57.11
-  - 028 | 118ms | 107.155.57.51
-  - 029 | 118ms | 167.88.61.198
-  - 030 | 118ms | 167.88.61.52
-  - 031 | 119ms | 167.88.61.85
-  - 032 | 120ms | 23.251.121.242
-  - 033 | 120ms | 167.88.61.193
-  - 034 | 120ms | 167.88.61.175
-  - 035 | 124ms | 198.2.251.107
-  - 036 | 125ms | 95.215.201.18
-  - 037 | 126ms | 173.244.56.6
-  - 038 | 137ms | 137.175.22.16
-  - 039 | 138ms | 137.175.22.116
-  - 040 | 138ms | 137.175.22.52
-  - 041 | 138ms | 137.175.22.84
-  - 042 | 138ms | crosscards.site
-  - 043 | 139ms | 137.175.22.72
-  - 044 | 139ms | 167.88.60.242
-  - 045 | 139ms | 137.175.22.88
-  - 046 | 139ms | 167.88.62.203
-  - 047 | 139ms | berniesbodybla.fun
-  - 048 | 139ms | crosscards.site
-  - 049 | 139ms | carolinafreigh.fun
-  - 050 | 140ms | 137.175.22.41
-  - 051 | 140ms | 136.0.197.99
-  - 052 | 140ms | 148.135.86.162
-  - 053 | 140ms | purposebydesig.club
-  - 054 | 140ms | mmgr.club
-  - 055 | 141ms | 167.88.62.56
-  - 056 | 142ms | 137.175.22.45
-  - 057 | 143ms | 137.175.22.56
-  - 058 | 143ms | 167.88.60.242
-  - 059 | 143ms | 137.175.22.89
-  - 060 | 144ms | 137.175.22.120
-  - 061 | 145ms | 137.175.22.29
-  - 062 | 145ms | 137.175.22.96
-  - 063 | 145ms | fan.365747.xyz
-  - 064 | 146ms | 137.175.22.85
-  - 065 | 146ms | 66.163.114.245
-  - 066 | 147ms | 66.163.114.106
-  - 067 | 147ms | 66.163.114.166
-  - 068 | 148ms | 137.175.22.98
-  - 069 | 149ms | 66.163.114.45
-  - 070 | 150ms | 66.163.114.132
-  - 071 | 151ms | 66.163.114.126
-  - 072 | 151ms | 66.163.114.114
-  - 073 | 154ms | 154.26.192.123
-  - 074 | 155ms | 156.229.167.109
-  - 075 | 156ms | 167.17.67.171
-  - 076 | 157ms | 79.110.54.250
-  - 077 | 157ms | 156.146.38.168
-  - 078 | 157ms | 156.146.38.170
-  - 079 | 158ms | 156.146.38.167
-  - 080 | 159ms | 107.151.182.197
-  - 081 | 159ms | 67.220.73.178
-  - 082 | 159ms | 66.163.112.171
-  - 083 | 160ms | 138.199.35.199
-  - 084 | 160ms | 138.199.35.217
-  - 085 | 160ms | 138.199.35.212
-  - 086 | 160ms | 66.163.112.13
-  - 087 | 160ms | 138.199.35.207
-  - 088 | 161ms | 138.199.35.204
-  - 089 | 161ms | 138.199.35.195
-  - 090 | 161ms | 138.199.35.217
-  - 091 | 161ms | 138.199.35.214
-  - 092 | 162ms | 138.199.35.197
-  - 093 | 162ms | 138.199.35.218
-  - 094 | 162ms | 138.199.35.214
-  - 095 | 162ms | 138.199.35.196
-  - 096 | 162ms | 138.199.35.219
-  - 097 | 162ms | 138.199.35.211
-  - 098 | 162ms | 138.199.35.215
-  - 099 | 162ms | 138.199.35.206
-  - 100 | 162ms | 138.199.35.208
+  - 001 | 33ms | 216.106.186.66
+  - 002 | 33ms | 216.106.186.82
+  - 003 | 33ms | www.findlocaljobnetworkandbuildcommunityconnections.com
+  - 004 | 35ms | 38.143.66.146
+  - 005 | 35ms | 216.106.186.33
+  - 006 | 36ms | 216.106.186.46
+  - 007 | 39ms | 138.199.43.159
+  - 008 | 39ms | 216.106.186.32
+  - 009 | 40ms | 149.22.88.65
+  - 010 | 44ms | 172.64.68.89
+  - 011 | 45ms | 172.64.69.89
+  - 012 | 46ms | 172.64.68.89
+  - 013 | 47ms | 149.22.95.183
+  - 014 | 56ms | 15.204.97.206
+  - 015 | 56ms | 15.204.97.209
+  - 016 | 57ms | 15.204.97.214
+  - 017 | 58ms | 15.204.97.219
+  - 018 | 59ms | 15.204.97.195
+  - 019 | 90ms | 137.184.89.151
+  - 020 | 102ms | 54.190.176.228
+  - 021 | 103ms | 23.150.152.38
+  - 022 | 108ms | 162.159.198.1
+  - 023 | 112ms | 104.19.173.68
+  - 024 | 120ms | 104.168.249.36
+  - 025 | 137ms | 137.175.22.40
+  - 026 | 138ms | 137.175.22.41
+  - 027 | 138ms | 137.175.22.52
+  - 028 | 138ms | 137.175.22.29
+  - 029 | 139ms | 107.173.237.146
+  - 030 | 140ms | 167.88.62.203
+  - 031 | 142ms | 137.175.22.120
+  - 032 | 152ms | 23.95.222.127
+  - 033 | 153ms | 167.17.67.171
+  - 034 | 154ms | 156.146.38.170
+  - 035 | 155ms | 156.146.38.169
+  - 036 | 155ms | 156.146.38.167
+  - 037 | 159ms | 138.199.35.220
+  - 038 | 160ms | 138.199.35.203
+  - 039 | 160ms | 216.106.178.169
+  - 040 | 161ms | 138.199.35.198
+  - 041 | 161ms | 138.199.35.220
+  - 042 | 161ms | 138.199.35.220
+  - 043 | 162ms | 138.199.35.201
+  - 044 | 162ms | 138.199.35.213
+  - 045 | 162ms | 138.199.35.217
+  - 046 | 163ms | 138.199.35.213
+  - 047 | 163ms | 138.199.35.209
+  - 048 | 163ms | 138.199.35.210
+  - 049 | 163ms | 138.199.35.205
+  - 050 | 164ms | 138.199.35.198
+  - 051 | 164ms | 138.199.35.216
+  - 052 | 164ms | 138.199.35.200
+  - 053 | 164ms | 107.151.182.197
+  - 054 | 165ms | 138.199.35.198
+  - 055 | 169ms | 79.110.53.169
+  - 056 | 170ms | 67.220.73.178
+  - 057 | 172ms | 38.95.111.226
+  - 058 | 178ms | 156.146.38.168
+  - 059 | 180ms | 85.155.179.206
+  - 060 | 185ms | 38.121.43.225
+  - 061 | 185ms | 38.121.43.231
+  - 062 | 185ms | 38.22.17.219
+  - 063 | 185ms | 172.111.36.123
+  - 064 | 186ms | 167.88.63.99
+  - 065 | 186ms | 38.22.17.139
+  - 066 | 186ms | 38.22.17.129
+  - 067 | 186ms | 38.121.43.18
+  - 068 | 187ms | 185.215.132.9
+  - 069 | 189ms | 167.88.63.39
+  - 070 | 190ms | goedkoopgeluid.icu
+  - 071 | 192ms | 15.204.233.41
+  - 072 | 193ms | jewelscollecti.icu
+  - 073 | 196ms | tzoa.fun
+  - 074 | 198ms | 38.91.100.39
+  - 075 | 200ms | 37.19.198.243
+  - 076 | 201ms | 37.19.198.160
+  - 077 | 203ms | 37.19.198.236
+  - 078 | 203ms | 37.19.198.244
+  - 079 | 208ms | 15.204.246.132
+  - 080 | 212ms | 67.220.73.204
+  - 081 | 214ms | 67.220.73.204
+  - 082 | 214ms | kimberlymilano.icu
+  - 083 | 217ms | tzoa.fun
+  - 084 | 218ms | zebpay.site
+  - 085 | 219ms | 216.152.155.23
+  - 086 | 221ms | 23.227.38.99
+  - 087 | 225ms | 149.40.57.133
+  - 088 | 226ms | 216.152.155.158
+  - 089 | 226ms | 149.40.57.134
+  - 090 | 226ms | 149.40.57.138
+  - 091 | 226ms | 45.86.51.18
+  - 092 | 227ms | 149.40.57.135
+  - 093 | 227ms | 185.230.230.18
+  - 094 | 227ms | 172.111.38.72
+  - 095 | 244ms | 188.114.97.6
+  - 096 | 244ms | 216.152.156.42
+  - 097 | 245ms | 216.152.156.65
+  - 098 | 246ms | 216.152.156.81
+  - 099 | 247ms | 216.152.156.49
+  - 100 | 250ms | 15.204.97.198
 rules:
 - MATCH,PROXY
