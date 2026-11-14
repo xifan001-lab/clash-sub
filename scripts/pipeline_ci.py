@@ -251,6 +251,7 @@ tcp_ok.sort(key=lambda p: p["_tcp"])
 print("tcp alive:", len(tcp_ok), flush=True)
 test = tcp_ok[:1100]
 for i, p in enumerate(test):
+    p["_orig_name"] = str(p.get("name") or p.get("server") or "")[:54]
     p["name"] = f"c{i:04d}"
 
 # ---- mihomo 3-round ----
@@ -329,42 +330,44 @@ for start in range(0, len(test), chunk):
 
 test = good
 print(f"tested total: {len(test)}, alive: {len(passes)}", flush=True)
-rows = [p for p in test if passes.get(p["name"])]
-rows.sort(key=lambda p: (-passes[p["name"]], lat[p["name"]]))
-print("alive:", len(rows), flush=True)
-picked = rows[:TARGET]
-if len(picked) < TARGET:
-    print(f"WARN: only {len(picked)} verified (<{TARGET}), keep existing clash.yaml", flush=True)
+# ---- keep provenance (original names) for readable labels ----
+for p in test:
+    p["_orig"] = p.get("_orig_name") or p.get("server")
+    p["_delay"] = lat.get(p["name"], 10 ** 6)
+    p["_passes"] = passes.get(p["name"], 0)
+
+rows = [p for p in test if p["_passes"] >= 2]
+rows.sort(key=lambda p: (-p["_passes"], p["_delay"]))
+print("solid(>=2 rounds):", len(rows), flush=True)
+if len(rows) < TARGET:
+    print(f"WARN: only {len(rows)} verified (<{TARGET}), keep existing clash.yaml", flush=True)
     raise SystemExit(0)
 
-proxies = []
-for i, p in enumerate(picked, 1):
-    q = {k: v for k, v in p.items() if k not in ("_sig", "_tcp", "name")}
-    core = str(p.get("name") or p.get("server"))
-    core = str(q.get("server"))
-    q["name"] = f"{i:03d} | {lat[p['name']]}ms | {core}"
-    q["udp"] = True
-    proxies.append(q)
-nm = [p["name"] for p in proxies]
-out = {"mixed-port": 7890, "allow-lan": False, "mode": "rule", "log-level": "warning",
-       "ipv6": True, "unified-delay": True, "external-controller": "127.0.0.1:9090",
-       "proxies": proxies,
-       "proxy-groups": [
-           {"name": "AUTO-FASTEST", "type": "url-test", "proxies": nm,
-            "url": TEST_URL, "interval": 300, "tolerance": 50, "lazy": False},
-           {"name": "PROXY", "type": "select", "proxies": ["AUTO-FASTEST", "DIRECT"] + nm},
-           {"name": "GLOBAL", "type": "select", "proxies": ["AUTO-FASTEST", "PROXY", "DIRECT"] + nm},
-       ],
-       "rules": ["MATCH,PROXY"]}
-header = (
-    "# ============================================================\n"
-    f"#  免费节点订阅  •  {len(proxies)} 个节点\n"
-    f"#  生成时间: {time.strftime('%Y-%m-%d %H:%M')} (UTC)\n"
-    "#  说明: 已用 mihomo 多轮实测延迟，全部非 VMess；按通过轮次优先排序\n"
-    "#  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。\n"
-    "# ============================================================\n"
-)
+# ---- IP classification + Google AI Studio gate ----
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    import nodegate
+    rows = nodegate.classify(rows, os.path.join(ROOT, "ci_ipinfo.json"))
+    rows = nodegate.ai_gate(rows, os.path.join(ROOT, "ci_aigate"))
+except Exception as e:
+    print(f"WARN: classification/AI gate unavailable ({type(e).__name__}: {e}); "
+          "falling back to latency-only grouping", flush=True)
+    for p in rows:
+        p.setdefault("_hosting", None)
+        p.setdefault("_ai", None)
+
+# ---- compose subscription ----
+import builder
+cfg, groups = builder.compose(rows, TARGET)
+if not groups["个人"] and not groups["机房"]:
+    print("WARN: no AI-verified nodes found, aborting to avoid degrading the profile",
+          flush=True)
+    raise SystemExit(0)
+
+when = time.strftime("%Y-%m-%d %H:%M") + " (UTC)"
+text = builder.render(cfg, groups, when)
 with open(os.path.join(ROOT, "clash.yaml"), "w", encoding="utf-8", newline="\n") as f:
-    f.write(header)
-    yaml.safe_dump(out, f, allow_unicode=True, sort_keys=False, width=4096)
-print("wrote clash.yaml", len(proxies), flush=True)
+    f.write(text)
+print(f"wrote clash.yaml: {len(cfg['proxies'])} nodes "
+      f"(个人 {len(groups['个人'])} / 机房 {len(groups['机房'])} / 备用 {len(groups['备用'])})",
+      flush=True)
