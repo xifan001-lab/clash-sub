@@ -8,7 +8,26 @@ unavailable the caller still gets a usable (if less precise) node set.
 import json, os, time, collections, subprocess, urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-MIHOMO = os.environ.get("MIHOMO_BIN", "mihomo")
+def _find_mihomo():
+    """Locate the mihomo binary: env override, PATH, then common CI locations."""
+    env = os.environ.get("MIHOMO_BIN")
+    if env and os.path.exists(env):
+        return env
+    for cand in ("mihomo", "verge-mihomo",
+                 "/usr/local/bin/mihomo", "/usr/bin/mihomo",
+                 r"C:\Program Files\Clash Verge\verge-mihomo.exe"):
+        if os.path.sep in cand:
+            if os.path.exists(cand):
+                return cand
+        else:
+            from shutil import which
+            found = which(cand)
+            if found:
+                return found
+    return "mihomo"
+
+
+MIHOMO = _find_mihomo()
 CTRL = "http://127.0.0.1:9099"
 AI_URL = "https://aistudio.google.com/app/apikey"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
