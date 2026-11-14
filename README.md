@@ -18,18 +18,18 @@ https://gh-proxy.com/https://raw.githubusercontent.com/xifan001-lab/clash-sub/ma
 
 | 分组 | 数量 | 说明 |
 | --- | --- | --- |
-| 个人节点 | 26 | 住宅 IP，已逐节点验证可打开 Google AI Studio |
-| 机房节点 | 60 | 数据中心 IP，已验证可打开 Google AI Studio |
-| 备用节点 | 14 | 多轮实测稳定，延迟优先 |
+| 个人节点 | 38 | 住宅 IP，已逐节点验证可打开 Google AI Studio |
+| 机房节点 | 50 | 数据中心 IP，已验证可打开 Google AI Studio |
+| 备用节点 | 12 | 多轮实测稳定 |
 
 - 节点总数：100
-- 协议：http×61, hysteria×3, hysteria2×1, socks5×5, ss×12, trojan×1, vless×17
-- 延迟：165 ~ 2750 ms（实测）
+- 协议：http×82, hysteria×3, hysteria2×1, ss×10, vless×4
+- 延迟：185 ~ 1571 ms（实测）
 
 ## 内置策略组
 
 - `AI-STUDIO`：所有验证过 AI Studio 的节点自动选最快，专供 Google AI Studio / Gemini
-- `个人节点`：仅住宅 IP 节点，最不容易触发风控
+- `个人节点`：仅住宅 IP 节点
 - `机房节点`：仅数据中心节点
 - `AUTO-FASTEST` / `PROXY` / `GLOBAL`：通用自动选择
 
