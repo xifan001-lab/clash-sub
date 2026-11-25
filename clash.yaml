@@ -1,14 +1,13 @@
 # ============================================================
-#  免费节点订阅  ·  100 个节点（3 轮延迟实测 + IP 纯净度检测）
-#  生成时间: 2026-11-24 16:32 (UTC)
-#  个人节点（住宅 IP）: 33 个
-#  机房节点: 56 个
-#  备用节点: 11 个
-#  纯净度分 <= 25 的低风险节点: 43 个
-#  纯净度分范围: 2 ~ 91（越低越干净）
-#  延迟范围: 217 ~ 4733 ms（实测）
-#  协议: anytls×6, http×54, socks5×29, ss×1, vless×10
-#  纯净度检测: clash-node-purity-test（IPPure + IPing + IPInfo）
+#  免费节点订阅  •  100 个节点
+#  生成时间: 2026-11-25 10:13 (UTC)
+#  个人节点（住宅 IP + Google AI Studio 实测可访问）: 40 个
+#  机房节点（AI Studio 实测可访问）: 50 个
+#  备用节点: 10 个
+#  AI 组节点逐个以独立端口验证 aistudio.google.com 返回 200
+#  全部节点经 mihomo 多轮延迟实测
+#  协议: http×76, socks5×8, ss×13, trojan×1, vless×2
+#  延迟: 22~851 ms（实测）
 #  安全提醒: 公开免费节点不可信，请勿用于网银/支付/公司系统等敏感场景。
 # ============================================================
 mixed-port: 7890
@@ -19,211 +18,39 @@ ipv6: true
 unified-delay: true
 external-controller: 127.0.0.1:9090
 proxies:
-- client-fingerprint: chrome
-  name: 001 | 289ms | 个人 P2 | 🇹🇼TW_3/1.6MB/s
-  password: 0324fbc29561
+- name: 001 | 296ms | 个人 🇺🇸US_18/910KB/s/R002-260618 [c0c88000d4a2]
   port: 443
-  server: a54ge.df6h451rh.xin
-  skip-cert-verify: true
-  sni: docs.microsoft.com
-  type: anytls
-  udp: true
-- name: 002 | 412ms | 个人 P3 | 🇹🇼 🇨🇳 台湾 / TWN 2
-  password: 0324fbc29561
-  port: 443
-  server: mfjh645drfj1dr6j5.df6h451rh.xin
-  skip-cert-verify: true
-  sni: px.ads.linkedin.com
-  type: anytls
-  udp: true
-- name: 003 | 701ms | 个人 P3 | VN - zhuhai.uk
-  type: socks5
-  server: 221.133.22.195
-  port: 62000
-  username: KUs4xRXd
-  password: 480w0Yy4
-  udp: true
-- name: 004 | 3784ms | 个人 P3 | 🇨🇿CZ_1/2.5MB/s/R002-260618 [dea96bfbdd9e]
-  port: 443
-  server: 193.35.104.196
+  server: 162.217.114.50
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- type: anytls
-  name: 005 | 217ms | 个人 P4 | 🇹🇼_TW_台湾_IPV4
-  server: rtifgjdr.df6h451rh.xin
+- name: 002 | 316ms | 个人 🇲🇽MX_1/400KB/s/R002-260618 [fc7c075ec4e0]
   port: 443
-  password: 2902c46c8493
-  tls: true
-  servername: docs.microsoft.com
-  sni: docs.microsoft.com
+  server: 45.134.9.41
   skip-cert-verify: true
-  udp: true
-- name: 006 | 2466ms | 个人 P5 | BR - zhuhai.uk
-  type: socks5
-  server: 191.7.129.186
-  port: 62000
-  username: uf3on6k8
-  password: anlxq4mb
-  udp: true
-- name: 007 | 464ms | 个人 P9 | 🇹🇼TW_18/473KB/s [909a8d192827]
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  udp: true
-- name: 008 | 692ms | 个人 P9 | ID - zhuhai.uk
-  type: socks5
-  server: 203.84.138.59
-  port: 62000
-  username: 9tcjLp2W
-  password: RRWtX6XP
-  udp: true
-- name: 009 | 1746ms | 个人 P31 | 🇮🇱IL_1/3.2MB/s
-  password: 'null'
-  port: 443
-  server: 62.90.77.30
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 010 | 2093ms | 个人 P56 | 🇺🇸US_179/349KB/s/R002-260618 [be32b39e85c7]
-  port: 8090
-  server: 98.101.229.212
-  skip-cert-verify: true
+  sni: 991cc80f13caf81d3426ddebb2da7f49-240d6105b6ef86f0.apache-iv.com
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 011 | 1819ms | 个人 P77 | seed27
-  port: 443
-  server: 24.225.10.211
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  x-toolall-mihomo: true
+- name: 003 | 318ms | 个人 🇺🇸US_53/901KB/s/M003-260806 [3ac3010a5c77]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 66.163.125.120
+  sub_tag: M003-260806
+  type: ss
   udp: true
-- name: 012 | 1328ms | 个人 P82 | 🇫🇷FR_4/1.2MB/s/K001-260618 [af44a4a293e5]
-  password: None
-  port: 8081
-  server: 31.32.19.111
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  username: ''
-  udp: true
-- name: 013 | 1694ms | 个人 P82 | 🇺🇸US_510/822KB/s/R002-260618 [e7d3d24b0e99]
-  port: 443
-  server: 71.43.26.234
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 014 | 1892ms | 个人 P82 | 🇺🇸US_298/646KB/s/P002-260618 [db679d7e13ba]
-  password: None
-  port: 8090
-  server: 173.42.49.102
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 015 | 2727ms | 个人 P82 | 🇲🇽MX_2/460KB/s/P002-260618 [a3038fd93823]
+- name: 004 | 318ms | 个人 seed14
   password: None
   port: 999
   server: 189.51.168.165
   sub_tag: P002-260618
   type: http
   udp: true
-- name: 016 | 555ms | 个人 P83 | 🇮🇩ID_2/594KB/s/R002-260618 [ec91e15d058c]
-  port: 443
-  server: 103.86.116.118
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 017 | 562ms | 个人 P83 | 🇮🇩ID_1/680KB/s/R002-260618 [964f620b2028]
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 018 | 1160ms | 个人 P83 | 🇩🇪DE_31/2.7MB/s/P002-260618 [a01dd6dcc5e0]
-  password: None
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 019 | 1236ms | 个人 P84 | 🇩🇪DE_100/2.2MB/s/R002-260618 [62cee87d127c]
-  port: 443
-  server: 176.94.74.21
-  skip-cert-verify: true
-  sni: 176.94.74.21
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 020 | 1364ms | 个人 P84 | FR - zhuhai.uk
-  type: http
-  server: 80.15.99.54
-  port: 8090
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 021 | 1880ms | 个人 P84 | 🇫🇷FR_66/2.2MB/s/R002-260618 [804be636e16d]
-  port: 4443
-  server: 83.172.143.53
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 022 | 582ms | 个人 P85 | 🇰🇷KR_1/3.8MB/s
-  port: 1080
-  server: 59.11.209.162
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- name: 023 | 1317ms | 个人 P85 | 🇳🇱NL_9/1.9MB/s
-  password: 'null'
-  port: 19362
-  server: 51.159.225.197
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 024 | 1355ms | 个人 P85 | seed4
-  port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 025 | 2329ms | 个人 P85 | 🇧🇷BR_1/1.1MB/s
-  password: 0mvrt5jb
-  port: 62000
-  server: 191.7.129.133
-  type: socks5
-  username: uwrgfkwg
-  udp: true
-- name: 026 | 1471ms | 个人 P86 | 🇺🇸US_650/725KB/s/R002-260618 [a8d5e1342ea1]
+- name: 005 | 330ms | 个人 seed25
   port: 8090
   server: 66.153.187.90
   skip-cert-verify: true
@@ -232,7 +59,150 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 027 | 1583ms | 个人 P86 | 🇺🇸US_292/715KB/s/K001-260618 [569c66c77b5f]
+- name: 006 | 342ms | 个人 🇲🇽MX_2/1.3MB/s
+  password: KsPAxZGn
+  port: 42000
+  server: 94.194.166.52
+  skip-cert-verify: true
+  type: socks5
+  username: userLRgK
+  udp: true
+- name: 007 | 342ms | 个人 seed46
+  password: lcFa8dTH
+  port: 62000
+  server: 94.194.165.96
+  sub_tag: R002-260618
+  type: socks5
+  username: QyVdo5ks
+  x-toolall-mihomo: true
+  udp: true
+- name: 008 | 353ms | 个人 seed43
+  password: 2j7CCZQb
+  port: 62000
+  server: 94.194.164.203
+  sub_tag: R002-260618
+  type: socks5
+  username: rVkkraqT
+  udp: true
+- name: 009 | 364ms | 个人 🇺🇸US_508/324KB/s/R002-260618 [a4d3572ae220]
+  port: 443
+  server: 38.28.193.188
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 010 | 368ms | 个人 🇺🇸US_227/83KB/s/R002-260618 [535e13772931]
+  password: 'null'
+  port: 443
+  server: 38.28.193.188
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 011 | 375ms | 个人 🇺🇸US_180/682KB/s/R002-260618 [ac79b772f5d0]
+  port: 443
+  server: 96.5.129.85
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 012 | 376ms | 个人 seed74
+  password: VvUAFi2E
+  port: 62000
+  server: 72.57.228.87
+  skip-cert-verify: true
+  type: socks5
+  username: UBXich0K
+  udp: true
+- cipher: aes-256-gcm
+  name: '013 | 421ms | 个人 🏳[www.v2nodes.com] ss- #2'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 38.114.120.221
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '014 | 422ms | 个人 🇳🇱[www.v2nodes.com] ss-NL-1614... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 151.241.19.29
+  type: ss
+  udp: true
+- name: 015 | 423ms | 个人 seed10
+  port: 443
+  server: 24.225.10.211
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  x-toolall-mihomo: true
+  udp: true
+- cipher: aes-256-gcm
+  name: '016 | 424ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.202.215
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 017 | 427ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.201.129
+  type: ss
+  udp: true
+- name: 018 | 440ms | 个人 seed76
+  password: 75bPoRcB
+  port: 62000
+  server: 216.132.114.27
+  sub_tag: R002-260618
+  type: socks5
+  username: JzufiJ62
+  udp: true
+- name: 019 | 460ms | 个人 seed13
+  password: None
+  port: 8090
+  server: 173.42.49.102
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- cipher: aes-256-gcm
+  name: '020 | 462ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 167.17.64.27
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 021 | 466ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.162.152.22
+  type: ss
+  udp: true
+- name: 022 | 467ms | 个人 🇺🇸US_552/109KB/s/R002-260618 [fbfa57386da4]
+  port: 443
+  server: 216.107.139.82
+  skip-cert-verify: true
+  sni: 991cc80f13caf81d3426ddebb2da7f49-92ff472ddc24e5b7.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- cipher: aes-256-gcm
+  name: '023 | 469ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #2'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 172.99.189.142
+  type: ss
+  udp: true
+- name: 024 | 489ms | 个人 seed26
   password: None
   port: 443
   server: 162.244.227.36
@@ -242,42 +212,40 @@ proxies:
   type: http
   username: ''
   udp: true
-- name: 028 | 2213ms | 个人 P86 | 🇺🇸US_305/691KB/s/R002-260618 [1185d729498d]
-  port: 8090
-  server: 24.142.229.178
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 029 | 1306ms | 个人 P88 | 🇳🇱NL_81/3.1MB/s/K001-260618 [0314ff07d8b2]
-  password: 'null'
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 030 | 1423ms | 个人 P88 | 🇫🇷FR_16/663KB/s/R002-260618 [4b53647fa1cf]
-  port: 8090
-  server: 83.206.1.225
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 031 | 1568ms | 个人 P89 | 🇳🇱NL_49/5.7MB/s/P002-260618 [d77b65a8fb8a]
-  password: None
+- name: 025 | 507ms | 个人 🇺🇸US_147/533KB/s/R002-260618 [3dbb27238fa5]
   port: 443
-  server: 51.158.243.91
+  server: 207.5.30.9
   skip-cert-verify: true
-  sub_tag: P002-260618
+  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 032 | 1944ms | 个人 P91 | 🇺🇸US_498/807KB/s/R002-260618 [413eefe66dea]
+- name: 026 | 531ms | 个人 🇫🇷FR_30/2.1MB/s/F003-260618 [125302a6243b]
+  encryption: none
+  network: ws
+  port: 14430
+  server: 138.124.70.41
+  sub_tag: F003-260618
+  type: vless
+  udp: true
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /vless
+  xudp: true
+  packet-encoding: xudp
+  servername: 138.124.70.41
+- name: 027 | 573ms | 个人 seed12
+  port: 443
+  server: 71.43.26.234
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 028 | 580ms | 个人 seed31
   port: 8090
   server: 184.188.139.2
   skip-cert-verify: true
@@ -285,180 +253,23 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 033 | 2499ms | 机房 P4 | 🇲🇽MX_10/325KB/s/P002-260618 [a4fc8a9a0c8d]
-  password: sZnD8GTz
-  port: 42000
-  server: 144.225.47.158
-  skip-cert-verify: true
+- name: 029 | 628ms | 个人 🇩🇪DE_59/6.6MB/s/P002-260618 [b982eaaa5258]
+  password: None
+  port: 11111
+  server: 103.237.102.191
   sub_tag: P002-260618
-  type: socks5
-  username: DJy1T0dt
+  type: http
   udp: true
-- name: 034 | 3028ms | 机房 P4 | 🇲🇽MX_4/190KB/s/R002-260618 [b7d81b4b7ca2]
-  password: DJy1T0dt
-  port: 42000
-  server: 144.225.47.8
-  sub_tag: R002-260618
-  type: socks5
-  username: Tek2x6av
-  udp: true
-- name: 035 | 2565ms | 机房 P7 | 🇲🇽MX_7/231KB/s/R002-260618 [4414f12f0fa0]
-  password: sZnD8GTz
-  port: 42000
-  server: 144.225.47.68
-  sub_tag: R002-260618
-  type: socks5
-  username: DJy1T0dt
-  udp: true
-- name: 036 | 1021ms | 机房 P8 | 🇹🇭TH_13/547KB/s/R002-260618 [464d3086d022]
-  password: ao3W5ZML
-  port: 42000
-  server: 168.222.8.119
-  sub_tag: R002-260618
-  type: socks5
-  username: JPjarpW3
-  udp: true
-- name: 037 | 1846ms | 机房 P8 | 🇹🇭TH_2/472KB/s/R002-260618 [849ebc43c563]
-  password: mpbK00Pl
-  port: 42000
-  server: 192.204.15.135
-  sub_tag: R002-260618
-  type: socks5
-  username: X3s3JteD
-  udp: true
-- name: 038 | 2733ms | 机房 P8 | 🇯🇵JP_2/3.1MB/s
-  password: J5rM2xL9
-  port: 42000
-  server: 103.248.150.238
-  skip-cert-verify: true
-  type: socks5
-  username: tB4vN7qP
-  udp: true
-- name: 039 | 814ms | 机房 P9 | 🇹🇭TH_14/549KB/s/K001-260618 [6a15e2bcb6c4]
-  password: VAwyJQX0iKMJiyCw5UVK9wGH
-  port: 42000
-  server: 103.14.164.202
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  type: socks5
-  username: route164JIa2CBPxfy
-  udp: true
-- name: 040 | 1177ms | 机房 P10 | 🇹🇭TH_3/546KB/s/R002-260618 [464b3437191d]
-  password: mpbK00Pl
-  port: 42000
-  server: 192.204.15.192
-  sub_tag: R002-260618
-  type: socks5
-  username: X3s3JteD
-  udp: true
-- name: 041 | 675ms | 机房 P11 | 巴西 002
-  type: vless
-  network: grpc
-  server: 201.24.116.192
+- name: 030 | 656ms | 个人 🇫🇷FR_6/564KB/s/R002-260618 [31a8661c0de3]
   port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  servername: vps3.nemnogogo.com
-  tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  udp: true
-- name: 042 | 695ms | 机房 P11 | 巴西 001
-  type: vless
-  network: grpc
-  server: 201.51.12.98
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  servername: vps3.nemnogogo.com
-  tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  udp: true
-- name: 043 | 723ms | 机房 P11 | 🇷🇺 俄罗斯 / RUS 4
-  server: leviko-ru4448.shopingggg.ir
-  port: 443
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  udp: true
-- name: 044 | 4380ms | 机房 P11 | 🇲🇽MX_9/490KB/s/R002-260618 [7a1e93a0ef85]
-  password: 2j7CCZQb
-  port: 62000
-  server: 94.194.164.203
-  sub_tag: R002-260618
-  type: socks5
-  username: rVkkraqT
-  udp: true
-- name: 045 | 2388ms | 机房 P12 | 🇫🇷FR_117/660KB/s/K001-260618 [44e893cb0aad]
-  password: Zn5mR7vA
-  port: 42000
-  server: 144.56.22.78
+  server: 103.82.101.43
   skip-cert-verify: true
-  sub_tag: K001-260618
-  type: socks5
-  username: L8wP3kQx
-  udp: true
-- name: 046 | 2635ms | 机房 P12 | 🇲🇽MX_5/489KB/s/R002-260618 [8153d1b7016b]
-  password: sZnD8GTz
-  port: 42000
-  server: 144.225.47.106
+  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
   sub_tag: R002-260618
-  type: socks5
-  username: DJy1T0dt
+  tls: true
+  type: http
   udp: true
-- name: 047 | 3828ms | 机房 P12 | seed25
-  password: lcFa8dTH
-  port: 62000
-  server: 94.194.165.96
-  sub_tag: R002-260618
-  type: socks5
-  username: QyVdo5ks
-  x-toolall-mihomo: true
-  udp: true
-- name: 048 | 740ms | 机房 P13 | 🇹🇭TH_8/558KB/s/R002-260618 [6e854ea98e74]
-  password: VAwyJQX0iKMJiyCw5UVK9wGH
-  port: 42000
-  server: 103.14.164.30
-  sub_tag: R002-260618
-  type: socks5
-  username: route164JIa2CBPxfy
-  udp: true
-- name: 049 | 1290ms | 机房 P13 | 🇹🇭TH_4/586KB/s/R002-260618 [f10b406ce373]
-  password: zdnivBaI
-  port: 62000
-  server: 109.66.136.194
-  sub_tag: R002-260618
-  type: socks5
-  username: r3ZzP8WW
-  udp: true
-- name: 050 | 1599ms | 机房 P14 | 🇹🇭TH_9/551KB/s/R002-260618 [08846cc7f1d1]
-  password: fAgE2jqK
-  port: 42000
-  server: 151.246.108.69
-  sub_tag: R002-260618
-  type: socks5
-  username: h87527jJ
-  udp: true
-- name: 051 | 539ms | 机房 P18 | 🇵🇭PH_1/266KB/s/R002-260618 [1ae4aa8e9ed4]
-  password: s6a1j38q
-  port: 42000
-  server: 103.18.230.88
-  sub_tag: R002-260618
-  type: socks5
-  username: uv4oakg5
-  udp: true
-- name: 052 | 1982ms | 机房 P20 | 🇯🇵JP_1/4.5MB/s
+- name: 031 | 661ms | 个人 seed51
   password: EGJDy5Kg
   port: 42000
   server: 103.248.150.50
@@ -466,193 +277,517 @@ proxies:
   type: socks5
   username: paZFN3JA
   udp: true
-- name: 053 | 826ms | 机房 P21 | 🇻🇳VN_6/353KB/s/R002-260618 [6d6a890a0e15]
-  password: jHsK2gqs
-  port: 62000
-  server: 103.184.113.236
+- name: 032 | 695ms | 个人 seed85
+  port: 443
+  server: 103.82.101.44
+  skip-cert-verify: true
+  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
   sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 033 | 710ms | 个人 seed9
+  port: 8090
+  server: 98.101.229.212
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 034 | 710ms | 个人 seed37
+  password: J5rM2xL9
+  port: 42000
+  server: 103.248.150.238
+  skip-cert-verify: true
   type: socks5
-  username: qT46DZLv
+  username: tB4vN7qP
   udp: true
-- name: 054 | 898ms | 机房 P22 | 🇻🇳VN_5/330KB/s/R002-260618 [1ed94f8d82c9]
-  password: jHsK2gqs
-  port: 62000
-  server: 103.184.113.190
+- name: 035 | 740ms | 个人 seed78
+  port: 443
+  server: 185.140.209.235
+  skip-cert-verify: true
+  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
   sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 036 | 742ms | 个人 🇯🇵JP_6/145KB/s/P002-260618 [6c3b615333c9]
+  password: None
+  port: 343
+  server: 133.18.200.207
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 037 | 760ms | 个人 seed21
+  port: 1080
+  server: 59.11.209.162
+  skip-cert-verify: true
   type: socks5
-  username: qT46DZLv
   udp: true
-- name: 055 | 1814ms | 机房 P23 | US - zhuhai.uk 08
+- name: 038 | 776ms | 个人 US - zhuhai.uk
   type: http
-  server: 137.175.22.56
-  port: 443
-  tls: true
-  sni: 137.175.22.56
-  skip-cert-verify: true
-  udp: true
-- name: 056 | 1830ms | 机房 P23 | 🇺🇸US_551/90KB/s/R002-260618 [2c5b09e88ef7]
-  port: 443
-  server: 137.175.22.45
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 057 | 1834ms | 机房 P23 | 🇺🇸US_500/80KB/s/R002-260618 [22a5f322cb38]
-  port: 443
-  server: 137.175.22.85
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 058 | 1844ms | 机房 P23 | 🇺🇸US_378/169KB/s/R002-260618 [b4135a5f200b]
-  port: 443
-  server: 137.175.22.98
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 059 | 2003ms | 机房 P23 | 🇺🇸US_523/180KB/s/R002-260618 [f680b3bec0ff]
-  port: 443
-  server: 137.175.22.29
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 060 | 2630ms | 机房 P23 | 🇺🇸US_509/232KB/s/R002-260618 [ea1befc94c60]
-  port: 443
-  server: 137.175.22.84
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 061 | 2721ms | 机房 P23 | 🇺🇸US_647/84KB/s/R002-260618 [7d81f74f9a2f]
-  port: 443
-  server: 137.175.22.52
-  skip-cert-verify: true
-  sni: 137.175.22.52
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 062 | 2789ms | 机房 P23 | 🇺🇸US_572/64KB/s/R002-260618 [39215ca34ddc]
-  port: 443
-  server: 137.175.22.72
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 063 | 2975ms | 机房 P23 | 🇺🇸US_597/224KB/s/R002-260618 [83c31957de44]
-  port: 443
-  server: 137.175.22.40
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 064 | 4173ms | 机房 P23 | 🇺🇸US_568/199KB/s/R002-260618 [6caecc4b1a5e]
-  port: 443
-  server: 137.175.22.120
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 065 | 4563ms | 机房 P23 | 🇺🇸US_307/216KB/s/R002-260618 [b92c1a4a1fb1]
-  port: 443
-  server: 137.175.22.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 066 | 1652ms | 机房 P24 | 🇹🇭TH_5/401KB/s/R002-260618 [97523c93a778]
-  password: zdnivBaI
-  port: 62000
-  server: 109.66.136.42
-  sub_tag: R002-260618
-  type: socks5
-  username: r3ZzP8WW
-  udp: true
-- name: 067 | 1369ms | 机房 P30 | 🇬🇧 英国 / GBR 7
-  server: 196.196.208.22
-  port: 443
-  type: vless
-  uuid: cae99415-10a6-4317-81bd-19a4586b5d76
-  tls: true
-  reality-opts:
-    public-key: _yJGJ5q-8IxTuWFcoy5wpKKYtk9p9q4lQ6svfXC1IUU
-    short-id: 621290c77645b731
-  servername: 9303d6x.fi-p1b.h1clayd.click
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /f57a81c99fea
-    host: 9303d6x.fi-p1b.h1clayd.click
-    mode: auto
-  udp: true
-- name: 068 | 1604ms | 机房 P30 | 🇹🇭TH_12/564KB/s/R002-260618 [4d7f4c48ed29]
-  password: YlRoWvE0dL_cUqS94wPeKnA4
-  port: 62000
-  server: 87.84.49.245
-  sub_tag: R002-260618
-  type: socks5
-  username: ks878449260d
-  udp: true
-- cipher: 2022-blake3-aes-128-gcm
-  name: '069 | 2381ms | 机房 P33 | 🇺🇸 美国 / USA #2'
-  password: qT1+kd0KB5v6sUmEyHdVJQ==
+  server: 162.191.87.112
   port: 8443
-  server: 103.232.93.17
-  type: ss
-  udp: true
-- type: anytls
-  name: 070 | 512ms | 机房 P34 | 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
-  server: sdf65h46wr.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
   tls: true
-  servername: images.ctfassets.net
-  sni: images.ctfassets.net
+  sni: 162.191.87.112
   skip-cert-verify: true
   udp: true
-- name: 071 | 1460ms | 机房 P34 | 🇮🇩ID_1/2.3MB/s
-  password: APJ7RmY9
-  port: 62000
-  server: 202.155.99.212
-  skip-cert-verify: true
-  type: socks5
-  username: gebHTLF6
-  udp: true
-- name: 072 | 1485ms | 机房 P40 | 🇨🇿 捷克 / CZE
-  server: 153.52.69.249
-  port: 443
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
-    short-id: d5492c7a39515c65
-  servername: cache-78.topp-con.xyz
+- name: 039 | 799ms | 个人 🇰🇷KR_15/468KB/s/A004-260618 [906ca5cbd3af]
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 073 | 1141ms | 机房 P41 | 🇳🇱NL_67/385KB/s/R002-260618 [212db84ab5aa]
-  port: 443
-  server: 103.97.88.154
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  port: 56127
+  server: 154.90.62.70
   skip-cert-verify: true
-  sni: 4a8c2906c96058315dffbc2b0e7ff19b-98005bea43f9ac33.apache-iv.com
+  sni: 154.90.62.70
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- name: 040 | 851ms | 个人 🇰🇷KR-211.178.105.134-0187 / 0.013MB
+  server: 211.178.105.134
+  port: 6123
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 041 | 22ms | 机房 🇺🇸US-95.215.201.18-0052 / 64.305MB
+  server: 95.215.201.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 042 | 41ms | 机房 🇺🇸US_642/975KB/s/M003-260806 [dc2acf418afb]
+  cipher: chacha20-ietf-poly1305
+  password: JUXsy78dSs6ROkasikmoaL
+  port: 11051
+  server: 104.238.140.45
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 043 | 43ms | 机房 🇺🇸US_220/889KB/s/A004-260618 [d92318afee09]
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 79.110.54.250
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 044 | 51ms | 机房 🇺🇸US_57/934KB/s/A004-260618 [0e40b52615aa]
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.197
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 045 | 53ms | 机房 🇺🇸US_213/760KB/s/R002-260618 [712a67040d3e]
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 074 | 1800ms | 机房 P42 | 🇺🇸US_493/773KB/s/P002-260618 [de266c2b5bde]
+- name: 046 | 54ms | 机房 🇺🇸US_98/806KB/s/R002-260618 [2d2bb008072d]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.212
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 047 | 54ms | 机房 🇺🇸US_105/758KB/s/P002-260618 [342fedcdd2a9]
+  password: None
+  port: 9002
+  server: 138.199.35.217
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 048 | 54ms | 机房 🇺🇸US_160/798KB/s/R002-260618 [4ac5d05f7655]
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 049 | 54ms | 机房 🇺🇸US_236/825KB/s/P002-260618 [6bccc75a3524]
+  password: None
+  port: 9002
+  server: 138.199.35.209
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 050 | 54ms | 机房 🇺🇸US_188/815KB/s/P002-260618 [7feeec8f30cf]
+  password: None
+  port: 9002
+  server: 138.199.35.212
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 051 | 54ms | 机房 🇺🇸US_129/797KB/s/R002-260618 [99f87f2b140a]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.210
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 052 | 54ms | 机房 🇺🇸US_162/805KB/s [9ad570cf8a0d]
+  password: ''
+  port: 9002
+  server: 138.199.35.205
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 053 | 54ms | 机房 🇺🇸US_73/675KB/s [bdd89167a37f]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 054 | 54ms | 机房 🇺🇸US_163/824KB/s [d4a1bf05a3c6]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.200
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 055 | 55ms | 机房 🇺🇸US_2/3.3MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 056 | 55ms | 机房 🇺🇸US_4/2.6MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 057 | 55ms | 机房 🇺🇸US_14/1.0MB/s
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 058 | 55ms | 机房 🇺🇸US_16/3.4MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.202
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 059 | 55ms | 机房 US - zhuhai.uk 02
+  type: http
+  server: 138.199.35.209
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 060 | 55ms | 机房 US - zhuhai.uk 07
+  type: http
+  server: 138.199.35.196
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 061 | 55ms | 机房 🇺🇸US_595/789KB/s/P002-260618 [2cca269a4ba7]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 062 | 55ms | 机房 🇺🇸US_81/855KB/s/R002-260618 [5385a051842e]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 063 | 55ms | 机房 🇺🇸US_175/765KB/s/R002-260618 [e7d870f81e49]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  sni: 138.199.35.201
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 064 | 55ms | 机房 🇺🇸US_170/820KB/s/R002-260618 [ffc0819f735f]
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 065 | 56ms | 机房 🇺🇸US_128/846KB/s/P002-260618 [64d55366a21c]
+  password: None
+  port: 9002
+  server: 138.199.35.205
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 066 | 56ms | 机房 🇺🇸US_70/760KB/s/P002-260618 [b90a89b0573a]
+  password: None
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 067 | 56ms | 机房 🇺🇸US_5/1.2MB/s/P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.196
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 068 | 56ms | 机房 🇺🇸US_15/2.6MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 069 | 56ms | 机房 🇺🇸US_72/717KB/s/R002-260618 [1ac4d958cac3]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.199
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 070 | 56ms | 机房 🇺🇸US_119/815KB/s/R002-260618 [1fd0f978ab09]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.197
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 071 | 56ms | 机房 🇺🇸US_167/837KB/s/P002-260618 [2066bdd63838]
+  password: None
+  port: 9002
+  server: 138.199.35.199
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 072 | 56ms | 机房 🇺🇸US_123/769KB/s/P002-260618 [30b959b768eb]
+  password: None
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 073 | 56ms | 机房 🇺🇸US_575/831KB/s/R002-260618 [39054f90cbcc]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.202
+  skip-cert-verify: true
+  sni: 138.199.35.202
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 074 | 56ms | 机房 🇺🇸US_542/877KB/s/P002-260618 [4cc71e0918ac]
+  password: None
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 075 | 56ms | 机房 🇺🇸US_64/876KB/s/P002-260618 [56adb46655ef]
+  password: None
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 076 | 56ms | 机房 🇺🇸US_69/712KB/s/P002-260618 [757e1ca598e8]
+  password: None
+  port: 9002
+  server: 138.199.35.197
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 077 | 56ms | 机房 🇺🇸US_112/816KB/s/R002-260618 [7999de0c275c]
+  password: None
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 078 | 56ms | 机房 🇺🇸US_193/844KB/s/P002-260618 [9411ee14b7b3]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.217
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 079 | 56ms | 机房 🇺🇸US_243/769KB/s/K001-260618 [c6e1aea44c4a]
+  password: None
+  port: 9002
+  server: 138.199.35.203
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 080 | 56ms | 机房 🇺🇸US_495/836KB/s/P002-260618 [e842f77422a7]
+  password: None
+  port: 9002
+  server: 138.199.35.207
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 081 | 57ms | 机房 🇺🇸US_215/882KB/s/P002-260618 [1e13e95b0e5a]
+  password: None
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 082 | 57ms | 机房 🇺🇸US_63/758KB/s/R002-260618 [430dc52727da]
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 083 | 57ms | 机房 🇺🇸US_120/777KB/s [518e0351a46f]
+  password: ''
+  port: 9002
+  server: 138.199.35.203
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 084 | 57ms | 机房 🇺🇸US_124/823KB/s/R002-260618 [57beb1e2a7df]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  sni: 138.199.35.198
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 085 | 57ms | 机房 🇺🇸US_200/791KB/s/P002-260618 [66ebf6ae1341]
+  password: ''
+  port: 9002
+  server: 138.199.35.210
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 086 | 57ms | 机房 🇺🇸US_181/808KB/s/P002-260618 [7fb6ee20b3bd]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.207
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 087 | 57ms | 机房 🇺🇸US_186/783KB/s/P002-260618 [d6053f38ebec]
+  password: None
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 088 | 57ms | 机房 🇺🇸US_8/859KB/s/P002-260618 [d71325a4e884]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.196
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 089 | 58ms | 机房 seed73
   password: None
   port: 9002
   server: 138.199.35.215
@@ -661,31 +796,49 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 075 | 1661ms | 机房 P43 | 🇲🇽MX_4/3.5MB/s
-  password: VvUAFi2E
-  port: 62000
-  server: 72.57.228.87
-  skip-cert-verify: true
-  type: socks5
-  username: UBXich0K
-  udp: true
-- name: 076 | 1299ms | 机房 P44 | 🇷🇴RO_32/1.7MB/s/R002-260618 [d639d2bb1dd5]
+- name: 090 | 58ms | 机房 🇺🇸US_189/814KB/s/R002-260618 [024ef203ebf1]
   port: 9002
-  server: 193.176.84.29
+  server: 138.199.35.200
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 077 | 2695ms | 机房 P44 | seed15
-  password: 75bPoRcB
-  port: 62000
-  server: 216.132.114.27
+- name: 091 | 58ms | 备用 🇺🇸US_65/752KB/s/R002-260618 [5bfea617b8dd]
+  port: 9002
+  server: 138.199.35.204
+  skip-cert-verify: true
   sub_tag: R002-260618
-  type: socks5
-  username: JzufiJ62
+  tls: true
+  type: http
   udp: true
-- name: 078 | 1167ms | 机房 P46 | 🇺🇸US_134/806KB/s/P002-260618 [8d81cfcb4761]
+- name: 092 | 58ms | 备用 NN_speednode_0023
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 093 | 61ms | 备用 seed80
+  password: ''
+  port: 9002
+  server: 138.199.35.219
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 094 | 62ms | 备用 seed90
+  password: None
+  port: 9002
+  server: 138.199.35.208
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 095 | 65ms | 备用 seed77
   password: 'null'
   port: 9002
   server: 138.199.35.218
@@ -695,478 +848,357 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 079 | 1191ms | 机房 P47 | 🇳🇱NL_96/959KB/s/R002-260618 [511bc38da784]
+- name: 096 | 65ms | 备用 🇩🇪DE_8/3.0MB/s/P002-260618
   port: 443
-  server: 185.140.209.235
+  server: 172.64.68.89
   skip-cert-verify: true
-  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
-  sub_tag: R002-260618
+  sni: 172.64.68.89
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
-- name: 080 | 1536ms | 机房 P47 | 🇩🇪DE_86/4.6MB/s [6e0eed8d575b]
+  x-toolall-mihomo: true
+- name: 097 | 66ms | 备用 🇫🇷FR_67/6.9MB/s [602eec94e97e]
   password: 'null'
-  port: 9002
-  server: 158.173.154.1
+  port: 443
+  server: 172.64.69.89
   skip-cert-verify: true
   tls: true
   type: http
   username: 'null'
   udp: true
-- name: 081 | 1099ms | 机房 P48 | 🇺🇸US_135/750KB/s [b6424e86ed03]
-  password: ''
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-  udp: true
-- name: 082 | 1553ms | 备用 P48 | 🇩🇪DE_129/6.0MB/s [fe00298482c1]
-  password: 'null'
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 083 | 1148ms | 备用 P49 | 🇳🇱NL_115/1.4MB/s/R002-260618 [8befcd8cfe66]
-  port: 443
-  server: 185.246.153.42
-  skip-cert-verify: true
-  sni: 482c8436a1f7c908b48a1757abb5dd79-3791fb4df2db250b.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 084 | 1503ms | 备用 P49 | 🇳🇱NL_20/5.3MB/s/P002-260618 [f84dd5f92876]
+- name: 098 | 71ms | 备用 🇩🇪DE_1/1.3MB/s/P002-260618
   password: None
-  port: 9002
-  server: 84.17.47.147
+  port: 443
+  server: 172.64.68.89
   skip-cert-verify: true
   sub_tag: P002-260618
   tls: true
   type: http
   udp: true
-- name: 085 | 1081ms | 备用 P50 | 🇺🇸US_66/799KB/s/P002-260618 [7ba0e952007a]
-  password: None
-  port: 9002
-  server: 138.199.35.211
-  skip-cert-verify: true
-  sub_tag: P002-260618
+  x-toolall-mihomo: true
+- name: '099 | 77ms | 备用 🇸🇬[www.v2nodes.com] vless-SG-1... #4'
+  network: ws
+  port: 8443
+  server: 172.64.154.113
+  servername: freeceshi6.frii.site
   tls: true
-  type: http
-  udp: true
-- name: 086 | 1156ms | 备用 P50 | 🇫🇷FR_19/1.3MB/s/R002-260618 [df3cefb034a8]
-  port: 443
-  server: 103.82.101.44
-  skip-cert-verify: true
-  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- type: vless
-  name: 087 | 1308ms | 备用 P50 | ❓未知丨yoyapai.com (43)
-  server: api.ferrin.uk
-  port: 443
-  uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
-  tls: true
-  servername: 7d1a74fd.ferrin.uk
-  sni: 7d1a74fd.ferrin.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /es
-    mode: stream-one
-  udp: true
-- name: 088 | 1553ms | 备用 P50 | 🇳🇱NL_4/4.8MB/s/R002-260618 [02e64b2794c6]
-  port: 9002
-  server: 84.17.47.150
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 089 | 3853ms | 备用 P50 | 🇯🇵 日本 / JPN
-  server: media.gosthk.site
-  port: 57180
-  type: anytls
-  password: 10f65625-c1f9-4a14-bec5-c1cae15e6f8f
-  sni: media.gosthk.site
-  skip-cert-verify: true
-  udp: true
-- name: 090 | 1385ms | 备用 P51 | NL_speednode_0015
-  password: 'null'
-  port: 9002
-  server: 84.17.47.148
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 091 | 1493ms | 备用 P51 | 🇺🇸US_149/788KB/s/P002-260618 [3fb4f934a2bc]
-  password: None
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- type: vless
-  name: 092 | 1096ms | 备用 P52 | US美国(mibei77.com 米贝节点分享) (27)
-  server: 162.35.101.177
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  servername: 0592efg.us8.h1clayd.click
-  sni: 0592efg.us8.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: edge
-  reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 99f2107b03f8
-  udp: true
-- name: 093 | 1199ms | 机房 P52 | 俄罗斯 002
   type: vless
-  network: xhttp
-  server: 193.160.208.240
-  port: 443
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  servername: 193.160.208.240
-  tls: true
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  ws-opts:
+    headers:
+      Host: freeceshi6.frii.site
+    path: /proxyip=ProxyIP.JP.CMLiussss.netfp=chrome
   udp: true
-  client-fingerprint: firefox
-  xhttp-opts:
-    mode: auto
-    path: /assets/twru01/
-- name: 094 | 1345ms | 机房 P53 | 🇷🇴RO_6/3.6MB/s
-  port: 9002
-  server: 193.176.84.40
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-  udp: true
-- type: vless
-  name: 095 | 4733ms | 机房 P52 | 西班牙(mibei77.com 米贝节点分享) (7)
-  server: 196.245.52.187
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  servername: 04535dt.us8.h1clayd.click
-  sni: 04535dt.us8.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-- name: 096 | 2461ms | 个人 P7 | 🇲🇽MX_1/1.6MB/s
-  port: 999
-  server: 189.187.131.201
-  type: http
-  udp: true
-- name: 097 | 1119ms | 机房 P48 | 🇬🇧 英国 / GBR 2
-  server: a80b5386.fi2.h1clayd.click
-  port: 443
-  type: vless
-  uuid: 2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df
-  tls: true
-  reality-opts:
-    public-key: PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc
-    short-id: cc678f10161992a9
-  servername: a80b5386.fi2.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- type: anytls
-  name: 098 | 606ms | 机房 P43 | 🇹🇼_TW_台湾->🇯🇵_JP_日本_IPV4
-  server: im.frnhk.xyz
-  port: 443
-  password: e2413369-16de-4c90-97c5-b39b8d6b71cd
-  tls: true
-  servername: im.frnhk.xyz
-  sni: im.frnhk.xyz
-  skip-cert-verify: true
-  udp: true
-- name: 099 | 1356ms | 机房 P54 | 🇷🇴RO_6/1.8MB/s/R002-260618 [edff0870a0ac]
-  password: 'null'
-  port: 9002
-  server: 193.176.84.39
-  skip-cert-verify: true
-  sni: 193.176.84.39
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 100 | 1367ms | 机房 P54 | 🇷🇴RO_26/1.8MB/s/P002-260618 [adaa083b38d5]
+- name: 100 | 97ms | 备用 🇺🇸US_92/804KB/s/P002-260618 [bdb7323375e8]
   password: None
-  port: 9002
-  server: 193.176.84.32
+  port: 443
+  server: fullmanfirm.icu
   skip-cert-verify: true
   sub_tag: P002-260618
   tls: true
   type: http
   udp: true
+  sni: fullmanfirm.icu
 proxy-groups:
-- name: 低风险IP
+- name: AI-STUDIO
   type: url-test
   proxies:
-  - 001 | 289ms | 个人 P2 | 🇹🇼TW_3/1.6MB/s
-  - 002 | 412ms | 个人 P3 | 🇹🇼 🇨🇳 台湾 / TWN 2
-  - 003 | 701ms | 个人 P3 | VN - zhuhai.uk
-  - 004 | 3784ms | 个人 P3 | 🇨🇿CZ_1/2.5MB/s/R002-260618 [dea96bfbdd9e]
-  - 005 | 217ms | 个人 P4 | 🇹🇼_TW_台湾_IPV4
-  - 006 | 2466ms | 个人 P5 | BR - zhuhai.uk
-  - 007 | 464ms | 个人 P9 | 🇹🇼TW_18/473KB/s [909a8d192827]
-  - 008 | 692ms | 个人 P9 | ID - zhuhai.uk
-  - 033 | 2499ms | 机房 P4 | 🇲🇽MX_10/325KB/s/P002-260618 [a4fc8a9a0c8d]
-  - 034 | 3028ms | 机房 P4 | 🇲🇽MX_4/190KB/s/R002-260618 [b7d81b4b7ca2]
-  - 035 | 2565ms | 机房 P7 | 🇲🇽MX_7/231KB/s/R002-260618 [4414f12f0fa0]
-  - 036 | 1021ms | 机房 P8 | 🇹🇭TH_13/547KB/s/R002-260618 [464d3086d022]
-  - 037 | 1846ms | 机房 P8 | 🇹🇭TH_2/472KB/s/R002-260618 [849ebc43c563]
-  - 038 | 2733ms | 机房 P8 | 🇯🇵JP_2/3.1MB/s
-  - 039 | 814ms | 机房 P9 | 🇹🇭TH_14/549KB/s/K001-260618 [6a15e2bcb6c4]
-  - 040 | 1177ms | 机房 P10 | 🇹🇭TH_3/546KB/s/R002-260618 [464b3437191d]
-  - 041 | 675ms | 机房 P11 | 巴西 002
-  - 042 | 695ms | 机房 P11 | 巴西 001
-  - 043 | 723ms | 机房 P11 | 🇷🇺 俄罗斯 / RUS 4
-  - 044 | 4380ms | 机房 P11 | 🇲🇽MX_9/490KB/s/R002-260618 [7a1e93a0ef85]
-  - 045 | 2388ms | 机房 P12 | 🇫🇷FR_117/660KB/s/K001-260618 [44e893cb0aad]
-  - 046 | 2635ms | 机房 P12 | 🇲🇽MX_5/489KB/s/R002-260618 [8153d1b7016b]
-  - 047 | 3828ms | 机房 P12 | seed25
-  - 048 | 740ms | 机房 P13 | 🇹🇭TH_8/558KB/s/R002-260618 [6e854ea98e74]
-  - 049 | 1290ms | 机房 P13 | 🇹🇭TH_4/586KB/s/R002-260618 [f10b406ce373]
-  - 050 | 1599ms | 机房 P14 | 🇹🇭TH_9/551KB/s/R002-260618 [08846cc7f1d1]
-  - 051 | 539ms | 机房 P18 | 🇵🇭PH_1/266KB/s/R002-260618 [1ae4aa8e9ed4]
-  - 052 | 1982ms | 机房 P20 | 🇯🇵JP_1/4.5MB/s
-  - 053 | 826ms | 机房 P21 | 🇻🇳VN_6/353KB/s/R002-260618 [6d6a890a0e15]
-  - 054 | 898ms | 机房 P22 | 🇻🇳VN_5/330KB/s/R002-260618 [1ed94f8d82c9]
-  - 055 | 1814ms | 机房 P23 | US - zhuhai.uk 08
-  - 056 | 1830ms | 机房 P23 | 🇺🇸US_551/90KB/s/R002-260618 [2c5b09e88ef7]
-  - 057 | 1834ms | 机房 P23 | 🇺🇸US_500/80KB/s/R002-260618 [22a5f322cb38]
-  - 058 | 1844ms | 机房 P23 | 🇺🇸US_378/169KB/s/R002-260618 [b4135a5f200b]
-  - 059 | 2003ms | 机房 P23 | 🇺🇸US_523/180KB/s/R002-260618 [f680b3bec0ff]
-  - 060 | 2630ms | 机房 P23 | 🇺🇸US_509/232KB/s/R002-260618 [ea1befc94c60]
-  - 061 | 2721ms | 机房 P23 | 🇺🇸US_647/84KB/s/R002-260618 [7d81f74f9a2f]
-  - 062 | 2789ms | 机房 P23 | 🇺🇸US_572/64KB/s/R002-260618 [39215ca34ddc]
-  - 063 | 2975ms | 机房 P23 | 🇺🇸US_597/224KB/s/R002-260618 [83c31957de44]
-  - 064 | 4173ms | 机房 P23 | 🇺🇸US_568/199KB/s/R002-260618 [6caecc4b1a5e]
-  - 065 | 4563ms | 机房 P23 | 🇺🇸US_307/216KB/s/R002-260618 [b92c1a4a1fb1]
-  - 066 | 1652ms | 机房 P24 | 🇹🇭TH_5/401KB/s/R002-260618 [97523c93a778]
-  - 096 | 2461ms | 个人 P7 | 🇲🇽MX_1/1.6MB/s
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 60
+  - 001 | 296ms | 个人 🇺🇸US_18/910KB/s/R002-260618 [c0c88000d4a2]
+  - 002 | 316ms | 个人 🇲🇽MX_1/400KB/s/R002-260618 [fc7c075ec4e0]
+  - 003 | 318ms | 个人 🇺🇸US_53/901KB/s/M003-260806 [3ac3010a5c77]
+  - 004 | 318ms | 个人 seed14
+  - 005 | 330ms | 个人 seed25
+  - 006 | 342ms | 个人 🇲🇽MX_2/1.3MB/s
+  - 007 | 342ms | 个人 seed46
+  - 008 | 353ms | 个人 seed43
+  - 009 | 364ms | 个人 🇺🇸US_508/324KB/s/R002-260618 [a4d3572ae220]
+  - 010 | 368ms | 个人 🇺🇸US_227/83KB/s/R002-260618 [535e13772931]
+  - 011 | 375ms | 个人 🇺🇸US_180/682KB/s/R002-260618 [ac79b772f5d0]
+  - 012 | 376ms | 个人 seed74
+  - '013 | 421ms | 个人 🏳[www.v2nodes.com] ss- #2'
+  - '014 | 422ms | 个人 🇳🇱[www.v2nodes.com] ss-NL-1614... #1'
+  - 015 | 423ms | 个人 seed10
+  - '016 | 424ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616... #1'
+  - 017 | 427ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616...
+  - 018 | 440ms | 个人 seed76
+  - 019 | 460ms | 个人 seed13
+  - '020 | 462ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #1'
+  - 021 | 466ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  - 022 | 467ms | 个人 🇺🇸US_552/109KB/s/R002-260618 [fbfa57386da4]
+  - '023 | 469ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #2'
+  - 024 | 489ms | 个人 seed26
+  - 025 | 507ms | 个人 🇺🇸US_147/533KB/s/R002-260618 [3dbb27238fa5]
+  - 026 | 531ms | 个人 🇫🇷FR_30/2.1MB/s/F003-260618 [125302a6243b]
+  - 027 | 573ms | 个人 seed12
+  - 028 | 580ms | 个人 seed31
+  - 029 | 628ms | 个人 🇩🇪DE_59/6.6MB/s/P002-260618 [b982eaaa5258]
+  - 030 | 656ms | 个人 🇫🇷FR_6/564KB/s/R002-260618 [31a8661c0de3]
+  - 031 | 661ms | 个人 seed51
+  - 032 | 695ms | 个人 seed85
+  - 033 | 710ms | 个人 seed9
+  - 034 | 710ms | 个人 seed37
+  - 035 | 740ms | 个人 seed78
+  - 036 | 742ms | 个人 🇯🇵JP_6/145KB/s/P002-260618 [6c3b615333c9]
+  - 037 | 760ms | 个人 seed21
+  - 038 | 776ms | 个人 US - zhuhai.uk
+  - 039 | 799ms | 个人 🇰🇷KR_15/468KB/s/A004-260618 [906ca5cbd3af]
+  - 040 | 851ms | 个人 🇰🇷KR-211.178.105.134-0187 / 0.013MB
+  - 041 | 22ms | 机房 🇺🇸US-95.215.201.18-0052 / 64.305MB
+  - 042 | 41ms | 机房 🇺🇸US_642/975KB/s/M003-260806 [dc2acf418afb]
+  - 043 | 43ms | 机房 🇺🇸US_220/889KB/s/A004-260618 [d92318afee09]
+  - 044 | 51ms | 机房 🇺🇸US_57/934KB/s/A004-260618 [0e40b52615aa]
+  - 045 | 53ms | 机房 🇺🇸US_213/760KB/s/R002-260618 [712a67040d3e]
+  - 046 | 54ms | 机房 🇺🇸US_98/806KB/s/R002-260618 [2d2bb008072d]
+  - 047 | 54ms | 机房 🇺🇸US_105/758KB/s/P002-260618 [342fedcdd2a9]
+  - 048 | 54ms | 机房 🇺🇸US_160/798KB/s/R002-260618 [4ac5d05f7655]
+  - 049 | 54ms | 机房 🇺🇸US_236/825KB/s/P002-260618 [6bccc75a3524]
+  - 050 | 54ms | 机房 🇺🇸US_188/815KB/s/P002-260618 [7feeec8f30cf]
+  - 051 | 54ms | 机房 🇺🇸US_129/797KB/s/R002-260618 [99f87f2b140a]
+  - 052 | 54ms | 机房 🇺🇸US_162/805KB/s [9ad570cf8a0d]
+  - 053 | 54ms | 机房 🇺🇸US_73/675KB/s [bdd89167a37f]
+  - 054 | 54ms | 机房 🇺🇸US_163/824KB/s [d4a1bf05a3c6]
+  - 055 | 55ms | 机房 🇺🇸US_2/3.3MB/s
+  - 056 | 55ms | 机房 🇺🇸US_4/2.6MB/s
+  - 057 | 55ms | 机房 🇺🇸US_14/1.0MB/s
+  - 058 | 55ms | 机房 🇺🇸US_16/3.4MB/s
+  - 059 | 55ms | 机房 US - zhuhai.uk 02
+  - 060 | 55ms | 机房 US - zhuhai.uk 07
+  - 061 | 55ms | 机房 🇺🇸US_595/789KB/s/P002-260618 [2cca269a4ba7]
+  - 062 | 55ms | 机房 🇺🇸US_81/855KB/s/R002-260618 [5385a051842e]
+  - 063 | 55ms | 机房 🇺🇸US_175/765KB/s/R002-260618 [e7d870f81e49]
+  - 064 | 55ms | 机房 🇺🇸US_170/820KB/s/R002-260618 [ffc0819f735f]
+  - 065 | 56ms | 机房 🇺🇸US_128/846KB/s/P002-260618 [64d55366a21c]
+  - 066 | 56ms | 机房 🇺🇸US_70/760KB/s/P002-260618 [b90a89b0573a]
+  - 067 | 56ms | 机房 🇺🇸US_5/1.2MB/s/P002-260618
+  - 068 | 56ms | 机房 🇺🇸US_15/2.6MB/s
+  - 069 | 56ms | 机房 🇺🇸US_72/717KB/s/R002-260618 [1ac4d958cac3]
+  - 070 | 56ms | 机房 🇺🇸US_119/815KB/s/R002-260618 [1fd0f978ab09]
+  - 071 | 56ms | 机房 🇺🇸US_167/837KB/s/P002-260618 [2066bdd63838]
+  - 072 | 56ms | 机房 🇺🇸US_123/769KB/s/P002-260618 [30b959b768eb]
+  - 073 | 56ms | 机房 🇺🇸US_575/831KB/s/R002-260618 [39054f90cbcc]
+  - 074 | 56ms | 机房 🇺🇸US_542/877KB/s/P002-260618 [4cc71e0918ac]
+  - 075 | 56ms | 机房 🇺🇸US_64/876KB/s/P002-260618 [56adb46655ef]
+  - 076 | 56ms | 机房 🇺🇸US_69/712KB/s/P002-260618 [757e1ca598e8]
+  - 077 | 56ms | 机房 🇺🇸US_112/816KB/s/R002-260618 [7999de0c275c]
+  - 078 | 56ms | 机房 🇺🇸US_193/844KB/s/P002-260618 [9411ee14b7b3]
+  - 079 | 56ms | 机房 🇺🇸US_243/769KB/s/K001-260618 [c6e1aea44c4a]
+  - 080 | 56ms | 机房 🇺🇸US_495/836KB/s/P002-260618 [e842f77422a7]
+  - 081 | 57ms | 机房 🇺🇸US_215/882KB/s/P002-260618 [1e13e95b0e5a]
+  - 082 | 57ms | 机房 🇺🇸US_63/758KB/s/R002-260618 [430dc52727da]
+  - 083 | 57ms | 机房 🇺🇸US_120/777KB/s [518e0351a46f]
+  - 084 | 57ms | 机房 🇺🇸US_124/823KB/s/R002-260618 [57beb1e2a7df]
+  - 085 | 57ms | 机房 🇺🇸US_200/791KB/s/P002-260618 [66ebf6ae1341]
+  - 086 | 57ms | 机房 🇺🇸US_181/808KB/s/P002-260618 [7fb6ee20b3bd]
+  - 087 | 57ms | 机房 🇺🇸US_186/783KB/s/P002-260618 [d6053f38ebec]
+  - 088 | 57ms | 机房 🇺🇸US_8/859KB/s/P002-260618 [d71325a4e884]
+  - 089 | 58ms | 机房 seed73
+  - 090 | 58ms | 机房 🇺🇸US_189/814KB/s/R002-260618 [024ef203ebf1]
+  url: https://aistudio.google.com/
+  interval: 600
+  tolerance: 80
   lazy: false
 - name: 个人节点
   type: select
   proxies:
-  - 低风险IP
-  - 001 | 289ms | 个人 P2 | 🇹🇼TW_3/1.6MB/s
-  - 002 | 412ms | 个人 P3 | 🇹🇼 🇨🇳 台湾 / TWN 2
-  - 003 | 701ms | 个人 P3 | VN - zhuhai.uk
-  - 004 | 3784ms | 个人 P3 | 🇨🇿CZ_1/2.5MB/s/R002-260618 [dea96bfbdd9e]
-  - 005 | 217ms | 个人 P4 | 🇹🇼_TW_台湾_IPV4
-  - 006 | 2466ms | 个人 P5 | BR - zhuhai.uk
-  - 007 | 464ms | 个人 P9 | 🇹🇼TW_18/473KB/s [909a8d192827]
-  - 008 | 692ms | 个人 P9 | ID - zhuhai.uk
-  - 009 | 1746ms | 个人 P31 | 🇮🇱IL_1/3.2MB/s
-  - 010 | 2093ms | 个人 P56 | 🇺🇸US_179/349KB/s/R002-260618 [be32b39e85c7]
-  - 011 | 1819ms | 个人 P77 | seed27
-  - 012 | 1328ms | 个人 P82 | 🇫🇷FR_4/1.2MB/s/K001-260618 [af44a4a293e5]
-  - 013 | 1694ms | 个人 P82 | 🇺🇸US_510/822KB/s/R002-260618 [e7d3d24b0e99]
-  - 014 | 1892ms | 个人 P82 | 🇺🇸US_298/646KB/s/P002-260618 [db679d7e13ba]
-  - 015 | 2727ms | 个人 P82 | 🇲🇽MX_2/460KB/s/P002-260618 [a3038fd93823]
-  - 016 | 555ms | 个人 P83 | 🇮🇩ID_2/594KB/s/R002-260618 [ec91e15d058c]
-  - 017 | 562ms | 个人 P83 | 🇮🇩ID_1/680KB/s/R002-260618 [964f620b2028]
-  - 018 | 1160ms | 个人 P83 | 🇩🇪DE_31/2.7MB/s/P002-260618 [a01dd6dcc5e0]
-  - 019 | 1236ms | 个人 P84 | 🇩🇪DE_100/2.2MB/s/R002-260618 [62cee87d127c]
-  - 020 | 1364ms | 个人 P84 | FR - zhuhai.uk
-  - 021 | 1880ms | 个人 P84 | 🇫🇷FR_66/2.2MB/s/R002-260618 [804be636e16d]
-  - 022 | 582ms | 个人 P85 | 🇰🇷KR_1/3.8MB/s
-  - 023 | 1317ms | 个人 P85 | 🇳🇱NL_9/1.9MB/s
-  - 024 | 1355ms | 个人 P85 | seed4
-  - 025 | 2329ms | 个人 P85 | 🇧🇷BR_1/1.1MB/s
-  - 026 | 1471ms | 个人 P86 | 🇺🇸US_650/725KB/s/R002-260618 [a8d5e1342ea1]
-  - 027 | 1583ms | 个人 P86 | 🇺🇸US_292/715KB/s/K001-260618 [569c66c77b5f]
-  - 028 | 2213ms | 个人 P86 | 🇺🇸US_305/691KB/s/R002-260618 [1185d729498d]
-  - 029 | 1306ms | 个人 P88 | 🇳🇱NL_81/3.1MB/s/K001-260618 [0314ff07d8b2]
-  - 030 | 1423ms | 个人 P88 | 🇫🇷FR_16/663KB/s/R002-260618 [4b53647fa1cf]
-  - 031 | 1568ms | 个人 P89 | 🇳🇱NL_49/5.7MB/s/P002-260618 [d77b65a8fb8a]
-  - 032 | 1944ms | 个人 P91 | 🇺🇸US_498/807KB/s/R002-260618 [413eefe66dea]
-  - 096 | 2461ms | 个人 P7 | 🇲🇽MX_1/1.6MB/s
+  - AI-STUDIO
+  - 001 | 296ms | 个人 🇺🇸US_18/910KB/s/R002-260618 [c0c88000d4a2]
+  - 002 | 316ms | 个人 🇲🇽MX_1/400KB/s/R002-260618 [fc7c075ec4e0]
+  - 003 | 318ms | 个人 🇺🇸US_53/901KB/s/M003-260806 [3ac3010a5c77]
+  - 004 | 318ms | 个人 seed14
+  - 005 | 330ms | 个人 seed25
+  - 006 | 342ms | 个人 🇲🇽MX_2/1.3MB/s
+  - 007 | 342ms | 个人 seed46
+  - 008 | 353ms | 个人 seed43
+  - 009 | 364ms | 个人 🇺🇸US_508/324KB/s/R002-260618 [a4d3572ae220]
+  - 010 | 368ms | 个人 🇺🇸US_227/83KB/s/R002-260618 [535e13772931]
+  - 011 | 375ms | 个人 🇺🇸US_180/682KB/s/R002-260618 [ac79b772f5d0]
+  - 012 | 376ms | 个人 seed74
+  - '013 | 421ms | 个人 🏳[www.v2nodes.com] ss- #2'
+  - '014 | 422ms | 个人 🇳🇱[www.v2nodes.com] ss-NL-1614... #1'
+  - 015 | 423ms | 个人 seed10
+  - '016 | 424ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616... #1'
+  - 017 | 427ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616...
+  - 018 | 440ms | 个人 seed76
+  - 019 | 460ms | 个人 seed13
+  - '020 | 462ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #1'
+  - 021 | 466ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  - 022 | 467ms | 个人 🇺🇸US_552/109KB/s/R002-260618 [fbfa57386da4]
+  - '023 | 469ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #2'
+  - 024 | 489ms | 个人 seed26
+  - 025 | 507ms | 个人 🇺🇸US_147/533KB/s/R002-260618 [3dbb27238fa5]
+  - 026 | 531ms | 个人 🇫🇷FR_30/2.1MB/s/F003-260618 [125302a6243b]
+  - 027 | 573ms | 个人 seed12
+  - 028 | 580ms | 个人 seed31
+  - 029 | 628ms | 个人 🇩🇪DE_59/6.6MB/s/P002-260618 [b982eaaa5258]
+  - 030 | 656ms | 个人 🇫🇷FR_6/564KB/s/R002-260618 [31a8661c0de3]
+  - 031 | 661ms | 个人 seed51
+  - 032 | 695ms | 个人 seed85
+  - 033 | 710ms | 个人 seed9
+  - 034 | 710ms | 个人 seed37
+  - 035 | 740ms | 个人 seed78
+  - 036 | 742ms | 个人 🇯🇵JP_6/145KB/s/P002-260618 [6c3b615333c9]
+  - 037 | 760ms | 个人 seed21
+  - 038 | 776ms | 个人 US - zhuhai.uk
+  - 039 | 799ms | 个人 🇰🇷KR_15/468KB/s/A004-260618 [906ca5cbd3af]
+  - 040 | 851ms | 个人 🇰🇷KR-211.178.105.134-0187 / 0.013MB
 - name: 机房节点
   type: select
   proxies:
-  - 低风险IP
-  - 033 | 2499ms | 机房 P4 | 🇲🇽MX_10/325KB/s/P002-260618 [a4fc8a9a0c8d]
-  - 034 | 3028ms | 机房 P4 | 🇲🇽MX_4/190KB/s/R002-260618 [b7d81b4b7ca2]
-  - 035 | 2565ms | 机房 P7 | 🇲🇽MX_7/231KB/s/R002-260618 [4414f12f0fa0]
-  - 036 | 1021ms | 机房 P8 | 🇹🇭TH_13/547KB/s/R002-260618 [464d3086d022]
-  - 037 | 1846ms | 机房 P8 | 🇹🇭TH_2/472KB/s/R002-260618 [849ebc43c563]
-  - 038 | 2733ms | 机房 P8 | 🇯🇵JP_2/3.1MB/s
-  - 039 | 814ms | 机房 P9 | 🇹🇭TH_14/549KB/s/K001-260618 [6a15e2bcb6c4]
-  - 040 | 1177ms | 机房 P10 | 🇹🇭TH_3/546KB/s/R002-260618 [464b3437191d]
-  - 041 | 675ms | 机房 P11 | 巴西 002
-  - 042 | 695ms | 机房 P11 | 巴西 001
-  - 043 | 723ms | 机房 P11 | 🇷🇺 俄罗斯 / RUS 4
-  - 044 | 4380ms | 机房 P11 | 🇲🇽MX_9/490KB/s/R002-260618 [7a1e93a0ef85]
-  - 045 | 2388ms | 机房 P12 | 🇫🇷FR_117/660KB/s/K001-260618 [44e893cb0aad]
-  - 046 | 2635ms | 机房 P12 | 🇲🇽MX_5/489KB/s/R002-260618 [8153d1b7016b]
-  - 047 | 3828ms | 机房 P12 | seed25
-  - 048 | 740ms | 机房 P13 | 🇹🇭TH_8/558KB/s/R002-260618 [6e854ea98e74]
-  - 049 | 1290ms | 机房 P13 | 🇹🇭TH_4/586KB/s/R002-260618 [f10b406ce373]
-  - 050 | 1599ms | 机房 P14 | 🇹🇭TH_9/551KB/s/R002-260618 [08846cc7f1d1]
-  - 051 | 539ms | 机房 P18 | 🇵🇭PH_1/266KB/s/R002-260618 [1ae4aa8e9ed4]
-  - 052 | 1982ms | 机房 P20 | 🇯🇵JP_1/4.5MB/s
-  - 053 | 826ms | 机房 P21 | 🇻🇳VN_6/353KB/s/R002-260618 [6d6a890a0e15]
-  - 054 | 898ms | 机房 P22 | 🇻🇳VN_5/330KB/s/R002-260618 [1ed94f8d82c9]
-  - 055 | 1814ms | 机房 P23 | US - zhuhai.uk 08
-  - 056 | 1830ms | 机房 P23 | 🇺🇸US_551/90KB/s/R002-260618 [2c5b09e88ef7]
-  - 057 | 1834ms | 机房 P23 | 🇺🇸US_500/80KB/s/R002-260618 [22a5f322cb38]
-  - 058 | 1844ms | 机房 P23 | 🇺🇸US_378/169KB/s/R002-260618 [b4135a5f200b]
-  - 059 | 2003ms | 机房 P23 | 🇺🇸US_523/180KB/s/R002-260618 [f680b3bec0ff]
-  - 060 | 2630ms | 机房 P23 | 🇺🇸US_509/232KB/s/R002-260618 [ea1befc94c60]
-  - 061 | 2721ms | 机房 P23 | 🇺🇸US_647/84KB/s/R002-260618 [7d81f74f9a2f]
-  - 062 | 2789ms | 机房 P23 | 🇺🇸US_572/64KB/s/R002-260618 [39215ca34ddc]
-  - 063 | 2975ms | 机房 P23 | 🇺🇸US_597/224KB/s/R002-260618 [83c31957de44]
-  - 064 | 4173ms | 机房 P23 | 🇺🇸US_568/199KB/s/R002-260618 [6caecc4b1a5e]
-  - 065 | 4563ms | 机房 P23 | 🇺🇸US_307/216KB/s/R002-260618 [b92c1a4a1fb1]
-  - 066 | 1652ms | 机房 P24 | 🇹🇭TH_5/401KB/s/R002-260618 [97523c93a778]
-  - 067 | 1369ms | 机房 P30 | 🇬🇧 英国 / GBR 7
-  - 068 | 1604ms | 机房 P30 | 🇹🇭TH_12/564KB/s/R002-260618 [4d7f4c48ed29]
-  - '069 | 2381ms | 机房 P33 | 🇺🇸 美国 / USA #2'
-  - 070 | 512ms | 机房 P34 | 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
-  - 071 | 1460ms | 机房 P34 | 🇮🇩ID_1/2.3MB/s
-  - 072 | 1485ms | 机房 P40 | 🇨🇿 捷克 / CZE
-  - 073 | 1141ms | 机房 P41 | 🇳🇱NL_67/385KB/s/R002-260618 [212db84ab5aa]
-  - 074 | 1800ms | 机房 P42 | 🇺🇸US_493/773KB/s/P002-260618 [de266c2b5bde]
-  - 075 | 1661ms | 机房 P43 | 🇲🇽MX_4/3.5MB/s
-  - 076 | 1299ms | 机房 P44 | 🇷🇴RO_32/1.7MB/s/R002-260618 [d639d2bb1dd5]
-  - 077 | 2695ms | 机房 P44 | seed15
-  - 078 | 1167ms | 机房 P46 | 🇺🇸US_134/806KB/s/P002-260618 [8d81cfcb4761]
-  - 079 | 1191ms | 机房 P47 | 🇳🇱NL_96/959KB/s/R002-260618 [511bc38da784]
-  - 080 | 1536ms | 机房 P47 | 🇩🇪DE_86/4.6MB/s [6e0eed8d575b]
-  - 081 | 1099ms | 机房 P48 | 🇺🇸US_135/750KB/s [b6424e86ed03]
-  - 093 | 1199ms | 机房 P52 | 俄罗斯 002
-  - 094 | 1345ms | 机房 P53 | 🇷🇴RO_6/3.6MB/s
-  - 095 | 4733ms | 机房 P52 | 西班牙(mibei77.com 米贝节点分享) (7)
-  - 097 | 1119ms | 机房 P48 | 🇬🇧 英国 / GBR 2
-  - 098 | 606ms | 机房 P43 | 🇹🇼_TW_台湾->🇯🇵_JP_日本_IPV4
-  - 099 | 1356ms | 机房 P54 | 🇷🇴RO_6/1.8MB/s/R002-260618 [edff0870a0ac]
-  - 100 | 1367ms | 机房 P54 | 🇷🇴RO_26/1.8MB/s/P002-260618 [adaa083b38d5]
+  - AI-STUDIO
+  - 041 | 22ms | 机房 🇺🇸US-95.215.201.18-0052 / 64.305MB
+  - 042 | 41ms | 机房 🇺🇸US_642/975KB/s/M003-260806 [dc2acf418afb]
+  - 043 | 43ms | 机房 🇺🇸US_220/889KB/s/A004-260618 [d92318afee09]
+  - 044 | 51ms | 机房 🇺🇸US_57/934KB/s/A004-260618 [0e40b52615aa]
+  - 045 | 53ms | 机房 🇺🇸US_213/760KB/s/R002-260618 [712a67040d3e]
+  - 046 | 54ms | 机房 🇺🇸US_98/806KB/s/R002-260618 [2d2bb008072d]
+  - 047 | 54ms | 机房 🇺🇸US_105/758KB/s/P002-260618 [342fedcdd2a9]
+  - 048 | 54ms | 机房 🇺🇸US_160/798KB/s/R002-260618 [4ac5d05f7655]
+  - 049 | 54ms | 机房 🇺🇸US_236/825KB/s/P002-260618 [6bccc75a3524]
+  - 050 | 54ms | 机房 🇺🇸US_188/815KB/s/P002-260618 [7feeec8f30cf]
+  - 051 | 54ms | 机房 🇺🇸US_129/797KB/s/R002-260618 [99f87f2b140a]
+  - 052 | 54ms | 机房 🇺🇸US_162/805KB/s [9ad570cf8a0d]
+  - 053 | 54ms | 机房 🇺🇸US_73/675KB/s [bdd89167a37f]
+  - 054 | 54ms | 机房 🇺🇸US_163/824KB/s [d4a1bf05a3c6]
+  - 055 | 55ms | 机房 🇺🇸US_2/3.3MB/s
+  - 056 | 55ms | 机房 🇺🇸US_4/2.6MB/s
+  - 057 | 55ms | 机房 🇺🇸US_14/1.0MB/s
+  - 058 | 55ms | 机房 🇺🇸US_16/3.4MB/s
+  - 059 | 55ms | 机房 US - zhuhai.uk 02
+  - 060 | 55ms | 机房 US - zhuhai.uk 07
+  - 061 | 55ms | 机房 🇺🇸US_595/789KB/s/P002-260618 [2cca269a4ba7]
+  - 062 | 55ms | 机房 🇺🇸US_81/855KB/s/R002-260618 [5385a051842e]
+  - 063 | 55ms | 机房 🇺🇸US_175/765KB/s/R002-260618 [e7d870f81e49]
+  - 064 | 55ms | 机房 🇺🇸US_170/820KB/s/R002-260618 [ffc0819f735f]
+  - 065 | 56ms | 机房 🇺🇸US_128/846KB/s/P002-260618 [64d55366a21c]
+  - 066 | 56ms | 机房 🇺🇸US_70/760KB/s/P002-260618 [b90a89b0573a]
+  - 067 | 56ms | 机房 🇺🇸US_5/1.2MB/s/P002-260618
+  - 068 | 56ms | 机房 🇺🇸US_15/2.6MB/s
+  - 069 | 56ms | 机房 🇺🇸US_72/717KB/s/R002-260618 [1ac4d958cac3]
+  - 070 | 56ms | 机房 🇺🇸US_119/815KB/s/R002-260618 [1fd0f978ab09]
+  - 071 | 56ms | 机房 🇺🇸US_167/837KB/s/P002-260618 [2066bdd63838]
+  - 072 | 56ms | 机房 🇺🇸US_123/769KB/s/P002-260618 [30b959b768eb]
+  - 073 | 56ms | 机房 🇺🇸US_575/831KB/s/R002-260618 [39054f90cbcc]
+  - 074 | 56ms | 机房 🇺🇸US_542/877KB/s/P002-260618 [4cc71e0918ac]
+  - 075 | 56ms | 机房 🇺🇸US_64/876KB/s/P002-260618 [56adb46655ef]
+  - 076 | 56ms | 机房 🇺🇸US_69/712KB/s/P002-260618 [757e1ca598e8]
+  - 077 | 56ms | 机房 🇺🇸US_112/816KB/s/R002-260618 [7999de0c275c]
+  - 078 | 56ms | 机房 🇺🇸US_193/844KB/s/P002-260618 [9411ee14b7b3]
+  - 079 | 56ms | 机房 🇺🇸US_243/769KB/s/K001-260618 [c6e1aea44c4a]
+  - 080 | 56ms | 机房 🇺🇸US_495/836KB/s/P002-260618 [e842f77422a7]
+  - 081 | 57ms | 机房 🇺🇸US_215/882KB/s/P002-260618 [1e13e95b0e5a]
+  - 082 | 57ms | 机房 🇺🇸US_63/758KB/s/R002-260618 [430dc52727da]
+  - 083 | 57ms | 机房 🇺🇸US_120/777KB/s [518e0351a46f]
+  - 084 | 57ms | 机房 🇺🇸US_124/823KB/s/R002-260618 [57beb1e2a7df]
+  - 085 | 57ms | 机房 🇺🇸US_200/791KB/s/P002-260618 [66ebf6ae1341]
+  - 086 | 57ms | 机房 🇺🇸US_181/808KB/s/P002-260618 [7fb6ee20b3bd]
+  - 087 | 57ms | 机房 🇺🇸US_186/783KB/s/P002-260618 [d6053f38ebec]
+  - 088 | 57ms | 机房 🇺🇸US_8/859KB/s/P002-260618 [d71325a4e884]
+  - 089 | 58ms | 机房 seed73
+  - 090 | 58ms | 机房 🇺🇸US_189/814KB/s/R002-260618 [024ef203ebf1]
 - name: AUTO-FASTEST
   type: url-test
   proxies:
-  - 001 | 289ms | 个人 P2 | 🇹🇼TW_3/1.6MB/s
-  - 002 | 412ms | 个人 P3 | 🇹🇼 🇨🇳 台湾 / TWN 2
-  - 003 | 701ms | 个人 P3 | VN - zhuhai.uk
-  - 004 | 3784ms | 个人 P3 | 🇨🇿CZ_1/2.5MB/s/R002-260618 [dea96bfbdd9e]
-  - 005 | 217ms | 个人 P4 | 🇹🇼_TW_台湾_IPV4
-  - 006 | 2466ms | 个人 P5 | BR - zhuhai.uk
-  - 007 | 464ms | 个人 P9 | 🇹🇼TW_18/473KB/s [909a8d192827]
-  - 008 | 692ms | 个人 P9 | ID - zhuhai.uk
-  - 009 | 1746ms | 个人 P31 | 🇮🇱IL_1/3.2MB/s
-  - 010 | 2093ms | 个人 P56 | 🇺🇸US_179/349KB/s/R002-260618 [be32b39e85c7]
-  - 011 | 1819ms | 个人 P77 | seed27
-  - 012 | 1328ms | 个人 P82 | 🇫🇷FR_4/1.2MB/s/K001-260618 [af44a4a293e5]
-  - 013 | 1694ms | 个人 P82 | 🇺🇸US_510/822KB/s/R002-260618 [e7d3d24b0e99]
-  - 014 | 1892ms | 个人 P82 | 🇺🇸US_298/646KB/s/P002-260618 [db679d7e13ba]
-  - 015 | 2727ms | 个人 P82 | 🇲🇽MX_2/460KB/s/P002-260618 [a3038fd93823]
-  - 016 | 555ms | 个人 P83 | 🇮🇩ID_2/594KB/s/R002-260618 [ec91e15d058c]
-  - 017 | 562ms | 个人 P83 | 🇮🇩ID_1/680KB/s/R002-260618 [964f620b2028]
-  - 018 | 1160ms | 个人 P83 | 🇩🇪DE_31/2.7MB/s/P002-260618 [a01dd6dcc5e0]
-  - 019 | 1236ms | 个人 P84 | 🇩🇪DE_100/2.2MB/s/R002-260618 [62cee87d127c]
-  - 020 | 1364ms | 个人 P84 | FR - zhuhai.uk
-  - 021 | 1880ms | 个人 P84 | 🇫🇷FR_66/2.2MB/s/R002-260618 [804be636e16d]
-  - 022 | 582ms | 个人 P85 | 🇰🇷KR_1/3.8MB/s
-  - 023 | 1317ms | 个人 P85 | 🇳🇱NL_9/1.9MB/s
-  - 024 | 1355ms | 个人 P85 | seed4
-  - 025 | 2329ms | 个人 P85 | 🇧🇷BR_1/1.1MB/s
-  - 026 | 1471ms | 个人 P86 | 🇺🇸US_650/725KB/s/R002-260618 [a8d5e1342ea1]
-  - 027 | 1583ms | 个人 P86 | 🇺🇸US_292/715KB/s/K001-260618 [569c66c77b5f]
-  - 028 | 2213ms | 个人 P86 | 🇺🇸US_305/691KB/s/R002-260618 [1185d729498d]
-  - 029 | 1306ms | 个人 P88 | 🇳🇱NL_81/3.1MB/s/K001-260618 [0314ff07d8b2]
-  - 030 | 1423ms | 个人 P88 | 🇫🇷FR_16/663KB/s/R002-260618 [4b53647fa1cf]
-  - 031 | 1568ms | 个人 P89 | 🇳🇱NL_49/5.7MB/s/P002-260618 [d77b65a8fb8a]
-  - 032 | 1944ms | 个人 P91 | 🇺🇸US_498/807KB/s/R002-260618 [413eefe66dea]
-  - 033 | 2499ms | 机房 P4 | 🇲🇽MX_10/325KB/s/P002-260618 [a4fc8a9a0c8d]
-  - 034 | 3028ms | 机房 P4 | 🇲🇽MX_4/190KB/s/R002-260618 [b7d81b4b7ca2]
-  - 035 | 2565ms | 机房 P7 | 🇲🇽MX_7/231KB/s/R002-260618 [4414f12f0fa0]
-  - 036 | 1021ms | 机房 P8 | 🇹🇭TH_13/547KB/s/R002-260618 [464d3086d022]
-  - 037 | 1846ms | 机房 P8 | 🇹🇭TH_2/472KB/s/R002-260618 [849ebc43c563]
-  - 038 | 2733ms | 机房 P8 | 🇯🇵JP_2/3.1MB/s
-  - 039 | 814ms | 机房 P9 | 🇹🇭TH_14/549KB/s/K001-260618 [6a15e2bcb6c4]
-  - 040 | 1177ms | 机房 P10 | 🇹🇭TH_3/546KB/s/R002-260618 [464b3437191d]
-  - 041 | 675ms | 机房 P11 | 巴西 002
-  - 042 | 695ms | 机房 P11 | 巴西 001
-  - 043 | 723ms | 机房 P11 | 🇷🇺 俄罗斯 / RUS 4
-  - 044 | 4380ms | 机房 P11 | 🇲🇽MX_9/490KB/s/R002-260618 [7a1e93a0ef85]
-  - 045 | 2388ms | 机房 P12 | 🇫🇷FR_117/660KB/s/K001-260618 [44e893cb0aad]
-  - 046 | 2635ms | 机房 P12 | 🇲🇽MX_5/489KB/s/R002-260618 [8153d1b7016b]
-  - 047 | 3828ms | 机房 P12 | seed25
-  - 048 | 740ms | 机房 P13 | 🇹🇭TH_8/558KB/s/R002-260618 [6e854ea98e74]
-  - 049 | 1290ms | 机房 P13 | 🇹🇭TH_4/586KB/s/R002-260618 [f10b406ce373]
-  - 050 | 1599ms | 机房 P14 | 🇹🇭TH_9/551KB/s/R002-260618 [08846cc7f1d1]
-  - 051 | 539ms | 机房 P18 | 🇵🇭PH_1/266KB/s/R002-260618 [1ae4aa8e9ed4]
-  - 052 | 1982ms | 机房 P20 | 🇯🇵JP_1/4.5MB/s
-  - 053 | 826ms | 机房 P21 | 🇻🇳VN_6/353KB/s/R002-260618 [6d6a890a0e15]
-  - 054 | 898ms | 机房 P22 | 🇻🇳VN_5/330KB/s/R002-260618 [1ed94f8d82c9]
-  - 055 | 1814ms | 机房 P23 | US - zhuhai.uk 08
-  - 056 | 1830ms | 机房 P23 | 🇺🇸US_551/90KB/s/R002-260618 [2c5b09e88ef7]
-  - 057 | 1834ms | 机房 P23 | 🇺🇸US_500/80KB/s/R002-260618 [22a5f322cb38]
-  - 058 | 1844ms | 机房 P23 | 🇺🇸US_378/169KB/s/R002-260618 [b4135a5f200b]
-  - 059 | 2003ms | 机房 P23 | 🇺🇸US_523/180KB/s/R002-260618 [f680b3bec0ff]
-  - 060 | 2630ms | 机房 P23 | 🇺🇸US_509/232KB/s/R002-260618 [ea1befc94c60]
-  - 061 | 2721ms | 机房 P23 | 🇺🇸US_647/84KB/s/R002-260618 [7d81f74f9a2f]
-  - 062 | 2789ms | 机房 P23 | 🇺🇸US_572/64KB/s/R002-260618 [39215ca34ddc]
-  - 063 | 2975ms | 机房 P23 | 🇺🇸US_597/224KB/s/R002-260618 [83c31957de44]
-  - 064 | 4173ms | 机房 P23 | 🇺🇸US_568/199KB/s/R002-260618 [6caecc4b1a5e]
-  - 065 | 4563ms | 机房 P23 | 🇺🇸US_307/216KB/s/R002-260618 [b92c1a4a1fb1]
-  - 066 | 1652ms | 机房 P24 | 🇹🇭TH_5/401KB/s/R002-260618 [97523c93a778]
-  - 067 | 1369ms | 机房 P30 | 🇬🇧 英国 / GBR 7
-  - 068 | 1604ms | 机房 P30 | 🇹🇭TH_12/564KB/s/R002-260618 [4d7f4c48ed29]
-  - '069 | 2381ms | 机房 P33 | 🇺🇸 美国 / USA #2'
-  - 070 | 512ms | 机房 P34 | 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
-  - 071 | 1460ms | 机房 P34 | 🇮🇩ID_1/2.3MB/s
-  - 072 | 1485ms | 机房 P40 | 🇨🇿 捷克 / CZE
-  - 073 | 1141ms | 机房 P41 | 🇳🇱NL_67/385KB/s/R002-260618 [212db84ab5aa]
-  - 074 | 1800ms | 机房 P42 | 🇺🇸US_493/773KB/s/P002-260618 [de266c2b5bde]
-  - 075 | 1661ms | 机房 P43 | 🇲🇽MX_4/3.5MB/s
-  - 076 | 1299ms | 机房 P44 | 🇷🇴RO_32/1.7MB/s/R002-260618 [d639d2bb1dd5]
-  - 077 | 2695ms | 机房 P44 | seed15
-  - 078 | 1167ms | 机房 P46 | 🇺🇸US_134/806KB/s/P002-260618 [8d81cfcb4761]
-  - 079 | 1191ms | 机房 P47 | 🇳🇱NL_96/959KB/s/R002-260618 [511bc38da784]
-  - 080 | 1536ms | 机房 P47 | 🇩🇪DE_86/4.6MB/s [6e0eed8d575b]
-  - 081 | 1099ms | 机房 P48 | 🇺🇸US_135/750KB/s [b6424e86ed03]
-  - 082 | 1553ms | 备用 P48 | 🇩🇪DE_129/6.0MB/s [fe00298482c1]
-  - 083 | 1148ms | 备用 P49 | 🇳🇱NL_115/1.4MB/s/R002-260618 [8befcd8cfe66]
-  - 084 | 1503ms | 备用 P49 | 🇳🇱NL_20/5.3MB/s/P002-260618 [f84dd5f92876]
-  - 085 | 1081ms | 备用 P50 | 🇺🇸US_66/799KB/s/P002-260618 [7ba0e952007a]
-  - 086 | 1156ms | 备用 P50 | 🇫🇷FR_19/1.3MB/s/R002-260618 [df3cefb034a8]
-  - 087 | 1308ms | 备用 P50 | ❓未知丨yoyapai.com (43)
-  - 088 | 1553ms | 备用 P50 | 🇳🇱NL_4/4.8MB/s/R002-260618 [02e64b2794c6]
-  - 089 | 3853ms | 备用 P50 | 🇯🇵 日本 / JPN
-  - 090 | 1385ms | 备用 P51 | NL_speednode_0015
-  - 091 | 1493ms | 备用 P51 | 🇺🇸US_149/788KB/s/P002-260618 [3fb4f934a2bc]
-  - 092 | 1096ms | 备用 P52 | US美国(mibei77.com 米贝节点分享) (27)
-  - 093 | 1199ms | 机房 P52 | 俄罗斯 002
-  - 094 | 1345ms | 机房 P53 | 🇷🇴RO_6/3.6MB/s
-  - 095 | 4733ms | 机房 P52 | 西班牙(mibei77.com 米贝节点分享) (7)
-  - 096 | 2461ms | 个人 P7 | 🇲🇽MX_1/1.6MB/s
-  - 097 | 1119ms | 机房 P48 | 🇬🇧 英国 / GBR 2
-  - 098 | 606ms | 机房 P43 | 🇹🇼_TW_台湾->🇯🇵_JP_日本_IPV4
-  - 099 | 1356ms | 机房 P54 | 🇷🇴RO_6/1.8MB/s/R002-260618 [edff0870a0ac]
-  - 100 | 1367ms | 机房 P54 | 🇷🇴RO_26/1.8MB/s/P002-260618 [adaa083b38d5]
+  - 001 | 296ms | 个人 🇺🇸US_18/910KB/s/R002-260618 [c0c88000d4a2]
+  - 002 | 316ms | 个人 🇲🇽MX_1/400KB/s/R002-260618 [fc7c075ec4e0]
+  - 003 | 318ms | 个人 🇺🇸US_53/901KB/s/M003-260806 [3ac3010a5c77]
+  - 004 | 318ms | 个人 seed14
+  - 005 | 330ms | 个人 seed25
+  - 006 | 342ms | 个人 🇲🇽MX_2/1.3MB/s
+  - 007 | 342ms | 个人 seed46
+  - 008 | 353ms | 个人 seed43
+  - 009 | 364ms | 个人 🇺🇸US_508/324KB/s/R002-260618 [a4d3572ae220]
+  - 010 | 368ms | 个人 🇺🇸US_227/83KB/s/R002-260618 [535e13772931]
+  - 011 | 375ms | 个人 🇺🇸US_180/682KB/s/R002-260618 [ac79b772f5d0]
+  - 012 | 376ms | 个人 seed74
+  - '013 | 421ms | 个人 🏳[www.v2nodes.com] ss- #2'
+  - '014 | 422ms | 个人 🇳🇱[www.v2nodes.com] ss-NL-1614... #1'
+  - 015 | 423ms | 个人 seed10
+  - '016 | 424ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616... #1'
+  - 017 | 427ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616...
+  - 018 | 440ms | 个人 seed76
+  - 019 | 460ms | 个人 seed13
+  - '020 | 462ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #1'
+  - 021 | 466ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  - 022 | 467ms | 个人 🇺🇸US_552/109KB/s/R002-260618 [fbfa57386da4]
+  - '023 | 469ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #2'
+  - 024 | 489ms | 个人 seed26
+  - 025 | 507ms | 个人 🇺🇸US_147/533KB/s/R002-260618 [3dbb27238fa5]
+  - 026 | 531ms | 个人 🇫🇷FR_30/2.1MB/s/F003-260618 [125302a6243b]
+  - 027 | 573ms | 个人 seed12
+  - 028 | 580ms | 个人 seed31
+  - 029 | 628ms | 个人 🇩🇪DE_59/6.6MB/s/P002-260618 [b982eaaa5258]
+  - 030 | 656ms | 个人 🇫🇷FR_6/564KB/s/R002-260618 [31a8661c0de3]
+  - 031 | 661ms | 个人 seed51
+  - 032 | 695ms | 个人 seed85
+  - 033 | 710ms | 个人 seed9
+  - 034 | 710ms | 个人 seed37
+  - 035 | 740ms | 个人 seed78
+  - 036 | 742ms | 个人 🇯🇵JP_6/145KB/s/P002-260618 [6c3b615333c9]
+  - 037 | 760ms | 个人 seed21
+  - 038 | 776ms | 个人 US - zhuhai.uk
+  - 039 | 799ms | 个人 🇰🇷KR_15/468KB/s/A004-260618 [906ca5cbd3af]
+  - 040 | 851ms | 个人 🇰🇷KR-211.178.105.134-0187 / 0.013MB
+  - 041 | 22ms | 机房 🇺🇸US-95.215.201.18-0052 / 64.305MB
+  - 042 | 41ms | 机房 🇺🇸US_642/975KB/s/M003-260806 [dc2acf418afb]
+  - 043 | 43ms | 机房 🇺🇸US_220/889KB/s/A004-260618 [d92318afee09]
+  - 044 | 51ms | 机房 🇺🇸US_57/934KB/s/A004-260618 [0e40b52615aa]
+  - 045 | 53ms | 机房 🇺🇸US_213/760KB/s/R002-260618 [712a67040d3e]
+  - 046 | 54ms | 机房 🇺🇸US_98/806KB/s/R002-260618 [2d2bb008072d]
+  - 047 | 54ms | 机房 🇺🇸US_105/758KB/s/P002-260618 [342fedcdd2a9]
+  - 048 | 54ms | 机房 🇺🇸US_160/798KB/s/R002-260618 [4ac5d05f7655]
+  - 049 | 54ms | 机房 🇺🇸US_236/825KB/s/P002-260618 [6bccc75a3524]
+  - 050 | 54ms | 机房 🇺🇸US_188/815KB/s/P002-260618 [7feeec8f30cf]
+  - 051 | 54ms | 机房 🇺🇸US_129/797KB/s/R002-260618 [99f87f2b140a]
+  - 052 | 54ms | 机房 🇺🇸US_162/805KB/s [9ad570cf8a0d]
+  - 053 | 54ms | 机房 🇺🇸US_73/675KB/s [bdd89167a37f]
+  - 054 | 54ms | 机房 🇺🇸US_163/824KB/s [d4a1bf05a3c6]
+  - 055 | 55ms | 机房 🇺🇸US_2/3.3MB/s
+  - 056 | 55ms | 机房 🇺🇸US_4/2.6MB/s
+  - 057 | 55ms | 机房 🇺🇸US_14/1.0MB/s
+  - 058 | 55ms | 机房 🇺🇸US_16/3.4MB/s
+  - 059 | 55ms | 机房 US - zhuhai.uk 02
+  - 060 | 55ms | 机房 US - zhuhai.uk 07
+  - 061 | 55ms | 机房 🇺🇸US_595/789KB/s/P002-260618 [2cca269a4ba7]
+  - 062 | 55ms | 机房 🇺🇸US_81/855KB/s/R002-260618 [5385a051842e]
+  - 063 | 55ms | 机房 🇺🇸US_175/765KB/s/R002-260618 [e7d870f81e49]
+  - 064 | 55ms | 机房 🇺🇸US_170/820KB/s/R002-260618 [ffc0819f735f]
+  - 065 | 56ms | 机房 🇺🇸US_128/846KB/s/P002-260618 [64d55366a21c]
+  - 066 | 56ms | 机房 🇺🇸US_70/760KB/s/P002-260618 [b90a89b0573a]
+  - 067 | 56ms | 机房 🇺🇸US_5/1.2MB/s/P002-260618
+  - 068 | 56ms | 机房 🇺🇸US_15/2.6MB/s
+  - 069 | 56ms | 机房 🇺🇸US_72/717KB/s/R002-260618 [1ac4d958cac3]
+  - 070 | 56ms | 机房 🇺🇸US_119/815KB/s/R002-260618 [1fd0f978ab09]
+  - 071 | 56ms | 机房 🇺🇸US_167/837KB/s/P002-260618 [2066bdd63838]
+  - 072 | 56ms | 机房 🇺🇸US_123/769KB/s/P002-260618 [30b959b768eb]
+  - 073 | 56ms | 机房 🇺🇸US_575/831KB/s/R002-260618 [39054f90cbcc]
+  - 074 | 56ms | 机房 🇺🇸US_542/877KB/s/P002-260618 [4cc71e0918ac]
+  - 075 | 56ms | 机房 🇺🇸US_64/876KB/s/P002-260618 [56adb46655ef]
+  - 076 | 56ms | 机房 🇺🇸US_69/712KB/s/P002-260618 [757e1ca598e8]
+  - 077 | 56ms | 机房 🇺🇸US_112/816KB/s/R002-260618 [7999de0c275c]
+  - 078 | 56ms | 机房 🇺🇸US_193/844KB/s/P002-260618 [9411ee14b7b3]
+  - 079 | 56ms | 机房 🇺🇸US_243/769KB/s/K001-260618 [c6e1aea44c4a]
+  - 080 | 56ms | 机房 🇺🇸US_495/836KB/s/P002-260618 [e842f77422a7]
+  - 081 | 57ms | 机房 🇺🇸US_215/882KB/s/P002-260618 [1e13e95b0e5a]
+  - 082 | 57ms | 机房 🇺🇸US_63/758KB/s/R002-260618 [430dc52727da]
+  - 083 | 57ms | 机房 🇺🇸US_120/777KB/s [518e0351a46f]
+  - 084 | 57ms | 机房 🇺🇸US_124/823KB/s/R002-260618 [57beb1e2a7df]
+  - 085 | 57ms | 机房 🇺🇸US_200/791KB/s/P002-260618 [66ebf6ae1341]
+  - 086 | 57ms | 机房 🇺🇸US_181/808KB/s/P002-260618 [7fb6ee20b3bd]
+  - 087 | 57ms | 机房 🇺🇸US_186/783KB/s/P002-260618 [d6053f38ebec]
+  - 088 | 57ms | 机房 🇺🇸US_8/859KB/s/P002-260618 [d71325a4e884]
+  - 089 | 58ms | 机房 seed73
+  - 090 | 58ms | 机房 🇺🇸US_189/814KB/s/R002-260618 [024ef203ebf1]
+  - 091 | 58ms | 备用 🇺🇸US_65/752KB/s/R002-260618 [5bfea617b8dd]
+  - 092 | 58ms | 备用 NN_speednode_0023
+  - 093 | 61ms | 备用 seed80
+  - 094 | 62ms | 备用 seed90
+  - 095 | 65ms | 备用 seed77
+  - 096 | 65ms | 备用 🇩🇪DE_8/3.0MB/s/P002-260618
+  - 097 | 66ms | 备用 🇫🇷FR_67/6.9MB/s [602eec94e97e]
+  - 098 | 71ms | 备用 🇩🇪DE_1/1.3MB/s/P002-260618
+  - '099 | 77ms | 备用 🇸🇬[www.v2nodes.com] vless-SG-1... #4'
+  - 100 | 97ms | 备用 🇺🇸US_92/804KB/s/P002-260618 [bdb7323375e8]
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -1174,219 +1206,219 @@ proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - 低风险IP
+  - AI-STUDIO
   - 个人节点
   - 机房节点
   - AUTO-FASTEST
   - DIRECT
-  - 001 | 289ms | 个人 P2 | 🇹🇼TW_3/1.6MB/s
-  - 002 | 412ms | 个人 P3 | 🇹🇼 🇨🇳 台湾 / TWN 2
-  - 003 | 701ms | 个人 P3 | VN - zhuhai.uk
-  - 004 | 3784ms | 个人 P3 | 🇨🇿CZ_1/2.5MB/s/R002-260618 [dea96bfbdd9e]
-  - 005 | 217ms | 个人 P4 | 🇹🇼_TW_台湾_IPV4
-  - 006 | 2466ms | 个人 P5 | BR - zhuhai.uk
-  - 007 | 464ms | 个人 P9 | 🇹🇼TW_18/473KB/s [909a8d192827]
-  - 008 | 692ms | 个人 P9 | ID - zhuhai.uk
-  - 009 | 1746ms | 个人 P31 | 🇮🇱IL_1/3.2MB/s
-  - 010 | 2093ms | 个人 P56 | 🇺🇸US_179/349KB/s/R002-260618 [be32b39e85c7]
-  - 011 | 1819ms | 个人 P77 | seed27
-  - 012 | 1328ms | 个人 P82 | 🇫🇷FR_4/1.2MB/s/K001-260618 [af44a4a293e5]
-  - 013 | 1694ms | 个人 P82 | 🇺🇸US_510/822KB/s/R002-260618 [e7d3d24b0e99]
-  - 014 | 1892ms | 个人 P82 | 🇺🇸US_298/646KB/s/P002-260618 [db679d7e13ba]
-  - 015 | 2727ms | 个人 P82 | 🇲🇽MX_2/460KB/s/P002-260618 [a3038fd93823]
-  - 016 | 555ms | 个人 P83 | 🇮🇩ID_2/594KB/s/R002-260618 [ec91e15d058c]
-  - 017 | 562ms | 个人 P83 | 🇮🇩ID_1/680KB/s/R002-260618 [964f620b2028]
-  - 018 | 1160ms | 个人 P83 | 🇩🇪DE_31/2.7MB/s/P002-260618 [a01dd6dcc5e0]
-  - 019 | 1236ms | 个人 P84 | 🇩🇪DE_100/2.2MB/s/R002-260618 [62cee87d127c]
-  - 020 | 1364ms | 个人 P84 | FR - zhuhai.uk
-  - 021 | 1880ms | 个人 P84 | 🇫🇷FR_66/2.2MB/s/R002-260618 [804be636e16d]
-  - 022 | 582ms | 个人 P85 | 🇰🇷KR_1/3.8MB/s
-  - 023 | 1317ms | 个人 P85 | 🇳🇱NL_9/1.9MB/s
-  - 024 | 1355ms | 个人 P85 | seed4
-  - 025 | 2329ms | 个人 P85 | 🇧🇷BR_1/1.1MB/s
-  - 026 | 1471ms | 个人 P86 | 🇺🇸US_650/725KB/s/R002-260618 [a8d5e1342ea1]
-  - 027 | 1583ms | 个人 P86 | 🇺🇸US_292/715KB/s/K001-260618 [569c66c77b5f]
-  - 028 | 2213ms | 个人 P86 | 🇺🇸US_305/691KB/s/R002-260618 [1185d729498d]
-  - 029 | 1306ms | 个人 P88 | 🇳🇱NL_81/3.1MB/s/K001-260618 [0314ff07d8b2]
-  - 030 | 1423ms | 个人 P88 | 🇫🇷FR_16/663KB/s/R002-260618 [4b53647fa1cf]
-  - 031 | 1568ms | 个人 P89 | 🇳🇱NL_49/5.7MB/s/P002-260618 [d77b65a8fb8a]
-  - 032 | 1944ms | 个人 P91 | 🇺🇸US_498/807KB/s/R002-260618 [413eefe66dea]
-  - 033 | 2499ms | 机房 P4 | 🇲🇽MX_10/325KB/s/P002-260618 [a4fc8a9a0c8d]
-  - 034 | 3028ms | 机房 P4 | 🇲🇽MX_4/190KB/s/R002-260618 [b7d81b4b7ca2]
-  - 035 | 2565ms | 机房 P7 | 🇲🇽MX_7/231KB/s/R002-260618 [4414f12f0fa0]
-  - 036 | 1021ms | 机房 P8 | 🇹🇭TH_13/547KB/s/R002-260618 [464d3086d022]
-  - 037 | 1846ms | 机房 P8 | 🇹🇭TH_2/472KB/s/R002-260618 [849ebc43c563]
-  - 038 | 2733ms | 机房 P8 | 🇯🇵JP_2/3.1MB/s
-  - 039 | 814ms | 机房 P9 | 🇹🇭TH_14/549KB/s/K001-260618 [6a15e2bcb6c4]
-  - 040 | 1177ms | 机房 P10 | 🇹🇭TH_3/546KB/s/R002-260618 [464b3437191d]
-  - 041 | 675ms | 机房 P11 | 巴西 002
-  - 042 | 695ms | 机房 P11 | 巴西 001
-  - 043 | 723ms | 机房 P11 | 🇷🇺 俄罗斯 / RUS 4
-  - 044 | 4380ms | 机房 P11 | 🇲🇽MX_9/490KB/s/R002-260618 [7a1e93a0ef85]
-  - 045 | 2388ms | 机房 P12 | 🇫🇷FR_117/660KB/s/K001-260618 [44e893cb0aad]
-  - 046 | 2635ms | 机房 P12 | 🇲🇽MX_5/489KB/s/R002-260618 [8153d1b7016b]
-  - 047 | 3828ms | 机房 P12 | seed25
-  - 048 | 740ms | 机房 P13 | 🇹🇭TH_8/558KB/s/R002-260618 [6e854ea98e74]
-  - 049 | 1290ms | 机房 P13 | 🇹🇭TH_4/586KB/s/R002-260618 [f10b406ce373]
-  - 050 | 1599ms | 机房 P14 | 🇹🇭TH_9/551KB/s/R002-260618 [08846cc7f1d1]
-  - 051 | 539ms | 机房 P18 | 🇵🇭PH_1/266KB/s/R002-260618 [1ae4aa8e9ed4]
-  - 052 | 1982ms | 机房 P20 | 🇯🇵JP_1/4.5MB/s
-  - 053 | 826ms | 机房 P21 | 🇻🇳VN_6/353KB/s/R002-260618 [6d6a890a0e15]
-  - 054 | 898ms | 机房 P22 | 🇻🇳VN_5/330KB/s/R002-260618 [1ed94f8d82c9]
-  - 055 | 1814ms | 机房 P23 | US - zhuhai.uk 08
-  - 056 | 1830ms | 机房 P23 | 🇺🇸US_551/90KB/s/R002-260618 [2c5b09e88ef7]
-  - 057 | 1834ms | 机房 P23 | 🇺🇸US_500/80KB/s/R002-260618 [22a5f322cb38]
-  - 058 | 1844ms | 机房 P23 | 🇺🇸US_378/169KB/s/R002-260618 [b4135a5f200b]
-  - 059 | 2003ms | 机房 P23 | 🇺🇸US_523/180KB/s/R002-260618 [f680b3bec0ff]
-  - 060 | 2630ms | 机房 P23 | 🇺🇸US_509/232KB/s/R002-260618 [ea1befc94c60]
-  - 061 | 2721ms | 机房 P23 | 🇺🇸US_647/84KB/s/R002-260618 [7d81f74f9a2f]
-  - 062 | 2789ms | 机房 P23 | 🇺🇸US_572/64KB/s/R002-260618 [39215ca34ddc]
-  - 063 | 2975ms | 机房 P23 | 🇺🇸US_597/224KB/s/R002-260618 [83c31957de44]
-  - 064 | 4173ms | 机房 P23 | 🇺🇸US_568/199KB/s/R002-260618 [6caecc4b1a5e]
-  - 065 | 4563ms | 机房 P23 | 🇺🇸US_307/216KB/s/R002-260618 [b92c1a4a1fb1]
-  - 066 | 1652ms | 机房 P24 | 🇹🇭TH_5/401KB/s/R002-260618 [97523c93a778]
-  - 067 | 1369ms | 机房 P30 | 🇬🇧 英国 / GBR 7
-  - 068 | 1604ms | 机房 P30 | 🇹🇭TH_12/564KB/s/R002-260618 [4d7f4c48ed29]
-  - '069 | 2381ms | 机房 P33 | 🇺🇸 美国 / USA #2'
-  - 070 | 512ms | 机房 P34 | 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
-  - 071 | 1460ms | 机房 P34 | 🇮🇩ID_1/2.3MB/s
-  - 072 | 1485ms | 机房 P40 | 🇨🇿 捷克 / CZE
-  - 073 | 1141ms | 机房 P41 | 🇳🇱NL_67/385KB/s/R002-260618 [212db84ab5aa]
-  - 074 | 1800ms | 机房 P42 | 🇺🇸US_493/773KB/s/P002-260618 [de266c2b5bde]
-  - 075 | 1661ms | 机房 P43 | 🇲🇽MX_4/3.5MB/s
-  - 076 | 1299ms | 机房 P44 | 🇷🇴RO_32/1.7MB/s/R002-260618 [d639d2bb1dd5]
-  - 077 | 2695ms | 机房 P44 | seed15
-  - 078 | 1167ms | 机房 P46 | 🇺🇸US_134/806KB/s/P002-260618 [8d81cfcb4761]
-  - 079 | 1191ms | 机房 P47 | 🇳🇱NL_96/959KB/s/R002-260618 [511bc38da784]
-  - 080 | 1536ms | 机房 P47 | 🇩🇪DE_86/4.6MB/s [6e0eed8d575b]
-  - 081 | 1099ms | 机房 P48 | 🇺🇸US_135/750KB/s [b6424e86ed03]
-  - 082 | 1553ms | 备用 P48 | 🇩🇪DE_129/6.0MB/s [fe00298482c1]
-  - 083 | 1148ms | 备用 P49 | 🇳🇱NL_115/1.4MB/s/R002-260618 [8befcd8cfe66]
-  - 084 | 1503ms | 备用 P49 | 🇳🇱NL_20/5.3MB/s/P002-260618 [f84dd5f92876]
-  - 085 | 1081ms | 备用 P50 | 🇺🇸US_66/799KB/s/P002-260618 [7ba0e952007a]
-  - 086 | 1156ms | 备用 P50 | 🇫🇷FR_19/1.3MB/s/R002-260618 [df3cefb034a8]
-  - 087 | 1308ms | 备用 P50 | ❓未知丨yoyapai.com (43)
-  - 088 | 1553ms | 备用 P50 | 🇳🇱NL_4/4.8MB/s/R002-260618 [02e64b2794c6]
-  - 089 | 3853ms | 备用 P50 | 🇯🇵 日本 / JPN
-  - 090 | 1385ms | 备用 P51 | NL_speednode_0015
-  - 091 | 1493ms | 备用 P51 | 🇺🇸US_149/788KB/s/P002-260618 [3fb4f934a2bc]
-  - 092 | 1096ms | 备用 P52 | US美国(mibei77.com 米贝节点分享) (27)
-  - 093 | 1199ms | 机房 P52 | 俄罗斯 002
-  - 094 | 1345ms | 机房 P53 | 🇷🇴RO_6/3.6MB/s
-  - 095 | 4733ms | 机房 P52 | 西班牙(mibei77.com 米贝节点分享) (7)
-  - 096 | 2461ms | 个人 P7 | 🇲🇽MX_1/1.6MB/s
-  - 097 | 1119ms | 机房 P48 | 🇬🇧 英国 / GBR 2
-  - 098 | 606ms | 机房 P43 | 🇹🇼_TW_台湾->🇯🇵_JP_日本_IPV4
-  - 099 | 1356ms | 机房 P54 | 🇷🇴RO_6/1.8MB/s/R002-260618 [edff0870a0ac]
-  - 100 | 1367ms | 机房 P54 | 🇷🇴RO_26/1.8MB/s/P002-260618 [adaa083b38d5]
+  - 001 | 296ms | 个人 🇺🇸US_18/910KB/s/R002-260618 [c0c88000d4a2]
+  - 002 | 316ms | 个人 🇲🇽MX_1/400KB/s/R002-260618 [fc7c075ec4e0]
+  - 003 | 318ms | 个人 🇺🇸US_53/901KB/s/M003-260806 [3ac3010a5c77]
+  - 004 | 318ms | 个人 seed14
+  - 005 | 330ms | 个人 seed25
+  - 006 | 342ms | 个人 🇲🇽MX_2/1.3MB/s
+  - 007 | 342ms | 个人 seed46
+  - 008 | 353ms | 个人 seed43
+  - 009 | 364ms | 个人 🇺🇸US_508/324KB/s/R002-260618 [a4d3572ae220]
+  - 010 | 368ms | 个人 🇺🇸US_227/83KB/s/R002-260618 [535e13772931]
+  - 011 | 375ms | 个人 🇺🇸US_180/682KB/s/R002-260618 [ac79b772f5d0]
+  - 012 | 376ms | 个人 seed74
+  - '013 | 421ms | 个人 🏳[www.v2nodes.com] ss- #2'
+  - '014 | 422ms | 个人 🇳🇱[www.v2nodes.com] ss-NL-1614... #1'
+  - 015 | 423ms | 个人 seed10
+  - '016 | 424ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616... #1'
+  - 017 | 427ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616...
+  - 018 | 440ms | 个人 seed76
+  - 019 | 460ms | 个人 seed13
+  - '020 | 462ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #1'
+  - 021 | 466ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  - 022 | 467ms | 个人 🇺🇸US_552/109KB/s/R002-260618 [fbfa57386da4]
+  - '023 | 469ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #2'
+  - 024 | 489ms | 个人 seed26
+  - 025 | 507ms | 个人 🇺🇸US_147/533KB/s/R002-260618 [3dbb27238fa5]
+  - 026 | 531ms | 个人 🇫🇷FR_30/2.1MB/s/F003-260618 [125302a6243b]
+  - 027 | 573ms | 个人 seed12
+  - 028 | 580ms | 个人 seed31
+  - 029 | 628ms | 个人 🇩🇪DE_59/6.6MB/s/P002-260618 [b982eaaa5258]
+  - 030 | 656ms | 个人 🇫🇷FR_6/564KB/s/R002-260618 [31a8661c0de3]
+  - 031 | 661ms | 个人 seed51
+  - 032 | 695ms | 个人 seed85
+  - 033 | 710ms | 个人 seed9
+  - 034 | 710ms | 个人 seed37
+  - 035 | 740ms | 个人 seed78
+  - 036 | 742ms | 个人 🇯🇵JP_6/145KB/s/P002-260618 [6c3b615333c9]
+  - 037 | 760ms | 个人 seed21
+  - 038 | 776ms | 个人 US - zhuhai.uk
+  - 039 | 799ms | 个人 🇰🇷KR_15/468KB/s/A004-260618 [906ca5cbd3af]
+  - 040 | 851ms | 个人 🇰🇷KR-211.178.105.134-0187 / 0.013MB
+  - 041 | 22ms | 机房 🇺🇸US-95.215.201.18-0052 / 64.305MB
+  - 042 | 41ms | 机房 🇺🇸US_642/975KB/s/M003-260806 [dc2acf418afb]
+  - 043 | 43ms | 机房 🇺🇸US_220/889KB/s/A004-260618 [d92318afee09]
+  - 044 | 51ms | 机房 🇺🇸US_57/934KB/s/A004-260618 [0e40b52615aa]
+  - 045 | 53ms | 机房 🇺🇸US_213/760KB/s/R002-260618 [712a67040d3e]
+  - 046 | 54ms | 机房 🇺🇸US_98/806KB/s/R002-260618 [2d2bb008072d]
+  - 047 | 54ms | 机房 🇺🇸US_105/758KB/s/P002-260618 [342fedcdd2a9]
+  - 048 | 54ms | 机房 🇺🇸US_160/798KB/s/R002-260618 [4ac5d05f7655]
+  - 049 | 54ms | 机房 🇺🇸US_236/825KB/s/P002-260618 [6bccc75a3524]
+  - 050 | 54ms | 机房 🇺🇸US_188/815KB/s/P002-260618 [7feeec8f30cf]
+  - 051 | 54ms | 机房 🇺🇸US_129/797KB/s/R002-260618 [99f87f2b140a]
+  - 052 | 54ms | 机房 🇺🇸US_162/805KB/s [9ad570cf8a0d]
+  - 053 | 54ms | 机房 🇺🇸US_73/675KB/s [bdd89167a37f]
+  - 054 | 54ms | 机房 🇺🇸US_163/824KB/s [d4a1bf05a3c6]
+  - 055 | 55ms | 机房 🇺🇸US_2/3.3MB/s
+  - 056 | 55ms | 机房 🇺🇸US_4/2.6MB/s
+  - 057 | 55ms | 机房 🇺🇸US_14/1.0MB/s
+  - 058 | 55ms | 机房 🇺🇸US_16/3.4MB/s
+  - 059 | 55ms | 机房 US - zhuhai.uk 02
+  - 060 | 55ms | 机房 US - zhuhai.uk 07
+  - 061 | 55ms | 机房 🇺🇸US_595/789KB/s/P002-260618 [2cca269a4ba7]
+  - 062 | 55ms | 机房 🇺🇸US_81/855KB/s/R002-260618 [5385a051842e]
+  - 063 | 55ms | 机房 🇺🇸US_175/765KB/s/R002-260618 [e7d870f81e49]
+  - 064 | 55ms | 机房 🇺🇸US_170/820KB/s/R002-260618 [ffc0819f735f]
+  - 065 | 56ms | 机房 🇺🇸US_128/846KB/s/P002-260618 [64d55366a21c]
+  - 066 | 56ms | 机房 🇺🇸US_70/760KB/s/P002-260618 [b90a89b0573a]
+  - 067 | 56ms | 机房 🇺🇸US_5/1.2MB/s/P002-260618
+  - 068 | 56ms | 机房 🇺🇸US_15/2.6MB/s
+  - 069 | 56ms | 机房 🇺🇸US_72/717KB/s/R002-260618 [1ac4d958cac3]
+  - 070 | 56ms | 机房 🇺🇸US_119/815KB/s/R002-260618 [1fd0f978ab09]
+  - 071 | 56ms | 机房 🇺🇸US_167/837KB/s/P002-260618 [2066bdd63838]
+  - 072 | 56ms | 机房 🇺🇸US_123/769KB/s/P002-260618 [30b959b768eb]
+  - 073 | 56ms | 机房 🇺🇸US_575/831KB/s/R002-260618 [39054f90cbcc]
+  - 074 | 56ms | 机房 🇺🇸US_542/877KB/s/P002-260618 [4cc71e0918ac]
+  - 075 | 56ms | 机房 🇺🇸US_64/876KB/s/P002-260618 [56adb46655ef]
+  - 076 | 56ms | 机房 🇺🇸US_69/712KB/s/P002-260618 [757e1ca598e8]
+  - 077 | 56ms | 机房 🇺🇸US_112/816KB/s/R002-260618 [7999de0c275c]
+  - 078 | 56ms | 机房 🇺🇸US_193/844KB/s/P002-260618 [9411ee14b7b3]
+  - 079 | 56ms | 机房 🇺🇸US_243/769KB/s/K001-260618 [c6e1aea44c4a]
+  - 080 | 56ms | 机房 🇺🇸US_495/836KB/s/P002-260618 [e842f77422a7]
+  - 081 | 57ms | 机房 🇺🇸US_215/882KB/s/P002-260618 [1e13e95b0e5a]
+  - 082 | 57ms | 机房 🇺🇸US_63/758KB/s/R002-260618 [430dc52727da]
+  - 083 | 57ms | 机房 🇺🇸US_120/777KB/s [518e0351a46f]
+  - 084 | 57ms | 机房 🇺🇸US_124/823KB/s/R002-260618 [57beb1e2a7df]
+  - 085 | 57ms | 机房 🇺🇸US_200/791KB/s/P002-260618 [66ebf6ae1341]
+  - 086 | 57ms | 机房 🇺🇸US_181/808KB/s/P002-260618 [7fb6ee20b3bd]
+  - 087 | 57ms | 机房 🇺🇸US_186/783KB/s/P002-260618 [d6053f38ebec]
+  - 088 | 57ms | 机房 🇺🇸US_8/859KB/s/P002-260618 [d71325a4e884]
+  - 089 | 58ms | 机房 seed73
+  - 090 | 58ms | 机房 🇺🇸US_189/814KB/s/R002-260618 [024ef203ebf1]
+  - 091 | 58ms | 备用 🇺🇸US_65/752KB/s/R002-260618 [5bfea617b8dd]
+  - 092 | 58ms | 备用 NN_speednode_0023
+  - 093 | 61ms | 备用 seed80
+  - 094 | 62ms | 备用 seed90
+  - 095 | 65ms | 备用 seed77
+  - 096 | 65ms | 备用 🇩🇪DE_8/3.0MB/s/P002-260618
+  - 097 | 66ms | 备用 🇫🇷FR_67/6.9MB/s [602eec94e97e]
+  - 098 | 71ms | 备用 🇩🇪DE_1/1.3MB/s/P002-260618
+  - '099 | 77ms | 备用 🇸🇬[www.v2nodes.com] vless-SG-1... #4'
+  - 100 | 97ms | 备用 🇺🇸US_92/804KB/s/P002-260618 [bdb7323375e8]
 - name: GLOBAL
   type: select
   proxies:
-  - 低风险IP
+  - AI-STUDIO
   - 个人节点
   - 机房节点
   - AUTO-FASTEST
   - PROXY
   - DIRECT
-  - 001 | 289ms | 个人 P2 | 🇹🇼TW_3/1.6MB/s
-  - 002 | 412ms | 个人 P3 | 🇹🇼 🇨🇳 台湾 / TWN 2
-  - 003 | 701ms | 个人 P3 | VN - zhuhai.uk
-  - 004 | 3784ms | 个人 P3 | 🇨🇿CZ_1/2.5MB/s/R002-260618 [dea96bfbdd9e]
-  - 005 | 217ms | 个人 P4 | 🇹🇼_TW_台湾_IPV4
-  - 006 | 2466ms | 个人 P5 | BR - zhuhai.uk
-  - 007 | 464ms | 个人 P9 | 🇹🇼TW_18/473KB/s [909a8d192827]
-  - 008 | 692ms | 个人 P9 | ID - zhuhai.uk
-  - 009 | 1746ms | 个人 P31 | 🇮🇱IL_1/3.2MB/s
-  - 010 | 2093ms | 个人 P56 | 🇺🇸US_179/349KB/s/R002-260618 [be32b39e85c7]
-  - 011 | 1819ms | 个人 P77 | seed27
-  - 012 | 1328ms | 个人 P82 | 🇫🇷FR_4/1.2MB/s/K001-260618 [af44a4a293e5]
-  - 013 | 1694ms | 个人 P82 | 🇺🇸US_510/822KB/s/R002-260618 [e7d3d24b0e99]
-  - 014 | 1892ms | 个人 P82 | 🇺🇸US_298/646KB/s/P002-260618 [db679d7e13ba]
-  - 015 | 2727ms | 个人 P82 | 🇲🇽MX_2/460KB/s/P002-260618 [a3038fd93823]
-  - 016 | 555ms | 个人 P83 | 🇮🇩ID_2/594KB/s/R002-260618 [ec91e15d058c]
-  - 017 | 562ms | 个人 P83 | 🇮🇩ID_1/680KB/s/R002-260618 [964f620b2028]
-  - 018 | 1160ms | 个人 P83 | 🇩🇪DE_31/2.7MB/s/P002-260618 [a01dd6dcc5e0]
-  - 019 | 1236ms | 个人 P84 | 🇩🇪DE_100/2.2MB/s/R002-260618 [62cee87d127c]
-  - 020 | 1364ms | 个人 P84 | FR - zhuhai.uk
-  - 021 | 1880ms | 个人 P84 | 🇫🇷FR_66/2.2MB/s/R002-260618 [804be636e16d]
-  - 022 | 582ms | 个人 P85 | 🇰🇷KR_1/3.8MB/s
-  - 023 | 1317ms | 个人 P85 | 🇳🇱NL_9/1.9MB/s
-  - 024 | 1355ms | 个人 P85 | seed4
-  - 025 | 2329ms | 个人 P85 | 🇧🇷BR_1/1.1MB/s
-  - 026 | 1471ms | 个人 P86 | 🇺🇸US_650/725KB/s/R002-260618 [a8d5e1342ea1]
-  - 027 | 1583ms | 个人 P86 | 🇺🇸US_292/715KB/s/K001-260618 [569c66c77b5f]
-  - 028 | 2213ms | 个人 P86 | 🇺🇸US_305/691KB/s/R002-260618 [1185d729498d]
-  - 029 | 1306ms | 个人 P88 | 🇳🇱NL_81/3.1MB/s/K001-260618 [0314ff07d8b2]
-  - 030 | 1423ms | 个人 P88 | 🇫🇷FR_16/663KB/s/R002-260618 [4b53647fa1cf]
-  - 031 | 1568ms | 个人 P89 | 🇳🇱NL_49/5.7MB/s/P002-260618 [d77b65a8fb8a]
-  - 032 | 1944ms | 个人 P91 | 🇺🇸US_498/807KB/s/R002-260618 [413eefe66dea]
-  - 033 | 2499ms | 机房 P4 | 🇲🇽MX_10/325KB/s/P002-260618 [a4fc8a9a0c8d]
-  - 034 | 3028ms | 机房 P4 | 🇲🇽MX_4/190KB/s/R002-260618 [b7d81b4b7ca2]
-  - 035 | 2565ms | 机房 P7 | 🇲🇽MX_7/231KB/s/R002-260618 [4414f12f0fa0]
-  - 036 | 1021ms | 机房 P8 | 🇹🇭TH_13/547KB/s/R002-260618 [464d3086d022]
-  - 037 | 1846ms | 机房 P8 | 🇹🇭TH_2/472KB/s/R002-260618 [849ebc43c563]
-  - 038 | 2733ms | 机房 P8 | 🇯🇵JP_2/3.1MB/s
-  - 039 | 814ms | 机房 P9 | 🇹🇭TH_14/549KB/s/K001-260618 [6a15e2bcb6c4]
-  - 040 | 1177ms | 机房 P10 | 🇹🇭TH_3/546KB/s/R002-260618 [464b3437191d]
-  - 041 | 675ms | 机房 P11 | 巴西 002
-  - 042 | 695ms | 机房 P11 | 巴西 001
-  - 043 | 723ms | 机房 P11 | 🇷🇺 俄罗斯 / RUS 4
-  - 044 | 4380ms | 机房 P11 | 🇲🇽MX_9/490KB/s/R002-260618 [7a1e93a0ef85]
-  - 045 | 2388ms | 机房 P12 | 🇫🇷FR_117/660KB/s/K001-260618 [44e893cb0aad]
-  - 046 | 2635ms | 机房 P12 | 🇲🇽MX_5/489KB/s/R002-260618 [8153d1b7016b]
-  - 047 | 3828ms | 机房 P12 | seed25
-  - 048 | 740ms | 机房 P13 | 🇹🇭TH_8/558KB/s/R002-260618 [6e854ea98e74]
-  - 049 | 1290ms | 机房 P13 | 🇹🇭TH_4/586KB/s/R002-260618 [f10b406ce373]
-  - 050 | 1599ms | 机房 P14 | 🇹🇭TH_9/551KB/s/R002-260618 [08846cc7f1d1]
-  - 051 | 539ms | 机房 P18 | 🇵🇭PH_1/266KB/s/R002-260618 [1ae4aa8e9ed4]
-  - 052 | 1982ms | 机房 P20 | 🇯🇵JP_1/4.5MB/s
-  - 053 | 826ms | 机房 P21 | 🇻🇳VN_6/353KB/s/R002-260618 [6d6a890a0e15]
-  - 054 | 898ms | 机房 P22 | 🇻🇳VN_5/330KB/s/R002-260618 [1ed94f8d82c9]
-  - 055 | 1814ms | 机房 P23 | US - zhuhai.uk 08
-  - 056 | 1830ms | 机房 P23 | 🇺🇸US_551/90KB/s/R002-260618 [2c5b09e88ef7]
-  - 057 | 1834ms | 机房 P23 | 🇺🇸US_500/80KB/s/R002-260618 [22a5f322cb38]
-  - 058 | 1844ms | 机房 P23 | 🇺🇸US_378/169KB/s/R002-260618 [b4135a5f200b]
-  - 059 | 2003ms | 机房 P23 | 🇺🇸US_523/180KB/s/R002-260618 [f680b3bec0ff]
-  - 060 | 2630ms | 机房 P23 | 🇺🇸US_509/232KB/s/R002-260618 [ea1befc94c60]
-  - 061 | 2721ms | 机房 P23 | 🇺🇸US_647/84KB/s/R002-260618 [7d81f74f9a2f]
-  - 062 | 2789ms | 机房 P23 | 🇺🇸US_572/64KB/s/R002-260618 [39215ca34ddc]
-  - 063 | 2975ms | 机房 P23 | 🇺🇸US_597/224KB/s/R002-260618 [83c31957de44]
-  - 064 | 4173ms | 机房 P23 | 🇺🇸US_568/199KB/s/R002-260618 [6caecc4b1a5e]
-  - 065 | 4563ms | 机房 P23 | 🇺🇸US_307/216KB/s/R002-260618 [b92c1a4a1fb1]
-  - 066 | 1652ms | 机房 P24 | 🇹🇭TH_5/401KB/s/R002-260618 [97523c93a778]
-  - 067 | 1369ms | 机房 P30 | 🇬🇧 英国 / GBR 7
-  - 068 | 1604ms | 机房 P30 | 🇹🇭TH_12/564KB/s/R002-260618 [4d7f4c48ed29]
-  - '069 | 2381ms | 机房 P33 | 🇺🇸 美国 / USA #2'
-  - 070 | 512ms | 机房 P34 | 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
-  - 071 | 1460ms | 机房 P34 | 🇮🇩ID_1/2.3MB/s
-  - 072 | 1485ms | 机房 P40 | 🇨🇿 捷克 / CZE
-  - 073 | 1141ms | 机房 P41 | 🇳🇱NL_67/385KB/s/R002-260618 [212db84ab5aa]
-  - 074 | 1800ms | 机房 P42 | 🇺🇸US_493/773KB/s/P002-260618 [de266c2b5bde]
-  - 075 | 1661ms | 机房 P43 | 🇲🇽MX_4/3.5MB/s
-  - 076 | 1299ms | 机房 P44 | 🇷🇴RO_32/1.7MB/s/R002-260618 [d639d2bb1dd5]
-  - 077 | 2695ms | 机房 P44 | seed15
-  - 078 | 1167ms | 机房 P46 | 🇺🇸US_134/806KB/s/P002-260618 [8d81cfcb4761]
-  - 079 | 1191ms | 机房 P47 | 🇳🇱NL_96/959KB/s/R002-260618 [511bc38da784]
-  - 080 | 1536ms | 机房 P47 | 🇩🇪DE_86/4.6MB/s [6e0eed8d575b]
-  - 081 | 1099ms | 机房 P48 | 🇺🇸US_135/750KB/s [b6424e86ed03]
-  - 082 | 1553ms | 备用 P48 | 🇩🇪DE_129/6.0MB/s [fe00298482c1]
-  - 083 | 1148ms | 备用 P49 | 🇳🇱NL_115/1.4MB/s/R002-260618 [8befcd8cfe66]
-  - 084 | 1503ms | 备用 P49 | 🇳🇱NL_20/5.3MB/s/P002-260618 [f84dd5f92876]
-  - 085 | 1081ms | 备用 P50 | 🇺🇸US_66/799KB/s/P002-260618 [7ba0e952007a]
-  - 086 | 1156ms | 备用 P50 | 🇫🇷FR_19/1.3MB/s/R002-260618 [df3cefb034a8]
-  - 087 | 1308ms | 备用 P50 | ❓未知丨yoyapai.com (43)
-  - 088 | 1553ms | 备用 P50 | 🇳🇱NL_4/4.8MB/s/R002-260618 [02e64b2794c6]
-  - 089 | 3853ms | 备用 P50 | 🇯🇵 日本 / JPN
-  - 090 | 1385ms | 备用 P51 | NL_speednode_0015
-  - 091 | 1493ms | 备用 P51 | 🇺🇸US_149/788KB/s/P002-260618 [3fb4f934a2bc]
-  - 092 | 1096ms | 备用 P52 | US美国(mibei77.com 米贝节点分享) (27)
-  - 093 | 1199ms | 机房 P52 | 俄罗斯 002
-  - 094 | 1345ms | 机房 P53 | 🇷🇴RO_6/3.6MB/s
-  - 095 | 4733ms | 机房 P52 | 西班牙(mibei77.com 米贝节点分享) (7)
-  - 096 | 2461ms | 个人 P7 | 🇲🇽MX_1/1.6MB/s
-  - 097 | 1119ms | 机房 P48 | 🇬🇧 英国 / GBR 2
-  - 098 | 606ms | 机房 P43 | 🇹🇼_TW_台湾->🇯🇵_JP_日本_IPV4
-  - 099 | 1356ms | 机房 P54 | 🇷🇴RO_6/1.8MB/s/R002-260618 [edff0870a0ac]
-  - 100 | 1367ms | 机房 P54 | 🇷🇴RO_26/1.8MB/s/P002-260618 [adaa083b38d5]
+  - 001 | 296ms | 个人 🇺🇸US_18/910KB/s/R002-260618 [c0c88000d4a2]
+  - 002 | 316ms | 个人 🇲🇽MX_1/400KB/s/R002-260618 [fc7c075ec4e0]
+  - 003 | 318ms | 个人 🇺🇸US_53/901KB/s/M003-260806 [3ac3010a5c77]
+  - 004 | 318ms | 个人 seed14
+  - 005 | 330ms | 个人 seed25
+  - 006 | 342ms | 个人 🇲🇽MX_2/1.3MB/s
+  - 007 | 342ms | 个人 seed46
+  - 008 | 353ms | 个人 seed43
+  - 009 | 364ms | 个人 🇺🇸US_508/324KB/s/R002-260618 [a4d3572ae220]
+  - 010 | 368ms | 个人 🇺🇸US_227/83KB/s/R002-260618 [535e13772931]
+  - 011 | 375ms | 个人 🇺🇸US_180/682KB/s/R002-260618 [ac79b772f5d0]
+  - 012 | 376ms | 个人 seed74
+  - '013 | 421ms | 个人 🏳[www.v2nodes.com] ss- #2'
+  - '014 | 422ms | 个人 🇳🇱[www.v2nodes.com] ss-NL-1614... #1'
+  - 015 | 423ms | 个人 seed10
+  - '016 | 424ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616... #1'
+  - 017 | 427ms | 个人 🇬🇧[www.v2nodes.com] ss-GB-1616...
+  - 018 | 440ms | 个人 seed76
+  - 019 | 460ms | 个人 seed13
+  - '020 | 462ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #1'
+  - 021 | 466ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  - 022 | 467ms | 个人 🇺🇸US_552/109KB/s/R002-260618 [fbfa57386da4]
+  - '023 | 469ms | 个人 🇫🇷[www.v2nodes.com] ss-FR-1615... #2'
+  - 024 | 489ms | 个人 seed26
+  - 025 | 507ms | 个人 🇺🇸US_147/533KB/s/R002-260618 [3dbb27238fa5]
+  - 026 | 531ms | 个人 🇫🇷FR_30/2.1MB/s/F003-260618 [125302a6243b]
+  - 027 | 573ms | 个人 seed12
+  - 028 | 580ms | 个人 seed31
+  - 029 | 628ms | 个人 🇩🇪DE_59/6.6MB/s/P002-260618 [b982eaaa5258]
+  - 030 | 656ms | 个人 🇫🇷FR_6/564KB/s/R002-260618 [31a8661c0de3]
+  - 031 | 661ms | 个人 seed51
+  - 032 | 695ms | 个人 seed85
+  - 033 | 710ms | 个人 seed9
+  - 034 | 710ms | 个人 seed37
+  - 035 | 740ms | 个人 seed78
+  - 036 | 742ms | 个人 🇯🇵JP_6/145KB/s/P002-260618 [6c3b615333c9]
+  - 037 | 760ms | 个人 seed21
+  - 038 | 776ms | 个人 US - zhuhai.uk
+  - 039 | 799ms | 个人 🇰🇷KR_15/468KB/s/A004-260618 [906ca5cbd3af]
+  - 040 | 851ms | 个人 🇰🇷KR-211.178.105.134-0187 / 0.013MB
+  - 041 | 22ms | 机房 🇺🇸US-95.215.201.18-0052 / 64.305MB
+  - 042 | 41ms | 机房 🇺🇸US_642/975KB/s/M003-260806 [dc2acf418afb]
+  - 043 | 43ms | 机房 🇺🇸US_220/889KB/s/A004-260618 [d92318afee09]
+  - 044 | 51ms | 机房 🇺🇸US_57/934KB/s/A004-260618 [0e40b52615aa]
+  - 045 | 53ms | 机房 🇺🇸US_213/760KB/s/R002-260618 [712a67040d3e]
+  - 046 | 54ms | 机房 🇺🇸US_98/806KB/s/R002-260618 [2d2bb008072d]
+  - 047 | 54ms | 机房 🇺🇸US_105/758KB/s/P002-260618 [342fedcdd2a9]
+  - 048 | 54ms | 机房 🇺🇸US_160/798KB/s/R002-260618 [4ac5d05f7655]
+  - 049 | 54ms | 机房 🇺🇸US_236/825KB/s/P002-260618 [6bccc75a3524]
+  - 050 | 54ms | 机房 🇺🇸US_188/815KB/s/P002-260618 [7feeec8f30cf]
+  - 051 | 54ms | 机房 🇺🇸US_129/797KB/s/R002-260618 [99f87f2b140a]
+  - 052 | 54ms | 机房 🇺🇸US_162/805KB/s [9ad570cf8a0d]
+  - 053 | 54ms | 机房 🇺🇸US_73/675KB/s [bdd89167a37f]
+  - 054 | 54ms | 机房 🇺🇸US_163/824KB/s [d4a1bf05a3c6]
+  - 055 | 55ms | 机房 🇺🇸US_2/3.3MB/s
+  - 056 | 55ms | 机房 🇺🇸US_4/2.6MB/s
+  - 057 | 55ms | 机房 🇺🇸US_14/1.0MB/s
+  - 058 | 55ms | 机房 🇺🇸US_16/3.4MB/s
+  - 059 | 55ms | 机房 US - zhuhai.uk 02
+  - 060 | 55ms | 机房 US - zhuhai.uk 07
+  - 061 | 55ms | 机房 🇺🇸US_595/789KB/s/P002-260618 [2cca269a4ba7]
+  - 062 | 55ms | 机房 🇺🇸US_81/855KB/s/R002-260618 [5385a051842e]
+  - 063 | 55ms | 机房 🇺🇸US_175/765KB/s/R002-260618 [e7d870f81e49]
+  - 064 | 55ms | 机房 🇺🇸US_170/820KB/s/R002-260618 [ffc0819f735f]
+  - 065 | 56ms | 机房 🇺🇸US_128/846KB/s/P002-260618 [64d55366a21c]
+  - 066 | 56ms | 机房 🇺🇸US_70/760KB/s/P002-260618 [b90a89b0573a]
+  - 067 | 56ms | 机房 🇺🇸US_5/1.2MB/s/P002-260618
+  - 068 | 56ms | 机房 🇺🇸US_15/2.6MB/s
+  - 069 | 56ms | 机房 🇺🇸US_72/717KB/s/R002-260618 [1ac4d958cac3]
+  - 070 | 56ms | 机房 🇺🇸US_119/815KB/s/R002-260618 [1fd0f978ab09]
+  - 071 | 56ms | 机房 🇺🇸US_167/837KB/s/P002-260618 [2066bdd63838]
+  - 072 | 56ms | 机房 🇺🇸US_123/769KB/s/P002-260618 [30b959b768eb]
+  - 073 | 56ms | 机房 🇺🇸US_575/831KB/s/R002-260618 [39054f90cbcc]
+  - 074 | 56ms | 机房 🇺🇸US_542/877KB/s/P002-260618 [4cc71e0918ac]
+  - 075 | 56ms | 机房 🇺🇸US_64/876KB/s/P002-260618 [56adb46655ef]
+  - 076 | 56ms | 机房 🇺🇸US_69/712KB/s/P002-260618 [757e1ca598e8]
+  - 077 | 56ms | 机房 🇺🇸US_112/816KB/s/R002-260618 [7999de0c275c]
+  - 078 | 56ms | 机房 🇺🇸US_193/844KB/s/P002-260618 [9411ee14b7b3]
+  - 079 | 56ms | 机房 🇺🇸US_243/769KB/s/K001-260618 [c6e1aea44c4a]
+  - 080 | 56ms | 机房 🇺🇸US_495/836KB/s/P002-260618 [e842f77422a7]
+  - 081 | 57ms | 机房 🇺🇸US_215/882KB/s/P002-260618 [1e13e95b0e5a]
+  - 082 | 57ms | 机房 🇺🇸US_63/758KB/s/R002-260618 [430dc52727da]
+  - 083 | 57ms | 机房 🇺🇸US_120/777KB/s [518e0351a46f]
+  - 084 | 57ms | 机房 🇺🇸US_124/823KB/s/R002-260618 [57beb1e2a7df]
+  - 085 | 57ms | 机房 🇺🇸US_200/791KB/s/P002-260618 [66ebf6ae1341]
+  - 086 | 57ms | 机房 🇺🇸US_181/808KB/s/P002-260618 [7fb6ee20b3bd]
+  - 087 | 57ms | 机房 🇺🇸US_186/783KB/s/P002-260618 [d6053f38ebec]
+  - 088 | 57ms | 机房 🇺🇸US_8/859KB/s/P002-260618 [d71325a4e884]
+  - 089 | 58ms | 机房 seed73
+  - 090 | 58ms | 机房 🇺🇸US_189/814KB/s/R002-260618 [024ef203ebf1]
+  - 091 | 58ms | 备用 🇺🇸US_65/752KB/s/R002-260618 [5bfea617b8dd]
+  - 092 | 58ms | 备用 NN_speednode_0023
+  - 093 | 61ms | 备用 seed80
+  - 094 | 62ms | 备用 seed90
+  - 095 | 65ms | 备用 seed77
+  - 096 | 65ms | 备用 🇩🇪DE_8/3.0MB/s/P002-260618
+  - 097 | 66ms | 备用 🇫🇷FR_67/6.9MB/s [602eec94e97e]
+  - 098 | 71ms | 备用 🇩🇪DE_1/1.3MB/s/P002-260618
+  - '099 | 77ms | 备用 🇸🇬[www.v2nodes.com] vless-SG-1... #4'
+  - 100 | 97ms | 备用 🇺🇸US_92/804KB/s/P002-260618 [bdb7323375e8]
 rules:
 - MATCH,PROXY
